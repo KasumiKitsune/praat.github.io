@@ -9,17 +9,14 @@
 
 ![Praat 简体中文本地化界面](docs/pictures/praat-zh-main-window.png)
 
----
+> [!TIP]
+> **本地化专属新增特性 (Unique Features)**
+> 
+> 为了提供更好的使用体验，本中文本地化版本在官方 Praat 的基础上，额外开发或移植了以下专属特性：
+> * **Windows 平台支持原生文件拖入打开 (Drag-and-Drop for Windows)**
+>   * **特性描述**：官方 Windows 版 Praat 长期不支持拖拽文件打开。我们移植并适配了 macOS 平台的文档打开回调机制，在 Windows 版本的底层 Motif 模拟器中实现了 native 拖拽响应接口。
+>   * **使用方法**：可直接将支持的语音、标注或脚本文件（如 `.wav`、`.TextGrid`、`.praat` 等）拖拽进 Praat 的任意窗口，即可自动加载至对象列表（Objects）中。支持一次性拖入并同时加载多个文件。
 
-### ✨ 本地化版本专属新增特性 (Unique Features)
-
-为了提供更好的使用体验，本中文本地化版本在官方 Praat 的基础上，额外开发或移植了以下专属特性：
-
-* **📁 Windows 平台支持原生文件拖入打开 (Drag-and-Drop for Windows)**
-  * **特性描述**：官方 Windows 版 Praat 长期不支持拖拽文件打开。我们移植并适配了 macOS 平台的文档打开回调机制，在 Windows 版本的底层 Motif 模拟器中实现了 native 拖拽响应接口。
-  * **使用方法**：可直接将支持的语音、标注或脚本文件（如 `.wav`、`.TextGrid`、`.praat` 等）拖拽进 Praat 的任意窗口，即可自动加载至对象列表（Objects）中。支持一次性拖入并同时加载多个文件。
-
----
 
 # Praat：用计算机做语音学分析
 
