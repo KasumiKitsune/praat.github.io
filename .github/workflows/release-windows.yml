@@ -231,6 +231,7 @@ jobs:
       - name: Create GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
           TAG_NAME: ${{ inputs.tag_name }}
           RELEASE_NAME: ${{ inputs.release_name }}
           DRAFT: ${{ inputs.draft }}
@@ -242,6 +243,7 @@ jobs:
             release create "$TAG_NAME"
             dist/Praat-"$TAG_NAME"-Windows-x64.zip
             dist/Praat-"$TAG_NAME"-macOS-universal.dmg
+            --repo "$GH_REPO"
             --target "${{ github.sha }}"
             --title "$RELEASE_NAME"
             --notes "基于 Praat 6.4.67 的非官方简体中文本地化版本。包含 Windows x64 与 macOS universal 构建产物。"
