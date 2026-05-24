@@ -1,4 +1,4 @@
-name: Build and release Windows
+name: Build and release
 
 on:
   workflow_dispatch:
@@ -11,6 +11,21 @@ on:
         description: "Release title"
         required: false
         default: "Praat 6.4.67 中文版"
+        type: string
+      praat_upstream_tag:
+        description: "Upstream Praat tag used for the Xcode project, e.g. v6.4.67"
+        required: false
+        default: "v6.4.67"
+        type: string
+      praat_version_digits:
+        description: "Praat version digits used in upstream asset names, e.g. 6467"
+        required: false
+        default: "6467"
+        type: string
+      xcodeproj_url:
+        description: "Optional direct URL to praatXXXX_xcodeproj.zip; leave blank to use upstream tag/version"
+        required: false
+        default: ""
         type: string
       draft:
         description: "Create as draft release"
@@ -74,29 +89,117 @@ jobs:
           name: Praat-${{ inputs.tag_name }}-Windows-x64
           path: dist/Praat-${{ inputs.tag_name }}-Windows-x64.zip
 
+  build-macos:
+    name: Build macOS universal
+    runs-on: macos-14
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Prepare Xcode project
+        shell: bash
+        env:
+          XCODEPROJ_URL: ${{ inputs.xcodeproj_url }}
+          PRAAT_UPSTREAM_TAG: ${{ inputs.praat_upstream_tag }}
+          PRAAT_VERSION_DIGITS: ${{ inputs.praat_version_digits }}
+        run: |
+          set -euo pipefail
+
+          if [ -d praat.xcodeproj ]; then
+            echo "Using praat.xcodeproj from repository."
+          else
+            if [ -z "$XCODEPROJ_URL" ]; then
+              XCODEPROJ_URL="https://github.com/praat/praat/releases/download/${PRAAT_UPSTREAM_TAG}/praat${PRAAT_VERSION_DIGITS}_xcodeproj.zip"
+            fi
+
+            echo "Downloading Xcode project from $XCODEPROJ_URL"
+            curl -fL "$XCODEPROJ_URL" -o praat_xcodeproj.zip
+            ditto -x -k praat_xcodeproj.zip .
+          fi
+
+          test -d praat.xcodeproj
+          xcodebuild -list -project praat.xcodeproj
+
+      - name: Build Praat.app
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          xcodebuild \
+            -project praat.xcodeproj \
+            -target praat_mac \
+            -configuration Configuration64 \
+            SYMROOT="$PWD/build/macos/products" \
+            OBJROOT="$PWD/build/macos/intermediates" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            build
+
+      - name: Prepare release package
+        shell: bash
+        env:
+          PACKAGE_NAME: Praat-${{ inputs.tag_name }}-macOS-universal.dmg
+        run: |
+          set -euo pipefail
+
+          mkdir -p dist
+          APP_PATH="$(find build/macos/products -type d -name Praat.app -print -quit)"
+          if [ -z "$APP_PATH" ]; then
+            echo "Praat.app was not produced by the Xcode build."
+            find build/macos/products -maxdepth 4 -print || true
+            exit 1
+          fi
+
+          hdiutil create -fs HFS+ -ov -srcfolder "$APP_PATH" -volname "Praat ${{ inputs.tag_name }}" "dist/${PACKAGE_NAME%.dmg}.tmp.dmg"
+          hdiutil convert -ov -format UDZO -o "dist/$PACKAGE_NAME" "dist/${PACKAGE_NAME%.dmg}.tmp.dmg"
+          rm "dist/${PACKAGE_NAME%.dmg}.tmp.dmg"
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Praat-${{ inputs.tag_name }}-macOS-universal
+          path: dist/Praat-${{ inputs.tag_name }}-macOS-universal.dmg
+
+  create-release:
+    name: Create GitHub release
+    runs-on: ubuntu-latest
+    needs:
+      - build-windows-x64
+      - build-macos
+
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+
       - name: Create GitHub release
-        shell: pwsh
         env:
           GH_TOKEN: ${{ github.token }}
           TAG_NAME: ${{ inputs.tag_name }}
           RELEASE_NAME: ${{ inputs.release_name }}
-          PACKAGE_NAME: Praat-${{ inputs.tag_name }}-Windows-x64.zip
           DRAFT: ${{ inputs.draft }}
           PRERELEASE: ${{ inputs.prerelease }}
         run: |
-          $args = @(
-            "release", "create", $env:TAG_NAME,
-            "dist/$env:PACKAGE_NAME",
-            "--target", "${{ github.sha }}",
-            "--title", $env:RELEASE_NAME,
-            "--notes", "基于 Praat 6.4.67 的非官方简体中文本地化版本。包含 Windows x64 可执行文件。"
+          set -euo pipefail
+
+          args=(
+            release create "$TAG_NAME"
+            dist/Praat-"$TAG_NAME"-Windows-x64.zip
+            dist/Praat-"$TAG_NAME"-macOS-universal.dmg
+            --target "${{ github.sha }}"
+            --title "$RELEASE_NAME"
+            --notes "基于 Praat 6.4.67 的非官方简体中文本地化版本。包含 Windows x64 与 macOS universal 构建产物。"
           )
 
-          if ($env:DRAFT -eq "true") {
-            $args += "--draft"
-          }
-          if ($env:PRERELEASE -eq "true") {
-            $args += "--prerelease"
-          }
+          if [ "$DRAFT" = "true" ]; then
+            args+=(--draft)
+          fi
+          if [ "$PRERELEASE" = "true" ]; then
+            args+=(--prerelease)
+          fi
 
-          gh @args
+          gh "${args[@]}"
