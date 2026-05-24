@@ -174,6 +174,12 @@ DIRECT (PRAAT__openNotebook) {
 	PRAAT_END
 }
 
+DIRECT (WINDOW_openPictureWindow) {
+	PRAAT
+		praat_picture_open ();
+	PRAAT_END
+}
+
 static ButtonEditor theReferenceToTheOnlyButtonEditor;
 
 static void cb_ButtonEditor_destruction (Editor /* editor */) {
@@ -858,6 +864,8 @@ void praat_addMenus (GuiWindow window) {
 			PRAAT__openScript);
 	praat_addMenuCommand (U"Objects", U"Praat", U"Open Praat notebook...", nullptr, GuiMenu_NO_API,
 			PRAAT__openNotebook);
+	praat_addMenuCommand (U"Objects", U"Praat", U"Open Picture window", nullptr, GuiMenu_NO_API,
+			WINDOW_openPictureWindow);
 	praat_addMenuCommand (U"Objects", U"Praat", U"-- buttons --", nullptr, 0, nullptr);
 	praat_addMenuCommand (U"Objects", U"Praat", U"Add menu command...", nullptr, GuiMenu_HIDDEN | GuiMenu_NO_API,
 			PRAAT__addMenuCommand);

@@ -1991,7 +1991,7 @@ void praat_init (conststring32 title,
 	trace (U"creating the Picture window");
 	trace (U"before picture window shows: locale is ", Melder_peek8to32_u (setlocale (LC_ALL, nullptr)));
 	if (! praatP.dontUsePictureWindow)
-		praat_picture_init (! praatP.commandLineOptions.hidePicture);
+		praat_picture_init (false);
 	trace (U"after picture window shows: locale is ", Melder_peek8to32_u (setlocale (LC_ALL, nullptr)));
 }
 

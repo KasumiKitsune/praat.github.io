@@ -1114,6 +1114,7 @@ static const std::unordered_map<std::u32string, std::u32string> g_translation_ma
 	{ U"One mark right...", U"\u5728\u53f3\u4fa7\u6807\u51fa\u5355\u4e2a\u523b\u5ea6..." },
 	{ U"One mark top...", U"\u5728\u9876\u90e8\u6807\u51fa\u5355\u4e2a\u523b\u5ea6..." },
 	{ U"Open", U"\u6253\u5f00" },
+	{ U"Open Picture window", U"\u6253\u5f00\u56fe\u50cf\u7a97\u53e3" },
 	{ U"Open Praat notebook...", U"\u6253\u5f00 Praat \u7b14\u8bb0\u672c (Notebook)..." },
 	{ U"Open Praat script...", U"\u6253\u5f00 Praat \u811a\u672c..." },
 	{ U"Open editor script...", U"\u6253\u5f00\u7f16\u8f91\u5668\u811a\u672c..." },
