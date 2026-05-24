@@ -91,11 +91,17 @@ jobs:
 
   build-macos:
     name: Build macOS universal
-    runs-on: macos-14
+    runs-on: macos-26
 
     steps:
       - name: Check out source
         uses: actions/checkout@v4
+
+      - name: Show Xcode version
+        shell: bash
+        run: |
+          xcodebuild -version
+          xcode-select -p
 
       - name: Prepare Xcode project
         shell: bash
