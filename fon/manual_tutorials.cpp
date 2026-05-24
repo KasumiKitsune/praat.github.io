@@ -138,12 +138,12 @@ See @@Intro 3. Spectral analysis@
 "FAQ (Frequently Asked Questions)"
 © Paul Boersma 2007-12-10
 
-,	@@FAQ: How to cite Praat
-,	@Unicode
-,	@@FAQ: Formant analysis
-,	@@FAQ: Pitch analysis
-,	@@FAQ: Spectrograms
-,	@@FAQ: Scripts
+,	@@FAQ: How to cite Praat|FAQ: 如何引用 Praat@
+,	@@Unicode|Unicode 编码@
+,	@@FAQ: Formant analysis|FAQ: 共振峰分析@
+,	@@FAQ: Pitch analysis|FAQ: 音高分析@
+,	@@FAQ: Spectrograms|FAQ: 声谱图@
+,	@@FAQ: Scripts|FAQ: 脚本@
 
 // Hardware
 // Pitch: octave errors
@@ -152,131 +152,89 @@ See @@Intro 3. Spectral analysis@
 "FAQ: Formant analysis"
 © Paul Boersma 2003-09-16
 
-#Problem: I get different formant values if I choose to analyse 3 formants
-than if I choose to analyse 4 formants.
+#问题：如果我选择分析 3 个共振峰，与选择分析 4 个共振峰相比，会得到不同的共振峰数值。
 
-Solution: the “number of formants” in formant analysis determines the
-number of peaks with which the %entire spectrum is modelled. For an average
-female voice, you should choose to analyse 5 formants in the region up to 5500 Hz,
-even if you are interested only in the first three formants.
+解答：“共振峰数量”（number of formants）在共振峰分析中决定了用于模拟%整个频谱%的峰值数量。对于普通的女性声音，即使您只对前三个共振峰感兴趣，也应该选择在最高到 5500 Hz 的范围内分析 5 个共振峰。
 
-#Problem: I often get only 1 formant in a region where I see clearly 2 formants
-in the spectrogram.
+#问题：在声谱图中我能清楚看到 2 个共振峰的区域，却经常只得到 1 个共振峰。
 
-This occurs mainly in back vowels (F1 and F2 close together) for male voices,
-if the “maximum formant” is set to the standard of 5500 Hz, which is appropriate
-for female voices. Set the “maximum formant” down to 5000 Hz.
-No, Praat comes without a guarantee: the formant analysis is based on LPC,
-and this comes with several assumptions as to what a speech spectrum is like.
+这主要发生在男性声音的后元音（F1 和 F2 靠得很近）中。如果是将“最大共振峰频率”（maximum formant）设置为了适用于女性声音的 5500 Hz 标准值，就会出现这种情况。请将“最大共振峰频率”调低至 5000 Hz。
+不，Praat 不提供万能保证：共振峰分析是基于线性预测编码（LPC）的，这伴随着对语音频谱特征的若干假设。
 
-#Question: what algorithm is used for formant analysis?
+#问题：共振峰分析使用的是什么算法？
 
-Answer: see @@Sound: To Formant (burg)...@.
+回答：参见 @@Sound: To Formant (burg)...|Sound: To Formant (burg)...@。
 
 ################################################################################
 "FAQ: How to cite Praat"
 © Paul Boersma 2005,2010,2014,2025,2026
 
-#Question: how do I cite Praat in my articles?
+#问题：如何在我的文章中引用 Praat？
 
-Answer: nowadays most journals allow you to cite computer programs and web sites.
-The style approved by the American Psychological Association,
-and therefore by many journals, is like the following
-(change the dates and version number as needed):
+回答：如今大多数期刊都允许您引用计算机程序和网站。
+美国心理学会（APA）批准的样式，也是许多期刊采用的格式如下（请根据需要更改日期和版本号）：
 {-
 	writeInfoLine: “Paul Boersma, David Weenink & Anastasia Shchupak (”, appYear(),
 	... “). Praat: doing phonetics by computer [Computer program]. Version ”, appVersion$(),
 	... “, retrieved ”, appDay(), “ ”, appMonth$(), “ ”, appYear(), “ from https://praat.org”
 }
-If the journal does not allow you to cite a web site, then try:
+如果期刊不允许您引用网站，可以尝试以下格式：
 
 Boersma, Paul (2001). Praat, a system for doing phonetics by computer.
 %%Glot International% ##5:9/10#, 341-345.
 
-This paper can be downloaded from Boersma’s website.
+此论文可以从 Boersma 的个人网站上下载。
 
 ################################################################################
 "FAQ: Pitch analysis"
 © Paul Boersma, 2002,2006,2022-2024
 
-Please also consult @@how to choose a pitch analysis method@.
+另请参阅 @@how to choose a pitch analysis method|如何选择音高分析方法@。
 
-#Question: what algorithm is used for pitch analysis?
+#问题：音高分析使用的是什么算法？
 
-Answer: for how the raw pitch analysis method works,
-see @@Sound: To Pitch (ac)...@. The 1993 article is downloadable from
+回答：有关基础音高分析方法的工作原理，参见 @@Sound: To Pitch (ac)...|Sound: To Pitch (ac)...@。发表于 1993 年的相关文献可从以下网址下载：
 https://www.fon.hum.uva.nl/paul/
 
-#Question: why does Praat consider my sound voiceless while I hear it as voiced?
+#问题：为什么我觉得是浊音（有声）的片段，Praat 却将其分析为清音（无声）？
 
-There are at least five possibilities. Most of them can be checked by zooming in on the @waveform.
+至少有五种可能性。其中大多数可以通过放大@波形图（waveform）来进行排查：
 
-The first possibility is that the pitch has fallen below the @@pitch floor@. For instance,
-your pitch floor could be 50 Hz but the English speaker produces creak at the end of the utterance.
-Or your pitch floor could be 50 Hz but the Chinese speaker is in the middle of a third tone.
-If this happens, it may help to lower the pitch floor to e.g. 30 Hz (@@Pitch settings...@),
-although that may also smooth the pitch curve too much in other places.
+第一种可能性是音高已经降到了“音高下限”（@@pitch floor@）以下。例如，您的音高下限设为 50 Hz，但英语发音人在话语末尾产生了裂音（creak）；或者音高下限为 50 Hz，但汉语发音人正处于第三声的低谷。如果发生这种情况，将音高下限降低到 30 Hz 左右可能会有所帮助（@@Pitch settings...|音高设置...@），尽管这可能会导致其他位置的音高曲线被过度平滑。
 
-The second possibility is that the pitch has moved too fast. This could happen at the end of a Chinese fourth tone,
-which drops very fast. If this happens, it may help to use @@pitch analysis by raw cross-correlation@,
-although Praat may then hallucinate pitches in other places that you would prefer to consider voiceless.
+第二种可能性是音高变化太快。这可能会发生在汉语第四声的末尾，因为第四声下降非常快。如果是这种情况，使用 @@pitch analysis by raw cross-correlation|原始互相关音高分析方法@ 可能会有帮助，尽管这可能会导致 Praat 在其他本该是清音的地方产生“幻觉”音高。
 
-The third possibility is that the periods are very irregular, as in some pathological voices.
-If you want to see a pitch in those cases, it may help to use @@pitch analysis by raw cross-correlation@.
-Or it may help to lower the ##voicing threshold# setting
-to 0.25 (instead of the standard 0.50) or so (@@Pitch settings...@).
+第三种可能性是周期非常不规则，例如在某些病理嗓音中。如果您想在这些情况下得到音高，使用 @@pitch analysis by raw cross-correlation|原始互相关音高分析方法@ 可能会有所帮助。或者也可以将“浊音阈值”（##voicing threshold#）设置调低到 0.25 左右（标准值为 0.50）（@@Pitch settings...|音高设置...@）。
 
-The fourth possibility is that there is a lot of background noise, as in a recording on a busy street.
-In such a case, it may help to lower the ##voicing threshold# setting
-to 0.25 (instead of the standard 0.50) or so. The disadvantage of lowering this setting is that for non-noisy
-recordings, Praat will become too eager to find voicing in some places that you would prefer to consider voiceless;
-so make sure to set it back to 0.50 once you have finished analysing the noisy recordings.
+第四种可能性是存在大量的背景噪音，例如在繁忙的街道上录音。在这种情况下，将“浊音阈值”（##voicing threshold#）设置调低到 0.25 左右可能会有所帮助。调低此设置的缺点是，对于没有噪音的录音，Praat 会在一些您更希望算作清音的地方过度敏感地分析出浊音。因此，一旦您完成对嘈杂录音的分析，请务必将其重新设置为 0.50。
 
-The fifth possibility is that the part analysed as voiceless is much less loud than the rest of the sound,
-or that the sound contains a loud noise elsewhere. This can be checked by zooming in on the part analysed as voiceless:
-if Praat suddenly considers it as voiced, this is a sign that this part is much quieter than the rest.
-To make Praat analyse this part as voiced, you can lower the ##silence threshold# setting to 0.01
-(instead of the standard 0.09) or so. The disadvantage of lowering this setting is that Praat may start to consider
-some distant background sounds (and quiet echos, for instance) as voiced.
+第五种可能性是分析为清音的片段的音量比其他部分小得多，或者声音在其他地方含有强噪音。这可以通过放大被分析为清音的部分来验证：如果 Praat 突然将其识别为浊音，说明这部分声音比其他部分安静得多。要让 Praat 将这部分分析为浊音，您可以将“静音阈值”（##silence threshold#）设置调低到 0.01 左右（标准值为 0.09）。调低此设置的缺点是，Praat 可能会开始将一些远处的背景声音（以及安静的回音）识别为浊音。
 
-#Question: why do I get different results for the maximum pitch if...?
+#问题：为什么在...时我得到的最大音高结果会有所不同？
 
-If you select a Sound and choose @@Sound: To Pitch (filtered ac)...@, the time step will usually
-be 0.015 seconds. The resulting @Pitch object will have values for times that are
-0.015 seconds apart. If you then click Info or choose ##Get maximum pitch# from the @@Query submenu@,
-the result is based on those time points. By contrast, if you choose ##Get maximum pitch#
-from the @@Pitch menu@ in the SoundEditor window, the result will be based on the visible points,
-of which there tend to be a hundred in the visible window. These different time spacings will
-lead to slightly different pitch contours.
+如果您选择一个 Sound 并运行 @@Sound: To Pitch (filtered ac)...|Sound: To Pitch (filtered ac)...@，时间步长通常为 0.015 秒。生成的 @Pitch 对象中时间间隔即为 0.015 秒。如果您随后点击“信息”或从 @@Query submenu|查询子菜单@ 中选择 ##Get maximum pitch#，结果将基于这些时间采样点。相比指下，如果您在声音编辑器窗口中从 @@Pitch menu|音高菜单@ 选择 ##Get maximum pitch#，结果将基于当前视窗中可见的采样点（通常有上百个）。这些不同的时间采样间隔会导致音高曲线略有不同。
 
-If you choose ##Move cursor to maximum pitch#, then choose ##Get pitch# from the
-@@Pitch menu@, the result will be different again. This is because ##Get maximum pitch#
-can do a parabolic interpolation around the maximum, whereas ##Get pitch#, not realizing
-that the cursor is at a maximum, does a stupid linear interpolation, which tends to lead to
-lower values.
+如果您选择 ##Move cursor to maximum pitch#（移动光标到最大音高），然后从 @@Pitch menu|音高菜单@ 选择 ##Get pitch#，结果会再次不同。这是因为 ##Get maximum pitch# 可以在最大值周围进行抛物线插值，而 ##Get pitch# 在不知道光标处于最大值的情况下，只进行简单的线性插值，这往往会得到稍低的值。
 
 ################################################################################
 "FAQ: Scripts"
 © Paul Boersma 2001,2004,2011,2013,2014,2023
 
-#Question: how do I do something to all the files in a directory?
+#问题：如何对一个文件夹中的所有文件执行相同的操作？
 
-Answer: look at @`fileNames$#` () or @@Create Strings as file list...@.
+回答：参考 @`fileNames$#` () 函数或者 @@Create Strings as file list...|Create Strings as file list...@ 菜单命令。
 ,
 
-#Question: why doesn't the editor window react to my commands?
+#问题：为什么编辑器窗口对我的脚本命令没有反应？
 
-Your commands are probably something like:
+您的脚本命令可能写成类似这样：
 {;
 	Read from file: “hello.wav”
 	View & Edit
 	Zoom: 0.3, 0.5
 }
 
-Answer: Praat doesn’t know it has to send the #Zoom command to the editor
-window called ##14. Sound hello#. There could be several Sound editor windows on your
-screen. According to @@Scripting 7.1. Scripting an editor from a shell script@,
-you will have to say this explicitly:
+回答：Praat 并不知道它必须把 #Zoom 命令发送给名为 ##14. Sound hello# 的编辑器窗口。因为您的屏幕上可能同时打开了多个声音编辑器窗口。根据 @@Scripting 7.1. Scripting an editor from a shell script|Scripting 7.1. Scripting an editor from a shell script@，您必须显式指定目标编辑器窗口：
 {;
 	Read from file: “hello.wav”
 	View & Edit
@@ -285,44 +243,32 @@ you will have to say this explicitly:
 }
 ,
 
-#Problem: a line like “%`Number = 1`” does not work.
+#问题：像 “%`Number = 1`” 这样的一行无法工作。
 
-Solution: names of variables should start with a lower-case letter.
+解答：变量的名称应当以小写字母开头。
 ,
 
-#Question: why do names of variables have to start with a lower-case letter?
-I would like to do things like “`F0 = Get mean pitch`”.
+#问题：为什么变量名称必须以小写字母开头？我想使用像 “`F0 = Get mean pitch`” 这样的写法。
 
-Answer: Praat scripts combine button commands with things that only occur
-in scripts. Button commands always start with a capital letter, e.g. `Play` (there is a button #Play).
-Script commands always start with lower case, e.g. `writeInfoLine: “Hello”`
-($writeInfoLine is a built-in function).
-A minimal pair is “$select”, which simulates a mouse click in the object list,
-versus “`Select...`”, which sets the selection in editor windows. If we allowed initial capitals,
-variable names would become rather ambiguous in assignments,
-as in “`x = Get`”, where “%`Get`” would be a variable, versus “`x = Get mean`”,
-where ##Get mean# is a button command. To prevent this confusion, Praat enforces
-a rigorous lower-case/upper-case distinction.
+回答：Praat 脚本将按钮命令与只在脚本中发生的功能结合在一起。按钮命令总是以大写字母开头，例如 `Play`（因为在界面中有一个名为 #Play 的按钮）。脚本专属命令则总是以小写字母开头，例如 `writeInfoLine: “Hello”`（$writeInfoLine 是一个内置函数）。
+一个典型的例子是 “$select”（它在脚本中模拟对象列表中的鼠标点击），与 “`Select...`”（它在编辑器窗口中设定选择范围）之间的区别。如果我们允许变量名首字母大写，在赋值时就会变得相当含糊。例如在 “`x = Get`” 中，“%`Get`” 会是一个变量；而在 “`x = Get mean`” 中，##Get mean# 是一个界面按钮命令。为了防止这种混淆，Praat 强制执行了严格的大小写区分规则。
 ,
 
-#Question: how do I convert a number into a string?
+#问题：如何将数字转换为字符串？
 
-Answer: `a$ = string$ (a)`
+回答：`a$ = string$ (a)`
 
-#Question: how do I convert a string into a number?
+#问题：如何将字符串转换为数字？
 
-Answer: `a = number (a$)`
+回答：`a = number (a$)`
 
 ################################################################################
 "FAQ: Spectrograms"
 © Paul Boersma 2002,2003
 
-#Problem: the background is grey instead of white (too little contrast)
+#问题：声谱图背景是灰色的，而不是白色的（对比度太低）
 
-Solution: reduce the ##Dynamic range# in the spectrogram settings. The standard value is 50 dB,
-which is fine for detecting small things like plosive voicing in well recorded speech.
-For gross features like vowel formants, or for noisy speech, you may want to change the dynamic range
-to 40 or even 30 dB.
+解答：调低声谱图设置中的“动态范围”（##Dynamic range#）。标准值是 50 dB，这对于在录音良好的语音中检测塞音浊化等微小特征非常合适。对于诸如元音共振峰之类的粗略特征，或者对于有背景噪音的语音，您可能需要将动态范围更改为 40 甚至 30 dB。
 
 ################################################################################
 "File menu"
