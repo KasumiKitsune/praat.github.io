@@ -38,3 +38,14 @@ Praat.app
 .Rdata
 .Rhistory
 .Rproj.user
+
+# Python cache
+__pycache__/
+
+# Local zip packages/releases
+*.zip
+
+# Translation temporary/intermediate log and candidate files
+debug_translations.txt
+gui_candidates.txt
+translation_candidates.txt
