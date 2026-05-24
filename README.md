@@ -7,6 +7,8 @@
 > 
 > 本文档是 Praat 英文 `README.md` 的中文翻译版本，旨在为中文用户提供更好的阅读和开发参考。
 
+![Praat 简体中文本地化界面](docs/pictures/praat-zh-main-window.png)
+
 # Praat：用计算机做语音学分析
 
 欢迎使用 Praat！Praat 是一款用于在计算机上进行语音学研究的语音分析工具。
