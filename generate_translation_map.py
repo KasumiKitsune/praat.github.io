@@ -1,10 +1,13 @@
 import re
 import os
+from pathlib import Path
 
-INPUT_FILE = r"C:\Users\Sager\.gemini\antigravity\brain\fb84dbc7-6204-4b36-bf21-51a5be09a3f0\scratch\ui_strings.txt"
-OUTPUT_CPP = r"c:\Users\Sager\Desktop\Program\Praat_ZH\sys\praat_translate.cpp"
-DEBUG_OUTPUT = r"c:\Users\Sager\Desktop\Program\Praat_ZH\debug_translations.txt"
-CANDIDATE_OUTPUT = r"c:\Users\Sager\Desktop\Program\Praat_ZH\translation_candidates.txt"
+ROOT = Path(__file__).resolve().parent
+
+INPUT_FILE = Path(os.environ.get("PRAAT_ZH_UI_STRINGS", ROOT / "ui_strings.txt"))
+OUTPUT_CPP = ROOT / "sys" / "praat_translate.cpp"
+DEBUG_OUTPUT = ROOT / "debug_translations.txt"
+CANDIDATE_OUTPUT = ROOT / "translation_candidates.txt"
 
 # Helper to escape non-ASCII characters to standard C++ \uXXXX escapes
 def to_cpp_unicode_literal(s):
