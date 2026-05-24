@@ -25,6 +25,9 @@
 #include "melder.h"
 #include "GuiP.h"
 #include "machine.h"
+#if defined (_WIN32)
+	#include <shellapi.h>   /* for DragAcceptFiles, DragQueryFileW, DragFinish */
+#endif
 
 static void (*theQuitApplicationCallback) ();
 
@@ -34,6 +37,18 @@ void Gui_setQuitApplicationCallback (void (*quitApplicationCallback) ()) {
 void Gui_runQuitApplicationCallback () {
 	theQuitApplicationCallback ();
 }
+
+#if defined (_WIN32)
+	static void (*theOpenDocumentCallback) (MelderFile file);
+	static void (*theFinishedOpeningDocumentsCallback) ();
+	void Gui_setOpenDocumentCallback (
+		void (*openDocumentCallback) (MelderFile file),
+		void (*finishedOpeningDocumentsCallback) ()
+	) {
+		theOpenDocumentCallback = openDocumentCallback;
+		theFinishedOpeningDocumentsCallback = finishedOpeningDocumentsCallback;
+	}
+#endif
 
 #if defined (_WIN32)
 #define TRY_BARLESS  0
@@ -678,6 +693,7 @@ static void _GuiNativizeWidget (GuiObject me) {
 			className = theWindowClassName;   // all later windows
 			SetWindowLongPtr (my window, GWLP_USERDATA, (LONG_PTR) me);
 			my motiff.shell.isDialog = theDialogHint;   // so we can maintain a single Shell class instead of two different
+			DragAcceptFiles (my window, TRUE);   // enable drag-and-drop of files onto the window
 		} break;
 		default: break;
 	}
@@ -2911,6 +2927,28 @@ static LRESULT CALLBACK windowProc (HWND window, UINT message, WPARAM wParam, LP
 			return 0;
 		}
 		#endif
+		case WM_DROPFILES:
+		{
+			HDROP hDrop = (HDROP) wParam;
+			if (theOpenDocumentCallback) {
+				const UINT numberOfFiles = DragQueryFileW (hDrop, 0xFFFFFFFF, NULL, 0);
+				for (UINT ifile = 0; ifile < numberOfFiles; ifile ++) {
+					WCHAR filePath [MAX_PATH + 1];
+					DragQueryFileW (hDrop, ifile, filePath, MAX_PATH + 1);
+					try {
+						structMelderFile file { };
+						Melder_sprint (file. path, kMelder_MAXPATH+1, Melder_peekWto32 (filePath));
+						theOpenDocumentCallback (& file);
+					} catch (MelderError) {
+						Melder_flushError (U"Cannot open dropped file.");
+					}
+				}
+				if (theFinishedOpeningDocumentsCallback)
+					theFinishedOpeningDocumentsCallback ();
+			}
+			DragFinish (hDrop);
+			return 0;
+		}
 		case WM_USER:   // TODO: remove once Elan's sendpraat is updated to using WM_APP instead of WM_USER
 		case WM_APP:
 		{

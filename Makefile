@@ -221,7 +221,7 @@ else ifeq ($(OS_IS_WINDOWS),1)
     CC := gcc
     CXX := g++
     LINKER_COMMAND := g++
-    NON_PRAAT_LIBRARIES = -lwinmm -lwsock32 -lcomctl32 -lole32 -lgdi32 -lgdiplus -lcomdlg32 -lwinspool \
+    NON_PRAAT_LIBRARIES = -lwinmm -lwsock32 -lcomctl32 -lole32 -lgdi32 -lgdiplus -lcomdlg32 -lwinspool -lshell32 \
       -static-libgcc -static-libstdc++ -mwindows -static -lwinpthread
       # Note: winpthread is linked statically, because it may not be available on all users' computers;
       # for the same reason, GCC's C and C++ libraries are also statically linked.
@@ -229,7 +229,7 @@ else ifeq ($(OS_IS_WINDOWS),1)
     CC := clang
     CXX := clang
     LINKER_COMMAND := clang
-    NON_PRAAT_LIBRARIES = -lwinmm -lwsock32 -lcomctl32 -lole32 -lgdi32 -lgdiplus -lcomdlg32 -lwinspool \
+    NON_PRAAT_LIBRARIES = -lwinmm -lwsock32 -lcomctl32 -lole32 -lgdi32 -lgdiplus -lcomdlg32 -lwinspool -lshell32 \
       -static -lc++ -lc++abi -mwindows
       # Note: Clang's C++ libraries are not available on all users' computers, so they are linked statically.
   endif

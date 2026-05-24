@@ -1194,9 +1194,7 @@ void GuiObject_destroy (GuiObject me);
 
 /********** EVENTS **********/
 
-#if defined (macintosh)
 void Gui_setOpenDocumentCallback (void (*openDocumentCallback) (MelderFile file), void (*finishedOpeningDocumentsCallback) ());
-#endif
 
 void Gui_setQuitApplicationCallback (void (*quitApplicationCallback) ());
 void Gui_runQuitApplicationCallback ();
