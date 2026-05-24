@@ -392,10 +392,11 @@ GuiMenu GuiMenu_createInWindow (GuiWindow window, conststring32 title, uint32 fl
 	autoGuiMenu me = Thing_new (GuiMenu);
 	my d_shell = window;
 	my d_parent = window;
+	conststring32 translatedTitle = praat_translate (title);
 	#if gtk
 		Melder_assert (window);
 		trace (U"create and show the menu title");
-		my d_gtkMenuTitle = (GtkMenuItem *) gtk_menu_item_new_with_label (Melder_peek32to8 (title));
+		my d_gtkMenuTitle = (GtkMenuItem *) gtk_menu_item_new_with_label (Melder_peek32to8 (translatedTitle));
 		gtk_menu_shell_append (GTK_MENU_SHELL (window -> d_gtkMenuBar), GTK_WIDGET (my d_gtkMenuTitle));
 		if (flags & GuiMenu_INSENSITIVE)
 			gtk_widget_set_sensitive (GTK_WIDGET (my d_gtkMenuTitle), false);
@@ -408,10 +409,10 @@ GuiMenu GuiMenu_createInWindow (GuiWindow window, conststring32 title, uint32 fl
 		_GuiObject_setUserData (my d_widget, me.get());
 	#elif motif
 		Melder_assert (window);
-		my d_xmMenuTitle = XmCreateCascadeButton (window -> d_xmMenuBar, Melder_peek32to8 (title), nullptr, 0);
+		my d_xmMenuTitle = XmCreateCascadeButton (window -> d_xmMenuBar, Melder_peek32to8 (translatedTitle), nullptr, 0);
 		if (str32equ (title, U"Help"))
 			XtVaSetValues (window -> d_xmMenuBar, XmNmenuHelpWidget, my d_xmMenuTitle, nullptr);
-		my d_widget = XmCreatePulldownMenu (window -> d_xmMenuBar, Melder_peek32to8 (title), nullptr, 0);
+		my d_widget = XmCreatePulldownMenu (window -> d_xmMenuBar, Melder_peek32to8 (translatedTitle), nullptr, 0);
 		XtVaSetValues (my d_xmMenuTitle, XmNsubMenuId, my d_widget, nullptr);
 		XtManageChild (my d_xmMenuTitle);
 		if (flags & GuiMenu_INSENSITIVE)
@@ -426,7 +427,7 @@ GuiMenu GuiMenu_createInWindow (GuiWindow window, conststring32 title, uint32 fl
 			[NSApp   setMainMenu: theMenuBar];
 		}
 		my d_cocoaMenu = [[GuiCocoaMenu alloc]
-				initWithTitle: (NSString *) Melder_peek32toCfstring (title)];
+				initWithTitle: (NSString *) Melder_peek32toCfstring (translatedTitle)];
 		my d_widget = my d_cocoaMenu;
 		[my d_cocoaMenu   setUserData: me.get()];
 		[my d_cocoaMenu   setAutoenablesItems: NO];
@@ -436,7 +437,7 @@ GuiMenu GuiMenu_createInWindow (GuiWindow window, conststring32 title, uint32 fl
 				This is done by creating a menu item for the main menu bar,
 				and during applicationWillFinishLaunching installing that item.
 			*/
-			NSString *itemTitle = (NSString *) Melder_peek32toCfstring (title);
+			NSString *itemTitle = (NSString *) Melder_peek32toCfstring (translatedTitle);
 			my d_cocoaMenuItem = [[GuiCocoaMenuItem alloc]
 					initWithTitle: itemTitle   action: nullptr   keyEquivalent: @""];
 
@@ -452,7 +453,7 @@ GuiMenu GuiMenu_createInWindow (GuiWindow window, conststring32 title, uint32 fl
 			const integer parentWidth = parentRect.size.width, parentHeight = parentRect.size.height;
 			if (window -> d_menuBarWidth == 0)
 				window -> d_menuBarWidth = -1;
-			const integer width = 18 + 7 * Melder_length (title), height = 35 /*25*/;
+			const integer width = 18 + 7 * Melder_length (translatedTitle), height = 35 /*25*/;
 			integer x = window -> d_menuBarWidth, y = parentHeight + 1 - height;
 			NSUInteger resizingMask = NSViewMinYMargin;
 			if (Melder_equ (title, U"Help")) {
@@ -491,7 +492,7 @@ GuiMenu GuiMenu_createInWindow (GuiWindow window, conststring32 title, uint32 fl
 			*/
 			[my d_cocoaMenuButton   setMenu: my d_cocoaMenu];   // the button will retain the menu...
 			[my d_cocoaMenu   release];   // ... so we can release the menu already (before even returning it!)
-			[my d_cocoaMenuButton   setTitle: (NSString *) Melder_peek32toCfstring (title)];
+			[my d_cocoaMenuButton   setTitle: (NSString *) Melder_peek32toCfstring (translatedTitle)];
 		}
 	#endif
 
@@ -512,8 +513,9 @@ GuiMenu GuiMenu_createInMenu (GuiMenu supermenu, conststring32 title, uint32 fla
 	my d_menuItem -> d_shell = my d_shell;
 	my d_menuItem -> d_parent = supermenu;
 	my d_menuItem -> d_menu = me.get();
+	conststring32 translatedTitle = praat_translate (title);
 	#if gtk
-		my d_menuItem -> d_widget = gtk_menu_item_new_with_label (Melder_peek32to8 (title));
+		my d_menuItem -> d_widget = gtk_menu_item_new_with_label (Melder_peek32to8 (translatedTitle));
 		my d_widget = gtk_menu_new ();
 		GtkAccelGroup *ag = (GtkAccelGroup *) gtk_menu_get_accel_group (GTK_MENU (supermenu -> d_widget));
 		if (ag)
@@ -526,17 +528,17 @@ GuiMenu GuiMenu_createInMenu (GuiMenu supermenu, conststring32 title, uint32 fla
 		gtk_widget_show (GTK_WIDGET (my d_menuItem -> d_widget));
 		_GuiObject_setUserData (my d_widget, me.get());
 	#elif motif
-		my d_menuItem -> d_widget = XmCreateCascadeButton (supermenu -> d_widget, Melder_peek32to8 (title), nullptr, 0);
-		my d_widget = XmCreatePulldownMenu (supermenu -> d_widget, Melder_peek32to8 (title), nullptr, 0);
+		my d_menuItem -> d_widget = XmCreateCascadeButton (supermenu -> d_widget, Melder_peek32to8 (translatedTitle), nullptr, 0);
+		my d_widget = XmCreatePulldownMenu (supermenu -> d_widget, Melder_peek32to8 (translatedTitle), nullptr, 0);
 		XtVaSetValues (my d_menuItem -> d_widget, XmNsubMenuId, my d_widget, nullptr);
 		XtManageChild (my d_menuItem -> d_widget);
 		if (flags & GuiMenu_INSENSITIVE)
 			XtSetSensitive (my d_menuItem -> d_widget, False);
 		_GuiObject_setUserData (my d_widget, me.get());
 	#elif cocoa
-		trace (U"creating menu item ", title);
+		trace (U"creating menu item ", translatedTitle);
 		NSMenuItem *item = [[NSMenuItem alloc]
-			initWithTitle: (NSString *) Melder_peek32toCfstring (title)
+			initWithTitle: (NSString *) Melder_peek32toCfstring (translatedTitle)
 			action: nullptr
 			keyEquivalent: @""
 		];
@@ -544,9 +546,9 @@ GuiMenu GuiMenu_createInMenu (GuiMenu supermenu, conststring32 title, uint32 fla
 		[supermenu -> d_cocoaMenu   addItem: item];   // the menu will retain the item...
 		trace (U"release the item");
 		[item release];   // ... so we can release the item already
-		trace (U"creating menu ", title);
+		trace (U"creating menu ", translatedTitle);
 		my d_cocoaMenu = [[GuiCocoaMenu alloc]
-			initWithTitle: (NSString *) Melder_peek32toCfstring (title)];
+			initWithTitle: (NSString *) Melder_peek32toCfstring (translatedTitle)];
 		[my d_cocoaMenu   setUserData: me.get()];
 		[my d_cocoaMenu   setAutoenablesItems: NO];
 		trace (U"adding the new menu ", Melder_pointer (me.get()), U" to its supermenu ", Melder_pointer (supermenu));
@@ -574,12 +576,13 @@ GuiMenu GuiMenu_createInForm (GuiForm form, int left, int right, int top, int bo
 	my d_cascadeButton -> d_shell = my d_shell;
 	my d_cascadeButton -> d_parent = form;
 	my d_cascadeButton -> d_menu = me.get();
+	conststring32 translatedTitle = praat_translate (title);
 	static MelderString neatTitle;
-	MelderString_copy (& neatTitle, title);
+	MelderString_copy (& neatTitle, translatedTitle);
 	if (neatTitle. length >= 1 && neatTitle.string [neatTitle. length - 1] == U'-') {
 		constexpr conststring32 narrowSpacesForPreciseAlignment =
 				UNITEXT_NARROW_NO_BREAK_SPACE  UNITEXT_NARROW_NO_BREAK_SPACE  U"   ";
-		MelderString_copy (& neatTitle, narrowSpacesForPreciseAlignment, title);
+		MelderString_copy (& neatTitle, narrowSpacesForPreciseAlignment, translatedTitle);
 		neatTitle.string [neatTitle. length - 1] = U' ';
 		/*
 			bikeshed choices for the disclosure sign:

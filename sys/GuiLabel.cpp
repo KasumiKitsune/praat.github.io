@@ -66,15 +66,16 @@ GuiLabel GuiLabel_create (GuiForm parent, int left, int right, int top, int bott
 	autoGuiLabel me = Thing_new (GuiLabel);
 	my d_shell = parent -> d_shell;
 	my d_parent = parent;
+	conststring32 translatedText = praat_translate (labelText);
 	#if gtk
 		if (flags & GuiLabel_BOLD) {
 			my d_widget = gtk_label_new (nullptr);
 			const char *format = "<b>%s</b>";
-			char *markedUpText = g_markup_printf_escaped (format, Melder_peek32to8 (labelText));
+			char *markedUpText = g_markup_printf_escaped (format, Melder_peek32to8 (translatedText));
 			gtk_label_set_markup (GTK_LABEL (my d_widget), markedUpText);
 			g_free (markedUpText);
 		} else {
-			my d_widget = gtk_label_new (Melder_peek32to8 (labelText));
+			my d_widget = gtk_label_new (Melder_peek32to8 (translatedText));
 		}
 		_GuiObject_setUserData (my d_widget, me.get());
 		my v_positionInForm (my d_widget, left, right, top, bottom, parent);
@@ -112,7 +113,7 @@ GuiLabel GuiLabel_create (GuiForm parent, int left, int right, int top, int bott
 		gtk_label_set_line_wrap (GTK_LABEL (my d_widget), true);
 		gtk_label_set_justify (GTK_LABEL (my d_widget), flags & GuiLabel_RIGHT ? GTK_JUSTIFY_RIGHT : flags & GuiLabel_CENTRE ? GTK_JUSTIFY_CENTER : GTK_JUSTIFY_LEFT);
 	#elif motif
-		my d_widget = _Gui_initializeWidget (xmLabelWidgetClass, parent -> d_widget, labelText);
+		my d_widget = _Gui_initializeWidget (xmLabelWidgetClass, parent -> d_widget, translatedText);
 		_GuiObject_setUserData (my d_widget, me.get());
 		my d_widget -> window = CreateWindow (L"static", Melder_peek32toW (_GuiWin_expandAmpersands (my d_widget -> name.get())),
 			WS_CHILD
@@ -141,7 +142,7 @@ GuiLabel GuiLabel_create (GuiForm parent, int left, int right, int top, int bott
 		trace (U"set selectable");
 		[label setSelectable: NO];
 		trace (U"title");
-		[label setTitleWithMnemonic: (NSString *) Melder_peek32toCfstring (labelText)];
+		[label setTitleWithMnemonic: (NSString *) Melder_peek32toCfstring (translatedText)];
 		[label setAlignment:( flags & GuiLabel_RIGHT ? NSRightTextAlignment : flags & GuiLabel_CENTRE ? NSCenterTextAlignment : NSLeftTextAlignment )];
 		if (flags & GuiLabel_BOLD)
 			[label setFont: theMacGuiBoldLabelFont ()];
@@ -160,13 +161,14 @@ GuiLabel GuiLabel_createShown (GuiForm parent, int left, int right, int top, int
 }
 
 void GuiLabel_setText (GuiLabel me, conststring32 text /* cattable */) {
+	conststring32 translatedText = praat_translate (text);
 	#if gtk
-		gtk_label_set_text (GTK_LABEL (my d_widget), Melder_peek32to8 (text));
+		gtk_label_set_text (GTK_LABEL (my d_widget), Melder_peek32to8 (translatedText));
 	#elif motif
-		my d_widget -> name = Melder_dup_f (text);
+		my d_widget -> name = Melder_dup_f (translatedText);
 		_GuiNativeControl_setTitle (my d_widget);
 	#elif cocoa
-		[(NSTextField *) my d_widget setTitleWithMnemonic: (NSString *) Melder_peek32toCfstring (text)];
+		[(NSTextField *) my d_widget setTitleWithMnemonic: (NSString *) Melder_peek32toCfstring (translatedText)];
 	#endif
 }
 

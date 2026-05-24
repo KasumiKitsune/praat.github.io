@@ -21,7 +21,7 @@ sources = '''
 	ScriptEditor.cpp StringsEditor.cpp
 	Script.cpp Simple.cpp site.cpp Strings.cpp
 	TextEditor.cpp Thing.cpp
-	Ui.cpp UiFile.cpp UiPause.cpp'''.split()
+	Ui.cpp UiFile.cpp UiPause.cpp praat_translate.cpp'''.split()
 
 libsys = static_library (
 	'sys',

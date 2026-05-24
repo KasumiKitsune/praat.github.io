@@ -18,6 +18,7 @@
 
 #include "../kar/longchar.h"
 #include "machine.h"
+#include "praat_translate.h"
 #include "GuiP.h"
 #include "Collection.h"
 #include "UiP.h"
@@ -204,7 +205,7 @@ UiOption UiForm_addOption (UiForm me, conststring32 optionText) {
 	if (! you)
 		return nullptr;
 	Melder_assert (your type == _kUiField_type::CHOICE_ || your type == _kUiField_type::OPTIONMENU_);
-	autoUiOption option = UiOption_create (optionText);
+	autoUiOption option = UiOption_create (praat_translate (optionText));
 	return your options. addItem_move (option.move());
 }
 
@@ -939,7 +940,7 @@ autoUiForm UiForm_createE (EditorCommand cmd, conststring32 title, conststring32
 static UiField UiForm_addField (UiForm me, _kUiField_type type, conststring32 labelText) {
 	if (my numberOfFields == MAXIMUM_NUMBER_OF_FIELDS)
 		Melder_throw (U"Cannot have more than ", MAXIMUM_NUMBER_OF_FIELDS, U"fields in a form.");
-	my field [++ my numberOfFields] = UiField_create (type, labelText);
+	my field [++ my numberOfFields] = UiField_create (type, praat_translate (labelText));
 	return my field [my numberOfFields].get();
 }
 
@@ -1024,7 +1025,7 @@ UiField UiForm_addHeading (UiForm me, conststring32 *variable, conststring32 lab
 	UiField thee = UiForm_addField (me, _kUiField_type::HEADING_, U"");   // this field gets no name; so that the user can give it any title
 	my referenceToLatestUsedChoiceOrOptionMenu = nullptr;
 	thy stringVariable = variable;
-	thy stringValue = Melder_dup (labelText);
+	thy stringValue = Melder_dup (praat_translate (labelText));
 	return thee;
 }
 
@@ -1032,7 +1033,7 @@ UiField UiForm_addComment (UiForm me, conststring32 *variable, conststring32 lab
 	UiField thee = UiForm_addField (me, _kUiField_type::COMMENT_, U"");   // this field gets no name; so that the user can give it any title
 	my referenceToLatestUsedChoiceOrOptionMenu = nullptr;
 	thy stringVariable = variable;
-	thy stringValue = Melder_dup (labelText);
+	thy stringValue = Melder_dup (praat_translate (labelText));
 	return thee;
 }
 
@@ -1040,7 +1041,7 @@ UiField UiForm_addCaption (UiForm me, conststring32 *variable, conststring32 lab
 	UiField thee = UiForm_addField (me, _kUiField_type::CAPTION_, U"");   // this field gets no name; so that the user can give it any title
 	my referenceToLatestUsedChoiceOrOptionMenu = nullptr;
 	thy stringVariable = variable;
-	thy stringValue = Melder_dup (labelText);
+	thy stringValue = Melder_dup (praat_translate (labelText));
 	return thee;
 }
 

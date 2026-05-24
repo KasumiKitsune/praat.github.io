@@ -123,6 +123,7 @@ static void gui_blocking_dialog_cb_ok (GuiDialog me, GuiButtonEvent event) {
 GuiButton GuiButton_create (GuiForm parent, int left, int right, int top, int bottom,
 	conststring32 buttonText, GuiButton_ActivateCallback activateCallback, Thing activateBoss, uint32 flags)
 {
+	conststring32 translatedText = praat_translate (buttonText);
 	autoGuiButton me = Thing_new (GuiButton);
 	my d_shell = parent -> d_shell;
 	my d_parent = parent;
@@ -143,7 +144,7 @@ GuiButton GuiButton_create (GuiForm parent, int left, int right, int top, int bo
 		}
 	}
 	#if gtk
-		my d_widget = gtk_button_new_with_label (Melder_peek32to8 (buttonText));
+		my d_widget = gtk_button_new_with_label (Melder_peek32to8 (translatedText));
 		gtk_button_set_relief (GTK_BUTTON (my d_widget), GTK_RELIEF_NORMAL);
 		_GuiObject_setUserData (my d_widget, me.get());
 		my v_positionInForm (my d_widget, left, right, top, bottom, parent);
@@ -165,7 +166,7 @@ GuiButton GuiButton_create (GuiForm parent, int left, int right, int top, int bo
 //			parent -> shell -> cancelButton = parent -> cancelButton = my widget;
 //		}
 	#elif motif
-		my d_widget = _Gui_initializeWidget (xmPushButtonWidgetClass, parent -> d_widget, buttonText);
+		my d_widget = _Gui_initializeWidget (xmPushButtonWidgetClass, parent -> d_widget, translatedText);
 		_GuiObject_setUserData (my d_widget, me.get());
 		my d_widget -> window = CreateWindow (L"button", Melder_peek32toW (_GuiWin_expandAmpersands (my d_widget -> name.get())),
 			WS_CHILD
@@ -184,7 +185,7 @@ GuiButton GuiButton_create (GuiForm parent, int left, int right, int top, int bo
 			parent -> d_widget -> shell -> cancelButton = parent -> d_widget -> cancelButton = my d_widget;
 	#elif cocoa
 		GuiCocoaButton *button = [[GuiCocoaButton alloc] init];
-		my name = Melder_dup_f (buttonText);
+		my name = Melder_dup_f (translatedText);
 		my d_widget = (GuiObject) button;
 		my v_positionInForm (my d_widget, left, right, top, bottom, parent);
 		[button setUserData: me.get()];
@@ -199,7 +200,7 @@ GuiButton GuiButton_create (GuiForm parent, int left, int right, int top, int bo
 		if (! theButtonFont)
 			theButtonFont = [NSFont systemFontOfSize: 13.0];
 		[button setFont: theButtonFont];
-		[button setTitle: (NSString *) Melder_peek32toCfstring (buttonText)];
+		[button setTitle: (NSString *) Melder_peek32toCfstring (translatedText)];
 		[button setTarget: (id) my d_widget];
 		[button setAction: @selector (_guiCocoaButton_activateCallback:)];
 		//[button setAutoresizingMask: NSViewNotSizable];

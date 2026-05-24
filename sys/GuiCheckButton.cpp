@@ -93,8 +93,9 @@ GuiCheckButton GuiCheckButton_create (GuiForm parent, int left, int right, int t
 	my d_parent = parent;
 	my d_valueChangedCallback = valueChangedCallback;
 	my d_valueChangedBoss = valueChangedBoss;
+	conststring32 translatedText = praat_translate (buttonText);
 	#if gtk
-		my d_widget = gtk_check_button_new_with_label (Melder_peek32to8 (buttonText));
+		my d_widget = gtk_check_button_new_with_label (Melder_peek32to8 (translatedText));
 		_GuiObject_setUserData (my d_widget, me.get());
 		my v_positionInForm (my d_widget, left, right, top, bottom, parent);
 		gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (my d_widget), (flags & GuiCheckButton_SET) != 0);
@@ -104,10 +105,10 @@ GuiCheckButton GuiCheckButton_create (GuiForm parent, int left, int right, int t
 		g_signal_connect (G_OBJECT (my d_widget), "destroy", G_CALLBACK (_GuiGtkCheckButton_destroyCallback), me.get());
 		g_signal_connect (GTK_TOGGLE_BUTTON (my d_widget), "toggled", G_CALLBACK (_GuiGtkCheckButton_valueChangedCallback), me.get());
 	#elif motif
-		my d_widget = _Gui_initializeWidget (xmToggleButtonWidgetClass, parent -> d_widget, buttonText);
+		my d_widget = _Gui_initializeWidget (xmToggleButtonWidgetClass, parent -> d_widget, translatedText);
 		_GuiObject_setUserData (my d_widget, me.get());
 		my d_widget -> isRadioButton = false;
-		my d_widget -> window = CreateWindow (L"button", Melder_peek32toW (_GuiWin_expandAmpersands (buttonText)),
+		my d_widget -> window = CreateWindow (L"button", Melder_peek32toW (_GuiWin_expandAmpersands (translatedText)),
 			WS_CHILD | BS_AUTOCHECKBOX | WS_CLIPSIBLINGS,
 			my d_widget -> x, my d_widget -> y, my d_widget -> width, my d_widget -> height,
 			my d_widget -> parent -> window, (HMENU) 1, theGui.instance, nullptr);
@@ -126,7 +127,7 @@ GuiCheckButton GuiCheckButton_create (GuiForm parent, int left, int right, int t
 		my v_positionInForm (my d_widget, left, right, top, bottom, parent);
 		[checkButton setUserData: me.get()];
 		[checkButton setButtonType: NSSwitchButton];
-		[checkButton setTitle: (NSString *) Melder_peek32toCfstring (buttonText)];
+		[checkButton setTitle: (NSString *) Melder_peek32toCfstring (translatedText)];
 		[checkButton setTarget: checkButton];
 		[checkButton setAction: @selector (_guiCocoaButton_activateCallback:)];
 		if (flags & GuiCheckButton_SET) {

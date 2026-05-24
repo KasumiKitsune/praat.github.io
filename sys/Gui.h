@@ -81,6 +81,7 @@ constexpr bool theCommandKeyIsToTheLeftOfTheOptionKey =
 #endif
 
 #include "machine.h"
+#include "praat_translate.h"
 
 #define Gui_LEFT_DIALOG_SPACING  20
 #define Gui_RIGHT_DIALOG_SPACING  20

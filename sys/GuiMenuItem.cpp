@@ -155,13 +155,14 @@ GuiMenuItem GuiMenu_addItem (GuiMenu menu, conststring32 title, uint32 flags,
 	my d_parent = menu;
 	my d_menu = menu;
 
-	trace (U"creating item \"", title, U"\" in menu ", Melder_pointer (menu));
+	conststring32 translatedTitle = praat_translate (title);
+	trace (U"creating item \"", translatedTitle, U"\" in menu ", Melder_pointer (menu));
 	bool toggle = flags & (GuiMenu_CHECKBUTTON | GuiMenu_RADIO_FIRST | GuiMenu_RADIO_NEXT | GuiMenu_TOGGLE_ON) ? true : false;
 	uint32 accelerator = flags & 127;
-	Melder_assert (title);
+	Melder_assert (translatedTitle);
 	static MelderString neatTitle;
-	const integer titleLength = Melder_length (title);
-	if (titleLength > 0 && title [titleLength - 1] == U':') {
+	const integer titleLength = Melder_length (translatedTitle);
+	if (titleLength > 0 && translatedTitle [titleLength - 1] == U':') {
 		/*
 			bikeshed choices
 		*/
@@ -173,21 +174,21 @@ GuiMenuItem GuiMenu_addItem (GuiMenu menu, conststring32 title, uint32 flags,
 		[[maybe_unused]] constexpr conststring32 countersink = U"\u2335";
 		[[maybe_unused]] constexpr conststring32 canadian_syllabics_pe = U"\u142F";
 		[[maybe_unused]] constexpr conststring32 logical_or = U"\u2228";
-		MelderString_copy (& neatTitle, down_triangle, U" ", title);
+		MelderString_copy (& neatTitle, down_triangle, U" ", translatedTitle);
 		//neatTitle.string [neatTitle.length - 1] = U' ';
 	} else {
-		MelderString_copy (& neatTitle, title);
+		MelderString_copy (& neatTitle, translatedTitle);
 	}
 	#if gtk
 		static GSList *group = nullptr;
 		if (toggle) {
 			if (flags & (GuiMenu_RADIO_FIRST)) group = nullptr;
 			if (flags & (GuiMenu_RADIO_FIRST | GuiMenu_RADIO_NEXT)) {
-				my d_widget = gtk_radio_menu_item_new_with_label (group, Melder_peek32to8 (title));
+				my d_widget = gtk_radio_menu_item_new_with_label (group, Melder_peek32to8 (translatedTitle));
 				group = gtk_radio_menu_item_get_group (GTK_RADIO_MENU_ITEM (my d_widget));
-				trace (U"created a radio menu item with title \"", title, U"\", group ", Melder_pointer (group));
+				trace (U"created a radio menu item with title \"", translatedTitle, U"\", group ", Melder_pointer (group));
 			} else {
-				my d_widget = gtk_check_menu_item_new_with_label (Melder_peek32to8 (title));
+				my d_widget = gtk_check_menu_item_new_with_label (Melder_peek32to8 (translatedTitle));
 			}
 		} else {
 			my d_widget = gtk_menu_item_new_with_label (Melder_peek32to8 (neatTitle.string));
