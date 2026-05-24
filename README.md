@@ -7,7 +7,10 @@
 > 
 > 本文档是 Praat 英文 `README.md` 的中文翻译版本，旨在为中文用户提供更好的阅读和开发参考。
 
-![Praat 简体中文本地化界面](docs/pictures/praat-zh-main-window.png)
+<div align="center">
+  <img src="docs/pictures/praat-zh-main-window.png" width="49%" alt="Praat 简体中文主窗口" />
+  <img src="docs/pictures/praat-zh-manuel.png" width="49%" alt="Praat 简体中文帮助手册" />
+</div>
 
 > [!TIP]
 > **本地化专属新增特性 (Unique Features)**
@@ -16,6 +19,9 @@
 > * **Windows 平台支持原生文件拖入打开 (Drag-and-Drop for Windows)**
 >   * **特性描述**：官方 Windows 版 Praat 长期不支持拖拽文件打开。我们移植并适配了 macOS 平台的文档打开回调机制，在 Windows 版本的底层 Motif 模拟器中实现了 native 拖拽响应接口。
 >   * **使用方法**：可直接将支持的语音、标注或脚本文件（如 `.wav`、`.TextGrid`、`.praat` 等）拖拽进 Praat 的任意窗口，即可自动加载至对象列表（Objects）中。支持一次性拖入并同时加载多个文件。
+> * **启动时默认隐藏图像窗口 (Praat Picture Window Auto-Hide on Startup)**
+>   * **特性描述**：官方原版 Praat 在启动时会强制打开“对象窗口”（Objects）与“图像窗口”（Praat Picture），这在许多不经常绘图的使用场景下会额外占用屏幕空间。本版本优化为启动时**默认隐藏/不主动打开**图像窗口，为您提供更加清爽的工作区。
+>   * **打开入口**：如果您需要使用图像窗口，只需在对象窗口（Objects）的左上角菜单点击 **`Praat`** -> 选择 **`打开图像窗口 (Praat Picture)`**，即可立即打开并使用。
 
 
 # Praat：用计算机做语音学分析
