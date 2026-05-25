@@ -42,6 +42,8 @@ Thing_define (HyperPage, Editor) {
 	CollectionOf<structHyperLink> links;
 	bool printing, mirror;
 	double top;
+	double d_verticalScrollBarMaximum;
+	double d_verticalScrollBarSliderSize;
 	conststring32 insideHeader, middleHeader, outsideHeader;
 	conststring32 insideFooter, middleFooter, outsideFooter;
 	autostring32 entryHint; double entryPosition;
