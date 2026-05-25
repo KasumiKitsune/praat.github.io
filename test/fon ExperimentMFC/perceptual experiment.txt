@@ -1,7 +1,7 @@
 "ooTextFile"
 "ExperimentMFC 5"
 stimuliAreSounds? <yes>
-stimulusFileNameHead = "C:\Users\Lily9008\Desktop\Sounds01/"
+stimulusFileNameHead = "C:\Path\To\Sounds01/"
 stimulusFileNameTail = ".wav"
 stimulusCarrierBefore = ""
 stimulusCarrierAfter = ""

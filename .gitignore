@@ -49,3 +49,4 @@ __pycache__/
 debug_translations.txt
 gui_candidates.txt
 translation_candidates.txt
+scratch/
