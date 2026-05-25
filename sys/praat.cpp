@@ -45,6 +45,8 @@
 #include "Strings_.h"
 #include "../kar/UnicodeData.h"
 #include "InfoEditor.h"
+#include "praat_translate.h"
+
 extern "C" char *sendpraat (void *display, const char *programName, long timeOut, const char *text);
 
 Thing_implement (Praat_Command, Thing, 0);
@@ -1060,6 +1062,7 @@ static void installPraatShellPreferences () {
 	Melder_textEncoding_prefs ();
 	Printer_prefs ();   // paper size, printer command...
 	structTextEditor :: f_preferences ();   // font size...
+	Preferences_addInt (U"Praat.languageChoice", & g_language_choice, 1);
 }
 
 extern "C" void praatlib_init () {

@@ -1034,6 +1034,12 @@ static const std::unordered_map<std::u32string, std::u32string> g_translation_ma
 	{ U"Label", U"\u6807\u7b7e" },
 	{ U"Label of first column", U"\u6807\u7b7e of \u7b2c\u4e00\u5217" },
 	{ U"Labels", U"\u6807\u7b7e" },
+	{ U"Language", U"\u8bed\u8a00" },
+	{ U"Language preferences...", U"\u8bed\u8a00\u504f\u597d\u8bbe\u7f6e..." },
+	{ U"Language settings", U"\u8bed\u8a00\u8bbe\u7f6e" },
+	{ U"Language settings (\u8bed\u8a00\u8bbe\u7f6e)", U"\u8bed\u8a00\u8bbe\u7f6e (Language settings)" },
+	{ U"Language settings...", U"\u8bed\u8a00\u8bbe\u7f6e..." },
+	{ U"Language settings... || Language preferences...", U"\u8bed\u8a00\u8bbe\u7f6e... || \u8bed\u8a00\u504f\u597d\u8bbe\u7f6e..." },
 	{ U"Left", U"\u5de6" },
 	{ U"Left or inside footer", U"\u5de6\u9875\u811a\u6216\u5185\u4fa7\u9875\u811a" },
 	{ U"Left or inside header", U"\u5de6\u9875\u7709\u6216\u5185\u4fa7\u9875\u7709" },
@@ -2054,9 +2060,14 @@ static const std::unordered_map<std::u32string, std::u32string> g_translation_ma
 static std::unordered_map<std::u32string, std::u32string> g_dynamic_cache;
 static std::mutex g_cache_mutex;
 
+int g_language_choice = 1; // 0 = English, 1 = Chinese
+
 const char32* praat_translate (const char32* text) {
 	if (!text) {
 		return nullptr;
+	}
+	if (g_language_choice == 0) {
+		return text;
 	}
 	
 	std::u32string key(text);
