@@ -118,7 +118,7 @@ DIRECT (PRAAT__BilingualTable) {
 		MelderInfo_writeLine (U"==========================================================================");
 		MelderInfo_writeLine (U"【第一部分：按类别排列 (Sorted by Category)】\n");
 		
-		MelderInfo_writeLine (U"### 一、 核心语音学与声学");
+		MelderInfo_writeLine (U"一、 核心语音学与声学");
 		MelderInfo_writeLine (U"  Pitch                 ===>  音高（及其派生：Pitch floor 音高下限 / Pitch ceiling 音高上限）");
 		MelderInfo_writeLine (U"  Intensity             ===>  音强");
 		MelderInfo_writeLine (U"  Formant               ===>  共振峰");
@@ -133,7 +133,7 @@ DIRECT (PRAAT__BilingualTable) {
 		MelderInfo_writeLine (U"  Vocal Tract           ===>  声道");
 		MelderInfo_writeLine (U"");
 		
-		MelderInfo_writeLine (U"### 二、 Praat 核心数据结构与标注体系");
+		MelderInfo_writeLine (U"二、 Praat 核心数据结构与标注体系");
 		MelderInfo_writeLine (U"  TextGrid              ===>  TextGrid（通常不译，作为专有名词保留）");
 		MelderInfo_writeLine (U"  Tier                  ===>  层");
 		MelderInfo_writeLine (U"  Interval tier         ===>  区间层");
@@ -145,7 +145,7 @@ DIRECT (PRAAT__BilingualTable) {
 		MelderInfo_writeLine (U"  TableOfReal           ===>  实数表");
 		MelderInfo_writeLine (U"");
 		
-		MelderInfo_writeLine (U"### 三、 专业语音分析与信号处理算法");
+		MelderInfo_writeLine (U"三、 专业语音分析与信号处理算法");
 		MelderInfo_writeLine (U"  Autocorrelation       ===>  自相关");
 		MelderInfo_writeLine (U"  Cross-correlation     ===>  互相关");
 		MelderInfo_writeLine (U"  Pre-emphasis          ===>  预加重");
@@ -161,7 +161,7 @@ DIRECT (PRAAT__BilingualTable) {
 		MelderInfo_writeLine (U"  Transcription         ===>  转写");
 		MelderInfo_writeLine (U"");
 		
-		MelderInfo_writeLine (U"### 四、 层级衍生对象与各种特殊视图");
+		MelderInfo_writeLine (U"四、 层级衍生对象与各种特殊视图");
 		MelderInfo_writeLine (U"  PitchTier             ===>  音高层");
 		MelderInfo_writeLine (U"  IntensityTier         ===>  音强层");
 		MelderInfo_writeLine (U"  DurationTier          ===>  时长层");
@@ -174,7 +174,7 @@ DIRECT (PRAAT__BilingualTable) {
 		MelderInfo_writeLine (U"  PowerCepstrogram      ===>  倒谱图");
 		MelderInfo_writeLine (U"");
 		
-		MelderInfo_writeLine (U"### 五、 语音合成、细微声带活动特征与高阶理论");
+		MelderInfo_writeLine (U"五、 语音合成、细微声带活动特征与高阶理论");
 		MelderInfo_writeLine (U"  Excitation            ===>  激励");
 		MelderInfo_writeLine (U"  Flutter               ===>  抖动（在嗓音分析中常与 Jitter/Shimmer 关联）");
 		MelderInfo_writeLine (U"  Double pulsing        ===>  双脉冲");

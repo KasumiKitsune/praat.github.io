@@ -240,81 +240,81 @@ A usually hidden command in the @@New menu@ to record a @Sound.
 "Sound"
 © Paul Boersma 2016-10-13
 
-One of the @@types of objects@ in Praat. For tutorial information, see all of the @Intro.
+Praat 中的@@对象类型|types of objects@之一。有关教程信息，请参阅完整的 @Intro。
 
-Commands
-========
+命令
+====
 
-Creation:
-- @@Record mono Sound...@ (from microphone or line input, with the @SoundRecorder)
+创建：
+- @@Record mono Sound...@（使用 @SoundRecorder 从麦克风或线路输入进行录音）
 - @@Record stereo Sound...@
 - @@Create Sound from formula...@
 - @@Create Sound as tone complex...
 - @@Create Sound as gammatone...
 - @@Create Sound as Shepard tone...
 
-Opening and saving:
+打开与保存：
 - @@Sound files
 
-You can also use the text and binary (real-valued) formats for Sounds, like for any other class:
+您也可以像使用其他类对象一样，对声音使用文本和二进制（实数值）格式：
 - @@Save as text file...
 - @@Save as binary file...
 
-Viewing and editing:
+查看与编辑：
 - @SoundEditor, @ManipulationEditor, @TextGridEditor, @PointEditor, @PitchTierEditor, @SpectrumEditor
 
-Playing:
+播放：
 - @@Sound: Play
 - @@PointProcess: Hum
 - @@PointProcess: Play
 
-Drawing:
+绘制：
 - @@Sound: Draw...
 - @@Sound: Draw where...
 - @@Sound: Paint where...
 - @@Sounds: Paint enclosed...
 
-Queries:
-, structure:
+查询：
+, 结构：
 	- @@time domain
 	- @@Get number of samples
 	- @@Get sampling period
 	- @@Get sampling frequency
 	- @@Get time from sample number...
 	- @@Get sample number from time...
-, content:
+, 内容：
 	- @@Sound: Get value at time...
 	- @@Sound: Get value at sample number...
-, shape:
+, 形状：
 	- @@Sound: Get minimum...
 	- @@Sound: Get time of minimum...
 	- @@Sound: Get maximum...
 	- @@Sound: Get time of maximum...
 	- @@Sound: Get absolute extremum...
 	- @@Sound: Get nearest zero crossing...
-, statistics:
+, 统计：
 	- @@Sound: Get mean...
 	- @@Sound: Get root-mean-square...
 	- @@Sound: Get standard deviation...
-, energy:
+, 能量：
 	- @@Sound: Get energy...
 	- @@Sound: Get power...
-, in air:
+, 在空气中：
 	- @@Sound: Get energy in air
 	- @@Sound: Get power in air
 	- @@Sound: Get intensity (dB)
 
-Modification:
+修改：
 - @@Matrix: Formula...
 - @@Sound: Set value at sample number...
 - @@Sound: Filter with one formant (in-place)...
 - @@Sound: Pre-emphasize (in-place)...
 - @@Sound: De-emphasize (in-place)...
 
-Annotation (see @@Intro 7. Annotation@):
+标注（参阅 @@Intro 7. Annotation@）：
 - @@Sound: To TextGrid...
 
-Periodicity analysis:
+周期性分析：
 - @@Sound: To Pitch (filtered autocorrelation)...
 - @@Sound: To Pitch (raw cross-correlation)...
 - @@Sound: To Pitch (raw autocorrelation)...
@@ -328,7 +328,7 @@ Periodicity analysis:
 - @@Sound & Pitch: To PointProcess (peaks)...
 - @@Sound: To Intensity...
 
-Spectral analysis:
+谱分析：
 - @@Sound: To Spectrum...
 - @@Sound: To Spectrogram...
 - @@Sound: To Formant (burg)...
@@ -339,7 +339,7 @@ Spectral analysis:
 - @@Sound: To LPC (burg)...
 - @@Sound: To LPC (marple)...
 
-Filtering (see @Filtering tutorial):
+滤波（参阅 @Filtering tutorial）：
 - @@Sound: Filter (pass Hann band)...
 - @@Sound: Filter (stop Hann band)...
 - @@Sound: Filter (formula)...
@@ -351,69 +351,69 @@ Filtering (see @Filtering tutorial):
 - @@Sound & Formant: Filter
 - @@Sound & FormantGrid: Filter
 
-Conversion:
+转换：
 - @@Sound: Resample...
 
-Enhancement:
-- @@Sound: Lengthen (overlap-add)...@: lengthen by a constant factor
-- @@Sound: Deepen band modulation...@: strenghten intensity modulations in each critical band
+增强：
+- @@Sound: Lengthen (overlap-add)...@：按恒定因子拉长声音
+- @@Sound: Deepen band modulation...@：增强每个临界频带中的强度调制
 
-Combination:
+组合：
 - @@Sounds: Convolve...
 - @@Sounds: Cross-correlate...
 - @@Sound: Autocorrelate...
 - @@Sounds: Concatenate
 
-Synthesis
-- @@Source-filter synthesis@ tutorial
-- @Manipulation (@@overlap-add@ etc.)
+合成：
+- @@Source-filter synthesis@ 教程
+- @Manipulation（@@overlap-add@ 等）
 - @@Spectrum: To Sound
 - ##Pitch: To Sound...
 - @@PointProcess: To Sound (pulse train)...
 - @@PointProcess: To Sound (hum)...
 - ##Pitch & PointProcess: To Sound...
-- @@Articulatory synthesis@ tutorial
+- @@Articulatory synthesis@ 教程
 - @@Artword & Speaker: To Sound...
 
-Inside a Sound
+Sound 内部结构
 ==============
 
-With @Inspect, you will see that a Sound contains the following data:
+使用 @Inspect 命令，您会看到一个 Sound 对象包含以下数据：
 
 %x__%min_
-:	start time, in seconds.
+:	起始时间（秒）。
 
 %x__%max_ > %x__%min_
-:	end time, in seconds.
+:	结束时间（秒）。
 
 %n_%x
-:	the number of samples (\\>_ 1).
+:	采样点数（\\>_ 1）。
 
 %dx
-:	sample period, in seconds. The inverse of the sampling frequency (in Hz).
+:	采样周期（秒）。为采样频率（Hz）的倒数。
 
 %x_1
-:	the time associated with the first sample (in seconds).
-This will normally be in the range [%xmin, %xmax].
-The time associated with the last sample (i.e., %x_1 + (%nx \-m 1) %dx))
-will also normally be in that range. Mostly, the sound starts at %t = 0 seconds
-and %x_1 = %dx / 2. Also, usually, %x__%max_ = %n_%x %dx.
+:	第一个采样点对应的时间（秒）。
+这通常在 [%xmin, %xmax] 范围内。
+最后一个采样点对应的时间（即 %x_1 + (%nx \-m 1) %dx））
+通常也在该范围内。大多数情况下，声音起始于 %t = 0 秒，
+且 %x_1 = %dx / 2。此外，通常情况下有 %x__%max_ = %n_%x %dx。
 
 %z [1] [1..%n_%x]
-:	the amplitude of the sound (stored as single-precision floating-point numbers).
-For the most common applications (playing and file I-O), Praat assumes that
-the amplitude is greater than -1 and less than +1.
-For some applications (modelling of the inner ear;
-articulatory synthesis), Praat assumes that the amplitude is expressed in Pascal units.
-If these interpretations are combined, we see that the maximum peak amplitude of
-a calibrated sound is 1 Pascal; for a sine wave, this means 91 dB SPL.
+:	声音的振幅（存储为单精度浮点数）。
+对于最常见的应用（播放和文件输入输出），Praat 假定
+振幅大小在 -1 到 +1 之间。
+对于某些特定应用（如内耳建模；
+发音合成），Praat 假定振幅单位以帕斯卡（Pascal）表示。
+如果结合这两种解释，我们可以看到一个校准后声音的最大峰值振幅
+是 1 帕斯卡；对于正弦波，这意味着 91 dB SPL。
 
-Limitations
-===========
+限制
+====
 
-Since the Sound object completely resides in memory, its size is limited
-to the amount of RAM in your computer. For sounds longer than a few minutes,
-you could use the @LongSound object instead, which you can view in the @LongSoundEditor.
+由于 Sound 对象完全驻留在内存中，其大小受限于
+您计算机的内存（RAM）容量。对于长于数分钟的声音，
+您可以改用 @LongSound 对象，并使用 @LongSoundEditor 对其进行查看。
 
 ################################################################################
 "Sound: De-emphasize (in-place)..."
@@ -1817,78 +1817,78 @@ Group（群组联结）按钮
 "SoundRecorder"
 © Paul Boersma 2020-11-20,2024
 
-With the Praat SoundRecorder window you can record a mono or stereo sound
-for subsequent viewing and analysis in Praat.
-The SoundRecorder appears on your screen if you choose @@Record mono Sound...@ or @@Record stereo Sound...@
-from the @@New menu@.
+通过 Praat 的 SoundRecorder（录音机）窗口，您可以录制单声道或双声道（立体声）声音，
+以便随后在 Praat 中进行查看和分析。
+如果您从 @@New menu@ 中选择 @@Record mono Sound...@ 或 @@Record stereo Sound...@，
+录音机窗口就会显示在屏幕上。
 
-Depending on your system, the SoundRecorder window may allow you to choose
-the sampling frequency, the input gain, and the input device (microphone, line, or digital).
-The sound input level is monitored continuously with one or two meters.
-The resulting sound has 16 bits per sample, like sounds on an audio CD.
+根据您系统的不同，录音机窗口可能会允许您选择
+采样频率、输入增益和输入设备（麦克风、线路输入或数字输入）。
+声音输入电平会通过一个或两个电平表进行持续监控。
+录制得到的声音每个采样点为 16 位精度，与音乐 CD 的音质相同。
 
-Usage
-=====
+用法
+====
 
-To record the sound, use the Record and Stop buttons in the SoundRecorder window.
-Click ##Save to list# to copy the recorded sound to the object window
-(or ##Save left channel to list# or ##Save right channel to list#
-to copy the left or right channel if you have a stereo sound).
-The name of the resulting Sound object will be taken from the text field next to the button clicked.
+要录制声音，请使用录音机窗口中的 Record（录音）和 Stop（停止）按钮。
+单击 ##Save to list# 按钮可将录制的声音复制到对象窗口中
+（如果是双声道声音，则可单击 ##Save left channel to list# 或 ##Save right channel to list#
+来仅复制左声道或右声道）。
+生成的声音（Sound）对象名称将取自所点击按钮旁边的文本框。
 
-Size of the recording buffer
-============================
+录音缓冲区大小
+==============
 
-The size of the recording buffer determines how many seconds of sound you can record.
-For instance, if the recording buffer is 20 megabytes (the standard value), you can record 220 seconds in stereo
-(440 seconds in mono) at a sampling frequency of 22050 Hz,
-or 110 seconds in stereo (220 seconds in mono) at a sampling frequency of 44100 Hz.
-You can change the size of the recording buffer
-with #Praat \-> #Settings \-> ##Sound recording settings...#.
+录音缓冲区的大小决定了您可以录制多少秒的声音。
+例如，如果录音缓冲区为 20 MB（默认标准值），在 22050 Hz 采样率下，您可以录制 220 秒双声道声音
+（单声道为 440 秒）；
+而在 44100 Hz 采样率下，您可以录制 110 秒双声道声音（单声道为 220 秒）。
+您可以通过 #Praat \-> #Settings \-> ##Sound recording settings...#
+更改录音缓冲区的大小。
 
-Recording sounds on the Mac or in Linux
-======================================
-
-On the Mac or in Linux, you can record from the list on the left in the SoundRecorder window.
-The list can contain several devices, such as the internal microphone, a line input, or external USB devices.
-Audio tracks on a CD can be opened directly with @@Read from file...@ or @@Open long sound file...@.
-
-Recording sounds in Windows
-===========================
-
-In Windows 10, you can choose your input device by right-clicking on the loudspeaker icon in the Start bar,
-then choosing ##Open Sound settings# \-> ##Choose your input device#. In Windows 11,
-you right-click the loudspeaker icon and choose ##Sound settings# \-> ##Choose a device for speaking or recording# instead."
-To set some input properties, right-click the loudspeaker icon,
-then on Windows 10 you choose #Sounds \-> #Recording \-> #Properties,
-while on Windows 11 you choose ##Sound settings# \-> #Advanced \-> ##All sound devices# \-> ##Input devices# \-> #Microphone.
-
-Watching the input level
-========================
-
-While recording, you can watch the input level as a green rectangle whose size changes.
-Whenever the input is loud, the top of the rectangle becomes yellow; if it turns red, the sound may have been clipped.
-In the Meter menu you can choose other visualizations,
-such as a moving ball that measures spectral centre of gravity (horizontally) versus intensity (vertically).
-
-The File menu
-=============
-
-If your computer has little memory, a very long recorded sound might be too big to be copied to the list of objects.
-Fortunately, the File menu contains commands to save the recording
-to a sound file on disk, so that you will never have to lose your recording.
-You can later open such a long sound file in Praat with @@Open long sound file...@ from the Open menu.
-
-Sound pressure calibration
+在 Mac 或 Linux 上录制声音
 ==========================
 
-Your computer's sound-recording software returns integer values between -32768 and 32767.
-Praat divides them by 32768 before putting them into a Sound object,
-so that the values in the Sound objects are always between -1 and +1.
+在 Mac 或 Linux 上，您可以从录音机窗口左侧的列表中选择并录音。
+该列表可包含多个设备，如内置麦克风、线路输入或外接 USB 设备。
+CD 上的音轨可以直接通过 @@Read from file...@ 或 @@Open long sound file...@ 打开。
 
-The Praat program considers these numbers to be air pressures in units of Pascal,
-but they are probably not the actual true air pressures that went into the microphone.
-For how to obtain the true air pressures, perform a @@sound pressure calibration@.
+在 Windows 上录制声音
+======================
+
+在 Windows 10 中，您可以通过右键单击任务栏的扬声器图标，
+然后选择 ##Open Sound settings# \-> ##Choose your input device# 来选择您的输入设备。在 Windows 11 中，
+您右键单击扬声器图标并选择 ##Sound settings# \-> ##Choose a device for speaking or recording#。"
+要设置输入属性，请右键单击扬声器图标，
+在 Windows 10 上，选择 #Sounds \-> #Recording \-> #Properties，
+而在 Windows 11 上，则选择 ##Sound settings# \-> #Advanced \-> ##All sound devices# \-> ##Input devices# \-> #Microphone。
+
+观察输入电平
+============
+
+录音时，您可以看到输入电平显示为一个大小不断变化的绿色矩形。
+当输入音量较大时，矩形顶部会变黄；如果变红，则表明声音可能已经过载失真（剪切/削波）。
+在 Meter（电平表）菜单中，您还可以选择其他可视化方式，
+例如显示为一个滚动的球，该球的水平位置度量频谱重心，垂直位置度量音强。
+
+File 菜单
+=========
+
+如果您的计算机内存较小，录制非常长的时间可能会导致声音数据过大，无法将其复制到对象列表中。
+幸运的是，File 菜单中包含将录音直接保存
+到磁盘上声音文件的命令，这样您就永远不会丢失录音。
+稍后，您可以使用 Open 菜单中的 @@Open long sound file...@ 在 Praat 中打开该长音频文件。
+
+声压校准
+========
+
+您的计算机录音软件会返回 -32768 到 32767 之间的整数值。
+Praat 在将它们存入 Sound 对象前，会将它们除以 32768，
+从而使 Sound 对象中的数值始终保持在 -1 到 +1 之间。
+
+Praat 程序将这些数值视为以帕斯卡为单位的空气压强，
+但它们可能并非进入麦克风的实际真实压强。
+关于如何获得真实的空气压强，请进行 @@sound pressure calibration@。
 
 ################################################################################
 "Sounds: Concatenate"
