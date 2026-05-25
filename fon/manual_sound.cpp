@@ -240,7 +240,7 @@ A usually hidden command in the @@New menu@ to record a @Sound.
 "Sound"
 © Paul Boersma 2016-10-13
 
-Praat 中的@@对象类型|types of objects@之一。有关教程信息，请参阅完整的 @Intro。
+Praat 中的@@types of objects|对象类型@之一。有关教程信息，请参阅完整的 @Intro。
 
 命令
 ====
