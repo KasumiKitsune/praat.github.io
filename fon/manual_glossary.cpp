@@ -498,23 +498,16 @@ NORMAL (U"If you select an object that is a function of time and you click @Insp
 MAN_END
 
 MAN_BEGIN (U"time selection", U"ppgb", 20220907)
-INTRO (U"The ways to select a part of the time domain in some @editors in Praat, "
-	"namely those that contain a function of time.")
-NORMAL (U"The ##time selection# is used for selecting the time interval that will be played, "
-	"copied, cut, modified, or questioned:")
-ENTRY (U"1. How to make a selection")
-NORMAL (U"The easiest way is to @drag the mouse across the part that you want to select. "
-	"This is analogous to how selection works in a text processor.")
-ENTRY (U"2. How to extend or shrink a selection")
-NORMAL (U"The easiest way is to click with the Shift key pressed. "
-	"The nearest edge of the selection will move to the time position where you clicked. "
-	"This is analogous to how extending a selection works in a text processor.")
-NORMAL (U"For instance, if the currently selected time interval runs from 2 to 5 seconds, "
-	"and you shift-click at a time position of 4 seconds, the end of the selection will move "
-	"from 5 to 4 seconds, thus shrinking the selection.")
-NORMAL (U"You can also shift-drag, i.e. hold the Shift key and the mouse button down while moving the mouse.")
-ENTRY (U"3. Other tricks")
-NORMAL (U"To select a specific time stretch or collapse the selection to its start or end, use the Time menu.")
+INTRO (U"在 Praat 的部分编辑器（即包含与时间轴相关的数据的编辑器）中选择特定时间范围的操作方法。")
+NORMAL (U"时间选区用于决定接下来要播放、复制、剪切、修改或进行属性查询的具体时间段：")
+ENTRY (U"1. 如何创建选区")
+NORMAL (U"最简单的方法是直接在波形或图表上按住鼠标左键并向左右 @@drag|拖动@。这与在文本编辑器中拖动鼠标选择一段文字的操作完全一致。")
+ENTRY (U"2. 如何扩大或收缩选区")
+NORMAL (U"最简单的方法是按住 Shift 键并点击鼠标。此时，现有选区距离点击位置最近的那个边缘会自动移动到您点击的时刻。这同样类似于文本编辑器中按住 Shift 键调整选区范围的操作。")
+NORMAL (U"例如：如果当前选中的时间范围是 2 到 5 秒，而您按住 Shift 键点击了 4 秒的位置，那么选区的终点就会从 5 秒处缩回至 4 秒处，从而收缩了选区范围。")
+NORMAL (U"您也可以按住 Shift 键并 @@Shift-drag|拖动@ 鼠标，即按住 Shift 键的同时按下鼠标左键并拖动鼠标。")
+ENTRY (U"3. 其他技巧")
+NORMAL (U"若要精确定位到特定的时间范围，或者快速将选区折叠到起点或终点，可以使用 Time（时间）菜单。")
 MAN_END
 
 MAN_BEGIN (U"total duration", U"ppgb", 20040505)

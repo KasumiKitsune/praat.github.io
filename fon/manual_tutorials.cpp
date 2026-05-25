@@ -72,26 +72,19 @@ which will allow you to print the drawing or to copy it to your word processor.
 "Dynamic menu"
 © Paul Boersma 20110131  // 2023-06-08
 
-A column of buttons in the right-hand part of the @@Objects window@,
-plus the @@Save menu@ in the Objects window.
+位于 @@Objects window|对象窗口@ 右侧的按钮列表栏，同时在逻辑上也包含对象窗口中的 Save（保存）菜单。
 
-If you select one or more @objects in the list,
-the possible actions that you can perform with the selected objects
-will appear in the dynamic menu.
-These actions can include viewing & editing, saving, drawing,
-conversions to other types (including analysis and synthesis), and more.
+当您在左侧列表中选中一个或多个数据对象时，所有可对这些对象执行的操作均会动态呈现在该菜单中。这些操作包括：查看与编辑（viewing & editing）、保存（saving）、在图画窗口绘制（drawing）、转换为其他类型的对象（包括特征分析与语音合成）等。
 
-Example of analysis:
-====================
+特征分析示例：
+=============
 
-Record a Sound, select it, and click ##To Pitch...#.
-This will create a new Pitch object and put it in the list of objects.
-You can then edit, write, and draw this Pitch object.
+录制一段声音，选中对应的 Sound 对象，点击右侧的 ##To Pitch...#。这会使用分析算法生成一个新的 Pitch（基频/音高）对象并将其放入对象列表中。接下来您就可以对这个 Pitch 对象进行编辑、写盘保存以及绘制。
 
-Example of synthesis:
-=====================
+语音合成示例：
+=============
 
-Create a Speaker, create and edit an Artword, and click ##To Sound...#.
+先创建一个 Speaker 对象，再创建并编辑一个 Artword（发音词）对象，最后点击 ##To Sound...#，即可合成输出对应的声音信号。
 
 ################################################################################
 "View & Edit"
@@ -1264,25 +1257,23 @@ INTRO (U"See @@Intro 7. Annotation@.")
 MAN_END
 
 MAN_BEGIN (U"List of Objects", U"ppgb", 20210228)
-INTRO (U"A list in the left-hand part of the @@Objects window@.")
-ENTRY (U"Purpose")
-NORMAL (U"If you select one or more @objects in this list, "
-	"the possible actions that you can perform with the selected objects "
-	"will appear in the @@Dynamic menu@.")
-ENTRY (U"How to select objects")
-NORMAL (U"To select one object (and deselect all the others), click on the object.")
-NORMAL (U"To extend the selection, drag the mouse or use Shift-click.")
-NORMAL (U"To change the selection of one object (without changing the others), use @@Command-click@.")
+INTRO (U"位于 @@Objects window|对象窗口@ 左半侧的列表区域。")
+ENTRY (U"主要作用")
+NORMAL (U"当您在该列表中选中一个或多个数据对象时，右侧的 @@Dynamic menu|动态菜单@ 会实时更新并显示适用于当前选中对象的所有可用操作按钮。")
+ENTRY (U"如何选择对象")
+NORMAL (U"* 选择单个对象：直接在列表中单击该对象，这会同时取消选中之前选中的其他所有对象。")
+NORMAL (U"* 连续选择多个对象：在列表上按住鼠标左键并拖动，或者使用按住 Shift 键并点击（Shift-click）。")
+NORMAL (U"* 增减选择特定对象：按住 Command/Ctrl 键并点击该对象（@@Command-click|Ctrl 键单击@），可以在不影响其他已选对象的情况下，单独添加或取消选中它。")
 MAN_END
 
 MAN_PAGES_BEGIN
 R"~~~(
 ################################################################################
 "New menu"
-© Paul Boersmma 2016,2023
+© Paul Boersma 2016,2023
 
-The ##New menu# is one of the menus in the @@Objects window@.
-You use this menu to create new objects from scratch. It contains the following commands:
+##New# 菜单是 @@Objects window|对象窗口@ 中的主菜单之一。
+您可以使用此菜单从零开始创建新的数据对象。该菜单包含以下常用命令：
 
 • @@Record mono Sound...
 • @@Record stereo Sound...
@@ -1389,47 +1380,42 @@ You use this menu to create new objects from scratch. It contains the following 
 		• ##Create PatternList...
 		• ##Create Categories...
 
-To create new objects from files on disk, use the @@Open menu@ instead.
-Objects can also often be created from other objects, with commands that start with ##To#.
+若要通过读取磁盘文件来创建新对象，请改用 @@Open menu|Open（打开）菜单@。
+另外，通常也可以通过已有的对象来派生新对象，这类命令一般以 ##To# 开头（例如 To Pitch... 等）。
 ################################################################################
 )~~~"
 MAN_PAGES_END
 
 MAN_BEGIN (U"Objects window", U"ppgb", 20230325)
-INTRO (U"One of the two main windows in the Praat program.")
+INTRO (U"Praat 程序中的两个主窗口之一。")
 ENTRY (U"Subdivision")
-LIST_ITEM (U"To the left: the @@List of Objects@.")
-LIST_ITEM (U"To the right: the @@Dynamic menu@.")
+LIST_ITEM (U"左侧部分：@@List of Objects|对象列表@。")
+LIST_ITEM (U"右侧部分：@@Dynamic menu|动态菜单@。")
 ENTRY (U"Fixed buttons")
-NORMAL (U"The following buttons appear below the List of Objects:")
-LIST_ITEM (U"• @@Rename...")
-LIST_ITEM (U"• @@Info")
-LIST_ITEM (U"• @@Copy...")
-LIST_ITEM (U"• @@Remove")
-LIST_ITEM (U"• @@Inspect")
+NORMAL (U"对象列表下方显示有以下几个常用固定按钮：")
+LIST_ITEM (U"• @@Rename...|重命名...@")
+LIST_ITEM (U"• @@Info|信息@")
+LIST_ITEM (U"• @@Copy...|复制...@")
+LIST_ITEM (U"• @@Remove|移除@")
+LIST_ITEM (U"• @@Inspect|检查/查看结构@")
 ENTRY (U"Menus")
-LIST_ITEM (U"The Objects window contains several fixed menus: "
-	"the #Praat, #New, #Open, and #Help menus. "
-	"It also contains the @@Save menu@, whose contents vary with the kinds of selected objects, "
-	"and must, therefore, be considered part of the dynamic menu.")
+LIST_ITEM (U"对象窗口的菜单栏包含几个固定的菜单：Praat、New（新建）、Open（打开）和 Help（帮助）菜单。此外还包含 Save（保存）菜单，由于 Save 菜单中的命令会根据当前所选对象的类型发生动态变化，因此在逻辑上它也属于右侧动态菜单的一部分。")
 ENTRY (U"The Praat menu")
-LIST_ITEM (U"• @@New Praat script@: creates an empty @@ScriptEditor@")
-LIST_ITEM (U"• @@New Praat notebook@: creates an empty @@NotebookEditor@")
-LIST_ITEM (U"• @@Open Praat script...@: creates a @@ScriptEditor@ with a script from disk")
-LIST_ITEM (U"• @@Open Praat notebook...@: creates a @@NotebookEditor@ with a notebook from disk")
-LIST_ITEM (U"• The ##Goodies submenu#: for doing things (like using the Calculator) "
-	"that do not create new objects and do not depend on the kinds of selected objects.")
-LIST_ITEM (U"• The ##Settings submenu#: for program-wide preferences, "
-	"like audio input and output settings.")
-LIST_ITEM (U"• ##Buttons...#: raises a @@ButtonEditor@")
-LIST_ITEM (U"• (@@Add menu command...@)")
-LIST_ITEM (U"• (@@Add action command...@)")
-LIST_ITEM (U"• @@Quit")
+LIST_ITEM (U"• @@New Praat script@：创建一个空白的 @@ScriptEditor|脚本编辑器@")
+LIST_ITEM (U"• @@New Praat notebook@：创建一个空白的 @@NotebookEditor|笔记本编辑器@")
+LIST_ITEM (U"• @@Open Praat script...@：从磁盘打开一个脚本并使用 @@ScriptEditor|脚本编辑器@ 展示")
+LIST_ITEM (U"• @@Open Praat notebook...@：从磁盘打开一个笔记本并使用 @@NotebookEditor|笔记本编辑器@ 展示")
+LIST_ITEM (U"• The ##Goodies submenu#：用于运行一些不依赖于特定选中对象且不创建新对象的辅助工具（例如调用 Calculator 计算器）。")
+LIST_ITEM (U"• The ##Settings submenu#：用于进行程序全局配置，例如配置音频输入和输出设备的参数。")
+LIST_ITEM (U"• ##Buttons...#：打开 @@ButtonEditor|按钮编辑器@，用于定制菜单和按钮显示。")
+LIST_ITEM (U"• (##Add menu command...#)")
+LIST_ITEM (U"• (##Add action command...#)")
+LIST_ITEM (U"• @@Quit@")
 ENTRY (U"Other menus")
-LIST_ITEM (U"• The @@New menu@: for creating objects from scratch.")
-LIST_ITEM (U"• The @@Open menu@: for reading objects from file into memory.")
-LIST_ITEM (U"• The @@Save menu@: for writing objects from memory to file.")
-LIST_ITEM (U"• The ##Help menu#: for viewing the manual.")
+LIST_ITEM (U"• @@New menu|New（新建）菜单@：用于从零开始创建各种类型的新数据对象。")
+LIST_ITEM (U"• @@Open menu|Open（打开）菜单@：用于将磁盘文件读入到内存中，生成数据对象。")
+LIST_ITEM (U"• @@Save menu|Save（保存）菜单@：用于将内存中的数据对象写入保存至磁盘。")
+LIST_ITEM (U"• The ##Help menu#：用于查看参考手册。")
 MAN_END
 
 MAN_BEGIN (U"Periodicity menu", U"ppgb", 20240722 /*20010417, 20231115*/)
@@ -1521,13 +1507,9 @@ LIST_ITEM (U"• If the file contains one object of type Pitch, named \"hallo\",
 MAN_END
 
 MAN_BEGIN (U"Open menu", U"ppgb", 20110111)
-INTRO (U"One of the menus in the @@Objects window@.")
-NORMAL (U"With the Open menu, you read one or more @objects from a file on disk into memory. "
-	"The resulting object(s) will appear in the @@List of Objects@.")
-NORMAL (U"The Open menu contains the command @@Read from file...@, which recognizes most file types, "
-	"and perhaps several other commands for reading unrecognizable file types (e.g., raw sound data), "
-	"or for interpreting known file types in a different way "
-	"(e.g., reading two mono sounds from one stereo sound file):")
+INTRO (U"@@Objects window|对象窗口@ 中的主菜单之一。")
+NORMAL (U"通过 Open 菜单，您可以将磁盘上的一个或多个文件读取到内存中。读取成功后，对应的数据对象将出现在左侧的 @@List of Objects|对象列表@ 中。")
+NORMAL (U"Open 菜单包含了通用的 @@Read from file...@（从文件读取...）命令，它可以自动识别大多数标准文件格式；此外还包含若干其他特定命令，用于读取非标准/无格式文件（例如 raw 原始声音数据），或者以特殊方式解析已知文件（例如从一个立体声音频文件中分别读取两个单声道声音对象）：")
 MAN_END
 
 MAN_BEGIN (U"pause window", U"ppgb", 20230723)
@@ -1554,23 +1536,18 @@ NORMAL (U"If you type special symbols or spaces, the Objects window will replace
 MAN_END
 
 MAN_BEGIN (U"Save menu", U"ppgb", 20211015)
-INTRO (U"One of the menus in the @@Objects window@.")
-ENTRY (U"Purpose")
-NORMAL (U"With the #Save menu, you write one or more selected @objects from memory to a file on disk. "
-	"The data can be read in again with one of the commands in the @@Open menu@ "
-	"(most often simply with @@Read from file...@).")
-ENTRY (U"Usage: save your work")
-NORMAL (U"You will often choose a command from this menu just before clicking the @Remove button "
-	"or choosing the @Quit command.")
-ENTRY (U"Fixed commands")
-NORMAL (U"If no object is selected, the #Save menu is empty. "
-	"If any object is selected, it will at least contain the following commands:")
-LIST_ITEM (U"• @@Save as text file...")
-LIST_ITEM (U"• @@Save as short text file...")
-LIST_ITEM (U"• @@Save as binary file...")
-ENTRY (U"Dynamic commands")
-NORMAL (U"Depending on the type of the selected object, the following commands may be available "
-	"in the #Save menu:")
+INTRO (U"@@Objects window|对象窗口@ 中的菜单之一。")
+ENTRY (U"保存目的")
+NORMAL (U"通过 Save 菜单，您可以将内存中当前选中的一个或多个数据对象写入保存到磁盘文件中。保存的数据稍后可以使用 @@Open menu|Open（打开）菜单@ 下的命令（最常用的是 @@Read from file...@）重新加载回内存中。")
+ENTRY (U"典型用法：保存您的工作成果")
+NORMAL (U"在您点击 @Remove（移除）按钮或执行 @Quit（退出）命令关闭 Praat 之前，通常应该使用此菜单下的命令来妥善保存您的数据对象。")
+ENTRY (U"固定保存命令")
+NORMAL (U"如果当前没有选中任何对象，Save 菜单将显示为空。一旦选中了任意对象，该菜单中至少会提供以下几个通用的固定保存命令：")
+LIST_ITEM (U"• @@Save as text file...|保存为文本文件...@")
+LIST_ITEM (U"• @@Save as short text file...|保存为简短文本文件...@")
+LIST_ITEM (U"• @@Save as binary file...|保存为二进制文件...@")
+ENTRY (U"动态保存命令")
+NORMAL (U"根据您当前选中的对象类型，Save 菜单中还会动态呈现一些专属于该类型的特有保存命令：")
 MAN_END
 
 MAN_BEGIN (U"Save as binary file...", U"ppgb", 20110129)

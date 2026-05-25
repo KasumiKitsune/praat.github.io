@@ -206,94 +206,54 @@ DEFINITION (U"If on, then the time domain of each tier will be made equal to the
 MAN_END
 
 MAN_BEGIN (U"TextGridEditor", U"ppgb", 20210228)
-INTRO (U"One of the @Editors in Praat, for editing a @TextGrid object.")
-NORMAL (U"You can optionally include a copy of a @Sound or @LongSound in this editor, "
-	"by selecting both the TextGrid and the Sound or LongSound before clicking ##View & Edit#. "
-	"The Sound or LongSound is shown in the upper part of the window, the tiers in the lower part. "
-	"A text window at the top shows the text of the %#selected interval or point, "
-	"i.e. the interval or point at the location of the cursor. "
-	"All tiers are visible, and if you do not zoom in, all boundaries, points, and texts are visible, too. "
-	"You can do many of the same things that you can do with a @SoundEditor or @LongSoundEditor.")
-ENTRY (U"Positioning the cursor or the selection marks")
+INTRO (U"Praat 中的 @@Editors|编辑器@ 之一，用于编辑 @@TextGrid|TextGrid@（文本标注网格）对象。")
+NORMAL (U"您在启动此编辑器时，可以同时选中 TextGrid 对象以及 @@Sound|Sound@（声音）或 @@LongSound|LongSound@（长声音）对象，然后再点击 ##View & Edit#。此时，声音波形或长声音将显示在窗口的上半部分，标注层级显示在下半部分。窗口最上方有一个文本输入框，显示当前选中区间或点（即光标当前所在位置的区间或点）的文本内容。所有层级默认都是可见的，如果您不缩放窗口，所有的边界、时间点和标注文本也都清晰可见。您在 TextGridEditor 中可以进行大部分在 @@SoundEditor|SoundEditor@ 或 @@LongSoundEditor|LongSoundEditor@ 中可用的操作。")
+ENTRY (U"定位光标与设置选区")
 NORMAL (U"To position the cursor hair, @click in the #Sound, on a boundary, on a point, or inside an interval.")
-NORMAL (U"To select any part of the time domain, use the @@time selection@ mechanism; "
-	"if you do this by clicking in a tier, "
-	"the selected time domain will snap to the nearest boundary or point.")
-ENTRY (U"Creating new intervals, boundaries, points, or tiers")
-NORMAL (U"To create a new interval, create a new boundary in an interval tier.")
-NORMAL (U"To create a new boundary or point in a tier, @click inside the cursor circle in that tier, "
-	"or choose one of the commands in the Boundary/Point menu to insert a boundary at the cursor time "
-	"on the selected tier (shortcut: Enter) or on any tier (shortcuts: @@Keyboard shortcuts|Command-F1@ through @@Keyboard shortcuts|Command-F9@). The original text "
-	"in the interval that is split, is divided up between the two resulting intervals, depending on "
-	"the position of the text cursor in the text window.")
-NORMAL (U"To create a new tier, choose ##Add interval tier# or ##Add point tier# from the #Tier menu.")
-ENTRY (U"Playing an entire interval, or part of it")
+NORMAL (U"若要选择特定时间段，请使用 @@time selection|时间选区@ 操作；如果您是在某个层级内拖动鼠标进行选择，选区边界会自动吸附到最近的边界线或时间点上。")
+ENTRY (U"创建新的区间、边界、点或层级")
+NORMAL (U"若要创建新区间，请在区间层级（interval tier）中创建一个新的边界线。")
+NORMAL (U"若要在层级中创建新的边界线或时间点，请点击该层级上光标对应的小圆圈，或者也可以通过 Boundary/Point（边界/点）菜单中的命令在光标时刻插入边界。这既可以在当前选中的层级上操作（快捷键：Enter），也可以在任意层级上操作（快捷键：@@Keyboard shortcuts|Command-F1@ 到 @@Keyboard shortcuts|Command-F9@）。区间被分割时，原来区间里的文字会根据文字光标在上方文本框中的位置，分别划分到分割后的两个新区间内。")
+NORMAL (U"若要创建新层级，请在 Tier（层级）菜单中选择 ##Add interval tier#（添加区间层）或 ##Add point tier#（添加点层）。")
+ENTRY (U"播放整个区间或其中一部分")
 NORMAL (U"As in many other editors, you can play a stretch of sound by clicking in any of the rectangles "
 	"around the drawing area.")
-NORMAL (U"To play an interval of an interval tier, you first @click inside it. This will make the interval %selected, "
-	"which means that the visible part of the interval will be drawn in yellow. The cursor will be positioned "
-	"at the start of the interval, and the time selection will comprise exactly the interval. This means that "
-	"you can use the Tab key to play the interval. If you press it while a sound is playing, "
-	"the Tab key will halt the playing sound, and the cursor will move to the time at which the sound stopped playing. "
-	"This helps you to divide up a long sentence into parts that you can remember long enough to write them "
-	"down.")
-NORMAL (U"The Tab key will play the selected interval.")
-ENTRY (U"Editing the text in an interval or at a point")
+NORMAL (U"若要播放区间层中的某个区间，请先在区间内部点击以选中它。被选中的区间在可见区域内会以黄色高亮显示。此时光标会自动定位在区间的起点，时间选区也会刚好包容该区间。这代表您可以直接按 Tab 键来播放这个选中的区间。如果在播放声音时再次按下 Tab 键，声音播放会停止，并且光标会移动到播放中断的时刻。这可以帮助您将较长的句子分割为一个个小片段，方便您听写记录。")
+NORMAL (U"Tab 键将播放选中的区间。")
+ENTRY (U"编辑区间或点中的文本")
 NORMAL (U"To edit the label text of an interval or point:")
 LIST_ITEM (U"1. Select that interval or point by clicking in or on it. The text currently in the interval or point "
 	"will appear in the text window.")
 LIST_ITEM (U"2. Just type the text, and use the mouse and the arrow keys to navigate the text window. "
 	"Everything you type will become visible immediately in the text window as well as in the selected "
 	"interval or point.")
-NORMAL (U"You can use all the @@Special symbols@ "
-	"that you can use elsewhere in Praat, including mathematical symbols, Greek and Chinese letters, superscripts, "
-	"and phonetic symbols.")
-ENTRY (U"Selecting a tier")
-NORMAL (U"To select a tier, click anywhere inside it. Its number and name will be drawn in red, "
-	"and a pointing finger symbol (☞) will appear on its left.")
-ENTRY (U"Selecting a boundary or point")
-NORMAL (U"To select a boundary on an interval tier, @click in its vicinity or inside the following interval; "
-	"the boundary will be drawn in red. The text in the interval will appear in the text window.")
-NORMAL (U"To select a point on a point tier, @click in its vicinity; it will be drawn in red. "
-	"The text of the point will appear in the text window.")
-ENTRY (U"Moving one or more boundaries or points")
+NORMAL (U"您可以使用在 Praat 其他地方可用的所有 @@Special symbols|特殊符号@，包括数学符号、希腊字母、中文字符、上标以及国际音标（IPA）等。")
+ENTRY (U"选择层级")
+NORMAL (U"若要选中某个层级，只需在层级区域内的任意空白位置点击一下。该层级的编号和名称将变为红色，且其左侧会显示一个指向它的手指符号（☞）。")
+ENTRY (U"选择边界或点")
+NORMAL (U"若要在区间层级上选中一条边界线，请在边界线附近或右侧相邻的区间内点击；被选中的边界线会变为红色。该边界线右侧区间的文本将显示在顶部的文本输入框中。")
+NORMAL (U"若要在点层级上选中一个时间点，请在其附近点击；选中的点会变为红色。该点的文本会显示在顶部的文本输入框中。")
+ENTRY (U"移动边界或点")
 NORMAL (U"To move a boundary or point to another time position, @drag it with the mouse.")
-NORMAL (U"To move all the boundaries and points with the same time (on different tiers) to another time position, "
-	"@@Shift-drag@ them.")
-NORMAL (U"To move boundaries or points to the exact time position of a boundary or point on an other tier, "
-	"@drag them into that other tier and into the vicinity of that boundary or point.")
-NORMAL (U"To move boundaries or points to the exact time position of the cursor, "
-	"@drag them into the vicinity of the cursor.")
-ENTRY (U"Removing a boundary, point, or tier")
-NORMAL (U"To remove a selected #boundary, choose #Remove from the #Boundary menu. "
-	"This creates a new interval which is the union of the two intervals originally adjoining the boundary; "
-	"the new text of this interval is the concatenation of the two original texts, "
-	"except if these were equal, in which case the new text equals both original texts.")
-NORMAL (U"To remove a selected #point, choose #Remove from the #Point menu.")
-NORMAL (U"To remove a selected #tier, choose ##Remove entire tier# from the #Tier menu.")
+NORMAL (U"若要将多个层级上处于同一时刻的所有边界线和时间点同步移动到另一个位置，请按住 Shift 键并 @@Shift-drag|拖动@ 它们。")
+NORMAL (U"若要把边界或点精准移动到另一个层级上某条边界线或时间点的时刻，请将它们拖动到该层级对应位置附近，它们会自动吸附对齐。")
+NORMAL (U"若要把边界或点精准移动到光标所在的时刻，请将它们拖动到光标位置附近，它们会自动吸附到光标上。")
+ENTRY (U"删除边界、点或层级")
+NORMAL (U"若要删除选中的边界线，请在 Boundary（边界）菜单中选择 #Remove（移除）。这会把原本由该边界线隔开的两个区间合并为一个新区间；新区间的内容将自动拼接在一起（如果两个区间的原文本完全相同，合并后则只保留一个，不会重复拼接）。")
+NORMAL (U"若要删除选中的时间点，请在 Point（点）菜单中选择 #Remove（移除）。")
+NORMAL (U"若要删除选中的层级，请在 Tier（层级）菜单中选择 ##Remove entire tier#（删除整个层级）。")
 /*"To rename a selected tier, choose 'Rename...' from the 'Tier' menu. "*/
 /*"To remove all the boundaries and labels in a selected tier, "
 "   choose 'Clear entire tier' from the 'Tier' menu. "*/
 ENTRY (U"Extracting a part of the sound")
-NORMAL (U"To copy the selected part of the Sound or LongSound as a Sound to the @@List of Objects@, "
-	"choose ##Extract sound selection# from the #File menu. You can specify whether you want "
-	"the time domain of the resulting Sound to match the starting and finishing times of the "
-	"selection or whether you want the time domain of the resulting Sound to start at zero seconds.")
-NORMAL (U"If you are viewing a LongSound, you can save the selected part of it to a 16-bit sound file "
-	"(AIFF, AIFC, WAV, NeXT/Sun, NIST) with a command from the File menu.")
-ENTRY (U"Accelerations")
-NORMAL (U"To save the @TextGrid object as a text file without going to the @@Objects window@: "
-	"choose ##Save TextGrid as text file...# from the #File menu.")
-ENTRY (U"Searching")
-NORMAL (U"The Search menu contains the command #Find (@@Keyboard shortcuts|Command-F@), which will allow you to specify "
-	"a text whose first occurrence will then be looked for in the currently selected tier "
-	"(starting from the currently selected text in the currently selected interval). "
-	"The command ##Find again# (@@Keyboard shortcuts|Command-G@) will search for the next occurrence of the same search text.")
-ENTRY (U"Checking the spelling")
-NORMAL (U"You can check the spelling of the intervals in your tiers by including a @SpellingChecker "
-	"object as you launch the editor: select TextGrid + (Long)Sound + SpellingChecker, "
-	"then click ##View & Edit#. The #Spell menu will contain the commands ##Check spelling in tier# (@@Keyboard shortcuts|Command-N@), and ##Check spelling in interval# "
-	"which will search for the next word in the tier or interval that does not occur in the lexicon.")
+NORMAL (U"若要将 Sound 或 LongSound 中选定的音频部分作为独立的 Sound 对象复制到对象列表（@@List of Objects@）中，请在 File（文件）菜单中选择 ##Extract sound selection#（提取所选声音）。您可以选择新生成的 Sound 对象的时间轴是保持选区的原始时刻，还是将其起点重置为 0 秒。")
+NORMAL (U"如果您正在查看 LongSound 对象，则可以直接使用 File 菜单下的命令将选定部分的音频保存为 16 位的标准声音文件（支持 AIFF、AIFC、WAV、NeXT/Sun、NIST 等格式）。")
+ENTRY (U"便捷操作")
+NORMAL (U"若要直接将 TextGrid 对象保存为文本文件而无需返回对象窗口：请在编辑器窗口的 File 菜单中选择 ##Save TextGrid as text file...#（保存 TextGrid 为文本文件...）。")
+ENTRY (U"搜索功能")
+NORMAL (U"Search（搜索）菜单中提供了 #Find（查找，快捷键：@@Keyboard shortcuts|Command-F@）命令。您可以通过它输入特定的查找文本，编辑器会从当前选中区间的当前字符开始，在当前选中的层级中向后搜索第一个匹配项。使用 ##Find again#（再次查找，快捷键：@@Keyboard shortcuts|Command-G@）则可以继续查找下一个匹配项。")
+ENTRY (U"拼写检查")
+NORMAL (U"您可以在启动编辑器时同时选中 TextGrid 对象、(Long)Sound 对象以及一个 @@SpellingChecker|SpellingChecker@（拼写检查器）对象来使用拼写检查功能：选中这三个对象并点击 ##View & Edit# 启动编辑器后，Spell（拼写）菜单中将出现 ##Check spelling in tier#（检查层级拼写，快捷键：@@Keyboard shortcuts|Command-N@）和 ##Check spelling in interval#（检查区间拼写）命令，它们会在层级或区间中搜索下一个不在词典中的词汇。")
 MAN_END
 
 MAN_BEGIN (U"WordList", U"ppgb", 20190616)

@@ -366,31 +366,22 @@ LIST_ITEM (U"• @@Save as FLAC file...@")
 MAN_END
 
 MAN_BEGIN (U"LongSound", U"ppgb", 20110131)
-INTRO (U"One of the @@types of objects@ in Praat. See the @@Sound files@ tutorial.")
-NORMAL (U"A LongSound object gives you the ability to view and label "
-	"a sound file that resides on disk. You will want to use it for sounds "
-	"that are too long to read into memory as a @Sound object (typically, a few minutes).")
-ENTRY (U"How to create a LongSound object")
-NORMAL (U"You create a LongSound object with @@Open long sound file...@ from the @@Open menu@.")
-ENTRY (U"What you can do with a LongSound object")
-NORMAL (U"You can save a LongSound object to a new sound file, "
-	"perhaps in a different format (AIFF, AIFC, WAV, NeXT/Sun, NIST, FLAC) "
-	"with the commands in the Save menu. You can also concatenate several "
-	"LongSound objects in this way. See @@How to concatenate sound files@.")
-ENTRY (U"How to view and edit a LongSound object")
-NORMAL (U"You can view a LongSound object in a @LongSoundEditor by choosing @@LongSound: View@. "
-	"This also allows you to extract parts of the LongSound as @Sound objects, "
-	"or save these parts as a sound file. "
-	"There are currently no ways to actually change the data in the file.")
-ENTRY (U"How to annotate a LongSound object")
-NORMAL (U"You can label and segment a LongSound object after the following steps:")
-LIST_ITEM (U"1. Select the LongSound object.")
-LIST_ITEM (U"2. Choose @@LongSound: To TextGrid...@ and specify your tiers.")
-LIST_ITEM (U"3. Select the resulting @TextGrid object together with the LongSound object, and click ##View & Edit#.")
-NORMAL (U"A @TextGridEditor will appear on the screen, with a copy of the LongSound object in it.")
-ENTRY (U"Limitations")
-NORMAL (U"The length of the sound file is limited to 2 gigabytes, which is 3 hours of CD-quality stereo, "
-	"or 12 hours 16-bit mono sampled at 22050 Hz.")
+INTRO (U"Praat 中的 @@types of objects|数据对象类型@ 之一。详细信息请参见 @@Sound files|声音文件@ 教程。")
+NORMAL (U"LongSound 对象允许您直接查看和标注保存在磁盘上的声音文件。当音频文件过大，无法作为 @Sound 对象完整加载到内存中时（通常指几分钟以上的长音频），推荐使用此对象。")
+ENTRY (U"如何创建 LongSound 对象")
+NORMAL (U"在 @@Open menu|Open（打开）菜单@ 中选择 @@Open long sound file...@（打开长声音文件...），即可创建一个 LongSound 对象。")
+ENTRY (U"LongSound 对象的操作与应用")
+NORMAL (U"您可以使用 Save（保存）菜单中的命令，将 LongSound 对象另存为新的声音文件，也可以在此过程中转换其格式（支持 AIFF、AIFC、WAV、NeXT/Sun、NIST、FLAC 等格式）。您还可以通过这种方式将多个 LongSound 对象首尾拼接合并。详情请参阅 @@How to concatenate sound files|如何拼接声音文件@。")
+ENTRY (U"如何查看 LongSound 对象")
+NORMAL (U"在列表中选中该对象并选择 @@LongSound: View|View（查看）@，可以在 @LongSoundEditor 中打开并查看它。这也允许您将长音频中的某些片段提取为内存中的 @Sound 对象，或将选定片段直接另存为独立的声音文件。目前 Praat 暂不支持直接修改原始声音文件中的音频数据。")
+ENTRY (U"如何对 LongSound 对象进行标注")
+NORMAL (U"您可以通过以下步骤对 LongSound 对象进行分段 and 标注：")
+LIST_ITEM (U"1. 选中该 LongSound 对象。")
+LIST_ITEM (U"2. 选择 @@LongSound: To TextGrid...@ 并输入需要创建的层级名称。")
+LIST_ITEM (U"3. 同时选中生成的 @TextGrid 对象和 LongSound 对象，然后点击 ##View & Edit#。")
+NORMAL (U"屏幕上会弹出一个 @TextGridEditor 窗口，并在其中载入该长声音音频。")
+ENTRY (U"局限性")
+NORMAL (U"支持的原始声音文件大小上限为 2 GB（吉字节），这相当于约 3 小时的 CD 级音质双声道立体声，或者 12 小时的 16 位单声道（采样率为 22050 Hz）音频。")
 MAN_END
 
 MAN_BEGIN (U"LongSound: To TextGrid...", U"ppgb", 19980730)
@@ -403,17 +394,13 @@ INTRO (U"A command to view the selected @LongSound object in a @LongSoundEditor.
 MAN_END
 
 MAN_BEGIN (U"LongSoundEditor", U"ppgb", 20041124)
-INTRO (U"One of the @Editors in Praat, for viewing a @LongSound object.")
-NORMAL (U"This viewer allows you:")
-LIST_ITEM (U"• to view and hear parts of the sound as it is on disk;")
-LIST_ITEM (U"• to copy a selected part as a @Sound object to the list of objects, so that you "
-	"can perform analyses on it or save it to a smaller sound file;")
-LIST_ITEM (U"• to copy a selected part as a @Sound object to the @Sound clipboard, "
-	"so that you can paste it into another Sound object that you are viewing in a @SoundEditor.")
-NORMAL (U"To label and segment the LongSound object, use the @TextGridEditor instead (see @LongSound).")
-NORMAL (U"The display and playback of the samples is restricted to 60 seconds at a time, for reasons of speed "
-	"(although you can change this number with ##LongSound prefs# from the main #Preferences menu; "
-	"the sound file itself can contain several hours of sound.")
+INTRO (U"Praat 中的 @@Editors|编辑器@ 之一，用于查看 @@LongSound|LongSound@（长声音）对象。")
+NORMAL (U"此查看器允许您：")
+LIST_ITEM (U"• 查看并聆听磁盘上声音文件的任意部分；")
+LIST_ITEM (U"• 将选定部分作为 @@Sound|Sound@（声音）对象复制到对象列表中，以便对其进行详细分析或保存为较小的声音文件；")
+LIST_ITEM (U"• 将选定部分作为 @@Sound|Sound@（声音）对象复制到声音剪贴板中，以便将其粘贴到您正在 @SoundEditor 中查看的另一个声音对象中。")
+NORMAL (U"若要对 LongSound 对象进行标注和分段，请改用 @TextGridEditor（参见 @LongSound）。")
+NORMAL (U"出于运行速度的考虑，单次显示和播放采样的长度限制在 60 秒以内（不过您可以通过主菜单 Preferences 中的 ##LongSound prefs# 来修改这一限制）；声音文件本身可以包含数小时 of 声音。")
 MAN_END
 
 MAN_BEGIN (U"Open long sound file...", U"ppgb", 19980730)

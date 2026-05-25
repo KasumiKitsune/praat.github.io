@@ -807,9 +807,9 @@ INTRO (U"One of the @editors in the Praat program, for viewing and editing an @I
 MAN_END
 
 MAN_BEGIN (U"Command-click", U"ppgb", 20210228)
-INTRO (U"To %%Command-click% means to click while the %%Command key% is pressed. "
-	"The Command key is the key that is marked with an apple or the word \"command\" on Apple keyboards, "
-	"or to the key that is marked \"Ctrl\" if you are on a Windows or Linux computer.")
+INTRO (U"%%Command-click%（按住 Command/Ctrl 键单击）是指在按下 %%Command key% 的同时单击鼠标。"
+	"Command 键在苹果（Apple）键盘上是标有苹果标志或“command”字样的键；"
+	"如果您使用的是 Windows 或 Linux 电脑，则对应的是键盘上的“Ctrl”键。")
 MAN_END
 
 MAN_BEGIN (U"Keyboard shortcuts", U"ppgb", 20220701)  // 2026

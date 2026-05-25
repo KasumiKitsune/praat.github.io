@@ -1769,55 +1769,49 @@ This sets the value of the 100th sample to 0.5.
 "SoundEditor"
 © Paul Boersma 20220814,2023-06-08
 
-An @@Editors|Editor@ for viewing and editing a @Sound object.
-Most of the functions of this editor are described in the @Intro.
+用于查看和编辑 @@Sound|Sound@（声音）对象的 @@Editors|编辑器@。
+该编辑器的绝大部分功能都在 @@Intro|Intro@（入门介绍）中进行了说明。
 
-The markers
-===========
-
-To set the cursor, use the left mouse button. A short horizontal line will also be shown at the left edge (in cyan);
-the extension of this line crosses the cursor line at the sound's function value (seen as a cyan dot).
-This function value (shown at the left in cyan) is the sinc-interpolated value, and is generally different from the
-value that you would expect when looking at the linearly interpolated version of the sampled sound.
-
-To select a part of the time domain, use the @@time selection@ mechanism.
-
-Playing
-=======
-
-To play any part of the sound, click in one of the rectangles
-below or above the sound window (there can be 1 to 8 of these rectangles),
-or choose a command from the Play menu.
-
-To mute one or more channels (of a multi-channel sound), @@Command-click@
-on the 🔈 icon at the right side of the corresponding channel number.
-The icon will turn to 🔇. In subsequent playing actions,
-the channel will not be played. Another @@Command-click@ on a muted channel icon will activate the channel again.
-
-Publishing
+标记与指示
 ==========
 
-To perform analyses on the selection, or save it to a file,
-create an independent Sound as a copy of the selection,
-by clicking on the button that will copy the selection to the List of Objects;
-the resulting Sound will be called “Sound untitled”.
+使用鼠标左键可以定位光标。定位后，窗口左侧边缘会显示一条青色短横线；
+该横线的延长线与光标竖线的交点即为当前时刻的声音函数值（显示为青色圆点）。
+左侧显示的函数值是基于 sinc 函数插值计算出来的，它通常与您直接看折线连接（线性插值）的采样波形图时直观预期的数值有所不同。
 
-Editing
-=======
-- Cut: cut the selection to the clipboard, for later pasting into the same or another Sound.
-- Copy selection to Sound clipboard: copy the selection to the clipboard, for later pasting into the same or another Sound.
-- Paste after selection: paste the clipboard to the cursor or after the selection.
-- Set selection to zero: set the selected samples to zero.
-- Reverse selection: reverse the selected part of the sound.
+若要选择特定时间段，请使用 @@time selection|时间选区@ 操作。
 
-You can undo these commands with Undo (@@Keyboard shortcuts|Command-Z@).
+声音播放
+========
 
-The Group button
-================
+点击声音波形窗口下方或上方的控制矩形条（通常有 1 到 8 个播放条），可以播放对应段的声音，
+或者也可以直接从 Play（播放）菜单中选择相应命令。
 
-To synchronize a SoundEditor window with other windows that show a time signal,
-push the Group button in all the windows that you want to synchronize.
-You cannot Cut from or Paste into a synchronized SoundEditor window.
+若要静音多声道声音中的某个声道，可以按住 @@Command-click|Ctrl 键单击@ 该声道编号右侧的 🔈 图标。
+图标会变为 🔇。之后在播放声音时，该声道将不再发声。再次按住 @@Command-click|Ctrl 键单击@ 已静音的声道图标即可重新激活它。
+
+数据提取/输出
+=============
+
+若要对选区进行分析或将其保存到文件中，您需要点击按钮，将该选区作为副本提取到对象列表（List of Objects）中，
+生成一个独立的声音对象，其默认名称为 “Sound untitled”（未命名声音）。
+
+编辑操作
+========
+- Cut：将所选声音剪切到剪贴板，以便稍后粘贴到当前或另一个声音对象中。
+- Copy selection to Sound clipboard：将所选部分复制到声音剪贴板，以便稍后粘贴。
+- Paste after selection：将剪贴板中的声音粘贴到光标位置或当前选区之后。
+- Set selection to zero：将所选范围内的采样值归零。
+- Reverse selection：将所选部分的声音进行倒放处理。
+
+您可以使用 Undo（撤销，快捷键：@@Keyboard shortcuts|Command-Z@）来撤销上述操作。
+
+Group（群组联结）按钮
+=====================
+
+若要将当前的 SoundEditor 窗口与显示时间信号的其他窗口同步（实现联动缩放和滚动），
+请在所有需要联动的窗口中按下 Group 按钮。
+在处于群组同步状态 of SoundEditor 窗口中，将无法执行剪切和粘贴操作。
 
 ################################################################################
 "SoundRecorder"
