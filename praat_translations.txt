@@ -1,4 +1,4 @@
-=== Praat Chinese Translation Database (Total: 1979 entries) ===
+=== Praat Chinese Translation Database (Total: 1987 entries) ===
 Format: [English] block followed by [Chinese] block, separated by '===================='.
 This structure prevents ambiguity with newlines or special characters in the text.
 
@@ -2106,7 +2106,7 @@ Copy object
 [English]
 Copy selection to Sound clipboard
 [Chinese]
-复制选择到声音剪贴板
+将选区复制到 Sound 剪贴板
 ====================
 [English]
 Copy text
@@ -2914,6 +2914,11 @@ Draw intensity to picture window
 绘制音强到图像窗口
 ====================
 [English]
+Draw intensity to picture window:
+[Chinese]
+绘制音强到图像窗口：
+====================
+[English]
 Draw line...
 [Chinese]
 绘制直线...
@@ -2987,6 +2992,11 @@ Draw selection times
 Draw sound to picture window:
 [Chinese]
 绘制声音到图像窗口：
+====================
+[English]
+Draw spectogram to picture window:
+[Chinese]
+绘制声谱图到图像窗口：
 ====================
 [English]
 Draw spectrogram to picture window
@@ -3179,6 +3189,11 @@ Edit double pulsing tier
 编辑双脉冲层
 ====================
 [English]
+Edit duration:
+[Chinese]
+编辑时长：
+====================
+[English]
 Edit flutter tier
 [Chinese]
 编辑抖动层
@@ -3212,6 +3227,11 @@ Edit open phase tier
 Edit pitch tier
 [Chinese]
 编辑音高层
+====================
+[English]
+Edit pitch:
+[Chinese]
+编辑音高：
 ====================
 [English]
 Edit spectral tilt tier
@@ -3439,6 +3459,11 @@ Extract intensity to objects window
 提取音强到对象窗口
 ====================
 [English]
+Extract intensity to objects window:
+[Chinese]
+提取音强到对象窗口：
+====================
+[English]
 Extract intervals where...
 [Chinese]
 提取符合条件的区间...
@@ -3547,6 +3572,11 @@ Extract sound to objects window:
 Extract spectral tilt tier
 [Chinese]
 提取频谱倾斜层
+====================
+[English]
+Extract spectrum:
+[Chinese]
+提取频谱：
 ====================
 [English]
 Extract tier...
@@ -5121,27 +5151,27 @@ Logarithmic marks
 [English]
 LongSound help
 [Chinese]
-长声音帮助
+LongSound 帮助
 ====================
 [English]
 LongSound preferences...
 [Chinese]
-长声音偏好...
+长音频偏好设置...
 ====================
 [English]
 LongSound settings...
 [Chinese]
-长声音设置...
+长音频设置...
 ====================
 [English]
 LongSound settings... || LongSound preferences...
 [Chinese]
-长声音设置... || 长声音偏好...
+长音频设置... || 长音频偏好设置...
 ====================
 [English]
 LongSoundEditor help
 [Chinese]
-长声音编辑器帮助
+LongSoundEditor 帮助
 ====================
 [English]
 Longest analysis (s)
@@ -5746,12 +5776,12 @@ Open editor script...
 [English]
 Open long sound file
 [Chinese]
-打开长声音文件
+打开长音频文件
 ====================
 [English]
 Open long sound file...
 [Chinese]
-打开长声音文件...
+打开长音频文件...
 ====================
 [English]
 Open...
@@ -5821,7 +5851,7 @@ Paste
 [English]
 Paste after selection
 [Chinese]
-粘贴到选择之后
+粘贴到选区之后
 ====================
 [English]
 Paste before selection
@@ -6244,6 +6274,11 @@ Pulses settings...
 脉冲设置...
 ====================
 [English]
+Pulses settings:
+[Chinese]
+脉冲设置：
+====================
+[English]
 Purple
 [Chinese]
 紫色
@@ -6272,6 +6307,11 @@ Query formants:
 Query intensity
 [Chinese]
 查询音强
+====================
+[English]
+Query intensity:
+[Chinese]
+查询音强：
 ====================
 [English]
 Query interval tier
@@ -6606,7 +6646,7 @@ Reduce noise...
 [English]
 Remove
 [Chinese]
-删除
+移除
 ====================
 [English]
 Remove boundary at time...
@@ -6796,7 +6836,7 @@ Reverse Y
 [English]
 Reverse selection
 [Chinese]
-反向选定部分
+反转选区
 ====================
 [English]
 Reverse trajectory
@@ -7633,7 +7673,7 @@ Set row label (label)...
 [English]
 Set selection to zero
 [Chinese]
-设置选区为零
+将选区置零
 ====================
 [English]
 Set selection:
@@ -9063,7 +9103,7 @@ Very accurate
 [English]
 View & Edit
 [Chinese]
-查看与编辑
+查看并编辑
 ====================
 [English]
 View & Edit alone

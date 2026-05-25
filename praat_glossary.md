@@ -59,10 +59,10 @@
 | `Query` | **查询** | 界面菜单译法 |
 | `Extract sound selection` | **Extract sound selection（提取所选声音）** | 帮助手册译法 |
 | `Cut` | **剪切** | 界面菜单译法 |
-| `Copy selection to Sound clipboard` | **复制选择到声音剪贴板** | 界面菜单译法 |
-| `Paste after selection` | **粘贴到选择之后** | 界面菜单译法 |
-| `Set selection to zero` | **设置选区为零** | 界面菜单译法 |
-| `Reverse selection` | **反向选定部分** | 界面菜单译法 |
+| `Copy selection to Sound clipboard` | **将选区复制到 Sound 剪贴板** | 界面菜单译法 |
+| `Paste after selection` | **粘贴到选区之后** | 界面菜单译法 |
+| `Set selection to zero` | **将选区置零** | 界面菜单译法 |
+| `Reverse selection` | **反转选区** | 界面菜单译法 |
 | `Undo` | **撤销** | 界面菜单译法 |
 | `Redo` | **重做** | 界面菜单译法 |
 

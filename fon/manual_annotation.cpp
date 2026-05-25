@@ -206,8 +206,8 @@ DEFINITION (U"If on, then the time domain of each tier will be made equal to the
 MAN_END
 
 MAN_BEGIN (U"TextGridEditor", U"ppgb", 20210228)
-INTRO (U"Praat 中的 @@Editors|编辑器@ 之一，用于编辑 @@TextGrid|TextGrid@（文本标注网格）对象。")
-NORMAL (U"您在启动此编辑器时，可以同时选中 TextGrid 对象以及 @@Sound|Sound@（声音）或 @@LongSound|LongSound@（长声音）对象，然后再点击 ##View & Edit#。此时，声音波形或长声音将显示在窗口的上半部分，标注层级显示在下半部分。窗口最上方有一个文本输入框，显示当前选中区间或点（即光标当前所在位置的区间或点）的文本内容。所有层级默认都是可见的，如果您不缩放窗口，所有的边界、时间点和标注文本也都清晰可见。您在 TextGridEditor 中可以进行大部分在 @@SoundEditor|SoundEditor@ 或 @@LongSoundEditor|LongSoundEditor@ 中可用的操作。")
+INTRO (U"Praat 中的 @@Editors|编辑器@ 之一，用于编辑 @@TextGrid|TextGrid@（标注网格/文本标注对象）对象。")
+NORMAL (U"您在启动此编辑器时，可以同时选中 TextGrid 对象以及 @@Sound|Sound@（声音对象）或 @@LongSound|LongSound@（长音频对象）对象，然后再点击 ##View & Edit#。此时，声音波形或长音频将显示在窗口的上半部分，标注层级显示在下半部分。窗口最上方有一个文本输入框，显示当前选中区间或点（即光标当前所在位置的区间或点）的文本内容。所有层级默认都是可见的，如果您不缩放窗口，所有的边界、时间点和标注文本也都清晰可见。您在 TextGridEditor 中可以进行大部分在 @@SoundEditor|SoundEditor@ 或 @@LongSoundEditor|LongSoundEditor@ 中可用的操作。")
 ENTRY (U"定位光标与设置选区")
 NORMAL (U"To position the cursor hair, @click in the #Sound, on a boundary, on a point, or inside an interval.")
 NORMAL (U"若要选择特定时间段，请使用 @@time selection|时间选区@ 操作；如果您是在某个层级内拖动鼠标进行选择，选区边界会自动吸附到最近的边界线或时间点上。")
@@ -238,10 +238,10 @@ NORMAL (U"To move a boundary or point to another time position, @drag it with th
 NORMAL (U"若要将多个层级上处于同一时刻的所有边界线和时间点同步移动到另一个位置，请按住 Shift 键并 @@Shift-drag|拖动@ 它们。")
 NORMAL (U"若要把边界或点精准移动到另一个层级上某条边界线或时间点的时刻，请将它们拖动到该层级对应位置附近，它们会自动吸附对齐。")
 NORMAL (U"若要把边界或点精准移动到光标所在的时刻，请将它们拖动到光标位置附近，它们会自动吸附到光标上。")
-ENTRY (U"删除边界、点或层级")
-NORMAL (U"若要删除选中的边界线，请在 Boundary（边界）菜单中选择 #Remove（移除）。这会把原本由该边界线隔开的两个区间合并为一个新区间；新区间的内容将自动拼接在一起（如果两个区间的原文本完全相同，合并后则只保留一个，不会重复拼接）。")
-NORMAL (U"若要删除选中的时间点，请在 Point（点）菜单中选择 #Remove（移除）。")
-NORMAL (U"若要删除选中的层级，请在 Tier（层级）菜单中选择 ##Remove entire tier#（删除整个层级）。")
+ENTRY (U"移除边界、点或层级")
+NORMAL (U"若要移除选中的边界线，请在 Boundary（边界）菜单中选择 #Remove（移除）。这会把原本由该边界线隔开的两个区间合并为一个新区间；新区间的内容将自动拼接在一起（如果两个区间的原文本完全相同，合并后则只保留一个，不会重复拼接）。")
+NORMAL (U"若要移除选中的时间点，请在 Point（点）菜单中选择 #Remove（移除）。")
+NORMAL (U"若要移除选中的层级，请在 Tier（层级）菜单中选择 ##Remove entire tier#（移除整个层级）。")
 /*"To rename a selected tier, choose 'Rename...' from the 'Tier' menu. "*/
 /*"To remove all the boundaries and labels in a selected tier, "
 "   choose 'Clear entire tier' from the 'Tier' menu. "*/
