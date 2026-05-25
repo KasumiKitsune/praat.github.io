@@ -1937,11 +1937,15 @@ void praat_init (conststring32 title,
 		trace (U"creating and installing the Objects window");
 		char32 objectWindowTitle [100];
 		Melder_sprint (objectWindowTitle,100, Melder_upperCaseAppName(), U" Objects");
-		double x, y;
+		double screenX, screenY, screenWidth, screenHeight;
 		trace (U"locale ", Melder_peek8to32_u (setlocale (LC_ALL, nullptr)));
-		Gui_getWindowPositioningBounds (& x, & y, nullptr, nullptr);
+		Gui_getWindowPositioningBounds (& screenX, & screenY, & screenWidth, & screenHeight);
 		trace (U"locale ", Melder_peek8to32_u (setlocale (LC_ALL, nullptr)));
-		theCurrentPraatApplication -> topShell = raam = GuiWindow_create (x + 10, y, WINDOW_WIDTH, WINDOW_HEIGHT, 450, 250,
+		double x = screenX + (screenWidth - WINDOW_WIDTH) / 2.0;
+		double y = screenY + (screenHeight - WINDOW_HEIGHT) / 2.0;
+		if (x < screenX) x = screenX;
+		if (y < screenY) y = screenY;
+		theCurrentPraatApplication -> topShell = raam = GuiWindow_create (x, y, WINDOW_WIDTH, WINDOW_HEIGHT, 450, 250,
 				objectWindowTitle, gui_cb_quit, nullptr, 0);
 		trace (U"locale ", Melder_peek8to32_u (setlocale (LC_ALL, nullptr)));
 		#if motif
