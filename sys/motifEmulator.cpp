@@ -412,19 +412,22 @@ void _GuiNativeControl_setTitle (GuiObject me) {
 }
 
 static int _XmScrollBar_check (GuiObject me) {
-	if (my maximum < my minimum)
-		Melder_warning (U"XmScrollBar: maximum (", my maximum, U") less than minimum (", my minimum, U").");
-	else if (my sliderSize > my maximum - my minimum)
-		Melder_warning (U"XmScrollBar: slider size (", my sliderSize, U") greater than maximum (",
-			my maximum, U") minus minimum (", my minimum, U").");
-	else if (my value < my minimum)
-		Melder_warning (U"XmScrollBar: value (", my value, U") less than minimum (", my minimum, U").");
-	else if (my value > my maximum - my sliderSize)
-		Melder_warning (U"XmScrollBar: value (", my value, U") greater than maximum (",
-			my maximum, U") minus slider size (", my sliderSize, U").");
-	else
-		return 1;
-	return 0;
+	if (my maximum < my minimum) {
+		my maximum = my minimum;
+	}
+	if (my sliderSize < 0) {
+		my sliderSize = 0;
+	}
+	if (my sliderSize > my maximum - my minimum) {
+		my sliderSize = my maximum - my minimum;
+	}
+	if (my value < my minimum) {
+		my value = my minimum;
+	}
+	if (my value > my maximum - my sliderSize) {
+		my value = my maximum - my sliderSize;
+	}
+	return 1;
 }
 
 static void NativeScrollBar_set (GuiObject me) {

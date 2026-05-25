@@ -175,6 +175,7 @@ void structManual :: v_draw () {
 			0.0, 0.0, 0.1, 0.1, HyperPage_ADD_BORDER);
 		HyperPage_any (this, page -> signature.get(), our instancePref_font(), our instancePref_fontSize(), Graphics_ITALIC, 0.0,
 			0.03, 0.0, 0.1, 0.0, 0);
+		our d_y -= 0.4;
 	}
 }
 
