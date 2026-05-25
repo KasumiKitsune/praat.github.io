@@ -2058,19 +2058,34 @@ static const std::unordered_map<std::u32string, std::u32string> g_translation_ma
 
 #include <mutex>
 static std::unordered_map<std::u32string, std::u32string> g_dynamic_cache;
+static std::unordered_map<std::u32string, std::u32string> g_reverse_translation_map;
 static std::mutex g_cache_mutex;
 
 int g_language_choice = 1; // 0 = English, 1 = Chinese
+
+static void ensure_reverse_translation_map () {
+	if (! g_reverse_translation_map.empty()) {
+		return;
+	}
+	for (const auto& entry : g_translation_map) {
+		g_reverse_translation_map.emplace (entry.second, entry.first);
+	}
+}
 
 const char32* praat_translate (const char32* text) {
 	if (!text) {
 		return nullptr;
 	}
+	std::u32string key(text);
 	if (g_language_choice == 0) {
+		ensure_reverse_translation_map ();
+		auto it_reverse = g_reverse_translation_map.find(key);
+		if (it_reverse != g_reverse_translation_map.end()) {
+			return it_reverse->second.c_str();
+		}
 		return text;
 	}
-	
-	std::u32string key(text);
+
 	auto it = g_translation_map.find(key);
 	if (it != g_translation_map.end()) {
 		return it->second.c_str();
@@ -2099,6 +2114,9 @@ const char32* praat_translate (const char32* text) {
 			return g_dynamic_cache[key].c_str();
 		}
 	}
-	
 	return text;
+}
+
+const char32* praat_translate_manual (const char32* text) {
+	return praat_translate (text);
 }

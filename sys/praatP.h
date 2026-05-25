@@ -112,6 +112,7 @@ void praat_picture_prefsChanged ();
    (after reading the prefs file).
    Picture window will update the font menu.
 */
+void praat_picture_languageChanged ();
 GuiMenu praat_picture_resolveMenu (conststring32 menu);
 
 /* The following routines are a bit private (used by praat_script.cpp). */
@@ -167,6 +168,7 @@ GuiMenu praat_objects_resolveMenu (conststring32 menu);
 void praat_addFixedButtons (GuiWindow window);
 void praat_addMenus (GuiWindow window);
 void praat_addMenus2 ();
+void praat_refreshObjectsWindowLanguage ();
 
 /* API creation: */
 void praat_library_createC (bool isInHeaderFile, bool includeCreateAPI, bool includeReadAPI, bool includeSaveAPI,

@@ -17,6 +17,7 @@
  */
 
 #include "HyperPage.h"
+#include "praat_translate.h"
 #include "Printer.h"
 #include "machine.h"
 #include "GuiP.h"
@@ -141,6 +142,7 @@ static void updateVerticalScrollBar (HyperPage me);
 void HyperPage_any (HyperPage me, conststring32 text, kGraphics_font font, double size, int style, double minFooterDistance,
 	double x, double secondIndent, double topSpacing, double bottomSpacing, uint32 method)
 {
+	text = praat_translate_manual (text);
 	if (my rightMargin == 0.0)
 		return;   // no infinite heights please
 	const double heightGuess = size * (1.2/72) * ((integer) size * Melder_length (text) / (int) (my rightMargin * 150));

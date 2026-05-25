@@ -256,6 +256,28 @@ DIRECT (PRAAT__BilingualTable) {
 
 static GuiMenu praatMenu, editMenu, windowMenu, newMenu, readMenu, goodiesMenu, preferencesMenu, technicalMenu, applicationHelpMenu, helpMenu;
 
+static void praat_languageChanged () {
+	if (praatMenu)           GuiMenu_setTitle (praatMenu,           U"Praat");
+	if (editMenu)            GuiMenu_setTitle (editMenu,            U"Edit");
+	if (windowMenu)          GuiMenu_setTitle (windowMenu,          U"Window");
+	if (newMenu)             GuiMenu_setTitle (newMenu,             U"New");
+	if (readMenu)            GuiMenu_setTitle (readMenu,            U"Open");
+	if (helpMenu)            GuiMenu_setTitle (helpMenu,            U"Help");
+	if (applicationHelpMenu) GuiMenu_setTitle (applicationHelpMenu, U"Help");
+	praat_picture_languageChanged ();
+	praat_refreshObjectsWindowLanguage ();
+	for (integer i = 1; i <= praat_getNumberOfMenuCommands (); i ++) {
+		Praat_Command command = praat_getMenuCommand (i);
+		if (! command || ! command -> button || ! command -> title || command -> title [0] == U'-')
+			continue;
+		if (Thing_isa (command -> button, classGuiMenuItem))
+			GuiMenuItem_setText ((GuiMenuItem) command -> button, command -> title.get());
+		else if (Thing_isa (command -> button, classGuiButton))
+			GuiButton_setText ((GuiButton) command -> button, command -> title.get());
+	}
+	praat_updateSelection ();
+}
+
 GuiMenu praat_objects_resolveMenu (conststring32 menu) {
 	return
 		str32equ (menu, U"Praat") || str32equ (menu, U"Control") ? praatMenu :
@@ -461,7 +483,10 @@ OK
 	SET_OPTION (language, g_language_choice + 1)
 DO
 	PREFS
-		g_language_choice = language - 1;
+		if (g_language_choice != language - 1) {
+			g_language_choice = language - 1;
+			praat_languageChanged ();
+		}
 	PREFS_END
 }
 

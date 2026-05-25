@@ -120,6 +120,12 @@ static structMelderFile buttonsFile { };
 static structMelderFile tracingFile { };
 
 static GuiList praatList_objects;
+static GuiLabel praatLabel_objects;
+
+void praat_refreshObjectsWindowLanguage () {
+	if (praatLabel_objects)
+		GuiLabel_setText (praatLabel_objects, U"Objects:");
+}
 
 /***** selection *****/
 
@@ -1975,7 +1981,7 @@ void praat_init (conststring32 title,
 		praat_addMenus (praatP.menuBar);
 
 		trace (U"creating the object list in the Objects window");
-		GuiLabel_createShown (raam, 3, -250, Machine_getMenuBarBottom () + 5, Machine_getMenuBarBottom () + 5 + Gui_LABEL_HEIGHT, U"Objects:", 0);
+		praatLabel_objects = GuiLabel_createShown (raam, 3, -250, Machine_getMenuBarBottom () + 5, Machine_getMenuBarBottom () + 5 + Gui_LABEL_HEIGHT, U"Objects:", 0);
 		praatList_objects = GuiList_create (raam, 0, -250, Machine_getMenuBarBottom () + 26, -100, true, U" Objects ");
 		GuiList_setSelectionChangedCallback (praatList_objects, gui_cb_list_selectionChanged, nullptr);
 		GuiThing_show (praatList_objects);

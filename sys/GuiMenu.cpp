@@ -667,4 +667,35 @@ GuiMenu GuiMenu_createInForm (GuiForm form, int left, int right, int top, int bo
 	return me.releaseToAmbiguousOwner();
 };
 
+void GuiMenu_setTitle (GuiMenu me, conststring32 title /* cattable */) {
+	conststring32 translatedTitle = praat_translate (title);
+	if (! translatedTitle)
+		return;
+	#if gtk
+		if (my d_gtkMenuTitle) {
+			gtk_menu_item_set_label (GTK_MENU_ITEM (my d_gtkMenuTitle), Melder_peek32to8 (translatedTitle));
+		}
+		if (my d_cascadeButton && my d_cascadeButton -> d_widget) {
+			gtk_button_set_label (GTK_BUTTON (my d_cascadeButton -> d_widget), Melder_peek32to8 (translatedTitle));
+		}
+	#elif motif
+		if (my d_xmMenuTitle) {
+			my d_xmMenuTitle -> name = Melder_dup (translatedTitle);
+			_GuiWinMenuItem_setText (my d_xmMenuTitle);
+		}
+		if (my d_cascadeButton && my d_cascadeButton -> d_widget) {
+			my d_cascadeButton -> d_widget -> name = Melder_dup (translatedTitle);
+			_GuiWinMenuItem_setText (my d_cascadeButton -> d_widget);
+		}
+	#elif cocoa
+		NSString *string = (NSString *) Melder_peek32toCfstring (translatedTitle);
+		if (my d_cocoaMenu)
+			[my d_cocoaMenu   setTitle: string];
+		if (my d_cocoaMenuItem)
+			[my d_cocoaMenuItem   setTitle: string];
+		if (my d_cocoaMenuButton)
+			[my d_cocoaMenuButton   setTitle: string];
+	#endif
+}
+
 /* End of file GuiMenu.cpp */

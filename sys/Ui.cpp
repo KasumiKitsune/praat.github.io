@@ -1391,7 +1391,11 @@ void UiForm_finish (UiForm me) {
 				textFieldHeight;
 	}
 	dialogHeight += 2 * Gui_BOTTOM_DIALOG_SPACING + Gui_PUSHBUTTON_HEIGHT;
-	my d_dialogForm = GuiDialog_create (my d_dialogParent, DIALOG_X, DIALOG_Y, dialogWidth, dialogHeight,
+	double screenX, screenY, screenWidth, screenHeight;
+	Gui_getWindowPositioningBounds (& screenX, & screenY, & screenWidth, & screenHeight);
+	const int dialogX = Melder_iround (screenX + (screenWidth - dialogWidth) / 2.0);
+	const int dialogY = Melder_iround (screenY + (screenHeight - dialogHeight) / 2.0);
+	my d_dialogForm = GuiDialog_create (my d_dialogParent, dialogX, dialogY, dialogWidth, dialogHeight,
 			my name.get(), gui_dialog_cb_close, me, GuiDialog_Modality::MODELESS);
 	GuiDialog_setDefaultCallback (my d_dialogForm, gui_dialog_cb_default, me);
 

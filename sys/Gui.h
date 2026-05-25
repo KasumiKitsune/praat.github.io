@@ -781,6 +781,7 @@ GuiMenu GuiMenu_createInMenu (GuiMenu supermenu, conststring32 title, uint32 fla
 GuiMenu GuiMenu_createInForm (GuiForm form, int left, int right, int top, int bottom, conststring32 title, uint32 flags);
 
 void GuiMenu_empty (GuiMenu me);
+void GuiMenu_setTitle (GuiMenu me, conststring32 title /* cattable */);
 
 /********** GuiMenuItem **********/
 
