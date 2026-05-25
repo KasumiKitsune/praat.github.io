@@ -1,4 +1,4 @@
-=== Praat Chinese Translation Database (Total: 1987 entries) ===
+=== Praat Chinese Translation Database (Total: 1988 entries) ===
 Format: [English] block followed by [Chinese] block, separated by '===================='.
 This structure prevents ambiguity with newlines or special characters in the text.
 
@@ -1650,6 +1650,11 @@ Begin column
 Begin row
 [Chinese]
 起始行
+====================
+[English]
+Bilingual
+[Chinese]
+对照表
 ====================
 [English]
 Black

@@ -111,6 +111,64 @@ DIRECT (PRAAT__Inspect) {
 	PRAAT_END
 }
 
+DIRECT (PRAAT__BilingualTable) {
+	PRAAT
+		MelderInfo_open ();
+		MelderInfo_writeLine (U"Praat 常用汉化及术语对照表 (Bilingual Terminology Reference)\n");
+		MelderInfo_writeLine (U"================================================================");
+		MelderInfo_writeLine (U"数据对象类型 (Objects & Types):");
+		MelderInfo_writeLine (U"  Sound                 ===>  声音");
+		MelderInfo_writeLine (U"  LongSound             ===>  长音频 / 长声音");
+		MelderInfo_writeLine (U"  TextGrid              ===>  标注网格 / 文本标注");
+		MelderInfo_writeLine (U"  Pitch                 ===>  音高 / 基频");
+		MelderInfo_writeLine (U"  Formant               ===>  共振峰");
+		MelderInfo_writeLine (U"  Intensity             ===>  音强");
+		MelderInfo_writeLine (U"  Harmonicity           ===>  谐噪比");
+		MelderInfo_writeLine (U"  PointProcess          ===>  点过程");
+		MelderInfo_writeLine (U"  Manipulation          ===>  操控对象");
+		MelderInfo_writeLine (U"  Spectrum              ===>  频谱");
+		MelderInfo_writeLine (U"  Spectrogram           ===>  声谱图");
+		MelderInfo_writeLine (U"  Strings               ===>  字符串");
+		MelderInfo_writeLine (U"");
+		MelderInfo_writeLine (U"编辑器名称 (Editors):");
+		MelderInfo_writeLine (U"  SoundEditor           ===>  声音编辑器");
+		MelderInfo_writeLine (U"  LongSoundEditor       ===>  长声音/长音频编辑器");
+		MelderInfo_writeLine (U"  TextGridEditor        ===>  标注网格编辑器");
+		MelderInfo_writeLine (U"  PitchTierEditor       ===>  音高层编辑器");
+		MelderInfo_writeLine (U"  IntensityTierEditor   ===>  音强层编辑器");
+		MelderInfo_writeLine (U"  ButtonEditor          ===>  按钮编辑器");
+		MelderInfo_writeLine (U"  ScriptEditor          ===>  脚本编辑器");
+		MelderInfo_writeLine (U"  NotebookEditor        ===>  笔记本编辑器");
+		MelderInfo_writeLine (U"");
+		MelderInfo_writeLine (U"菜单与操作 (Menus & Actions):");
+		MelderInfo_writeLine (U"  View & Edit           ===>  查看并编辑");
+		MelderInfo_writeLine (U"  Play                  ===>  播放");
+		MelderInfo_writeLine (U"  Mute                  ===>  静音");
+		MelderInfo_writeLine (U"  Record                ===>  录音");
+		MelderInfo_writeLine (U"  Rename...             ===>  重命名...");
+		MelderInfo_writeLine (U"  Info                  ===>  信息");
+		MelderInfo_writeLine (U"  Copy...               ===>  复制...");
+		MelderInfo_writeLine (U"  Remove                ===>  移除");
+		MelderInfo_writeLine (U"  Inspect               ===>  检查 (查看内部结构)");
+		MelderInfo_writeLine (U"  Save as text file...  ===>  保存为文本文件...");
+		MelderInfo_writeLine (U"  Save as short text file ===> 保存为短文本文件...");
+		MelderInfo_writeLine (U"  Save as binary file... ===>  保存为二进制文件...");
+		MelderInfo_writeLine (U"  Read from file...     ===>  从文件读取...");
+		MelderInfo_writeLine (U"  Draw                  ===>  绘制");
+		MelderInfo_writeLine (U"  Query                 ===>  查询");
+		MelderInfo_writeLine (U"  Extract sound selection ===> 提取声音选区");
+		MelderInfo_writeLine (U"  Cut                   ===>  剪切");
+		MelderInfo_writeLine (U"  Copy selection to Sound clipboard ===> 将选区复制到 Sound 剪贴板");
+		MelderInfo_writeLine (U"  Paste after selection ===>  粘贴到选区之后");
+		MelderInfo_writeLine (U"  Set selection to zero ===>  将选区置零");
+		MelderInfo_writeLine (U"  Reverse selection     ===>  反转选区");
+		MelderInfo_writeLine (U"  Undo                  ===>  撤销");
+		MelderInfo_writeLine (U"  Redo                  ===>  重做");
+		MelderInfo_writeLine (U"================================================================");
+		MelderInfo_close ();
+	PRAAT_END
+}
+
 /********** The fixed menus. **********/
 
 static GuiMenu praatMenu, editMenu, windowMenu, newMenu, readMenu, goodiesMenu, preferencesMenu, technicalMenu, applicationHelpMenu, helpMenu;
@@ -701,6 +759,7 @@ void praat_show () {
 	praat_sensitivizeFixedButtonCommand (U"Copy...", theCurrentPraatObjects -> totalSelection == 1);
 	praat_sensitivizeFixedButtonCommand (U"Info", theCurrentPraatObjects -> totalSelection == 1);
 	praat_sensitivizeFixedButtonCommand (U"Inspect", theCurrentPraatObjects -> totalSelection != 0);
+	praat_sensitivizeFixedButtonCommand (U"Bilingual", true);
 	praat_actions_show ();
 	if (theCurrentPraatApplication == & theForegroundPraatApplication && theReferenceToTheOnlyButtonEditor)
 		Editor_dataChanged (theReferenceToTheOnlyButtonEditor, nullptr);
@@ -715,6 +774,7 @@ void praat_addFixedButtons (GuiWindow window) {
 			PRAAT__Inspect, 8, 40);
 	praat_addFixedButtonCommand (window, U"Info", INFO_Info, 98, 40);
 	praat_addFixedButtonCommand (window, U"Remove", PRAAT_Remove, 8, 10);
+	praat_addFixedButtonCommand (window, U"Bilingual", PRAAT__BilingualTable, 98, 10);
 }
 
 static void searchProc () {

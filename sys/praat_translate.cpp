@@ -332,6 +332,7 @@ static const std::unordered_map<std::u32string, std::u32string> g_translation_ma
 	{ U"Bartlett (triangular)", U"\u5df4\u7279\u5229\u7279\u7a97 (Bartlett/triangular)" },
 	{ U"Begin column", U"\u8d77\u59cb\u5217" },
 	{ U"Begin row", U"\u8d77\u59cb\u884c" },
+	{ U"Bilingual", U"\u5bf9\u7167\u8868" },
 	{ U"Black", U"\u9ed1\u8272" },
 	{ U"Blue", U"\u84dd\u8272" },
 	{ U"Boundary", U"\u8fb9\u754c" },

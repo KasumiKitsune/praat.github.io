@@ -378,6 +378,7 @@ EXACT_MAP = {
     "Bartlett (triangular)": "巴特利特窗 (Bartlett/triangular)",
     "Begin column": "起始列",
     "Begin row": "起始行",
+    "Bilingual": "对照表",
     "Black": "黑色",
     "Blue": "蓝色",
     "Boundary": "边界",
