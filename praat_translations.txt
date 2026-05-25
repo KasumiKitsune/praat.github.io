@@ -1,0 +1,9877 @@
+=== Praat Chinese Translation Database (Total: 1972 entries) ===
+Format: [English] block followed by [Chinese] block, separated by '===================='.
+This structure prevents ambiguity with newlines or special characters in the text.
+
+[English]
+
+Please change its name or remove it.
+[Chinese]
+
+请更改其名称或将其删除。
+====================
+[English]
+" of column
+[Chinese]
+” 列
+====================
+[English]
+" of row
+[Chinese]
+” 行
+====================
+[English]
+& Sound: To TextGrid?
+[Chinese]
+& 声音： 转为 TextGrid？
+====================
+[English]
+(= all)
+[Chinese]
+(= 全部)
+====================
+[English]
+(= auto)
+[Chinese]
+(= 自动)
+====================
+[English]
+(Cannot show pitch contour. Zoom out or change bottom of pitch range in pitch settings.)
+[Chinese]
+(无法显示音高曲线。请缩小窗口，或在音高设置中修改音高范围下限。)
+====================
+[English]
+(To see the analyses, zoom in to at most 
+[Chinese]
+(要查看分析，请放大至最多
+====================
+[English]
+(all of your "advanced settings" have their standard values)
+[Chinese]
+(您所有的“高级设置”均具有标准值)
+====================
+[English]
+(by whole)
+[Chinese]
+(按完整对象)
+====================
+[English]
+(by window)
+[Chinese]
+(按当前视口)
+====================
+[English]
+(cannot read sound file)
+[Chinese]
+（无法读取声音文件）
+====================
+[English]
+(fixed height)
+[Chinese]
+(固定高度)
+====================
+[English]
+(fixed range)
+[Chinese]
+(固定范围)
+====================
+[English]
+(whitespace-separated)
+[Chinese]
+(以空格分隔)
+====================
+[English]
+(you have standard time step settings, see Analyse menu)
+[Chinese]
+（您的时间步长设置为标准值，详见“分析”菜单）
+====================
+[English]
+(your "time step strategy" has its standard value: automatic)
+[Chinese]
+（您的 "时间步长策略" 具有标准值：自动）
+====================
+[English]
+(your current pitch analysis method is indeed filtered autocorrelation)
+[Chinese]
+（您当前的音高分析方法确为：滤波自相关）
+====================
+[English]
+(zoom in to see the samples)
+[Chinese]
+（放大以查看采样）
+====================
+[English]
+(zoom out to see the data)
+[Chinese]
+（缩小以查看数据）
+====================
+[English]
+) already exists, but it is not an interval tier.
+[Chinese]
+）已存在，但它不是一个区间层。
+====================
+[English]
+) does not match length of string (
+[Chinese]
+）与字符串长度不匹配（
+====================
+[English]
+) exceeds my number of tiers (
+[Chinese]
+）超过了此对象的层数（
+====================
+[English]
+) is less than the selected number of columns (
+[Chinese]
+）少于所选的列数（
+====================
+[English]
+) on Mark tier.
+[Chinese]
+）在标记层上。
+====================
+[English]
+) on Trigger tier.
+[Chinese]
+）在触发层上。
+====================
+[English]
+) should not be greater than the number of tiers (
+[Chinese]
+）不应大于层数（
+====================
+[English]
+).
+Missing samples were set to zero.
+[Chinese]
+）。 缺失的采样已被设置为零。
+====================
+[English]
+, because that TextGrid has only
+[Chinese]
+，因为该 TextGrid 仅有
+====================
+[English]
+, because that tier has only
+[Chinese]
+，因为该层仅有
+====================
+[English]
+, because that tier is a point tier instead of an interval tier.
+[Chinese]
+，因为该层是点层，而不是区间层。
+====================
+[English]
+, because that tier is an interval tier instead of a point tier.
+[Chinese]
+，因为该层是区间层，而不是点层。
+====================
+[English]
+, because that tier is not an interval tier.
+[Chinese]
+，因为该层不是区间层。
+====================
+[English]
+, because the FormantGrid has only
+[Chinese]
+，因为该共振峰网格仅有
+====================
+[English]
+, because this is at the left edge of the tier.
+[Chinese]
+，因为这处于该层的左边缘。
+====================
+[English]
+, because this is at the right edge of the tier.
+[Chinese]
+，因为这处于该层的右边缘。
+====================
+[English]
+, but should be at most my number of columns (
+[Chinese]
+，但最多应为此对象的列数（
+====================
+[English]
+- Draw intensity to picture window:
+[Chinese]
+- 绘制音强到图像窗口：
+====================
+[English]
+- Draw spectogram to picture window:
+[Chinese]
+- 绘制声谱图到图像窗口：
+====================
+[English]
+- Edit duration:
+[Chinese]
+- 编辑时长：
+====================
+[English]
+- Edit pitch:
+[Chinese]
+- 编辑音高：
+====================
+[English]
+- Extract intensity to objects window:
+[Chinese]
+- 提取音强到对象窗口：
+====================
+[English]
+- Extract spectrum:
+[Chinese]
+- 提取频谱：
+====================
+[English]
+- Pulses settings:
+[Chinese]
+- 脉冲设置：
+====================
+[English]
+- Query intensity:
+[Chinese]
+- 查询音强：
+====================
+[English]
+- Query interval:
+[Chinese]
+- 查询区间：
+====================
+[English]
+- Query pitch:
+[Chinese]
+- 查询音高：
+====================
+[English]
+- Query selection:
+[Chinese]
+- 查询选择：
+====================
+[English]
+- Query sound:
+[Chinese]
+- 查询声音：
+====================
+[English]
+- Query spectrogram:
+[Chinese]
+- 查询声谱图：
+====================
+[English]
+- Set selection:
+[Chinese]
+- 设置选择：
+====================
+[English]
+- Set visible part:
+[Chinese]
+- 设置可见部分：
+====================
+[English]
+-- AI settings --
+[Chinese]
+-- AI 设置 --
+====================
+[English]
+-- Extract columns ----
+[Chinese]
+-- 提取列----
+====================
+[English]
+-- Pitch
+[Chinese]
+-- 音高
+====================
+[English]
+-- add --
+[Chinese]
+-- 添加 --
+====================
+[English]
+-- axes --
+[Chinese]
+-- 坐标轴 --
+====================
+[English]
+-- confusion statistics --
+[Chinese]
+-- 混淆矩阵统计 --
+====================
+[English]
+-- convert --
+[Chinese]
+-- 转换 --
+====================
+[English]
+-- edit frication tiers --
+[Chinese]
+-- 编辑摩擦层 --
+====================
+[English]
+-- edit lexicon --
+[Chinese]
+-- 编辑词典 --
+====================
+[English]
+-- edit ot --
+[Chinese]
+-- 编辑 ot --
+====================
+[English]
+-- frequency-domain filter --
+[Chinese]
+-- 频率-域滤波 --
+====================
+[English]
+-- get gain --
+[Chinese]
+-- 获取增益 --
+====================
+[English]
+-- get moments --
+[Chinese]
+-- 获取矩 --
+====================
+[English]
+-- get slope --
+[Chinese]
+-- 获取斜率 --
+====================
+[English]
+-- get statistics --
+[Chinese]
+-- 获取统计 --
+====================
+[English]
+-- get stats --
+[Chinese]
+-- 获取统计 --
+====================
+[English]
+-- get time discretization --
+[Chinese]
+-- 获取时间离散化 --
+====================
+[English]
+-- help add --
+[Chinese]
+-- 帮助添加 --
+====================
+[English]
+-- help history --
+[Chinese]
+-- 帮助历史 --
+====================
+[English]
+-- history --
+[Chinese]
+-- 历史 --
+====================
+[English]
+-- monic --
+[Chinese]
+-- 首一 --
+====================
+[English]
+-- open table --
+[Chinese]
+-- 打开表格 --
+====================
+[English]
+-- pitch --
+[Chinese]
+-- 音高 --
+====================
+[English]
+-- query interval labels --
+[Chinese]
+-- 查询区间标签 --
+====================
+[English]
+-- query labels --
+[Chinese]
+-- 查询标签 --
+====================
+[English]
+-- query textgrid --
+[Chinese]
+-- 查询 TextGrid --
+====================
+[English]
+-- query tier --
+[Chinese]
+-- 查询层 --
+====================
+[English]
+-- read sound --
+[Chinese]
+-- 读取声音 --
+====================
+[English]
+-- read tier --
+[Chinese]
+-- 读取层 --
+====================
+[English]
+-- remove --
+[Chinese]
+-- 移除 --
+====================
+[English]
+-- remove ot --
+[Chinese]
+-- 移除 ot --
+====================
+[English]
+-- roots --
+[Chinese]
+-- 根 --
+====================
+[English]
+-- save --
+[Chinese]
+-- 保存 --
+====================
+[English]
+-- scatter plots --
+[Chinese]
+-- 散点图 --
+====================
+[English]
+-- set --
+[Chinese]
+-- 设置 --
+====================
+[English]
+-- set parameter values --
+[Chinese]
+-- 设置参数值 --
+====================
+[English]
+-- set rotations & reflections --
+[Chinese]
+-- 设置旋转&反射 --
+====================
+[English]
+-- singular values ---
+[Chinese]
+-- 奇异值---
+====================
+[English]
+-- sound settings --
+[Chinese]
+-- 声音设置 --
+====================
+[English]
+-- statistics --
+[Chinese]
+-- 统计 --
+====================
+[English]
+-- stylize --
+[Chinese]
+-- 样式化 --
+====================
+[English]
+-- tableau grammars --
+[Chinese]
+-- 表格语法 --
+====================
+[English]
+-- time-domain filter --
+[Chinese]
+-- 时间-域滤波 --
+====================
+[English]
+-- weight --
+[Chinese]
+-- 权重 --
+====================
+[English]
+-- write --
+[Chinese]
+-- 写入 --
+====================
+[English]
+---- states / symbols -----
+[Chinese]
+---- 状态/符号-----
+====================
+[English]
+--show trajectory settings--
+[Chinese]
+--显示轨迹设置--
+====================
+[English]
+--show vowel marks--
+[Chinese]
+--显示元音标记--
+====================
+[English]
+-channel
+[Chinese]
+-通道
+====================
+[English]
+.
+Cannot play sound.
+[Chinese]
+。 无法播放声音。
+====================
+[English]
+. Model file not found?
+[Chinese]
+。找不到模型文件？
+====================
+[English]
+. Please reverse.
+[Chinese]
+。请反转。
+====================
+[English]
+0 (= at end)
+[Chinese]
+0 (= 在末尾)
+====================
+[English]
+0 (= at start)
+[Chinese]
+0 (= 在开头)
+====================
+[English]
+0 (= automatic)
+[Chinese]
+0 (= 自动)
+====================
+[English]
+0.0 (= all)
+[Chinese]
+0.0 (= 全部)
+====================
+[English]
+0.0 (= auto)
+[Chinese]
+0.0 (= 自动)
+====================
+[English]
+1 (= at top)
+[Chinese]
+1 (= 在顶部)
+====================
+[English]
+1/2 < slope < 2
+[Chinese]
+1/2 <斜率< 2
+====================
+[English]
+1/3 < slope < 3
+[Chinese]
+1/3 <斜率< 3
+====================
+[English]
+12.0 ; (0 = no label)
+[Chinese]
+12.0 ; (0 = no 标签)
+====================
+[English]
+2/3 < slope < 3/2
+[Chinese]
+2/3 <斜率< 3/2
+====================
+[English]
+: Cannot align.
+[Chinese]
+：无法对齐。
+====================
+[English]
+: Cannot find language code.
+[Chinese]
+：找不到语言代码。
+====================
+[English]
+: Cannot find phoneme set code.
+[Chinese]
+：找不到音素集代码。
+====================
+[English]
+: Cannot find voice code.
+[Chinese]
+：找不到嗓音代码。
+====================
+[English]
+: Correlation not created.
+[Chinese]
+：相关未创建。
+====================
+[English]
+: Excitation not extracted.
+[Chinese]
+：激励未提取。
+====================
+[English]
+: I don't contain a DurationTier.
+[Chinese]
+：此对象不包含时长层。
+====================
+[English]
+: I don't contain a PitchTier.
+[Chinese]
+：此对象不包含音高层。
+====================
+[English]
+: I don't contain a PointProcess.
+[Chinese]
+：此对象不包含点过程。
+====================
+[English]
+: I don't contain a Sound.
+[Chinese]
+：此对象不包含声音。
+====================
+[English]
+: Intensity not created.
+[Chinese]
+：音强未创建。
+====================
+[English]
+: LPC synthesis not performed.
+[Chinese]
+：LPC 合成未执行。
+====================
+[English]
+: Matrix not created.
+[Chinese]
+：矩阵未创建。
+====================
+[English]
+: No matrix created.
+[Chinese]
+：未创建矩阵。
+====================
+[English]
+: Permutation not created.
+[Chinese]
+：置换未创建。
+====================
+[English]
+: Sound not extracted.
+[Chinese]
+：声音未提取。
+====================
+[English]
+: TableOfReal not created.
+[Chinese]
+：实数表未创建。
+====================
+[English]
+: TextGrid not created.
+[Chinese]
+：TextGrid 未创建。
+====================
+[English]
+: cannot convert to Sound.
+[Chinese]
+：无法转换为声音。
+====================
+[English]
+: cannot convert to Spectrum.
+[Chinese]
+：无法转换为频谱。
+====================
+[English]
+: cannot extract files.
+[Chinese]
+：无法提取文件。
+====================
+[English]
+: cannot find matches.
+[Chinese]
+：找不到匹配项。
+====================
+[English]
+: cannot find path.
+[Chinese]
+：找不到路径。
+====================
+[English]
+: cannot remove my only row.
+[Chinese]
+：无法删除唯一的行。
+====================
+[English]
+: cannot replace the tier.
+[Chinese]
+：无法替换该层。
+====================
+[English]
+: channel
+[Chinese]
+：通道
+====================
+[English]
+: channel not converted to sound.
+[Chinese]
+：通道未转换为声音。
+====================
+[English]
+: channels not extracted.
+[Chinese]
+：通道未提取。
+====================
+[English]
+: column
+[Chinese]
+：列
+====================
+[English]
+: column "
+[Chinese]
+：列"
+====================
+[English]
+: column “
+[Chinese]
+：列“
+====================
+[English]
+: constraint "
+[Chinese]
+：约束"
+====================
+[English]
+: could not detect speech activity.
+[Chinese]
+：无法检测语音活动。
+====================
+[English]
+: could not determine Intensity.
+[Chinese]
+：无法确定音强。
+====================
+[English]
+: could not extract part.
+[Chinese]
+：无法提取部分。
+====================
+[English]
+: could not list all classes.
+[Chinese]
+：无法列出所有类别。
+====================
+[English]
+: cumulative costs matrix not created.
+[Chinese]
+：累积代价矩阵未创建。
+====================
+[English]
+: difference not computed.
+[Chinese]
+：差异未计算。
+====================
+[English]
+: duration tier not replaced with
+[Chinese]
+：时长层未替换为
+====================
+[English]
+: formant analysis (Burg) not performed.
+[Chinese]
+：共振峰分析 (Burg) 未执行。
+====================
+[English]
+: formant point not added.
+[Chinese]
+：共振峰点未添加。
+====================
+[English]
+: formula not completed.
+[Chinese]
+：公式未完成。
+====================
+[English]
+: group labels not extracted.
+[Chinese]
+：组标签未提取。
+====================
+[English]
+: intensity analysis not performed.
+[Chinese]
+：音强分析未执行。
+====================
+[English]
+: label of column
+[Chinese]
+：列标签
+====================
+[English]
+: label of row
+[Chinese]
+：行标签
+====================
+[English]
+: left boundary not moved.
+[Chinese]
+：左边界未移动。
+====================
+[English]
+: left boundary not removed.
+[Chinese]
+：左边界未删除。
+====================
+[English]
+: no Formant created.
+[Chinese]
+：未创建共振峰。
+====================
+[English]
+: no FormantGrid extracted.
+[Chinese]
+：未提取共振峰网格。
+====================
+[English]
+: no IntensityTier created.
+[Chinese]
+：未创建音强层。
+====================
+[English]
+: no Matrix created.
+[Chinese]
+：未创建矩阵。
+====================
+[English]
+: no Pitch created.
+[Chinese]
+：未创建音高。
+====================
+[English]
+: no PitchTier created.
+[Chinese]
+：未创建音高层。
+====================
+[English]
+: no PointProcess created.
+[Chinese]
+：未创建点过程。
+====================
+[English]
+: no Sound created.
+[Chinese]
+：未创建声音。
+====================
+[English]
+: no Spectrogram created.
+[Chinese]
+：未创建声谱图。
+====================
+[English]
+: no Spectrum created.
+[Chinese]
+：未创建频谱。
+====================
+[English]
+: no Table created.
+[Chinese]
+：未创建表格。
+====================
+[English]
+: no TableOfReal created.
+[Chinese]
+：未创建实数表。
+====================
+[English]
+: no VocalTract created.
+[Chinese]
+：未创建声道。
+====================
+[English]
+: no formant added.
+[Chinese]
+：未添加共振峰。
+====================
+[English]
+: no robust Formant created.
+[Chinese]
+：未创建鲁棒共振峰。
+====================
+[English]
+: no rows.
+[Chinese]
+： no 行.
+====================
+[English]
+: no start probabilities set.
+[Chinese]
+：未设置起始概率。
+====================
+[English]
+: no synthesis.
+[Chinese]
+：未合成。
+====================
+[English]
+: no trend subtracted.
+[Chinese]
+：未减去趋势。
+====================
+[English]
+: not converted to BarkSpectrogram.
+[Chinese]
+：未转换为巴克声谱图。
+====================
+[English]
+: not converted to Cochleagram.
+[Chinese]
+：未转换为耳蜗图。
+====================
+[English]
+: not converted to DurationTier.
+[Chinese]
+：未转换为时长层。
+====================
+[English]
+: not converted to Formant.
+[Chinese]
+：未转换为共振峰。
+====================
+[English]
+: not converted to FormantGrid.
+[Chinese]
+：未转换为共振峰网格。
+====================
+[English]
+: not converted to FormantTier.
+[Chinese]
+：未转换为共振峰层。
+====================
+[English]
+: not converted to Intensity.
+[Chinese]
+：未转换为音强。
+====================
+[English]
+: not converted to IntensityTier.
+[Chinese]
+：未转换为音强层。
+====================
+[English]
+: not converted to Manipulation.
+[Chinese]
+：未转换为 操控对象。
+====================
+[English]
+: not converted to Matrix.
+[Chinese]
+：未转换为矩阵。
+====================
+[English]
+: not converted to Pitch.
+[Chinese]
+：未转换为音高。
+====================
+[English]
+: not converted to PitchTier.
+[Chinese]
+：未转换为音高层。
+====================
+[English]
+: not converted to PointProcess.
+[Chinese]
+：未转换为点过程。
+====================
+[English]
+: not converted to RealTier.
+[Chinese]
+：未转换为实数层。
+====================
+[English]
+: not converted to Sound.
+[Chinese]
+：未转换为声音。
+====================
+[English]
+: not converted to Spectrogram.
+[Chinese]
+：未转换为声谱图。
+====================
+[English]
+: not converted to Spectrum.
+[Chinese]
+：未转换为频谱。
+====================
+[English]
+: not converted to Table.
+[Chinese]
+：未转换为表格。
+====================
+[English]
+: not converted to TableOfReal.
+[Chinese]
+：未转换为实数表。
+====================
+[English]
+: not converted to TextGrid.
+[Chinese]
+：未转换为 TextGrid。
+====================
+[English]
+: not converted to VocalTract.
+[Chinese]
+：未转换为声道。
+====================
+[English]
+: not converted to mono.
+[Chinese]
+：未转换为单声道。
+====================
+[English]
+: not converted to stereo.
+[Chinese]
+：未转换为双声道。
+====================
+[English]
+: not written to raw sound file
+[Chinese]
+：未写入原始声音文件
+====================
+[English]
+: row
+[Chinese]
+：行
+====================
+[English]
+: word "
+[Chinese]
+：单词"
+====================
+[English]
+A Sound cannot have a duration less than zero.
+[Chinese]
+声音时长不能小于零。
+====================
+[English]
+A Sound cannot have a duration of zero.
+[Chinese]
+声音时长不能为零。
+====================
+[English]
+A Sound cannot have zero channels.
+[Chinese]
+声音通道数不能为零。
+====================
+[English]
+A column number cannot be less than 1 (the column number you supplied is
+[Chinese]
+列号不能小于 1 (您提供的列号为
+====================
+[English]
+A folder in one of the paths is busy.
+[Chinese]
+路径中的某个文件夹正忙。
+====================
+[English]
+A folder or file in the path does not exist.
+[Chinese]
+路径中的文件夹或文件不存在。
+====================
+[English]
+A part of the path is not a folder (hint: look at the slahes).
+[Chinese]
+路径的一部分不是文件夹 (提示： 请检查斜杠)。
+====================
+[English]
+AI settings
+[Chinese]
+AI 设置
+====================
+[English]
+AI settings...
+[Chinese]
+AI 设置...
+====================
+[English]
+About Praat
+[Chinese]
+关于 Praat
+====================
+[English]
+About special symbols
+[Chinese]
+关于特殊符号
+====================
+[English]
+About text styles
+[Chinese]
+关于文本样式
+====================
+[English]
+Acknowledgments
+[Chinese]
+致谢
+====================
+[English]
+Acoustic synthesis (Klatt)
+[Chinese]
+声学合成 (Klatt)
+====================
+[English]
+Acoustic synthesis (Klatt) >
+[Chinese]
+声学合成 (Klatt) >
+====================
+[English]
+Add
+[Chinese]
+添加
+====================
+[English]
+Add VocalTract...
+[Chinese]
+添加声道...
+====================
+[English]
+Add action command
+[Chinese]
+添加动作命令
+====================
+[English]
+Add action command...
+[Chinese]
+添加动作命令...
+====================
+[English]
+Add amplitude point...
+[Chinese]
+添加振幅点...
+====================
+[English]
+Add bandwidth point...
+[Chinese]
+添加带宽点...
+====================
+[English]
+Add connection...
+[Chinese]
+添加连接...
+====================
+[English]
+Add duration point at cursor
+[Chinese]
+在光标处添加时长点
+====================
+[English]
+Add duration point at...
+[Chinese]
+添加时长点于...
+====================
+[English]
+Add formant point...
+[Chinese]
+添加共振峰点...
+====================
+[English]
+Add interval on tier 1
+[Chinese]
+在第 1 层上添加区间
+====================
+[English]
+Add interval on tier 2
+[Chinese]
+在第 2 层上添加区间
+====================
+[English]
+Add interval on tier 3
+[Chinese]
+在第 3 层上添加区间
+====================
+[English]
+Add interval on tier 4
+[Chinese]
+在第 4 层上添加区间
+====================
+[English]
+Add interval on tier 5
+[Chinese]
+在第 5 层上添加区间
+====================
+[English]
+Add interval on tier 6
+[Chinese]
+在第 6 层上添加区间
+====================
+[English]
+Add interval on tier 7
+[Chinese]
+在第 7 层上添加区间
+====================
+[English]
+Add interval on tier 8
+[Chinese]
+在第 8 层上添加区间
+====================
+[English]
+Add interval tier
+[Chinese]
+添加区间层
+====================
+[English]
+Add interval tier...
+[Chinese]
+添加区间层...
+====================
+[English]
+Add menu command
+[Chinese]
+添加菜单命令
+====================
+[English]
+Add menu command...
+[Chinese]
+添加菜单命令...
+====================
+[English]
+Add new word...
+[Chinese]
+添加新单词...
+====================
+[English]
+Add on all tiers
+[Chinese]
+在所有层上添加
+====================
+[English]
+Add on selected tier
+[Chinese]
+在选定层上添加
+====================
+[English]
+Add on tier 1
+[Chinese]
+在第 1 层上添加
+====================
+[English]
+Add on tier 2
+[Chinese]
+在第 2 层上添加
+====================
+[English]
+Add on tier 3
+[Chinese]
+在第 3 层上添加
+====================
+[English]
+Add on tier 4
+[Chinese]
+在第 4 层上添加
+====================
+[English]
+Add on tier 5
+[Chinese]
+在第 5 层上添加
+====================
+[English]
+Add on tier 6
+[Chinese]
+在第 6 层上添加
+====================
+[English]
+Add on tier 7
+[Chinese]
+在第 7 层上添加
+====================
+[English]
+Add on tier 8
+[Chinese]
+在第 8 层上添加
+====================
+[English]
+Add open phase point...
+[Chinese]
+添加开放相位点...
+====================
+[English]
+Add pitch point at cursor
+[Chinese]
+在光标处添加音高点
+====================
+[English]
+Add pitch point at time slice
+[Chinese]
+在时间片上添加音高点
+====================
+[English]
+Add pitch point at...
+[Chinese]
+添加音高点于...
+====================
+[English]
+Add pitch point...
+[Chinese]
+添加音高点...
+====================
+[English]
+Add point at cursor
+[Chinese]
+在光标处添加点
+====================
+[English]
+Add point at...
+[Chinese]
+添加点于...
+====================
+[English]
+Add point tier
+[Chinese]
+添加点层
+====================
+[English]
+Add point tier...
+[Chinese]
+添加点层...
+====================
+[English]
+Add point...
+[Chinese]
+添加点...
+====================
+[English]
+Add pulse at cursor
+[Chinese]
+在光标处添加脉冲
+====================
+[English]
+Add pulse at...
+[Chinese]
+添加脉冲于...
+====================
+[English]
+Add search tier...
+[Chinese]
+添加搜索层...
+====================
+[English]
+Add tier...
+[Chinese]
+添加层...
+====================
+[English]
+Add to dynamic menu...
+[Chinese]
+添加到动态菜单...
+====================
+[English]
+Add to fixed menu...
+[Chinese]
+添加到固定菜单...
+====================
+[English]
+Add to menu...
+[Chinese]
+添加到菜单...
+====================
+[English]
+Add...
+[Chinese]
+添加...
+====================
+[English]
+Advanced
+[Chinese]
+高级
+====================
+[English]
+Advanced formant settings
+[Chinese]
+高级共振峰设置
+====================
+[English]
+Advanced formant settings...
+[Chinese]
+高级共振峰设置...
+====================
+[English]
+Advanced pulses settings
+[Chinese]
+高级脉冲设置
+====================
+[English]
+Advanced pulses settings...
+[Chinese]
+高级脉冲设置...
+====================
+[English]
+Advanced spectrogram settings
+[Chinese]
+高级声谱图设置
+====================
+[English]
+Advanced spectrogram settings...
+[Chinese]
+高级声谱图设置...
+====================
+[English]
+Align interval
+[Chinese]
+对齐区间
+====================
+[English]
+Align interval...
+[Chinese]
+对齐区间...
+====================
+[English]
+Alignment settings...
+[Chinese]
+对齐设置...
+====================
+[English]
+All Formant objects must have the same starting and finishing times.
+[Chinese]
+所有共振峰对象必须具有相同的起始和终止时间。
+====================
+[English]
+All tier names
+[Chinese]
+所有层名称
+====================
+[English]
+Amplitude scale in dB
+[Chinese]
+振幅刻度 (dB)
+====================
+[English]
+AmplitudeTier help
+[Chinese]
+振幅层帮助
+====================
+[English]
+AmplitudeTier: Add point...
+[Chinese]
+振幅层： 添加点...
+====================
+[English]
+AmplitudeTier: Formula...
+[Chinese]
+振幅层： 公式...
+====================
+[English]
+AmplitudeTier: To IntensityTier...
+[Chinese]
+振幅层： 转为音强层...
+====================
+[English]
+Analyse
+[Chinese]
+分析
+====================
+[English]
+Analyse -
+[Chinese]
+分析 -
+====================
+[English]
+Analyse interval tier -
+[Chinese]
+分析区间层 -
+====================
+[English]
+Analyse periodicity -
+[Chinese]
+分析周期性 -
+====================
+[English]
+Analyse point tier -
+[Chinese]
+分析点层 -
+====================
+[English]
+Analyse spectrum -
+[Chinese]
+分析频谱 -
+====================
+[English]
+Analyses
+[Chinese]
+分析
+====================
+[English]
+Analyze
+[Chinese]
+分析
+====================
+[English]
+Annotate -
+[Chinese]
+标注 -
+====================
+[English]
+Annotation file extension
+[Chinese]
+标注文件拓展名
+====================
+[English]
+Annotation file extension:
+[Chinese]
+标注文件拓展名：
+====================
+[English]
+Annotation tutorial
+[Chinese]
+标注教程
+====================
+[English]
+Append
+[Chinese]
+追加
+====================
+[English]
+Append column...
+[Chinese]
+追加列...
+====================
+[English]
+Append columns
+[Chinese]
+追加列
+====================
+[English]
+Append difference column...
+[Chinese]
+追加差异列...
+====================
+[English]
+Append row
+[Chinese]
+追加行
+====================
+[English]
+Append to existing sound file...
+[Chinese]
+追加到现有声音文件...
+====================
+[English]
+Apply
+[Chinese]
+应用
+====================
+[English]
+Arrow size...
+[Chinese]
+箭头大小...
+====================
+[English]
+Articulatory synthesis
+[Chinese]
+发音合成
+====================
+[English]
+Articulatory synthesis tutorial
+[Chinese]
+发音合成教程
+====================
+[English]
+Artword & Speaker: To Sound...
+[Chinese]
+发音词与说话人： 转为声音...
+====================
+[English]
+Artword help
+[Chinese]
+发音词帮助
+====================
+[English]
+Aspiration
+[Chinese]
+送气
+====================
+[English]
+Attenuation at tops
+[Chinese]
+高频衰减量
+====================
+[English]
+Audio:
+[Chinese]
+音频：
+====================
+[English]
+Autocorrelate...
+[Chinese]
+自相关...
+====================
+[English]
+Average
+[Chinese]
+平均
+====================
+[English]
+Averaging method
+[Chinese]
+平均方法
+====================
+[English]
+Axes...
+[Chinese]
+坐标轴...
+====================
+[English]
+Back
+[Chinese]
+返回
+====================
+[English]
+Bandwidth (Hz)
+[Chinese]
+带宽 (Hz)
+====================
+[English]
+Bar plot...
+[Chinese]
+条形图...
+====================
+[English]
+Bar width (wc)
+[Chinese]
+条形宽度(wc)
+====================
+[English]
+Bark
+[Chinese]
+巴克
+====================
+[English]
+Bartlett (triangular)
+[Chinese]
+巴特利特窗 (Bartlett/triangular)
+====================
+[English]
+Begin column
+[Chinese]
+起始列
+====================
+[English]
+Begin row
+[Chinese]
+起始行
+====================
+[English]
+Black
+[Chinese]
+黑色
+====================
+[English]
+Blue
+[Chinese]
+蓝色
+====================
+[English]
+Boundary
+[Chinese]
+边界
+====================
+[English]
+Breathiness
+[Chinese]
+气声
+====================
+[English]
+Buttons...
+[Chinese]
+按键...
+====================
+[English]
+CC: Draw c0
+[Chinese]
+CC：绘制 c0
+====================
+[English]
+CC: Draw c0...
+[Chinese]
+CC：绘制 c0...
+====================
+[English]
+CJK font style
+[Chinese]
+CJK 字体样式
+====================
+[English]
+CJK font style preferences...
+[Chinese]
+CJK 字体样式偏好...
+====================
+[English]
+CJK font style settings
+[Chinese]
+CJK 字体样式设置
+====================
+[English]
+CJK font style settings...
+[Chinese]
+CJK 字体样式设置...
+====================
+[English]
+CJK font style settings... || CJK font style preferences...
+[Chinese]
+CJK 字体样式设置... || CJK 字体样式偏好...
+====================
+[English]
+Calculator
+[Chinese]
+计算器
+====================
+[English]
+Calculator...
+[Chinese]
+计算器...
+====================
+[English]
+Can't redo
+[Chinese]
+无法重做
+====================
+[English]
+Can't undo
+[Chinese]
+无法撤销
+====================
+[English]
+Cancel
+[Chinese]
+取消
+====================
+[English]
+Cannot inspect data from batch.
+[Chinese]
+无法从批处理中检查数据。
+====================
+[English]
+Cannot open /dev/mixer.
+[Chinese]
+无法打开 /dev/mixer。
+====================
+[English]
+Cannot open audio device.
+[Chinese]
+无法打开音频设备。
+====================
+[English]
+Cannot open audio device.
+
+[Chinese]
+无法打开音频设备。
+====================
+[English]
+Cannot open audio device.
+Please switch on PortAudio in the Sound Recording Preferences.
+[Chinese]
+无法打开音频设备。 请在“录音偏好设置”中启用 PortAudio。
+====================
+[English]
+Cannot open dropped file.
+[Chinese]
+无法打开拖入的文件。
+====================
+[English]
+Cannot open folder
+[Chinese]
+无法打开文件夹
+====================
+[English]
+Cannot open null file.
+[Chinese]
+无法打开空文件。
+====================
+[English]
+Cannot open picture file
+[Chinese]
+无法打开图像文件
+====================
+[English]
+Ceiling (Hz)
+[Chinese]
+上限 (Hz)
+====================
+[English]
+Centre columns
+[Chinese]
+中心化列
+====================
+[English]
+Centre of gravity ~ intensity
+[Chinese]
+谱重心~音强
+====================
+[English]
+Centre rows
+[Chinese]
+中心化行
+====================
+[English]
+Centre x
+[Chinese]
+中心化 x
+====================
+[English]
+Centre y
+[Chinese]
+中心化 y
+====================
+[English]
+Change
+[Chinese]
+修改
+====================
+[English]
+Change gender...
+[Chinese]
+改变性别...
+====================
+[English]
+Change...
+[Chinese]
+修改...
+====================
+[English]
+Channel
+[Chinese]
+通道
+====================
+[English]
+Channels to mute
+[Chinese]
+静音的通道
+====================
+[English]
+Channels to mute:
+[Chinese]
+静音的通道：
+====================
+[English]
+Channels:
+[Chinese]
+通道：
+====================
+[English]
+ChebyshevSeries help
+[Chinese]
+切比雪夫级数帮助
+====================
+[English]
+ChebyshevSeries(x) = c[1] T[0](x) + c[2] T[1](x) + ... c[n+1] T[n](x)
+[Chinese]
+切比雪夫级数(x) = c[1] T[0](x) + c[2] T[1](x) + ... c[n+1] T[n](x)
+====================
+[English]
+Checking for updates
+[Chinese]
+检查更新
+====================
+[English]
+Checking for updates?
+[Chinese]
+检查更新?
+====================
+[English]
+Circular permutation...
+[Chinese]
+循环置换...
+====================
+[English]
+Clear
+[Chinese]
+清除
+====================
+[English]
+Clear history
+[Chinese]
+清除历史
+====================
+[English]
+Clear undo history
+[Chinese]
+清除撤销历史
+====================
+[English]
+Clone time domain
+[Chinese]
+克隆时间域
+====================
+[English]
+Close
+[Chinese]
+关闭
+====================
+[English]
+Cochleagram Formula
+[Chinese]
+耳蜗图公式
+====================
+[English]
+Cochleagram difference
+[Chinese]
+耳蜗图差异
+====================
+[English]
+Cochleagram help
+[Chinese]
+耳蜗图帮助
+====================
+[English]
+Cochleagram: Formula...
+[Chinese]
+耳蜗图：公式...
+====================
+[English]
+Collapse rows...
+[Chinese]
+折叠行...
+====================
+[English]
+Collect
+[Chinese]
+收集
+====================
+[English]
+Collision phase
+[Chinese]
+碰撞相位
+====================
+[English]
+Colour...
+[Chinese]
+画笔颜色...
+====================
+[English]
+Column
+[Chinese]
+列
+====================
+[English]
+Column "
+[Chinese]
+列"
+====================
+[English]
+Column label
+[Chinese]
+列标签
+====================
+[English]
+Combine
+[Chinese]
+合并
+====================
+[English]
+Combine -
+[Chinese]
+合并 -
+====================
+[English]
+Combine into SoundList
+[Chinese]
+合并放入声音列表
+====================
+[English]
+Combine into SoundSet
+[Chinese]
+合并放入声音集合
+====================
+[English]
+Combine to stereo
+[Chinese]
+合并为双声道
+====================
+[English]
+Compress frequency domain...
+[Chinese]
+压缩频率域...
+====================
+[English]
+Concatenate
+[Chinese]
+连接 (串联)
+====================
+[English]
+Concatenate recoverably
+[Chinese]
+可恢复连接 (Concatenate)
+====================
+[English]
+Concatenate with overlap...
+[Chinese]
+重叠连接 (overlap)...
+====================
+[English]
+Conflate
+[Chinese]
+合并
+====================
+[English]
+Confusion help
+[Chinese]
+混淆矩阵帮助
+====================
+[English]
+Conjugate
+[Chinese]
+共轭
+====================
+[English]
+Connection
+[Chinese]
+连接
+====================
+[English]
+Constraint
+[Chinese]
+约束
+====================
+[English]
+Constraint grammars
+[Chinese]
+约束语法
+====================
+[English]
+Continue
+[Chinese]
+继续
+====================
+[English]
+Convert
+[Chinese]
+转换
+====================
+[English]
+Convert -
+[Chinese]
+转换 -
+====================
+[English]
+Convert entire TextGrid to Unicode
+[Chinese]
+将整个 TextGrid 转换为 Unicode
+====================
+[English]
+Convert entire TextGrid to backslash trigraphs
+[Chinese]
+将整个 TextGrid 转换为反斜杠三合字符
+====================
+[English]
+Convert to C string
+[Chinese]
+转换为 C 字符串
+====================
+[English]
+Convert to Unicode
+[Chinese]
+转换为 Unicode
+====================
+[English]
+Convert to backslash trigraphs
+[Chinese]
+转换为反斜杠三元字符
+====================
+[English]
+Convert to mono
+[Chinese]
+转换为单声道
+====================
+[English]
+Convert to stereo
+[Chinese]
+转换为双声道
+====================
+[English]
+Convex hull
+[Chinese]
+凸包
+====================
+[English]
+Convolve
+[Chinese]
+卷积
+====================
+[English]
+Convolve...
+[Chinese]
+卷积...
+====================
+[English]
+Copy
+[Chinese]
+复制
+====================
+[English]
+Copy object
+[Chinese]
+复制对象
+====================
+[English]
+Copy selection to Sound clipboard
+[Chinese]
+复制选择到声音剪贴板
+====================
+[English]
+Copy text
+[Chinese]
+复制文本
+====================
+[English]
+Copy to clipboard
+[Chinese]
+复制到剪贴板
+====================
+[English]
+Copy...
+[Chinese]
+复制...
+====================
+[English]
+Correlation
+[Chinese]
+相关
+====================
+[English]
+Correlation help
+[Chinese]
+相关帮助
+====================
+[English]
+Count differences
+[Chinese]
+计数差异
+====================
+[English]
+Count intervals where...
+[Chinese]
+计数区间，当...
+====================
+[English]
+Count labels
+[Chinese]
+计数标签
+====================
+[English]
+Count labels...
+[Chinese]
+计数标签...
+====================
+[English]
+Count points where...
+[Chinese]
+计数点，当...
+====================
+[English]
+Count voiced frames
+[Chinese]
+计数浊音帧
+====================
+[English]
+Courier
+[Chinese]
+Courier 等宽体
+====================
+[English]
+Covariance
+[Chinese]
+协方差
+====================
+[English]
+Covariance help
+[Chinese]
+协方差帮助
+====================
+[English]
+Covariance matrix
+[Chinese]
+协方差矩阵
+====================
+[English]
+Create AmplitudeTier...
+[Chinese]
+创建振幅层...
+====================
+[English]
+Create Articulation...
+[Chinese]
+创建发音...
+====================
+[English]
+Create C interface...
+[Chinese]
+创建 C 接口...
+====================
+[English]
+Create Categories...
+[Chinese]
+创建类别...
+====================
+[English]
+Create ChebyshevSeries
+[Chinese]
+创建切比雪夫级数
+====================
+[English]
+Create ChebyshevSeries...
+[Chinese]
+创建切比雪夫级数...
+====================
+[English]
+Create Configuration...
+[Chinese]
+创建配置...
+====================
+[English]
+Create Corpus...
+[Chinese]
+创建语料库...
+====================
+[English]
+Create DurationTier...
+[Chinese]
+创建时长层...
+====================
+[English]
+Create FFNet (linear outputs)...
+[Chinese]
+创建前馈神经网络 (线性输出)...
+====================
+[English]
+Create FFNet...
+[Chinese]
+创建前馈神经网络...
+====================
+[English]
+Create FormantGrid
+[Chinese]
+创建共振峰网格
+====================
+[English]
+Create FormantGrid...
+[Chinese]
+创建共振峰网格...
+====================
+[English]
+Create FormantTier...
+[Chinese]
+创建共振峰层...
+====================
+[English]
+Create INDSCAL Carroll Wish example...
+[Chinese]
+创建 INDSCAL Carroll-Wish 示例...
+====================
+[English]
+Create ISpline
+[Chinese]
+创建 I 样条
+====================
+[English]
+Create ISpline...
+[Chinese]
+创建 I 样条...
+====================
+[English]
+Create IntensityTier...
+[Chinese]
+创建音强层...
+====================
+[English]
+Create KlattGrid from vowel...
+[Chinese]
+从元音创建 KlattGrid...
+====================
+[English]
+Create KlattGrid...
+[Chinese]
+创建 KlattGrid...
+====================
+[English]
+Create LegendreSeries
+[Chinese]
+创建勒让德级数
+====================
+[English]
+Create LegendreSeries...
+[Chinese]
+创建勒让德级数...
+====================
+[English]
+Create MSpline
+[Chinese]
+创建 M 样条
+====================
+[English]
+Create MSpline...
+[Chinese]
+创建 M 样条...
+====================
+[English]
+Create Matrix
+[Chinese]
+创建矩阵
+====================
+[English]
+Create Matrix...
+[Chinese]
+创建矩阵...
+====================
+[English]
+Create Net as DeepBeliefNetwork
+[Chinese]
+创建深度信念网络
+====================
+[English]
+Create Net as deep belief network...
+[Chinese]
+创建深度信念网络...
+====================
+[English]
+Create NoCoda grammar
+[Chinese]
+创建无尾音语法
+====================
+[English]
+Create Pattern...
+[Chinese]
+创建模式...
+====================
+[English]
+Create PatternList...
+[Chinese]
+创建模式列表...
+====================
+[English]
+Create PatternList... || Create Pattern...
+[Chinese]
+创建模式列表... || 创建模式...
+====================
+[English]
+Create Permutation
+[Chinese]
+创建置换
+====================
+[English]
+Create Permutation...
+[Chinese]
+创建置换...
+====================
+[English]
+Create Photo
+[Chinese]
+创建照片
+====================
+[English]
+Create Photo...
+[Chinese]
+创建照片...
+====================
+[English]
+Create PitchTier...
+[Chinese]
+创建音高层...
+====================
+[English]
+Create Poisson process...
+[Chinese]
+创建泊松过程...
+====================
+[English]
+Create Polygon (random points)...
+[Chinese]
+创建多边形(随机点)...
+====================
+[English]
+Create Polygon (random vertices)...
+[Chinese]
+创建多边形(随机顶点)...
+====================
+[English]
+Create Polynomial...
+[Chinese]
+创建多项式...
+====================
+[English]
+Create RealTier...
+[Chinese]
+创建实数层...
+====================
+[English]
+Create Sound as Shepard tone...
+[Chinese]
+创建谢泼德音声音...
+====================
+[English]
+Create Sound as gammatone...
+[Chinese]
+创建伽马通声音...
+====================
+[English]
+Create Sound as pure tone
+[Chinese]
+创建纯音声音
+====================
+[English]
+Create Sound as pure tone...
+[Chinese]
+创建纯音声音...
+====================
+[English]
+Create Sound as tone complex
+[Chinese]
+创建复合音声音
+====================
+[English]
+Create Sound as tone complex...
+[Chinese]
+创建复合音声音...
+====================
+[English]
+Create Sound as tone complex... || Create Sound from tone complex...
+[Chinese]
+创建复合音声音... || 从复音创建声音...
+====================
+[English]
+Create Sound from formula...
+[Chinese]
+通过公式创建声音...
+====================
+[English]
+Create Sound from tone complex...
+[Chinese]
+从复音创建声音...
+====================
+[English]
+Create Sound...
+[Chinese]
+创建声音...
+====================
+[English]
+Create Speaker...
+[Chinese]
+创建说话人...
+====================
+[English]
+Create SpeechRecognizer
+[Chinese]
+创建语音识别器
+====================
+[English]
+Create SpeechRecognizer...
+[Chinese]
+创建语音识别器...
+====================
+[English]
+Create SpeechSynthesizer
+[Chinese]
+创建语音合成器
+====================
+[English]
+Create SpeechSynthesizer...
+[Chinese]
+创建语音合成器...
+====================
+[English]
+Create Strings as file list...
+[Chinese]
+从文件列表创建字符串...
+====================
+[English]
+Create Strings as folder list...
+[Chinese]
+从文夵列表创建字符串...
+====================
+[English]
+Create Strings from texts...
+[Chinese]
+从文本创建字符串...
+====================
+[English]
+Create Strings from tokens...
+[Chinese]
+从分词创建字符串...
+====================
+[English]
+Create Table with column names...
+[Chinese]
+创建带列名的表格...
+====================
+[English]
+Create Table without column names
+[Chinese]
+创建表格不带列名
+====================
+[English]
+Create Table without column names...
+[Chinese]
+创建表格不带列名...
+====================
+[English]
+Create Table without column names... || Create Table...
+[Chinese]
+创建表格不带列名... || 创建表格...
+====================
+[English]
+Create Table...
+[Chinese]
+创建表格...
+====================
+[English]
+Create TableOfReal
+[Chinese]
+创建实数表
+====================
+[English]
+Create TableOfReal...
+[Chinese]
+创建实数表...
+====================
+[English]
+Create TextGrid
+[Chinese]
+创建 TextGrid
+====================
+[English]
+Create TextGrid...
+[Chinese]
+创建 TextGrid...
+====================
+[English]
+Create a Speaker
+[Chinese]
+创建 a 说话人
+====================
+[English]
+Create empty EditCostsTable...
+[Chinese]
+创建空编辑代价表...
+====================
+[English]
+Create empty Network...
+[Chinese]
+创建空网络...
+====================
+[English]
+Create empty PointProcess...
+[Chinese]
+创建空点过程...
+====================
+[English]
+Create iris example...
+[Chinese]
+创建鸢尾花示例...
+====================
+[English]
+Create letter R example...
+[Chinese]
+创建字母 R 示例...
+====================
+[English]
+Create metrics grammar...
+[Chinese]
+创建节律语法...
+====================
+[English]
+Create mono Sound
+[Chinese]
+创建单声道声音
+====================
+[English]
+Create multi-level metrics grammar...
+[Chinese]
+创建多层级节律语法...
+====================
+[English]
+Create place assimilation distribution
+[Chinese]
+创建部位同化分布
+====================
+[English]
+Create place assimilation grammar
+[Chinese]
+创建部位同化语法
+====================
+[English]
+Create rectangular Network (vertical)...
+[Chinese]
+创建矩形网络（垂直）...
+====================
+[English]
+Create rectangular Network...
+[Chinese]
+创建矩形网络...
+====================
+[English]
+Create simple Confusion...
+[Chinese]
+创建简单混淆矩阵...
+====================
+[English]
+Create simple Correlation...
+[Chinese]
+创建简单相关矩阵...
+====================
+[English]
+Create simple Covariance...
+[Chinese]
+创建简单协方差矩阵...
+====================
+[English]
+Create tongue-root grammar...
+[Chinese]
+创建舌根语法...
+====================
+[English]
+Cross-correlate...
+[Chinese]
+计算互相关...
+====================
+[English]
+CrossCorrelationTable help
+[Chinese]
+互相关表帮助
+====================
+[English]
+Cut
+[Chinese]
+剪切
+====================
+[English]
+Cut text
+[Chinese]
+剪切文本
+====================
+[English]
+Cyan
+[Chinese]
+青色
+====================
+[English]
+Dashed line
+[Chinese]
+虚线
+====================
+[English]
+Dashed-dotted line
+[Chinese]
+双点划线
+====================
+[English]
+Data sets from the literature
+[Chinese]
+来自文献的数据集
+====================
+[English]
+Debug multi-threading
+[Chinese]
+调试多线程
+====================
+[English]
+Debug multi-threading...
+[Chinese]
+调试多线程...
+====================
+[English]
+Debug...
+[Chinese]
+调试...
+====================
+[English]
+Deepen band modulation...
+[Chinese]
+加深频带调制...
+====================
+[English]
+Delete log file 1
+[Chinese]
+删除记录文件 1
+====================
+[English]
+Delete log file 2
+[Chinese]
+删除记录文件 2
+====================
+[English]
+Demo window
+[Chinese]
+演示窗口
+====================
+[English]
+Diarization settings...
+[Chinese]
+说话人分离设置...
+====================
+[English]
+Diarize interval
+[Chinese]
+进行说话人分离
+====================
+[English]
+Diarize interval...
+[Chinese]
+进行说话人分离...
+====================
+[English]
+Difference
+[Chinese]
+差异
+====================
+[English]
+Difference of two proportions
+[Chinese]
+两个比例的差异
+====================
+[English]
+Difference...
+[Chinese]
+差异...
+====================
+[English]
+Do you still want to quit Praat?
+[Chinese]
+您确定要退出 Praat 吗？
+====================
+[English]
+Do you still want to quit?
+[Chinese]
+您确定要退出吗？
+====================
+[English]
+Domain
+[Chinese]
+域
+====================
+[English]
+Domain of polynomial
+[Chinese]
+域 of 多项式
+====================
+[English]
+Dot size (mm)
+[Chinese]
+点大小 (毫米)
+====================
+[English]
+Dotted line
+[Chinese]
+点线
+====================
+[English]
+Double pulsing
+[Chinese]
+双脉冲
+====================
+[English]
+Down to Matrix
+[Chinese]
+降为矩阵
+====================
+[English]
+Draw
+[Chinese]
+绘制
+====================
+[English]
+Draw -
+[Chinese]
+绘制 -
+====================
+[English]
+Draw Excitation
+[Chinese]
+绘制激励
+====================
+[English]
+Draw Formant
+[Chinese]
+绘制共振峰
+====================
+[English]
+Draw FormantTier
+[Chinese]
+绘制共振峰层
+====================
+[English]
+Draw Intensity
+[Chinese]
+绘制音强
+====================
+[English]
+Draw MDS class relations
+[Chinese]
+绘制 MDS 类别关系
+====================
+[English]
+Draw Network
+[Chinese]
+绘制网络
+====================
+[English]
+Draw TextGrid to picture window:
+[Chinese]
+绘制 TextGrid 到图像窗口：
+====================
+[English]
+Draw arc...
+[Chinese]
+绘制圆弧...
+====================
+[English]
+Draw arrow...
+[Chinese]
+绘制箭头...
+====================
+[English]
+Draw as grid...
+[Chinese]
+绘制为网格...
+====================
+[English]
+Draw circle (mm)...
+[Chinese]
+绘制圆形 (毫米)...
+====================
+[English]
+Draw circle...
+[Chinese]
+绘制圆形...
+====================
+[English]
+Draw confusion...
+[Chinese]
+绘制混淆矩阵...
+====================
+[English]
+Draw connection...
+[Chinese]
+绘制连接...
+====================
+[English]
+Draw ellipse...
+[Chinese]
+绘制椭圆...
+====================
+[English]
+Draw formants to picture window:
+[Chinese]
+绘制共振峰到图像窗口：
+====================
+[English]
+Draw frication
+[Chinese]
+绘制摩擦
+====================
+[English]
+Draw function...
+[Chinese]
+绘制数学函数曲线...
+====================
+[English]
+Draw gain...
+[Chinese]
+绘制增益...
+====================
+[English]
+Draw harmonicity
+[Chinese]
+绘制谐噪比
+====================
+[English]
+Draw inner box
+[Chinese]
+绘制内侧边框
+====================
+[English]
+Draw intensity to picture window
+[Chinese]
+绘制音强到图像窗口
+====================
+[English]
+Draw line...
+[Chinese]
+绘制直线...
+====================
+[English]
+Draw mel...
+[Chinese]
+绘制 mel...
+====================
+[English]
+Draw only those parts where the following condition holds:
+[Chinese]
+仅绘制符合以下条件的区域：
+====================
+[English]
+Draw pitch to picture window:
+[Chinese]
+绘制音高到图像窗口：
+====================
+[English]
+Draw pulses to picture window:
+[Chinese]
+绘制脉冲到图像窗口：
+====================
+[English]
+Draw rectangle...
+[Chinese]
+绘制矩形...
+====================
+[English]
+Draw rounded rectangle...
+[Chinese]
+绘制圆角矩形...
+====================
+[English]
+Draw rows
+[Chinese]
+绘制行
+====================
+[English]
+Draw rows...
+[Chinese]
+绘制行...
+====================
+[English]
+Draw scatter plot matrix...
+[Chinese]
+绘制散点图矩阵...
+====================
+[English]
+Draw scatter plot...
+[Chinese]
+绘制散点图...
+====================
+[English]
+Draw selected sound...
+[Chinese]
+绘制选定声音...
+====================
+[English]
+Draw selection hairs
+[Chinese]
+绘制游标十字线
+====================
+[English]
+Draw selection times
+[Chinese]
+绘制选定时间
+====================
+[English]
+Draw sound to picture window:
+[Chinese]
+绘制声音到图像窗口：
+====================
+[English]
+Draw spectrogram to picture window
+[Chinese]
+绘制声谱图到图像窗口
+====================
+[English]
+Draw spectrogram to picture window:
+[Chinese]
+绘制声谱图到图像窗口：
+====================
+[English]
+Draw splines...
+[Chinese]
+绘制样条曲线...
+====================
+[English]
+Draw tableau
+[Chinese]
+绘制表格
+====================
+[English]
+Draw tableau...
+[Chinese]
+绘制表格...
+====================
+[English]
+Draw trajectory...
+[Chinese]
+绘制轨迹...
+====================
+[English]
+Draw two-way arrow...
+[Chinese]
+绘制双向箭头...
+====================
+[English]
+Draw visible TextGrid...
+[Chinese]
+绘制可见 TextGrid...
+====================
+[English]
+Draw visible formant contour...
+[Chinese]
+绘制可见共振峰曲线...
+====================
+[English]
+Draw visible intensity contour...
+[Chinese]
+绘制可见音强曲线...
+====================
+[English]
+Draw visible pitch contour and TextGrid...
+[Chinese]
+绘制可见音高曲线与 TextGrid...
+====================
+[English]
+Draw visible pitch contour...
+[Chinese]
+绘制可见音高曲线...
+====================
+[English]
+Draw visible pulses...
+[Chinese]
+绘制可见脉冲...
+====================
+[English]
+Draw visible sound
+[Chinese]
+绘制可见声音
+====================
+[English]
+Draw visible sound and TextGrid...
+[Chinese]
+绘制可见声音与 TextGrid...
+====================
+[English]
+Draw visible sound...
+[Chinese]
+绘制可见声音...
+====================
+[English]
+Draw vocal tract...
+[Chinese]
+绘制声道...
+====================
+[English]
+Draw where...
+[Chinese]
+绘制于指定条件...
+====================
+[English]
+Draw with sound...
+[Chinese]
+随声音绘制...
+====================
+[English]
+Draw with sound2...
+[Chinese]
+随声音绘制 2...
+====================
+[English]
+Draw...
+[Chinese]
+绘制...
+====================
+[English]
+Drawing method
+[Chinese]
+绘制方法
+====================
+[English]
+Duplicate tier
+[Chinese]
+复制层
+====================
+[English]
+Duplicate tier...
+[Chinese]
+复制层...
+====================
+[English]
+Duration (s):
+[Chinese]
+时长 (s)：
+====================
+[English]
+DurationTier help
+[Chinese]
+时长层帮助
+====================
+[English]
+DurationTier: Formula
+[Chinese]
+时长层：公式
+====================
+[English]
+DurationTier: Formula...
+[Chinese]
+时长层：公式...
+====================
+[English]
+Dynamic compression (0 - 1)
+[Chinese]
+动态压缩 (0 - 1)
+====================
+[English]
+Dynamic compression (0 - 1):
+[Chinese]
+动态压缩 (0 - 1)：
+====================
+[English]
+Dynamic range (dB)
+[Chinese]
+动态范围 (dB)
+====================
+[English]
+ERB
+[Chinese]
+等效矩形带宽 (ERB)
+====================
+[English]
+Edit
+[Chinese]
+编辑
+====================
+[English]
+Edit aspiration amplitude tier
+[Chinese]
+编辑送气振幅层
+====================
+[English]
+Edit breathiness amplitude tier
+[Chinese]
+编辑气声振幅层
+====================
+[English]
+Edit collision phase tier
+[Chinese]
+编辑碰撞相位层
+====================
+[English]
+Edit constraint...
+[Chinese]
+编辑约束...
+====================
+[English]
+Edit double pulsing tier
+[Chinese]
+编辑双脉冲层
+====================
+[English]
+Edit flutter tier
+[Chinese]
+编辑抖动层
+====================
+[English]
+Edit frication amplitude tier
+[Chinese]
+编辑摩擦振幅层
+====================
+[English]
+Edit frication bypass tier
+[Chinese]
+编辑摩擦旁路层
+====================
+[English]
+Edit frication formant amplitude tier...
+[Chinese]
+编辑摩擦共振峰振幅层...
+====================
+[English]
+Edit frication formant grid
+[Chinese]
+编辑摩擦共振峰网格
+====================
+[English]
+Edit open phase tier
+[Chinese]
+编辑开放相位层
+====================
+[English]
+Edit pitch tier
+[Chinese]
+编辑音高层
+====================
+[English]
+Edit spectral tilt tier
+[Chinese]
+编辑频谱倾斜层
+====================
+[English]
+Edit voicing amplitude tier
+[Chinese]
+编辑浊音化振幅层
+====================
+[English]
+Edit...
+[Chinese]
+编辑...
+====================
+[English]
+EditCostsTable help
+[Chinese]
+编辑代价表帮助
+====================
+[English]
+Editor info
+[Chinese]
+编辑器信息
+====================
+[English]
+Editors
+[Chinese]
+编辑器
+====================
+[English]
+Encoding of 8-bit text files
+[Chinese]
+8 位文本文件的编码
+====================
+[English]
+End column
+[Chinese]
+结束列
+====================
+[English]
+End of selection (
+[Chinese]
+选区结束位置 (
+====================
+[English]
+End row
+[Chinese]
+结束行
+====================
+[English]
+End time
+[Chinese]
+结束时间
+====================
+[English]
+End time (s)
+[Chinese]
+结束时间 (s)
+====================
+[English]
+Erase first
+[Chinese]
+先擦除
+====================
+[English]
+Excitation Formula
+[Chinese]
+激励公式
+====================
+[English]
+Excitation help
+[Chinese]
+激励帮助
+====================
+[English]
+Excitation: Formula...
+[Chinese]
+激励：公式...
+====================
+[English]
+Extend-select left
+[Chinese]
+向左扩展选择
+====================
+[English]
+Extend-select right
+[Chinese]
+向右扩展选择
+====================
+[English]
+Extract
+[Chinese]
+提取
+====================
+[English]
+Extract -
+[Chinese]
+提取 -
+====================
+[English]
+Extract CrossCorrelationTable...
+[Chinese]
+提取互相关表...
+====================
+[English]
+Extract DataModeler...
+[Chinese]
+提取数据建模器...
+====================
+[English]
+Extract Electroglottogram...
+[Chinese]
+提取声带电图 (EGG)...
+====================
+[English]
+Extract Excitation...
+[Chinese]
+提取激励...
+====================
+[English]
+Extract Formant
+[Chinese]
+提取共振峰
+====================
+[English]
+Extract FormantGrid
+[Chinese]
+提取共振峰网格
+====================
+[English]
+Extract PitchTier
+[Chinese]
+提取音高层
+====================
+[English]
+Extract TextGrid to objects window:
+[Chinese]
+提取 TextGrid 到对象窗口：
+====================
+[English]
+Extract Trajectory as Table
+[Chinese]
+提取轨迹为表格
+====================
+[English]
+Extract all channels
+[Chinese]
+提取所有通道
+====================
+[English]
+Extract all intervals...
+[Chinese]
+提取所有区间...
+====================
+[English]
+Extract amplitude tier...
+[Chinese]
+提取振幅层...
+====================
+[English]
+Extract aspiration amplitude tier
+[Chinese]
+提取送气振幅层
+====================
+[English]
+Extract breathiness amplitude tier
+[Chinese]
+提取气声振幅层
+====================
+[English]
+Extract channel...
+[Chinese]
+提取通道...
+====================
+[English]
+Extract channels...
+[Chinese]
+提取通道...
+====================
+[English]
+Extract collision phase tier
+[Chinese]
+提取碰撞相位层
+====================
+[English]
+Extract double pulsing tier
+[Chinese]
+提取双脉冲层
+====================
+[English]
+Extract duration tier
+[Chinese]
+提取时长层
+====================
+[English]
+Extract flutter tier
+[Chinese]
+提取抖动层
+====================
+[English]
+Extract formant grid...
+[Chinese]
+提取共振峰网格...
+====================
+[English]
+Extract formants to objects window:
+[Chinese]
+提取共振峰到对象窗口：
+====================
+[English]
+Extract frication amplitude tier
+[Chinese]
+提取摩擦振幅层
+====================
+[English]
+Extract frication bypass tier
+[Chinese]
+提取摩擦旁路层
+====================
+[English]
+Extract intensity to objects window
+[Chinese]
+提取音强到对象窗口
+====================
+[English]
+Extract intervals where...
+[Chinese]
+提取符合条件的区间...
+====================
+[English]
+Extract left channel
+[Chinese]
+提取左通道
+====================
+[English]
+Extract non-empty intervals...
+[Chinese]
+提取非空区间...
+====================
+[English]
+Extract one channel...
+[Chinese]
+提取单个通道...
+====================
+[English]
+Extract one tier...
+[Chinese]
+提取单层...
+====================
+[English]
+Extract open phase tier
+[Chinese]
+提取开放相位层
+====================
+[English]
+Extract part -
+[Chinese]
+提取部分-
+====================
+[English]
+Extract part for overlap...
+[Chinese]
+提取用于重叠的部分...
+====================
+[English]
+Extract part...
+[Chinese]
+提取部分...
+====================
+[English]
+Extract pitch tier
+[Chinese]
+提取音高层
+====================
+[English]
+Extract pitch to objects window:
+[Chinese]
+提取音高到对象窗口：
+====================
+[English]
+Extract pulses to objects window:
+[Chinese]
+提取脉冲到对象窗口：
+====================
+[English]
+Extract right channel
+[Chinese]
+提取右通道
+====================
+[English]
+Extract selected TextGrid (preserve times)
+[Chinese]
+提取选定 TextGrid (保留时间)
+====================
+[English]
+Extract selected TextGrid (time from 0)
+[Chinese]
+提取选定 TextGrid (时间从 0 开始)
+====================
+[English]
+Extract selected sound (preserve times)
+[Chinese]
+提取选定声音 (保留时间)
+====================
+[English]
+Extract selected sound (time from 0)
+[Chinese]
+提取选定声音 (时间从 0 开始)
+====================
+[English]
+Extract selected sound (windowed)...
+[Chinese]
+提取选定声音 (加窗)...
+====================
+[English]
+Extract selected sound for overlap...
+[Chinese]
+提取用于重叠的选定声音...
+====================
+[English]
+Extract singular values
+[Chinese]
+提取奇异值
+====================
+[English]
+Extract sound to objects window:
+[Chinese]
+提取声音到对象窗口：
+====================
+[English]
+Extract spectral tilt tier
+[Chinese]
+提取频谱倾斜层
+====================
+[English]
+Extract tier...
+[Chinese]
+提取层...
+====================
+[English]
+Extract to objects window:
+[Chinese]
+提取到对象窗口：
+====================
+[English]
+Extract visible formant contour
+[Chinese]
+提取可见共振峰曲线
+====================
+[English]
+Extract visible intensity contour
+[Chinese]
+提取可见音强曲线
+====================
+[English]
+Extract visible pitch contour
+[Chinese]
+提取可见音高曲线
+====================
+[English]
+Extract visible pulses
+[Chinese]
+提取可见脉冲
+====================
+[English]
+Extract visible spectrogram
+[Chinese]
+提取可见声谱图
+====================
+[English]
+Extract voicing amplitude tier
+[Chinese]
+提取浊音化振幅层
+====================
+[English]
+F/B weight (0-1)
+[Chinese]
+F/B 权重(0-1)
+====================
+[English]
+FAQ (Frequently Asked Questions)
+[Chinese]
+常见问题 (FAQ)
+====================
+[English]
+Feedforward neural networks
+[Chinese]
+前馈神经网络
+====================
+[English]
+Fifth up
+[Chinese]
+上移纯五度
+====================
+[English]
+File
+[Chinese]
+文件
+====================
+[English]
+File too short.
+[Chinese]
+文件太短。
+====================
+[English]
+Filter
+[Chinese]
+滤波
+====================
+[English]
+Filter (de-emphasis)...
+[Chinese]
+滤波 (去加重)...
+====================
+[English]
+Filter (formula)...
+[Chinese]
+滤波(公式)...
+====================
+[English]
+Filter (gammatone)...
+[Chinese]
+滤波 (伽马通)...
+====================
+[English]
+Filter (one formant)...
+[Chinese]
+滤波 (单共振峰)...
+====================
+[English]
+Filter (pass Hann band)...
+[Chinese]
+滤波 (带通 Hanning 窗)...
+====================
+[English]
+Filter (pre-emphasis)...
+[Chinese]
+滤波 (预加重)...
+====================
+[English]
+Filter (stop Hann band)...
+[Chinese]
+滤波 (带阻 Hanning 窗)...
+====================
+[English]
+Filter -
+[Chinese]
+滤波 -
+====================
+[English]
+Filter by vocal tract...
+[Chinese]
+根据声道滤波...
+====================
+[English]
+Filter...
+[Chinese]
+滤波...
+====================
+[English]
+Filtering tutorial
+[Chinese]
+滤波教程
+====================
+[English]
+Find
+[Chinese]
+寻找
+====================
+[English]
+Find first
+[Chinese]
+寻找第一
+====================
+[English]
+Find...
+[Chinese]
+寻找...
+====================
+[English]
+First
+[Chinese]
+第一
+====================
+[English]
+First frequency (Hz)
+[Chinese]
+第一频率 (Hz)
+====================
+[English]
+First table
+[Chinese]
+第一表格
+====================
+[English]
+Fixed time step (s)
+[Chinese]
+固定时间步长 (秒)
+====================
+[English]
+Flutter
+[Chinese]
+抖动
+====================
+[English]
+Folder with annotation files
+[Chinese]
+标注文件文件夹
+====================
+[English]
+Folder with annotation files:
+[Chinese]
+标注文件文件夹：
+====================
+[English]
+Folder with sound files
+[Chinese]
+声音文件文件夹
+====================
+[English]
+Folder with sound files:
+[Chinese]
+声音文件文件夹：
+====================
+[English]
+Font
+[Chinese]
+字体
+====================
+[English]
+Font size...
+[Chinese]
+字号...
+====================
+[English]
+Font...
+[Chinese]
+字体...
+====================
+[English]
+For "fixed height":
+[Chinese]
+对于 "固定高度"：
+====================
+[English]
+For "fixed range":
+[Chinese]
+对于 "固定范围"：
+====================
+[English]
+For details, click Help.
+[Chinese]
+有关详细信息，请单击帮助。
+====================
+[English]
+Formant
+[Chinese]
+共振峰
+====================
+[English]
+Formant ceiling (Hz)
+[Chinese]
+共振峰上限 (Hz)
+====================
+[English]
+Formant frequency interval (Hz)
+[Chinese]
+共振峰频率区间 (Hz)
+====================
+[English]
+Formant help
+[Chinese]
+共振峰帮助
+====================
+[English]
+Formant listing
+[Chinese]
+共振峰列表
+====================
+[English]
+Formant settings
+[Chinese]
+共振峰设置
+====================
+[English]
+Formant settings...
+[Chinese]
+共振峰设置...
+====================
+[English]
+Formant: Formula
+[Chinese]
+共振峰：公式
+====================
+[English]
+Formant: Formula (
+[Chinese]
+共振峰：公式(
+====================
+[English]
+Formant: Get bandwidth
+[Chinese]
+共振峰：获取带宽
+====================
+[English]
+Formant: Get bandwidth at time...
+[Chinese]
+Formant：获取指定时间的 bandwidth
+====================
+[English]
+Formant: List
+[Chinese]
+共振峰：列表
+====================
+[English]
+Formant: List formant slope
+[Chinese]
+共振峰：列表共振峰斜率
+====================
+[English]
+Formant: List formant slope...
+[Chinese]
+共振峰：列表共振峰斜率...
+====================
+[English]
+Formant: Scatter plot
+[Chinese]
+共振峰：散点图
+====================
+[English]
+FormantGrid help
+[Chinese]
+共振峰网格帮助
+====================
+[English]
+FormantGrid: Draw
+[Chinese]
+共振峰网格：绘制
+====================
+[English]
+FormantTier: Get bandwidth
+[Chinese]
+共振峰层：获取带宽
+====================
+[English]
+FormantTier: Get bandwidth at time...
+[Chinese]
+FormantTier：获取指定时间的 bandwidth
+====================
+[English]
+Formants
+[Chinese]
+共振峰
+====================
+[English]
+Formula (
+[Chinese]
+公式(
+====================
+[English]
+Formula (part)...
+[Chinese]
+公式(部分)...
+====================
+[English]
+Formula...
+[Chinese]
+公式...
+====================
+[English]
+Formulas tutorial
+[Chinese]
+公式教程
+====================
+[English]
+Fourier
+[Chinese]
+傅里叶 (Fourier)
+====================
+[English]
+Frequency
+[Chinese]
+频率
+====================
+[English]
+Frequency (Hz or st)
+[Chinese]
+频率 (Hz or st)
+====================
+[English]
+Frequency (Hz)
+[Chinese]
+频率 (Hz)
+====================
+[English]
+Frequency domain
+[Chinese]
+频率域
+====================
+[English]
+Frequency shift
+[Chinese]
+频率移动
+====================
+[English]
+Frequently asked questions
+[Chinese]
+常见问题 (FAQ)
+====================
+[English]
+Frication bypass
+[Chinese]
+摩擦旁路
+====================
+[English]
+Functions
+[Chinese]
+函数
+====================
+[English]
+Gain (0-1)
+[Chinese]
+增益(0-1)
+====================
+[English]
+Garnish
+[Chinese]
+添加图饰
+====================
+[English]
+Gaussian
+[Chinese]
+高斯窗 (Gaussian)
+====================
+[English]
+Generics
+[Chinese]
+通用
+====================
+[English]
+Get
+[Chinese]
+获取
+====================
+[English]
+Get absolute extremum...
+[Chinese]
+获取绝对极值...
+====================
+[English]
+Get amplitude at time...
+[Chinese]
+获取指定时间的 amplitude
+====================
+[English]
+Get amplitude(s)
+[Chinese]
+获取振幅
+====================
+[English]
+Get aspiration amplitude at time...
+[Chinese]
+获取指定时间的 aspiration amplitude
+====================
+[English]
+Get average...
+[Chinese]
+获取平均...
+====================
+[English]
+Get bandwidth at time...
+[Chinese]
+获取指定时间的 bandwidth
+====================
+[English]
+Get bandwidth...
+[Chinese]
+获取带宽...
+====================
+[English]
+Get begin of selection
+[Chinese]
+获取选区起点
+====================
+[English]
+Get breathiness amplitude at time...
+[Chinese]
+获取指定时间的 breathiness amplitude
+====================
+[English]
+Get centre of gravity...
+[Chinese]
+获取谱重心...
+====================
+[English]
+Get centre points...
+[Chinese]
+获取中心点...
+====================
+[English]
+Get collision phase at time...
+[Chinese]
+获取指定时间的 collision phase
+====================
+[English]
+Get column label
+[Chinese]
+获取列标签
+====================
+[English]
+Get column label...
+[Chinese]
+获取列标签...
+====================
+[English]
+Get constraint...
+[Chinese]
+获取约束...
+====================
+[English]
+Get correlation...
+[Chinese]
+获取相关...
+====================
+[English]
+Get cursor
+[Chinese]
+获取光标位置
+====================
+[English]
+Get double pulsing at time...
+[Chinese]
+获取指定时间的 double pulsing
+====================
+[English]
+Get end of selection
+[Chinese]
+获取选区终点
+====================
+[English]
+Get end of visible part
+[Chinese]
+获取可见部分终点
+====================
+[English]
+Get end point of interval
+[Chinese]
+获取区间结束时间
+====================
+[English]
+Get end point of interval...
+[Chinese]
+获取区间结束时间...
+====================
+[English]
+Get end point...
+[Chinese]
+获取结束点...
+====================
+[English]
+Get end points...
+[Chinese]
+获取终点...
+====================
+[English]
+Get end time (x)
+[Chinese]
+获取结束时间(x)
+====================
+[English]
+Get end time (y)
+[Chinese]
+获取结束时间(y)
+====================
+[English]
+Get end time of interval...
+[Chinese]
+获取区间结束时间...
+====================
+[English]
+Get end time of interval... || Get end point...
+[Chinese]
+获取区间结束时间... || 获取结束点...
+====================
+[English]
+Get end time...
+[Chinese]
+获取结束时间...
+====================
+[English]
+Get energy in air
+[Chinese]
+获取空气中的能量
+====================
+[English]
+Get energy...
+[Chinese]
+获取能量...
+====================
+[English]
+Get first bandwidth
+[Chinese]
+获取第一带宽
+====================
+[English]
+Get first formant
+[Chinese]
+获取第一共振峰
+====================
+[English]
+Get flutter at time...
+[Chinese]
+获取指定时间的 flutter
+====================
+[English]
+Get formant at time...
+[Chinese]
+获取指定时间的 formant
+====================
+[English]
+Get formant...
+[Chinese]
+获取共振峰...
+====================
+[English]
+Get fourth bandwidth
+[Chinese]
+获取第四带宽
+====================
+[English]
+Get fourth formant
+[Chinese]
+获取第四共振峰
+====================
+[English]
+Get frequency at frequency cursor
+[Chinese]
+获取频率光标处的频率
+====================
+[English]
+Get frequency in Bark...
+[Chinese]
+获取频率 in Bark...
+====================
+[English]
+Get frequency in mel...
+[Chinese]
+获取频率 in mel...
+====================
+[English]
+Get frequency of row
+[Chinese]
+获取行的频率
+====================
+[English]
+Get frication amplitude at time...
+[Chinese]
+获取指定时间的 frication amplitude
+====================
+[English]
+Get frication bypass at time...
+[Chinese]
+获取指定时间的 frication bypass
+====================
+[English]
+Get gain in frame...
+[Chinese]
+获取增益 in 帧...
+====================
+[English]
+Get high index from time...
+[Chinese]
+从时间获取高层索引...
+====================
+[English]
+Get high interval at time...
+[Chinese]
+获取指定时间的 high interval
+====================
+[English]
+Get index from time...
+[Chinese]
+通过时间获取索引...
+====================
+[English]
+Get intensity
+[Chinese]
+获取音强
+====================
+[English]
+Get intensity (dB)
+[Chinese]
+获取音强 (dB)
+====================
+[English]
+Get interval at time...
+[Chinese]
+获取指定时间的 interval
+====================
+[English]
+Get interval boundary from time...
+[Chinese]
+从时间获取区间边界...
+====================
+[English]
+Get interval edge from time...
+[Chinese]
+从时间获取区间边缘...
+====================
+[English]
+Get interval...
+[Chinese]
+获取区间...
+====================
+[English]
+Get label of interval
+[Chinese]
+获取区间标签
+====================
+[English]
+Get label of interval...
+[Chinese]
+获取区间标签...
+====================
+[English]
+Get label of point...
+[Chinese]
+获取点的标签...
+====================
+[English]
+Get label...
+[Chinese]
+获取标签...
+====================
+[English]
+Get length
+[Chinese]
+获取长度
+====================
+[English]
+Get length of selection
+[Chinese]
+获取选区长度
+====================
+[English]
+Get length of selection || Get selection length
+[Chinese]
+获取选择部分长度 || 获取选择长度
+====================
+[English]
+Get length of visible part
+[Chinese]
+获取可见部分长度
+====================
+[English]
+Get low index from time...
+[Chinese]
+从时间获取低层索引...
+====================
+[English]
+Get low interval at time...
+[Chinese]
+获取指定时间的 low interval
+====================
+[English]
+Get maximum intensity
+[Chinese]
+获取最大音强
+====================
+[English]
+Get maximum pitch
+[Chinese]
+获取最大音高
+====================
+[English]
+Get maximum...
+[Chinese]
+获取最大值...
+====================
+[English]
+Get mean...
+[Chinese]
+获取均值...
+====================
+[English]
+Get minimum intensity
+[Chinese]
+获取最小音强
+====================
+[English]
+Get minimum pitch
+[Chinese]
+获取最小音高
+====================
+[English]
+Get minimum...
+[Chinese]
+获取最小值...
+====================
+[English]
+Get nearest index from time...
+[Chinese]
+从时间获取最近索引...
+====================
+[English]
+Get nearest level crossing...
+[Chinese]
+获取最近的电平交叉点...
+====================
+[English]
+Get nearest zero crossing...
+[Chinese]
+获取最近的零交叉点...
+====================
+[English]
+Get number of channels
+[Chinese]
+获取通道数
+====================
+[English]
+Get number of intervals
+[Chinese]
+获取区间数量
+====================
+[English]
+Get number of intervals...
+[Chinese]
+获取区间数量...
+====================
+[English]
+Get number of points
+[Chinese]
+获取点数量
+====================
+[English]
+Get number of points...
+[Chinese]
+获取点数量...
+====================
+[English]
+Get number of samples
+[Chinese]
+获取采样数
+====================
+[English]
+Get number of tiers
+[Chinese]
+获取层数量
+====================
+[English]
+Get open phase at time...
+[Chinese]
+获取指定时间的 open phase
+====================
+[English]
+Get pitch
+[Chinese]
+获取音高
+====================
+[English]
+Get pitch at time...
+[Chinese]
+获取指定时间的 pitch
+====================
+[English]
+Get points (followed)...
+[Chinese]
+获取后面的点...
+====================
+[English]
+Get points (preceded)...
+[Chinese]
+获取前面的点...
+====================
+[English]
+Get points...
+[Chinese]
+获取点...
+====================
+[English]
+Get power in air
+[Chinese]
+获取空气中的功率
+====================
+[English]
+Get power...
+[Chinese]
+获取功率...
+====================
+[English]
+Get root-mean-square...
+[Chinese]
+获取均方根 (RMS)...
+====================
+[English]
+Get row label
+[Chinese]
+获取行标签
+====================
+[English]
+Get row label...
+[Chinese]
+获取行标签...
+====================
+[English]
+Get sample duration
+[Chinese]
+获取采样时长
+====================
+[English]
+Get sample number from time...
+[Chinese]
+通过时间获取采样号...
+====================
+[English]
+Get sample number from time... || Get index from time...
+[Chinese]
+通过时间获取采样号... || 通过时间获取索引...
+====================
+[English]
+Get sample period
+[Chinese]
+获取采样周期
+====================
+[English]
+Get sample rate
+[Chinese]
+获取采样率
+====================
+[English]
+Get sampling frequency
+[Chinese]
+获取采样频率
+====================
+[English]
+Get sampling frequency || Get sample rate
+[Chinese]
+获取采样频率 || 获取采样率
+====================
+[English]
+Get sampling period
+[Chinese]
+获取采样周期
+====================
+[English]
+Get sampling period || Get sample duration || Get sample period
+[Chinese]
+获取采样周期 || 获取采样时长 || 获取采样周期
+====================
+[English]
+Get second bandwidth
+[Chinese]
+获取第二带宽
+====================
+[English]
+Get second formant
+[Chinese]
+获取第二共振峰
+====================
+[English]
+Get selection length
+[Chinese]
+获取选择长度
+====================
+[English]
+Get slope...
+[Chinese]
+获取斜率...
+====================
+[English]
+Get spectral power at cursor cross
+[Chinese]
+获取光标交叉处的谱功率
+====================
+[English]
+Get spectral tilt at time...
+[Chinese]
+获取指定时间的 spectral tilt
+====================
+[English]
+Get standard deviation...
+[Chinese]
+获取标准差...
+====================
+[English]
+Get start of selection
+[Chinese]
+获取选区起点
+====================
+[English]
+Get start of selection || Get begin of selection
+[Chinese]
+获取选择部分起点 || 获取起点 of 选择
+====================
+[English]
+Get start of visible part
+[Chinese]
+获取可见部分起点
+====================
+[English]
+Get start point...
+[Chinese]
+获取起始点...
+====================
+[English]
+Get start time (x)
+[Chinese]
+获取开始时间(x)
+====================
+[English]
+Get start time (y)
+[Chinese]
+获取开始时间(y)
+====================
+[English]
+Get start time of interval...
+[Chinese]
+获取区间起始时间...
+====================
+[English]
+Get start time of interval... || Get starting point... || Get start point...
+[Chinese]
+获取区间起始时间... || 获取起始点... || 获取起始点...
+====================
+[English]
+Get start time...
+[Chinese]
+获取开始时间...
+====================
+[English]
+Get starting point of interval
+[Chinese]
+获取区间开始时间
+====================
+[English]
+Get starting point of interval...
+[Chinese]
+获取区间开始时间...
+====================
+[English]
+Get starting point...
+[Chinese]
+获取起始点...
+====================
+[English]
+Get starting points...
+[Chinese]
+获取起点...
+====================
+[English]
+Get third bandwidth
+[Chinese]
+获取第三带宽
+====================
+[English]
+Get third formant
+[Chinese]
+获取第三共振峰
+====================
+[English]
+Get tier name
+[Chinese]
+获取层名称
+====================
+[English]
+Get tier name...
+[Chinese]
+获取层名称...
+====================
+[English]
+Get tier type
+[Chinese]
+获取层类型
+====================
+[English]
+Get time
+[Chinese]
+获取时间
+====================
+[English]
+Get time from index...
+[Chinese]
+通过索引获取时间...
+====================
+[English]
+Get time from sample number...
+[Chinese]
+通过采样号获取时间...
+====================
+[English]
+Get time from sample number... || Get time from index...
+[Chinese]
+通过采样号获取时间... || 通过索引获取时间...
+====================
+[English]
+Get time of column
+[Chinese]
+获取列对应的时间
+====================
+[English]
+Get time of maximum...
+[Chinese]
+获取最大值的时间...
+====================
+[English]
+Get time of minimum...
+[Chinese]
+获取最小值的时间...
+====================
+[English]
+Get time of point...
+[Chinese]
+获取点的时间...
+====================
+[English]
+Get total duration of intervals where...
+[Chinese]
+获取区间总时长，当...
+====================
+[English]
+Get value at sample number...
+[Chinese]
+获取指定采样点号的数值...
+====================
+[English]
+Get value at time...
+[Chinese]
+获取指定时间的 value
+====================
+[English]
+Get voicing amplitude at time...
+[Chinese]
+获取指定时间的 voicing amplitude
+====================
+[English]
+Get weight
+[Chinese]
+获取权重
+====================
+[English]
+Get weight...
+[Chinese]
+获取权重...
+====================
+[English]
+Get x of column...
+[Chinese]
+获取列的 x 坐标...
+====================
+[English]
+Get x time...
+[Chinese]
+获取 x 时间...
+====================
+[English]
+Get y of row...
+[Chinese]
+获取行的 y 坐标...
+====================
+[English]
+Get y time...
+[Chinese]
+获取 y 时间...
+====================
+[English]
+Go to manual page
+[Chinese]
+转到手册页
+====================
+[English]
+Go to manual page...
+[Chinese]
+转到手册页...
+====================
+[English]
+Goodies
+[Chinese]
+小工具 (Goodies)
+====================
+[English]
+Green
+[Chinese]
+绿色
+====================
+[English]
+Grey
+[Chinese]
+灰色
+====================
+[English]
+Group
+[Chinese]
+分组
+====================
+[English]
+Group...
+[Chinese]
+分组...
+====================
+[English]
+Hamming (raised sine-squared)
+[Chinese]
+海明窗 (Hamming/raised sine-squared)
+====================
+[English]
+Hanning (sine-squared)
+[Chinese]
+汉宁窗 (Hanning/sine-squared)
+====================
+[English]
+Harmonicity Formula
+[Chinese]
+谐噪比公式
+====================
+[English]
+Harmonicity help
+[Chinese]
+谐噪比帮助
+====================
+[English]
+Harmonicity: Formula...
+[Chinese]
+谐噪比：公式...
+====================
+[English]
+Height
+[Chinese]
+高度
+====================
+[English]
+Height (dB)
+[Chinese]
+高度 (dB)
+====================
+[English]
+Help
+[Chinese]
+帮助
+====================
+[English]
+Helvetica
+[Chinese]
+Helvetica 无衬线体
+====================
+[English]
+Hertz
+[Chinese]
+赫兹
+====================
+[English]
+Hertz (logarithmic)
+[Chinese]
+赫兹 (对数)
+====================
+[English]
+Hide action command
+[Chinese]
+隐藏动作命令
+====================
+[English]
+Hide action command...
+[Chinese]
+隐藏动作命令...
+====================
+[English]
+Hide menu command
+[Chinese]
+隐藏菜单命令
+====================
+[English]
+Hide menu command...
+[Chinese]
+隐藏菜单命令...
+====================
+[English]
+Hint: to label or segment an existing Sound,
+[Chinese]
+提示：若要对现有声音进行标注或切分，
+====================
+[English]
+How to choose a pitch analysis method
+[Chinese]
+如何选择音高分析方法
+====================
+[English]
+How to find a path through the candidates...
+[Chinese]
+如何确定最终音高路径...
+====================
+[English]
+How to find the candidates...
+[Chinese]
+如何寻找候选音高...
+====================
+[English]
+How to preprocess the sound...
+[Chinese]
+如何预处理声音...
+====================
+[English]
+How to view...
+[Chinese]
+显示方式...
+====================
+[English]
+ISpline help
+[Chinese]
+I 样条帮助
+====================
+[English]
+ISpline(x) = c[1] I[1](x) + c[2] I[1](x) + ... c[n] I[n](x)
+[Chinese]
+I 样条(x) = c[1] I[1](x) + c[2] I[1](x) + ... c[n] I[n](x)
+====================
+[English]
+If the time step strategy is "fixed":
+[Chinese]
+如果时间步长策略为 "固定 (fixed)"：
+====================
+[English]
+If the time step strategy is "view-dependent":
+[Chinese]
+如果时间步长策略为 "每个视口 (view-dependent)"：
+====================
+[English]
+In-place filter
+[Chinese]
+就地滤波
+====================
+[English]
+Include empty intervals
+[Chinese]
+包含空区间
+====================
+[English]
+Include line number
+[Chinese]
+包含行号
+====================
+[English]
+Include tier names
+[Chinese]
+包含层名称
+====================
+[English]
+Info
+[Chinese]
+信息
+====================
+[English]
+Info on whole Sound
+[Chinese]
+完整声音信息
+====================
+[English]
+Info on whole Sound || Sound info
+[Chinese]
+完整声音信息 || 声音信息
+====================
+[English]
+Insert boundary...
+[Chinese]
+插入边界...
+====================
+[English]
+Insert interval tier...
+[Chinese]
+插入区间层...
+====================
+[English]
+Insert picture from file (embedded)...
+[Chinese]
+从文件插入图像 (嵌入式)...
+====================
+[English]
+Insert picture from file...
+[Chinese]
+从文件插入图像...
+====================
+[English]
+Insert point tier...
+[Chinese]
+插入点层...
+====================
+[English]
+Insert point...
+[Chinese]
+插入点...
+====================
+[English]
+Inspect
+[Chinese]
+检查
+====================
+[English]
+Intensity
+[Chinese]
+音强
+====================
+[English]
+Intensity (Pa\u00B2)
+[Chinese]
+音强 (Pa\u00B2)
+====================
+[English]
+Intensity (dB)
+[Chinese]
+音强 (dB)
+====================
+[English]
+Intensity Formula
+[Chinese]
+音强公式
+====================
+[English]
+Intensity help
+[Chinese]
+音强帮助
+====================
+[English]
+Intensity listing
+[Chinese]
+音强列表
+====================
+[English]
+Intensity settings
+[Chinese]
+音强设置
+====================
+[English]
+Intensity settings...
+[Chinese]
+音强设置...
+====================
+[English]
+IntensityTier help
+[Chinese]
+音强层帮助
+====================
+[English]
+IntensityTier: Formula
+[Chinese]
+音强层：公式
+====================
+[English]
+IntensityTier: Formula...
+[Chinese]
+音强层：公式...
+====================
+[English]
+Interoperability
+[Chinese]
+互操作性
+====================
+[English]
+Interrupt playing
+[Chinese]
+中断播放
+====================
+[English]
+Interval
+[Chinese]
+区间
+====================
+[English]
+Interval:
+[Chinese]
+区间：
+====================
+[English]
+Intro
+[Chinese]
+简介
+====================
+[English]
+Is interval tier...
+[Chinese]
+是否为区间层？...
+====================
+[English]
+KlattGrid help
+[Chinese]
+KlattGrid 帮助
+====================
+[English]
+Label
+[Chinese]
+标签
+====================
+[English]
+Label of first column
+[Chinese]
+标签 of 第一列
+====================
+[English]
+Labels
+[Chinese]
+标签
+====================
+[English]
+Left
+[Chinese]
+左
+====================
+[English]
+LegendreSeries help
+[Chinese]
+勒让德级数帮助
+====================
+[English]
+LegendreSeries(x) = c[1] P[0](x) + c[2] P[1](x) + ... c[n+1] P[n](x)
+[Chinese]
+勒让德级数(x) = c[1] P[0](x) + c[2] P[1](x) + ... c[n+1] P[n](x)
+====================
+[English]
+Lengthen (overlap-add)...
+[Chinese]
+拉长 (重叠相加)...
+====================
+[English]
+License
+[Chinese]
+许可证
+====================
+[English]
+Lime
+[Chinese]
+浅绿 (酸橙)
+====================
+[English]
+Line width...
+[Chinese]
+线宽...
+====================
+[English]
+Linear
+[Chinese]
+线性
+====================
+[English]
+List formant slope...
+[Chinese]
+列表共振峰斜率...
+====================
+[English]
+List labels...
+[Chinese]
+列表标签...
+====================
+[English]
+List parameter values
+[Chinese]
+列表参数值
+====================
+[English]
+List readable types of objects
+[Chinese]
+列出可读取的对象类型
+====================
+[English]
+List values
+[Chinese]
+列表值
+====================
+[English]
+List...
+[Chinese]
+列表...
+====================
+[English]
+Log 1
+[Chinese]
+记录 1
+====================
+[English]
+Log 2
+[Chinese]
+记录 2
+====================
+[English]
+Log script 3 (...)
+[Chinese]
+日志脚本 3 (...)
+====================
+[English]
+Log script 4 (...)
+[Chinese]
+日志脚本 4 (...)
+====================
+[English]
+Log settings...
+[Chinese]
+记录设置...
+====================
+[English]
+Logarithmic
+[Chinese]
+对数
+====================
+[English]
+Logarithmic marks
+[Chinese]
+对数刻度标记
+====================
+[English]
+LongSound help
+[Chinese]
+长声音帮助
+====================
+[English]
+LongSound preferences...
+[Chinese]
+长声音偏好...
+====================
+[English]
+LongSound settings...
+[Chinese]
+长声音设置...
+====================
+[English]
+LongSound settings... || LongSound preferences...
+[Chinese]
+长声音设置... || 长声音偏好...
+====================
+[English]
+LongSoundEditor help
+[Chinese]
+长声音编辑器帮助
+====================
+[English]
+Longest analysis (s)
+[Chinese]
+最长分析时间 (秒)
+====================
+[English]
+MSpline help
+[Chinese]
+M 样条帮助
+====================
+[English]
+MSpline(x) = c[1] M[1](x) + c[2] M[1](x) + ... c[n] M[n](x)
+[Chinese]
+M 样条(x) = c[1] M[1](x) + c[2] M[1](x) + ... c[n] M[n](x)
+====================
+[English]
+Magenta
+[Chinese]
+品红
+====================
+[English]
+Manipulate -
+[Chinese]
+操作 -
+====================
+[English]
+Margins
+[Chinese]
+页边距
+====================
+[English]
+Margins:
+[Chinese]
+边距：
+====================
+[English]
+Marks
+[Chinese]
+刻度标记
+====================
+[English]
+Marks bottom every...
+[Chinese]
+底部每隔...标出刻度...
+====================
+[English]
+Marks left every...
+[Chinese]
+左侧每隔...标出刻度...
+====================
+[English]
+Marks right every...
+[Chinese]
+右侧每隔...标出刻度...
+====================
+[English]
+Marks top every...
+[Chinese]
+顶部每隔...标出刻度...
+====================
+[English]
+Maroon
+[Chinese]
+褐红
+====================
+[English]
+Matrix
+[Chinese]
+矩阵
+====================
+[English]
+Matrix Formula
+[Chinese]
+矩阵公式
+====================
+[English]
+Matrix help
+[Chinese]
+矩阵帮助
+====================
+[English]
+Matrix: Formula...
+[Chinese]
+矩阵：公式...
+====================
+[English]
+Matrix: Get x of column
+[Chinese]
+Matrix：获取列的 x 坐标
+====================
+[English]
+Matrix: Get y of row
+[Chinese]
+Matrix：获取行的 y 坐标
+====================
+[English]
+Matrix: Scatter plot
+[Chinese]
+矩阵：散点图
+====================
+[English]
+Max. number of candidates
+[Chinese]
+最大候选音高数量
+====================
+[English]
+Maximum (dB/Hz)
+[Chinese]
+最大值 (dB/Hz)
+====================
+[English]
+Maximum (dB/Hz):
+[Chinese]
+最大值 (dB/Hz)：
+====================
+[English]
+Maximum amplitude factor
+[Chinese]
+最大振幅因子
+====================
+[English]
+Maximum formant (Hz)
+[Chinese]
+最大共振峰 (Hz)
+====================
+[English]
+Maximum number of threads
+[Chinese]
+最大线程数
+====================
+[English]
+Maximum period factor
+[Chinese]
+最大周期因子
+====================
+[English]
+Maximum:
+[Chinese]
+最大值：
+====================
+[English]
+Measure
+[Chinese]
+测量
+====================
+[English]
+Mel
+[Chinese]
+美尔
+====================
+[English]
+Merge...
+[Chinese]
+合并...
+====================
+[English]
+Method
+[Chinese]
+方法
+====================
+[English]
+Minimum number of frames per thread
+[Chinese]
+每个线程的最小帧数
+====================
+[English]
+Minimum:
+[Chinese]
+最小值：
+====================
+[English]
+MixingMatrix
+[Chinese]
+混合矩阵
+====================
+[English]
+MixingMatrix help
+[Chinese]
+混合矩阵帮助
+====================
+[English]
+Modify
+[Chinese]
+修改
+====================
+[English]
+Modify -
+[Chinese]
+修改 -
+====================
+[English]
+Modify Sound
+[Chinese]
+修改声音
+====================
+[English]
+Modify TextGrid
+[Chinese]
+修改 TextGrid
+====================
+[English]
+Modify sound:
+[Chinese]
+修改声音：
+====================
+[English]
+Modify times
+[Chinese]
+修改时间
+====================
+[English]
+Mono
+[Chinese]
+单声道
+====================
+[English]
+Mouse selects inner viewport
+[Chinese]
+鼠标选择内部视口
+====================
+[English]
+Mouse selects outer viewport
+[Chinese]
+鼠标选择外部视口
+====================
+[English]
+Move cursor by
+[Chinese]
+移动光标 (偏移量)
+====================
+[English]
+Move cursor by...
+[Chinese]
+移动光标 (偏移量)...
+====================
+[English]
+Move cursor to
+[Chinese]
+移动光标到
+====================
+[English]
+Move cursor to end of selection
+[Chinese]
+移动光标到选择终点
+====================
+[English]
+Move cursor to maximum pitch
+[Chinese]
+移动光标到最大音高
+====================
+[English]
+Move cursor to minimum pitch
+[Chinese]
+移动光标到最小音高
+====================
+[English]
+Move cursor to nearest zero crossing
+[Chinese]
+移动光标到最近的零交叉点
+====================
+[English]
+Move cursor to start of selection
+[Chinese]
+移动光标到选择起点
+====================
+[English]
+Move cursor to...
+[Chinese]
+移动光标到...
+====================
+[English]
+Move end of selection by
+[Chinese]
+移动选区终点 (偏移量)
+====================
+[English]
+Move end of selection by...
+[Chinese]
+移动选区终点 (偏移量)...
+====================
+[English]
+Move end of selection left
+[Chinese]
+左移选择终点
+====================
+[English]
+Move end of selection right
+[Chinese]
+右移选择终点
+====================
+[English]
+Move end of selection to nearest zero crossing
+[Chinese]
+移动选区终点到最近的零交叉点
+====================
+[English]
+Move frequency cursor to...
+[Chinese]
+移动频率光标到...
+====================
+[English]
+Move start of selection by
+[Chinese]
+移动选区起点 (偏移量)
+====================
+[English]
+Move start of selection by...
+[Chinese]
+移动选区起点 (偏移量)...
+====================
+[English]
+Move start of selection left
+[Chinese]
+左移选择起点
+====================
+[English]
+Move start of selection right
+[Chinese]
+右移选择起点
+====================
+[English]
+Move start of selection to nearest zero crossing
+[Chinese]
+移动选区起点到最近的零交叉点
+====================
+[English]
+Multidimensional scaling
+[Chinese]
+多维标度分析
+====================
+[English]
+Multidimensional scaling tutorial
+[Chinese]
+多维标度分析教程
+====================
+[English]
+Multiply by window...
+[Chinese]
+乘窗...
+====================
+[English]
+Multiply...
+[Chinese]
+乘...
+====================
+[English]
+Mute channels
+[Chinese]
+静音通道
+====================
+[English]
+Mute channels...
+[Chinese]
+静音通道...
+====================
+[English]
+Name of new object
+[Chinese]
+新对象名称
+====================
+[English]
+Name:
+[Chinese]
+名称：
+====================
+[English]
+Navy
+[Chinese]
+藏青
+====================
+[English]
+Network: Add connection
+[Chinese]
+网络：添加连接
+====================
+[English]
+Network: Get weight
+[Chinese]
+网络：获取权重
+====================
+[English]
+Network: Set weight
+[Chinese]
+网络：设置权重
+====================
+[English]
+New
+[Chinese]
+新建
+====================
+[English]
+New Praat notebook
+[Chinese]
+新建 Praat 笔记本 (Notebook)
+====================
+[English]
+New Praat script
+[Chinese]
+新建 Praat 脚本
+====================
+[English]
+New editor script
+[Chinese]
+新建编辑器脚本
+====================
+[English]
+New name
+[Chinese]
+新名称
+====================
+[English]
+No channel
+[Chinese]
+无通道
+====================
+[English]
+No column
+[Chinese]
+无列
+====================
+[English]
+No columns.
+[Chinese]
+无列。
+====================
+[English]
+No constraint "
+[Chinese]
+无约束 "
+====================
+[English]
+No history.
+[Chinese]
+无历史。
+====================
+[English]
+No periodicity at time
+[Chinese]
+指定时间无周期性
+====================
+[English]
+No rows.
+[Chinese]
+无行。
+====================
+[English]
+No selection.
+[Chinese]
+无选区。
+====================
+[English]
+No text selected.
+[Chinese]
+未选择任何文本。
+====================
+[English]
+No tier
+[Chinese]
+无层
+====================
+[English]
+Note that you can include many special functions in your formula,
+[Chinese]
+请注意，您可以在公式中包含许多特殊函数，
+====================
+[English]
+Note: the pitch floor is taken from the pitch settings.
+[Chinese]
+注：音高下限取自音高设置。
+====================
+[English]
+Number of formants
+[Chinese]
+共振峰数量
+====================
+[English]
+Number of frequency steps
+[Chinese]
+频率步数
+====================
+[English]
+Number of frequency steps:
+[Chinese]
+频率步数：
+====================
+[English]
+Number of threads for diarization:
+[Chinese]
+说话人分离线程数：
+====================
+[English]
+Number of threads for transcription:
+[Chinese]
+转写线程数：
+====================
+[English]
+Number of time steps
+[Chinese]
+时间步数
+====================
+[English]
+Number of time steps per view
+[Chinese]
+每个视口的时间步数
+====================
+[English]
+Number of time steps:
+[Chinese]
+时间步数：
+====================
+[English]
+OK
+[Chinese]
+确定
+====================
+[English]
+OT learning tutorial
+[Chinese]
+优选论学习教程
+====================
+[English]
+Objects
+[Chinese]
+对象
+====================
+[English]
+Objects window
+[Chinese]
+对象窗口
+====================
+[English]
+Objects:
+[Chinese]
+对象：
+====================
+[English]
+Octave cost
+[Chinese]
+倍频程惩罚
+====================
+[English]
+Octave-jump cost
+[Chinese]
+倍频程跳跃惩罚
+====================
+[English]
+Olive
+[Chinese]
+橄榄绿
+====================
+[English]
+One logarithmic mark
+[Chinese]
+单个对数刻度标记
+====================
+[English]
+One mark bottom...
+[Chinese]
+在底部标出单个刻度...
+====================
+[English]
+One mark left...
+[Chinese]
+在左侧标出单个刻度...
+====================
+[English]
+One mark right...
+[Chinese]
+在右侧标出单个刻度...
+====================
+[English]
+One mark top...
+[Chinese]
+在顶部标出单个刻度...
+====================
+[English]
+Open
+[Chinese]
+打开
+====================
+[English]
+Open Picture window
+[Chinese]
+打开图像窗口 (Praat Picture)
+====================
+[English]
+Open Praat notebook...
+[Chinese]
+打开 Praat 笔记本 (Notebook)...
+====================
+[English]
+Open Praat script...
+[Chinese]
+打开 Praat 脚本...
+====================
+[English]
+Open editor script...
+[Chinese]
+打开编辑器脚本...
+====================
+[English]
+Open long sound file
+[Chinese]
+打开长声音文件
+====================
+[English]
+Open long sound file...
+[Chinese]
+打开长声音文件...
+====================
+[English]
+Open...
+[Chinese]
+打开...
+====================
+[English]
+Output encoding
+[Chinese]
+输出编码
+====================
+[English]
+Override sampling frequency...
+[Chinese]
+覆盖采样频率...
+====================
+[English]
+Paint circle (mm)...
+[Chinese]
+填充圆形 (毫米)...
+====================
+[English]
+Paint circle...
+[Chinese]
+填充圆形...
+====================
+[English]
+Paint ellipse...
+[Chinese]
+填充椭圆...
+====================
+[English]
+Paint enclosed...
+[Chinese]
+对闭合区域着色...
+====================
+[English]
+Paint rectangle...
+[Chinese]
+填充矩形...
+====================
+[English]
+Paint rounded rectangle...
+[Chinese]
+填充圆角矩形...
+====================
+[English]
+Paint visible spectrogram...
+[Chinese]
+绘制可见声谱图...
+====================
+[English]
+Paint where...
+[Chinese]
+着色于指定条件...
+====================
+[English]
+Palatino
+[Chinese]
+Palatino 优雅体
+====================
+[English]
+Paste
+[Chinese]
+粘贴
+====================
+[English]
+Paste after selection
+[Chinese]
+粘贴到选择之后
+====================
+[English]
+Paste before selection
+[Chinese]
+粘贴到选择之前
+====================
+[English]
+Paste over selection
+[Chinese]
+覆盖粘贴到选择
+====================
+[English]
+Paste text
+[Chinese]
+粘贴文本
+====================
+[English]
+Pause
+[Chinese]
+暂停
+====================
+[English]
+Pen
+[Chinese]
+画笔
+====================
+[English]
+Permutation help
+[Chinese]
+置换帮助
+====================
+[English]
+Permutation: Reverse
+[Chinese]
+置换：反转
+====================
+[English]
+Permutation: Reverse...
+[Chinese]
+置换：反转...
+====================
+[English]
+Phase
+[Chinese]
+相位
+====================
+[English]
+Phase (0-1)
+[Chinese]
+相位(0-1)
+====================
+[English]
+Phonetic symbols
+[Chinese]
+音标符号
+====================
+[English]
+Photo
+[Chinese]
+照片
+====================
+[English]
+Picture
+[Chinese]
+图像
+====================
+[English]
+Picture info
+[Chinese]
+图像属性信息
+====================
+[English]
+Picture window help
+[Chinese]
+图像窗口帮助
+====================
+[English]
+Picture window:
+[Chinese]
+图像窗口：
+====================
+[English]
+Pink
+[Chinese]
+粉红
+====================
+[English]
+Pitch
+[Chinese]
+音高
+====================
+[English]
+Pitch (Hz)
+[Chinese]
+音高 (Hz)
+====================
+[English]
+Pitch analysis method is filtered autocorrelation
+[Chinese]
+音高分析方法为滤波自相关
+====================
+[English]
+Pitch analysis method is filtered cross-correlation
+[Chinese]
+音高分析方法为滤波互相关
+====================
+[English]
+Pitch analysis method is raw autocorrelation
+[Chinese]
+音高分析方法为原始自相关
+====================
+[English]
+Pitch analysis method is raw cross-correlation
+[Chinese]
+音高分析方法为原始互相关
+====================
+[English]
+Pitch ceiling (Hz)
+[Chinese]
+音高上限 (Hz)
+====================
+[English]
+Pitch floor (Hz)
+[Chinese]
+音高下限 (Hz)
+====================
+[English]
+Pitch help
+[Chinese]
+音高帮助
+====================
+[English]
+Pitch listing
+[Chinese]
+音高列表
+====================
+[English]
+Pitch methods and settings:
+[Chinese]
+音高分析方法与设置：
+====================
+[English]
+Pitch settings (filtered autocorrelation)...
+[Chinese]
+音高设置 (滤波自相关)...
+====================
+[English]
+Pitch settings (filtered cross-correlation)...
+[Chinese]
+音高设置 (滤波互相关)...
+====================
+[English]
+Pitch settings (raw autocorrelation)...
+[Chinese]
+音高设置 (原始自相关)...
+====================
+[English]
+Pitch settings (raw cross-correlation)...
+[Chinese]
+音高设置 (原始互相关)...
+====================
+[English]
+Pitch settings...
+[Chinese]
+音高设置...
+====================
+[English]
+Pitch:
+[Chinese]
+音高：
+====================
+[English]
+Pitch: Draw
+[Chinese]
+音高：绘制
+====================
+[English]
+Pitch: Draw mel
+[Chinese]
+音高：绘制 mel
+====================
+[English]
+Pitch: Draw...
+[Chinese]
+音高：绘制...
+====================
+[English]
+Pitch: Formula
+[Chinese]
+音高：公式
+====================
+[English]
+PitchTier & Pitch: Draw
+[Chinese]
+音高层&音高：绘制
+====================
+[English]
+PitchTier help
+[Chinese]
+音高层帮助
+====================
+[English]
+PitchTier: Draw
+[Chinese]
+音高层：绘制
+====================
+[English]
+PitchTier: Formula
+[Chinese]
+音高层：公式
+====================
+[English]
+PitchTier: Formula...
+[Chinese]
+音高层：公式...
+====================
+[English]
+PitchTier: Stylize
+[Chinese]
+音高层：样式化
+====================
+[English]
+PitchTier: Stylize...
+[Chinese]
+音高层：样式化...
+====================
+[English]
+Play
+[Chinese]
+播放
+====================
+[English]
+Play -
+[Chinese]
+播放-
+====================
+[English]
+Play or stop
+[Chinese]
+播放或停止
+====================
+[English]
+Play part...
+[Chinese]
+播放部分...
+====================
+[English]
+Play reverse
+[Chinese]
+播放反转
+====================
+[English]
+Play special...
+[Chinese]
+播放特殊...
+====================
+[English]
+Play window
+[Chinese]
+播放视口内声音
+====================
+[English]
+Play...
+[Chinese]
+播放...
+====================
+[English]
+Plot intensity by pitch
+[Chinese]
+按音高绘制音强图
+====================
+[English]
+Point
+[Chinese]
+点
+====================
+[English]
+PointProcess help
+[Chinese]
+点过程帮助
+====================
+[English]
+PointProcess: Draw
+[Chinese]
+点过程：绘制
+====================
+[English]
+PointProcess: Get interval
+[Chinese]
+点过程：获取区间
+====================
+[English]
+PointProcess: Get interval...
+[Chinese]
+点过程：获取区间...
+====================
+[English]
+Polygon
+[Chinese]
+多边形
+====================
+[English]
+Polygon help
+[Chinese]
+多边形帮助
+====================
+[English]
+Polygon: Circular permutation
+[Chinese]
+多边形：循环置换
+====================
+[English]
+Polygon: Draw
+[Chinese]
+多边形：绘制
+====================
+[English]
+Polynomial
+[Chinese]
+多项式
+====================
+[English]
+Polynomial help
+[Chinese]
+多项式帮助
+====================
+[English]
+PortAudio cannot open sound output:
+[Chinese]
+PortAudio 无法打开声音输出：
+====================
+[English]
+Praat
+[Chinese]
+Praat
+====================
+[English]
+Praat Intro
+[Chinese]
+Praat 简介
+====================
+[English]
+Praat test...
+[Chinese]
+Praat 测试...
+====================
+[English]
+Pre-emphasis (dB/oct)
+[Chinese]
+预加重 (dB/oct)
+====================
+[English]
+Pre-emphasis (dB/oct):
+[Chinese]
+预加重 (dB/oct)：
+====================
+[English]
+Pre-emphasis from (Hz)
+[Chinese]
+预加重起点 (Hz)
+====================
+[English]
+Preferences
+[Chinese]
+偏好设置
+====================
+[English]
+Preferences...
+[Chinese]
+偏好设置...
+====================
+[English]
+Preserve times
+[Chinese]
+保留时间
+====================
+[English]
+Print...
+[Chinese]
+打印图像...
+====================
+[English]
+Privacy and security
+[Chinese]
+隐私与安全
+====================
+[English]
+Programming
+[Chinese]
+编程
+====================
+[English]
+Programming with Praat
+[Chinese]
+用 Praat 进行编程
+====================
+[English]
+Publish
+[Chinese]
+发布
+====================
+[English]
+Pulse listing
+[Chinese]
+脉冲列表
+====================
+[English]
+Pulses
+[Chinese]
+脉冲
+====================
+[English]
+Pulses -- Pitch
+[Chinese]
+脉冲 -- 音高
+====================
+[English]
+Pulses settings...
+[Chinese]
+脉冲设置...
+====================
+[English]
+Purple
+[Chinese]
+紫色
+====================
+[English]
+Query
+[Chinese]
+查询
+====================
+[English]
+Query -
+[Chinese]
+查询 -
+====================
+[English]
+Query dictionary...
+[Chinese]
+查询词典...
+====================
+[English]
+Query formants:
+[Chinese]
+查询共振峰：
+====================
+[English]
+Query intensity
+[Chinese]
+查询音强
+====================
+[English]
+Query interval tier
+[Chinese]
+查询区间层
+====================
+[English]
+Query interval:
+[Chinese]
+查询区间：
+====================
+[English]
+Query pitch:
+[Chinese]
+查询音高：
+====================
+[English]
+Query pulses:
+[Chinese]
+查询脉冲：
+====================
+[English]
+Query selection:
+[Chinese]
+查询选择部分：
+====================
+[English]
+Query sound:
+[Chinese]
+查询声音：
+====================
+[English]
+Query spectrogram:
+[Chinese]
+查询声谱图：
+====================
+[English]
+Query time domain
+[Chinese]
+查询时间域
+====================
+[English]
+Query time sampling
+[Chinese]
+查询时间采样
+====================
+[English]
+Query time sampling >
+[Chinese]
+查询时间采样 >
+====================
+[English]
+Query visible part:
+[Chinese]
+查询可见部分：
+====================
+[English]
+Quit
+[Chinese]
+退出
+====================
+[English]
+Quit Praat
+[Chinese]
+退出 Praat
+====================
+[English]
+Read Matrix from raw text file
+[Chinese]
+从原始文本文件读取矩阵
+====================
+[English]
+Read Matrix from raw text file...
+[Chinese]
+从原始文本文件读取矩阵...
+====================
+[English]
+Read Object(s) from file
+[Chinese]
+从文件读取对象
+====================
+[English]
+Read Sound from raw 16-bit Big Endian file...
+[Chinese]
+从原始 16 位大端文件读取声音...
+====================
+[English]
+Read Sound from raw 16-bit Little Endian file...
+[Chinese]
+从原始 16 位小端文件读取声音...
+====================
+[English]
+Read Sound from raw Alaw file...
+[Chinese]
+从原始 Alaw 文件读取声音...
+====================
+[English]
+Read Sound with adjacent annotation files
+[Chinese]
+从声音与相邻标注文件读取
+====================
+[English]
+Read Sound with adjacent annotation files (Buckeye)
+[Chinese]
+从声音与相邻标注文件读取 (Buckeye)
+====================
+[English]
+Read Sound with adjacent annotation files (Buckeye)...
+[Chinese]
+从声音与相邻标注文件读取 (Buckeye)...
+====================
+[English]
+Read Sound with adjacent annotation files (TIMIT)
+[Chinese]
+从声音与相邻标注文件读取 (TIMIT)
+====================
+[English]
+Read Sound with adjacent annotation files (TIMIT)...
+[Chinese]
+从声音与相邻标注文件读取 (TIMIT)...
+====================
+[English]
+Read Sound with adjacent annotation files...
+[Chinese]
+从声音与相邻标注文件读取...
+====================
+[English]
+Read Strings from raw text file
+[Chinese]
+从原始文本文件读取 Strings 字符串列表
+====================
+[English]
+Read Strings from raw text file...
+[Chinese]
+从原始文本文件读取 Strings 字符串列表...
+====================
+[English]
+Read Table from comma-separated file
+[Chinese]
+从逗号分隔文件读取表格
+====================
+[English]
+Read Table from comma-separated file...
+[Chinese]
+从逗号分隔文件读取表格...
+====================
+[English]
+Read Table from semicolon-separated file
+[Chinese]
+从分号分隔文件读取表格
+====================
+[English]
+Read Table from semicolon-separated file...
+[Chinese]
+从分号分隔文件读取表格...
+====================
+[English]
+Read Table from tab-separated file
+[Chinese]
+从制表符分隔文件读取表格
+====================
+[English]
+Read Table from tab-separated file...
+[Chinese]
+从制表符分隔文件读取表格...
+====================
+[English]
+Read Table from table file...
+[Chinese]
+从表格文件读取表格...
+====================
+[English]
+Read Table from whitespace-separated file
+[Chinese]
+从空格分隔文件读取表格
+====================
+[English]
+Read Table from whitespace-separated file...
+[Chinese]
+从空格分隔文件读取表格...
+====================
+[English]
+Read Table from whitespace-separated file... || Read Table from table file...
+[Chinese]
+从空格分隔文件读取表格... || 从表格文件读取表格...
+====================
+[English]
+Read Table of Real from headerless spreadsheet file
+[Chinese]
+从无表头电子表格文件读取实数表
+====================
+[English]
+Read TableOfReal from headerless spreadsheet file
+[Chinese]
+从无表头电子表格文件读取实数表
+====================
+[English]
+Read TableOfReal from headerless spreadsheet file...
+[Chinese]
+从无表头电子表格文件读取实数表...
+====================
+[English]
+Read TextGrid from ESPS label file...
+[Chinese]
+从 ESPS 标签文件读取 TextGrid...
+====================
+[English]
+Read TextGrid from Xwaves...
+[Chinese]
+从 Xwaves 读取 TextGrid...
+====================
+[English]
+Read TextGrid from Xwaves... || Read TextGrid from ESPS label file...
+[Chinese]
+从 Xwaves 读取 TextGrid... || 从 ESPS 标签文件读取 TextGrid...
+====================
+[English]
+Read from file
+[Chinese]
+从文件读取
+====================
+[English]
+Read from file...
+[Chinese]
+从文件读取...
+====================
+[English]
+Read from praat picture file...
+[Chinese]
+从 Praat Picture 文件读取...
+====================
+[English]
+Read from special annotation file
+[Chinese]
+从特殊标注文件读取
+====================
+[English]
+Read from special annotation file...
+[Chinese]
+从特殊标注文件读取...
+====================
+[English]
+Read from special sound file
+[Chinese]
+从特殊声音文件读取
+====================
+[English]
+Read separate channels from sound file
+[Chinese]
+从声音文件读取分离通道
+====================
+[English]
+Read separate channels from sound file...
+[Chinese]
+从声音文件读取分离通道...
+====================
+[English]
+Read separate channels from sound file... || Read two Sounds from stereo file...
+[Chinese]
+从声音文件读取分离通道... || 从双声道文件读取两个声音...
+====================
+[English]
+Read two Sounds from stereo file...
+[Chinese]
+从双声道文件读取两个声音...
+====================
+[English]
+RealTier help
+[Chinese]
+实数层帮助
+====================
+[English]
+RealTier: Formula
+[Chinese]
+实数层：公式
+====================
+[English]
+RealTier: Formula...
+[Chinese]
+实数层：公式...
+====================
+[English]
+Record
+[Chinese]
+录音
+====================
+[English]
+Record Sound
+[Chinese]
+录制声音
+====================
+[English]
+Record Sound (fixed time)...
+[Chinese]
+录制声音 (固定时间)...
+====================
+[English]
+Record mono Sound...
+[Chinese]
+录制单声道声音...
+====================
+[English]
+Record stereo Sound...
+[Chinese]
+录制双声道声音...
+====================
+[English]
+Rectangle text (maximal fit)...
+[Chinese]
+矩形区域文本 (最大拟合)...
+====================
+[English]
+Rectangle text (wrap & truncate)...
+[Chinese]
+矩形区域文本 (换行与截断)...
+====================
+[English]
+Red
+[Chinese]
+红色
+====================
+[English]
+Redo
+[Chinese]
+重做
+====================
+[English]
+Reduce noise...
+[Chinese]
+降噪...
+====================
+[English]
+Remove
+[Chinese]
+删除
+====================
+[English]
+Remove boundary at time...
+[Chinese]
+移除指定时间的边界...
+====================
+[English]
+Remove channel
+[Chinese]
+移除通道
+====================
+[English]
+Remove channel...
+[Chinese]
+移除通道...
+====================
+[English]
+Remove column
+[Chinese]
+移除列
+====================
+[English]
+Remove column...
+[Chinese]
+移除列...
+====================
+[English]
+Remove constraint
+[Chinese]
+移除约束
+====================
+[English]
+Remove constraint...
+[Chinese]
+移除约束...
+====================
+[English]
+Remove left boundary...
+[Chinese]
+移除左边界...
+====================
+[English]
+Remove point...
+[Chinese]
+移除点...
+====================
+[English]
+Remove points...
+[Chinese]
+移除多个点...
+====================
+[English]
+Remove right boundary...
+[Chinese]
+移除右边界...
+====================
+[English]
+Remove row
+[Chinese]
+移除行
+====================
+[English]
+Remove row...
+[Chinese]
+移除行...
+====================
+[English]
+Remove tier
+[Chinese]
+删除层
+====================
+[English]
+Remove tier...
+[Chinese]
+删除层...
+====================
+[English]
+Rename object
+[Chinese]
+重命名对象
+====================
+[English]
+Rename tier
+[Chinese]
+重命名层
+====================
+[English]
+Rename tier...
+[Chinese]
+重命名层...
+====================
+[English]
+Rename...
+[Chinese]
+重命名...
+====================
+[English]
+Replace interval texts...
+[Chinese]
+替换区间文本...
+====================
+[English]
+Replace point texts...
+[Chinese]
+替换点文本...
+====================
+[English]
+Report app properties
+[Chinese]
+报告应用属性
+====================
+[English]
+Report difference of two proportions
+[Chinese]
+报告两个比例的差异
+====================
+[English]
+Report difference of two proportions...
+[Chinese]
+报告两个比例的差异...
+====================
+[English]
+Report floating point properties
+[Chinese]
+报告浮点属性
+====================
+[English]
+Report font properties
+[Chinese]
+报告字体属性
+====================
+[English]
+Report graphical properties
+[Chinese]
+报告图形属性
+====================
+[English]
+Report integer properties
+[Chinese]
+报告整型属性
+====================
+[English]
+Report memory use
+[Chinese]
+报告内存占用
+====================
+[English]
+Report system properties
+[Chinese]
+报告系统属性
+====================
+[English]
+Report text properties
+[Chinese]
+报告文本属性
+====================
+[English]
+Reporting a problem
+[Chinese]
+报告问题
+====================
+[English]
+Reporting a problem?
+[Chinese]
+报告问题?
+====================
+[English]
+Resample...
+[Chinese]
+重采样...
+====================
+[English]
+Reverse
+[Chinese]
+反转
+====================
+[English]
+Reverse X
+[Chinese]
+反转 X
+====================
+[English]
+Reverse Y
+[Chinese]
+反转 Y
+====================
+[English]
+Reverse selection
+[Chinese]
+反向选定部分
+====================
+[English]
+Reverse trajectory
+[Chinese]
+反转轨迹
+====================
+[English]
+Reverse...
+[Chinese]
+反转...
+====================
+[English]
+Revert
+[Chinese]
+重置
+====================
+[English]
+Right
+[Chinese]
+右
+====================
+[English]
+Roots help
+[Chinese]
+根帮助
+====================
+[English]
+Roots: Draw
+[Chinese]
+根：绘制
+====================
+[English]
+Row
+[Chinese]
+行
+====================
+[English]
+Row label
+[Chinese]
+行标签
+====================
+[English]
+Run
+[Chinese]
+运行
+====================
+[English]
+Run script...
+[Chinese]
+运行脚本...
+====================
+[English]
+Sampling frequency:
+[Chinese]
+采样频率：
+====================
+[English]
+Save
+[Chinese]
+保存
+====================
+[English]
+Save & Open
+[Chinese]
+保存&打开
+====================
+[English]
+Save Demo window as PDF file
+[Chinese]
+保存演示窗口为 PDF 文件
+====================
+[English]
+Save Demo window as PDF file...
+[Chinese]
+保存演示窗口为 PDF 文件...
+====================
+[English]
+Save Object(s) as one binary file
+[Chinese]
+保存多个对象为一个二进制文件
+====================
+[English]
+Save Object(s) as one short text file
+[Chinese]
+保存多个对象为一个短文本文件
+====================
+[English]
+Save Object(s) as one text file
+[Chinese]
+保存多个对象为一个文本文件
+====================
+[English]
+Save all pages as HTML files
+[Chinese]
+保存所有页面为 HTML 文件
+====================
+[English]
+Save as 24-bit WAV file...
+[Chinese]
+保存为 24 位 WAV 文件...
+====================
+[English]
+Save as 300-dpi PNG file...
+[Chinese]
+保存为 300-dpi PNG 图像...
+====================
+[English]
+Save as 32-bit WAV file...
+[Chinese]
+保存为 32 位 WAV 文件...
+====================
+[English]
+Save as 600-dpi PNG file...
+[Chinese]
+保存为 600-dpi PNG 图像...
+====================
+[English]
+Save as AIFC file...
+[Chinese]
+保存为 AIFC 文件...
+====================
+[English]
+Save as AIFC file... || Write to AIFC file...
+[Chinese]
+保存为 AIFC 文件... || 写入 AIFC 文件...
+====================
+[English]
+Save as AIFF file...
+[Chinese]
+保存为 AIFF 文件...
+====================
+[English]
+Save as AIFF file... || Write to AIFF file...
+[Chinese]
+保存为 AIFF 文件... || 写入 AIFF 文件...
+====================
+[English]
+Save as EPS file
+[Chinese]
+保存为 EPS 矢量图
+====================
+[English]
+Save as EPS file...
+[Chinese]
+保存为 EPS 矢量图...
+====================
+[English]
+Save as FLAC file...
+[Chinese]
+保存为 FLAC 文件...
+====================
+[English]
+Save as FLAC file... || Write to FLAC file...
+[Chinese]
+保存为 FLAC 文件... || 写入 FLAC 文件...
+====================
+[English]
+Save as Kay sound file...
+[Chinese]
+保存为 Kay 声音文件...
+====================
+[English]
+Save as Kay sound file... || Write to Kay sound file...
+[Chinese]
+保存为 Kay 声音文件... || 写入为 Kay 声音文件...
+====================
+[English]
+Save as NIST file...
+[Chinese]
+保存为 NIST 文件...
+====================
+[English]
+Save as NIST file... || Write to NIST file...
+[Chinese]
+保存为 NIST 文件... || 写入 NIST 文件...
+====================
+[English]
+Save as NeXT/Sun file...
+[Chinese]
+保存为 NeXT/Sun 文件...
+====================
+[English]
+Save as NeXT/Sun file... || Write to NeXT/Sun file...
+[Chinese]
+保存为 NeXT/Sun 文件... || 写入 NeXT/Sun 文件...
+====================
+[English]
+Save as WAV file...
+[Chinese]
+保存为 WAV 文件...
+====================
+[English]
+Save as WAV file... || Write to WAV file...
+[Chinese]
+保存为 WAV 文件... || 写入 WAV 文件...
+====================
+[English]
+Save as Windows metafile...
+[Chinese]
+保存为 Windows 图元文件 (WMF)...
+====================
+[English]
+Save as binary file...
+[Chinese]
+保存为二进制文件...
+====================
+[English]
+Save as binary file... || Write to binary file...
+[Chinese]
+保存为二进制文件... || 写入二进制文件...
+====================
+[English]
+Save as comma-separated file...
+[Chinese]
+另存为逗号分隔文件...
+====================
+[English]
+Save as highest quality MP3 file...
+[Chinese]
+保存为最高品质 MP3 文件...
+====================
+[English]
+Save as praat picture file...
+[Chinese]
+保存为 Praat Picture 文件...
+====================
+[English]
+Save as raw 16-bit big-endian file...
+[Chinese]
+保存为原始 16 位大端文件...
+====================
+[English]
+Save as raw 16-bit little-endian file...
+[Chinese]
+保存为原始 16 位小端文件...
+====================
+[English]
+Save as raw 24-bit big-endian file...
+[Chinese]
+保存为原始 24 位大端文件...
+====================
+[English]
+Save as raw 24-bit little-endian file...
+[Chinese]
+保存为原始 24 位小端文件...
+====================
+[English]
+Save as raw 32-bit big-endian file...
+[Chinese]
+保存为原始 32 位大端文件...
+====================
+[English]
+Save as raw 32-bit little-endian file...
+[Chinese]
+保存为原始 32 位小端文件...
+====================
+[English]
+Save as raw 8-bit signed file...
+[Chinese]
+保存为原始 8 位有符号文件...
+====================
+[English]
+Save as raw 8-bit signed file... || Write to raw 8-bit signed file...
+[Chinese]
+保存为原始 8 位有符号文件... || 写入到原始 8 位有符号文件...
+====================
+[English]
+Save as raw 8-bit unsigned file...
+[Chinese]
+保存为原始 8 位无符号文件...
+====================
+[English]
+Save as raw 8-bit unsigned file... || Write to raw 8-bit unsigned file...
+[Chinese]
+保存为原始 8 位无符号文件... || 写入到原始 8 位无符号文件...
+====================
+[English]
+Save as semicolon-separated file...
+[Chinese]
+另存为分号分隔文件...
+====================
+[English]
+Save as short text file...
+[Chinese]
+保存为短文本文件...
+====================
+[English]
+Save as short text file... || Write to short text file...
+[Chinese]
+保存为短文本文件... || 写入短文本文件...
+====================
+[English]
+Save as text file...
+[Chinese]
+保存为文本文件...
+====================
+[English]
+Save as text file... || Write to text file...
+[Chinese]
+保存为文本文件... || 写入文本文件...
+====================
+[English]
+Save as...
+[Chinese]
+另存为...
+====================
+[English]
+Save left channel as AIFC file...
+[Chinese]
+保存左声道为 AIFC 文件...
+====================
+[English]
+Save left channel as AIFC file... || Write left channel to AIFC file...
+[Chinese]
+将左声道保存为 AIFC 文件... || 将左声道写入 AIFC 文件...
+====================
+[English]
+Save left channel as AIFF file...
+[Chinese]
+保存左声道为 AIFF 文件...
+====================
+[English]
+Save left channel as AIFF file... || Write left channel to AIFF file...
+[Chinese]
+将左声道保存为 AIFF 文件... || 将左声道写入 AIFF 文件...
+====================
+[English]
+Save left channel as FLAC file...
+[Chinese]
+保存左声道为 FLAC 文件...
+====================
+[English]
+Save left channel as FLAC file... || Write left channel to FLAC file...
+[Chinese]
+将左声道保存为 FLAC 文件... || 将左声道写入 FLAC 文件...
+====================
+[English]
+Save left channel as NIST file...
+[Chinese]
+保存左声道为 NIST 文件...
+====================
+[English]
+Save left channel as NIST file... || Write left channel to NIST file...
+[Chinese]
+将左声道保存为 NIST 文件... || 将左声道写入 NIST 文件...
+====================
+[English]
+Save left channel as NeXT/Sun file...
+[Chinese]
+保存左声道为 NeXT/Sun 文件...
+====================
+[English]
+Save left channel as NeXT/Sun file... || Write left channel to NeXT/Sun file...
+[Chinese]
+将左声道保存为 NeXT/Sun 文件... || 将左声道写入 NeXT/Sun 文件...
+====================
+[English]
+Save left channel as WAV file...
+[Chinese]
+保存左声道为 WAV 文件...
+====================
+[English]
+Save left channel as WAV file... || Write left channel to WAV file...
+[Chinese]
+将左声道保存为 WAV 文件... || 将左声道写入 WAV 文件...
+====================
+[English]
+Save manual to HTML folder...
+[Chinese]
+保存手册到 HTML 文件夹...
+====================
+[English]
+Save part as audio file...
+[Chinese]
+保存部分为音频文件...
+====================
+[English]
+Save part as audio file... || Write part to audio file...
+[Chinese]
+保存部分为音频文件... || 写入部分到音频文件...
+====================
+[English]
+Save right channel as AIFC file...
+[Chinese]
+保存右声道为 AIFC 文件...
+====================
+[English]
+Save right channel as AIFC file... || Write right channel to AIFC file...
+[Chinese]
+将右声道保存为 AIFC 文件... || 将右声道写入 AIFC 文件...
+====================
+[English]
+Save right channel as AIFF file...
+[Chinese]
+保存右声道为 AIFF 文件...
+====================
+[English]
+Save right channel as AIFF file... || Write right channel to AIFF file...
+[Chinese]
+将右声道保存为 AIFF 文件... || 将右声道写入 AIFF 文件...
+====================
+[English]
+Save right channel as FLAC file...
+[Chinese]
+保存右声道为 FLAC 文件...
+====================
+[English]
+Save right channel as FLAC file... || Write right channel to FLAC file...
+[Chinese]
+将右声道保存为 FLAC 文件... || 将右声道写入 FLAC 文件...
+====================
+[English]
+Save right channel as NIST file...
+[Chinese]
+保存右声道为 NIST 文件...
+====================
+[English]
+Save right channel as NIST file... || Write right channel to NIST file...
+[Chinese]
+将右声道保存为 NIST 文件... || 将右声道写入 NIST 文件...
+====================
+[English]
+Save right channel as NeXT/Sun file...
+[Chinese]
+保存右声道为 NeXT/Sun 文件...
+====================
+[English]
+Save right channel as NeXT/Sun file... || Write right channel to NeXT/Sun file...
+[Chinese]
+将右声道保存为 NeXT/Sun 文件... || 将右声道写入 NeXT/Sun 文件...
+====================
+[English]
+Save right channel as WAV file...
+[Chinese]
+保存右声道为 WAV 文件...
+====================
+[English]
+Save right channel as WAV file... || Write right channel to WAV file...
+[Chinese]
+将右声道保存为 WAV 文件... || 将右声道写入 WAV 文件...
+====================
+[English]
+Save selected sound as 24-bit WAV file...
+[Chinese]
+保存选定声音为 24 位 WAV 文件...
+====================
+[English]
+Save selected sound as 32-bit WAV file...
+[Chinese]
+保存选定声音为 32 位 WAV 文件...
+====================
+[English]
+Save selected sound as AIFC file...
+[Chinese]
+保存选定声音为 AIFC 文件...
+====================
+[English]
+Save selected sound as AIFC file... ||
+[Chinese]
+保存选定声音为 AIFC 文件... ||
+====================
+[English]
+Save selected sound as AIFF file...
+[Chinese]
+保存选定声音为 AIFF 文件...
+====================
+[English]
+Save selected sound as AIFF file... ||
+[Chinese]
+保存选定声音为 AIFF 文件... ||
+====================
+[English]
+Save selected sound as FLAC file...
+[Chinese]
+保存选定声音为 FLAC 文件...
+====================
+[English]
+Save selected sound as FLAC file... ||
+[Chinese]
+保存选定声音为 FLAC 文件... ||
+====================
+[English]
+Save selected sound as NIST file...
+[Chinese]
+保存选定声音为 NIST 文件...
+====================
+[English]
+Save selected sound as NIST file... ||
+[Chinese]
+保存选定声音为 NIST 文件... ||
+====================
+[English]
+Save selected sound as NeXT/Sun file...
+[Chinese]
+保存选定声音为 NeXT/Sun 文件...
+====================
+[English]
+Save selected sound as NeXT/Sun file... ||
+[Chinese]
+保存选定声音为 NeXT/Sun 文件... ||
+====================
+[English]
+Save selected sound as WAV file...
+[Chinese]
+保存选定声音为 WAV 文件...
+====================
+[English]
+Save selected sound as WAV file... ||
+[Chinese]
+保存选定声音为 WAV 文件... ||
+====================
+[English]
+Save sound to disk:
+[Chinese]
+保存声音到磁盘：
+====================
+[English]
+Save to HTML directory...
+[Chinese]
+保存到 HTML 目录...
+====================
+[English]
+Save to HTML folder...
+[Chinese]
+保存到 HTML 文件夹...
+====================
+[English]
+Save to HTML folder... || Save to HTML directory...
+[Chinese]
+保存到 HTML 文件夹... || 保存到 HTML 目录...
+====================
+[English]
+Save to list
+[Chinese]
+保存到列表
+====================
+[English]
+Save to list & Close
+[Chinese]
+保存到列表并关闭
+====================
+[English]
+Scale intensity...
+[Chinese]
+缩放音强...
+====================
+[English]
+Scale peak...
+[Chinese]
+缩放峰值...
+====================
+[English]
+Scale times
+[Chinese]
+缩放时间
+====================
+[English]
+Scale times by...
+[Chinese]
+缩放时间 (相对值)...
+====================
+[English]
+Scale times to...
+[Chinese]
+缩放时间 (绝对值)...
+====================
+[English]
+Scale times...
+[Chinese]
+缩放时间...
+====================
+[English]
+Scaling strategy:
+[Chinese]
+缩放策略：
+====================
+[English]
+Scatter plot
+[Chinese]
+散点图
+====================
+[English]
+Scatter plot...
+[Chinese]
+散点图...
+====================
+[English]
+Scripting tutorial
+[Chinese]
+脚本教程
+====================
+[English]
+Scroll page back
+[Chinese]
+向后滚动一页
+====================
+[English]
+Scroll page forward
+[Chinese]
+向前滚动一页
+====================
+[English]
+Search
+[Chinese]
+搜索
+====================
+[English]
+Search Praat manual
+[Chinese]
+搜索 Praat 手册
+====================
+[English]
+Search Praat manual...
+[Chinese]
+搜索 Praat 手册...
+====================
+[English]
+Search for strings (separate with spaces)
+[Chinese]
+搜索字符串 (用空格分隔)
+====================
+[English]
+Search manual
+[Chinese]
+搜索手册
+====================
+[English]
+Search manual...
+[Chinese]
+搜索手册...
+====================
+[English]
+Select
+[Chinese]
+选择
+====================
+[English]
+Select by TextGrid:
+[Chinese]
+根据 TextGrid 选择：
+====================
+[English]
+Select by pitch:
+[Chinese]
+根据音高选择：
+====================
+[English]
+Select by sound:
+[Chinese]
+根据声音选择：
+====================
+[English]
+Select earlier
+[Chinese]
+选择较早部分
+====================
+[English]
+Select frequency:
+[Chinese]
+选择频率：
+====================
+[English]
+Select inner viewport...
+[Chinese]
+选择内部视口...
+====================
+[English]
+Select later
+[Chinese]
+选择较晚部分
+====================
+[English]
+Select next interval
+[Chinese]
+选择下一个区间
+====================
+[English]
+Select next tier
+[Chinese]
+选择下一层
+====================
+[English]
+Select outer viewport...
+[Chinese]
+选择外部视口...
+====================
+[English]
+Select outer viewport... || Viewport...
+[Chinese]
+选择外部视口... || 视口...
+====================
+[English]
+Select previous interval
+[Chinese]
+选择上一个区间
+====================
+[English]
+Select previous tier
+[Chinese]
+选择上一层
+====================
+[English]
+Select...
+[Chinese]
+选择...
+====================
+[English]
+Selection changed!
+Cannot copy more than one object at a time.
+[Chinese]
+选区已更改！ 一次只能复制一个对象。
+====================
+[English]
+Selection changed!
+Cannot query more than one object at a time.
+[Chinese]
+选区已更改！ 一次只能查询一个对象。
+====================
+[English]
+Selection changed!
+Cannot rename more than one object at a time.
+[Chinese]
+选区已更改！ 一次只能重命名一个对象。
+====================
+[English]
+Selection changed!
+No object selected. Cannot copy.
+[Chinese]
+选区已更改！ 没有选中任何对象。无法复制。
+====================
+[English]
+Selection changed!
+No object selected. Cannot inspect.
+[Chinese]
+选区已更改！ 没有选中任何对象。无法检查。
+====================
+[English]
+Selection changed!
+No object selected. Cannot query.
+[Chinese]
+选区已更改！ 没有选中任何对象。无法查询。
+====================
+[English]
+Selection changed!
+No object selected. Cannot rename.
+[Chinese]
+选区已更改！ 没有选中任何对象。无法重命名。
+====================
+[English]
+Selection of (part of) Matrix
+[Chinese]
+选择矩阵 (或其部分)
+====================
+[English]
+Selection of Matrix values
+[Chinese]
+选择矩阵值
+====================
+[English]
+Selection step settings
+[Chinese]
+选择步长设置
+====================
+[English]
+Selection step settings...
+[Chinese]
+选择步长设置...
+====================
+[English]
+Semitones
+[Chinese]
+半音
+====================
+[English]
+Set F3 & F4...
+[Chinese]
+设置 F3 & F4...
+====================
+[English]
+Set column label
+[Chinese]
+设置列标签
+====================
+[English]
+Set column label (label)...
+[Chinese]
+设置列标签(标签)...
+====================
+[English]
+Set debugging options
+[Chinese]
+设置调试选项
+====================
+[English]
+Set domain...
+[Chinese]
+设置域...
+====================
+[English]
+Set f0...
+[Chinese]
+设置 f0...
+====================
+[English]
+Set interval text...
+[Chinese]
+设置区间文本...
+====================
+[English]
+Set length
+[Chinese]
+设置长度
+====================
+[English]
+Set part to zero...
+[Chinese]
+设置部分为零...
+====================
+[English]
+Set point text...
+[Chinese]
+设置点文本...
+====================
+[English]
+Set row label
+[Chinese]
+设置行标签
+====================
+[English]
+Set row label (label)...
+[Chinese]
+设置行标签(标签)...
+====================
+[English]
+Set selection to zero
+[Chinese]
+设置选区为零
+====================
+[English]
+Set selection:
+[Chinese]
+设置选择部分：
+====================
+[English]
+Set tier name...
+[Chinese]
+设置层名称...
+====================
+[English]
+Set value at sample number...
+[Chinese]
+设置采样点处的数值...
+====================
+[English]
+Set visible part:
+[Chinese]
+设置可见部分：
+====================
+[English]
+Set weight
+[Chinese]
+设置权重
+====================
+[English]
+Set weight...
+[Chinese]
+设置权重...
+====================
+[English]
+Settings
+[Chinese]
+设置
+====================
+[English]
+Settings...
+[Chinese]
+设置...
+====================
+[English]
+Shift
+[Chinese]
+移动
+====================
+[English]
+Shift (s)
+[Chinese]
+移动 (s)
+====================
+[English]
+Shift by (Hz)
+[Chinese]
+按频率偏移 (Hz)
+====================
+[English]
+Shift left
+[Chinese]
+移动左
+====================
+[English]
+Shift right
+[Chinese]
+移动右
+====================
+[English]
+Shift times by...
+[Chinese]
+偏移时间 (相对量)...
+====================
+[English]
+Shift times to...
+[Chinese]
+偏移时间 (绝对量)...
+====================
+[English]
+Shift trajectory...
+[Chinese]
+移动轨迹...
+====================
+[English]
+Show
+[Chinese]
+显示
+====================
+[English]
+Show action command
+[Chinese]
+显示动作命令
+====================
+[English]
+Show action command...
+[Chinese]
+显示动作命令...
+====================
+[English]
+Show all
+[Chinese]
+显示全部
+====================
+[English]
+Show analyses
+[Chinese]
+显示分析
+====================
+[English]
+Show analyses...
+[Chinese]
+显示分析...
+====================
+[English]
+Show formants
+[Chinese]
+显示共振峰
+====================
+[English]
+Show intensity
+[Chinese]
+显示音强
+====================
+[English]
+Show menu command
+[Chinese]
+显示菜单命令
+====================
+[English]
+Show menu command...
+[Chinese]
+显示菜单命令...
+====================
+[English]
+Show pitch
+[Chinese]
+显示音高
+====================
+[English]
+Show pulses
+[Chinese]
+显示脉冲
+====================
+[English]
+Show spectrogram
+[Chinese]
+显示声谱图
+====================
+[English]
+Silence threshold
+[Chinese]
+静音阈值
+====================
+[English]
+Silver
+[Chinese]
+银色
+====================
+[English]
+Slope constraint
+[Chinese]
+斜率约束
+====================
+[English]
+Smoothing parameter
+[Chinese]
+平滑参数
+====================
+[English]
+Smoothing:
+[Chinese]
+平滑：
+====================
+[English]
+Solid line
+[Chinese]
+实线
+====================
+[English]
+Sound
+[Chinese]
+声音
+====================
+[English]
+Sound -
+[Chinese]
+声音-
+====================
+[English]
+Sound file extension
+[Chinese]
+声音文件拓展名
+====================
+[English]
+Sound file extension:
+[Chinese]
+声音文件拓展名：
+====================
+[English]
+Sound help
+[Chinese]
+声音帮助
+====================
+[English]
+Sound info
+[Chinese]
+声音信息
+====================
+[English]
+Sound playing preferences...
+[Chinese]
+播放偏好...
+====================
+[English]
+Sound playing settings...
+[Chinese]
+播放设置...
+====================
+[English]
+Sound playing settings... || Sound playing preferences...
+[Chinese]
+播放设置... || 播放偏好...
+====================
+[English]
+Sound recording preferences...
+[Chinese]
+录音偏好...
+====================
+[English]
+Sound recording settings...
+[Chinese]
+录音设置...
+====================
+[English]
+Sound recording settings... || Sound recording preferences...
+[Chinese]
+录音设置... || 录音偏好...
+====================
+[English]
+Sound scaling
+[Chinese]
+声音缩放
+====================
+[English]
+Sound scaling...
+[Chinese]
+声音缩放...
+====================
+[English]
+Sound “
+[Chinese]
+声音“
+====================
+[English]
+Sound:
+[Chinese]
+声音：
+====================
+[English]
+Sound: Add
+[Chinese]
+声音：添加
+====================
+[English]
+Sound: Autocorrelate...
+[Chinese]
+声音：自相关...
+====================
+[English]
+Sound: Draw
+[Chinese]
+声音：绘制
+====================
+[English]
+Sound: Draw where
+[Chinese]
+绘制声音至指定条件
+====================
+[English]
+Sound: Draw where...
+[Chinese]
+绘制声音至指定条件...
+====================
+[English]
+Sound: Extract channel
+[Chinese]
+声音：提取通道
+====================
+[English]
+Sound: Extract channels
+[Chinese]
+声音：提取通道
+====================
+[English]
+Sound: Extract part
+[Chinese]
+声音：提取部分
+====================
+[English]
+Sound: Extract part...
+[Chinese]
+声音：提取部分...
+====================
+[English]
+Sound: Filter (formula)...
+[Chinese]
+声音：滤波(公式)...
+====================
+[English]
+Sound: Formula
+[Chinese]
+声音：公式
+====================
+[English]
+Sound: Formula (part)
+[Chinese]
+声音：公式(部分)
+====================
+[English]
+Sound: Formula...
+[Chinese]
+声音：公式...
+====================
+[English]
+Sound: autocorrelate
+[Chinese]
+声音：自相关
+====================
+[English]
+SoundEditor help
+[Chinese]
+声音编辑器帮助
+====================
+[English]
+SoundRecorder (mono)
+[Chinese]
+录音机 (单声道)
+====================
+[English]
+SoundRecorder (stereo)
+[Chinese]
+录音机 (双声道)
+====================
+[English]
+Speaker
+[Chinese]
+说话人
+====================
+[English]
+Speaker help
+[Chinese]
+说话人帮助
+====================
+[English]
+Speckle size...
+[Chinese]
+斑点大小...
+====================
+[English]
+Spectral tilt
+[Chinese]
+频谱倾斜
+====================
+[English]
+Spectrogram
+[Chinese]
+声谱图
+====================
+[English]
+Spectrogram analysis settings
+[Chinese]
+声谱图分析设置
+====================
+[English]
+Spectrogram analysis settings:
+[Chinese]
+声谱图分析设置：
+====================
+[English]
+Spectrogram help
+[Chinese]
+声谱图帮助
+====================
+[English]
+Spectrogram settings
+[Chinese]
+声谱图设置
+====================
+[English]
+Spectrogram settings...
+[Chinese]
+声谱图设置...
+====================
+[English]
+Spectrogram view settings
+[Chinese]
+声谱图显示设置
+====================
+[English]
+Spectrogram view settings:
+[Chinese]
+声谱图显示设置：
+====================
+[English]
+Spectrogram: Formula
+[Chinese]
+声谱图：公式
+====================
+[English]
+Spectrogram: Formula...
+[Chinese]
+声谱图：公式...
+====================
+[English]
+Spectrum
+[Chinese]
+频谱
+====================
+[English]
+Spectrum help
+[Chinese]
+频谱帮助
+====================
+[English]
+Spectrum: Compress frequency domain
+[Chinese]
+频谱：压缩频率域
+====================
+[English]
+Spectrum: Draw
+[Chinese]
+频谱：绘制
+====================
+[English]
+Spectrum: Formula
+[Chinese]
+频谱：公式
+====================
+[English]
+Spectrum: Formula...
+[Chinese]
+频谱：公式...
+====================
+[English]
+Spectrum: Get centre of gravity
+[Chinese]
+频谱：获取谱重心
+====================
+[English]
+Spectrum: Get centre of gravity...
+[Chinese]
+频谱：获取谱重心...
+====================
+[English]
+Speech-to-text recognition
+[Chinese]
+语音转文本识别
+====================
+[English]
+Speech-to-text recognition >
+[Chinese]
+语音转文本识别 >
+====================
+[English]
+SpeechRecognizer help
+[Chinese]
+语音识别器帮助
+====================
+[English]
+SpeechSynthesizer help
+[Chinese]
+语音合成器帮助
+====================
+[English]
+Standards
+[Chinese]
+标准值
+====================
+[English]
+Start f0 (Hz):
+[Chinese]
+起点 f0 (Hz)：
+====================
+[English]
+Start of selection (
+[Chinese]
+选区开始位置 (
+====================
+[English]
+Start time
+[Chinese]
+开始时间
+====================
+[English]
+Start time (s)
+[Chinese]
+开始时间 (s)
+====================
+[English]
+States
+[Chinese]
+状态
+====================
+[English]
+Statistics tutorial
+[Chinese]
+统计教程
+====================
+[English]
+Stats
+[Chinese]
+统计
+====================
+[English]
+Stereo
+[Chinese]
+双声道
+====================
+[English]
+Stop
+[Chinese]
+停止
+====================
+[English]
+Stop playing sound
+[Chinese]
+停止播放声音
+====================
+[English]
+Stylize pitch (2 st)
+[Chinese]
+样式化音高(2 st)
+====================
+[English]
+Stylize pitch...
+[Chinese]
+样式化音高...
+====================
+[English]
+Stylize...
+[Chinese]
+样式化...
+====================
+[English]
+Subtract mean
+[Chinese]
+减去均值
+====================
+[English]
+Subtract mean pressure
+[Chinese]
+减去平均声压
+====================
+[English]
+Symmetric
+[Chinese]
+对称
+====================
+[English]
+Symmetric neural networks
+[Chinese]
+对称神经网络
+====================
+[English]
+Synchronize zoom and scroll
+[Chinese]
+同步缩放与滚动
+====================
+[English]
+Synthesize
+[Chinese]
+合成
+====================
+[English]
+Synthesize -
+[Chinese]
+合成 -
+====================
+[English]
+Table help
+[Chinese]
+表格帮助
+====================
+[English]
+Table: Append column
+[Chinese]
+表格：追加列
+====================
+[English]
+Table: Append difference column
+[Chinese]
+表格：追加差异列
+====================
+[English]
+Table: Bar plot
+[Chinese]
+表格：条形图
+====================
+[English]
+Table: Bar plot...
+[Chinese]
+表格：条形图...
+====================
+[English]
+Table: Collapse rows
+[Chinese]
+表格：折叠行
+====================
+[English]
+Table: Formula
+[Chinese]
+表格：公式
+====================
+[English]
+Table: Formula...
+[Chinese]
+表格：公式...
+====================
+[English]
+Table: Get column label
+[Chinese]
+表格：获取列标签
+====================
+[English]
+Table: List
+[Chinese]
+表格：列表
+====================
+[English]
+Table: Remove column
+[Chinese]
+表格：移除列
+====================
+[English]
+Table: Remove row
+[Chinese]
+表格：移除行
+====================
+[English]
+TableOfReal help
+[Chinese]
+实数表帮助
+====================
+[English]
+TableOfReal: Draw scatter plot
+[Chinese]
+实数表：绘制散点图
+====================
+[English]
+TableOfReal: Draw scatter plot...
+[Chinese]
+实数表：绘制散点图...
+====================
+[English]
+TableOfReal: Draw scatter plots matrix
+[Chinese]
+实数表：绘制散点图矩阵
+====================
+[English]
+TableOfReal: Formula
+[Chinese]
+实数表：公式
+====================
+[English]
+TableOfReal: tab-separated file
+[Chinese]
+实数表：制表符分隔文件
+====================
+[English]
+Tables
+[Chinese]
+表格
+====================
+[English]
+Tabulate -
+[Chinese]
+制表 -
+====================
+[English]
+Tabulate SpeechSynthesizer language properties
+[Chinese]
+列表显示语音合成器语言属性
+====================
+[English]
+Tabulate SpeechSynthesizer voice properties
+[Chinese]
+列表显示语音合成器声音属性
+====================
+[English]
+Tabulate occurrences...
+[Chinese]
+列表显示出现次数...
+====================
+[English]
+Teal
+[Chinese]
+蓝绿 (鸭绿)
+====================
+[English]
+Technical
+[Chinese]
+技术调试 (Technical)
+====================
+[English]
+Text bottom...
+[Chinese]
+在底部添加文本...
+====================
+[English]
+Text left...
+[Chinese]
+在左侧添加文本...
+====================
+[English]
+Text reading preferences...
+[Chinese]
+文本读取偏好...
+====================
+[English]
+Text reading settings
+[Chinese]
+文本读取设置
+====================
+[English]
+Text reading settings...
+[Chinese]
+文本读取设置...
+====================
+[English]
+Text reading settings... || Text reading preferences...
+[Chinese]
+文本读取设置... || 文本读取偏好...
+====================
+[English]
+Text right...
+[Chinese]
+在右侧添加文本...
+====================
+[English]
+Text special...
+[Chinese]
+绘制特殊文本...
+====================
+[English]
+Text top...
+[Chinese]
+在顶部添加文本...
+====================
+[English]
+Text writing preferences...
+[Chinese]
+文本写入偏好...
+====================
+[English]
+Text writing settings
+[Chinese]
+文本写入设置
+====================
+[English]
+Text writing settings...
+[Chinese]
+文本写入设置...
+====================
+[English]
+Text writing settings... || Text writing preferences...
+[Chinese]
+文本写入设置... || 文本写入偏好...
+====================
+[English]
+Text-to-speech synthesis
+[Chinese]
+文本转语音合成
+====================
+[English]
+Text-to-speech synthesis >
+[Chinese]
+文本转语音合成 >
+====================
+[English]
+Text...
+[Chinese]
+绘制文本...
+====================
+[English]
+TextGrid
+[Chinese]
+TextGrid
+====================
+[English]
+TextGrid & Pitch: Draw
+[Chinese]
+TextGrid&音高：绘制
+====================
+[English]
+TextGrid & Pitch: Draw mel
+[Chinese]
+TextGrid&音高：绘制 mel
+====================
+[English]
+TextGrid & Sound: Align interval
+[Chinese]
+TextGrid&声音：对齐区间
+====================
+[English]
+TextGrid & Sound: Draw...
+[Chinese]
+TextGrid&声音：绘制...
+====================
+[English]
+TextGrid help
+[Chinese]
+TextGrid 帮助
+====================
+[English]
+TextGrid preferences...
+[Chinese]
+TextGrid 偏好设置...
+====================
+[English]
+TextGrid settings...
+[Chinese]
+TextGrid 设置...
+====================
+[English]
+TextGrid settings... || TextGrid preferences...
+[Chinese]
+TextGrid 设置... || TextGrid 偏好设置...
+====================
+[English]
+TextGrid:
+[Chinese]
+TextGrid：
+====================
+[English]
+TextGrid: Count labels...
+[Chinese]
+TextGrid：计数标签...
+====================
+[English]
+TextGrid: Draw
+[Chinese]
+TextGrid：绘制
+====================
+[English]
+TextGrid: Extract part
+[Chinese]
+TextGrid：提取部分
+====================
+[English]
+TextGrid: Extract tier
+[Chinese]
+TextGrid：提取层
+====================
+[English]
+TextGrid: Get end time of interval
+[Chinese]
+TextGrid：获取结束时间 of 区间
+====================
+[English]
+TextGrid: Get interval at time
+[Chinese]
+TextGrid：获取指定时间的 interval
+====================
+[English]
+TextGrid: Get label of interval
+[Chinese]
+TextGrid：获取标签 of 区间
+====================
+[English]
+TextGrid: Get start time of interval
+[Chinese]
+TextGrid：获取开始时间 of 区间
+====================
+[English]
+TextGrid: Is interval tier?
+[Chinese]
+TextGrid： Is 区间层?
+====================
+[English]
+TextGrid: List
+[Chinese]
+TextGrid：列表
+====================
+[English]
+TextGrid: Remove tier
+[Chinese]
+TextGrid：移除层
+====================
+[English]
+TextGridEditor help
+[Chinese]
+TextGrid 编辑器帮助
+====================
+[English]
+The column totals should be positive.
+[Chinese]
+列总数必须为正数。
+====================
+[English]
+The numbers should not be negative.
+[Chinese]
+数值不能为负数。
+====================
+[English]
+The row totals should be positive.
+[Chinese]
+行总数必须为正数。
+====================
+[English]
+These settings determine how fast transcription and diarization procedures are performed on your computer.
+[Chinese]
+这些设置决定了在您的计算机上执行转写和说话人分离程序的速度。
+====================
+[English]
+This Praat version cannot open movie files.
+[Chinese]
+此 Praat 版本无法打开视频文件。
+====================
+[English]
+This is not a Praat picture file.
+[Chinese]
+这不是一个有效的 Praat 图像文件。
+====================
+[English]
+Tier
+[Chinese]
+层
+====================
+[English]
+Tier end time (s)
+[Chinese]
+层结束时间 (s)
+====================
+[English]
+Tier start time (s)
+[Chinese]
+层开始时间 (s)
+====================
+[English]
+Tiers
+[Chinese]
+层
+====================
+[English]
+Time
+[Chinese]
+时间
+====================
+[English]
+Time (s)
+[Chinese]
+时间 (s)
+====================
+[English]
+Time and frequency resolutions:
+[Chinese]
+时间与频率分辨率：
+====================
+[English]
+Time at x (s)
+[Chinese]
+时间 at x (s)
+====================
+[English]
+Time at y (s)
+[Chinese]
+时间 at y (s)
+====================
+[English]
+Time decimals
+[Chinese]
+时间小数位数
+====================
+[English]
+Time decimals:
+[Chinese]
+时间小数位数：
+====================
+[English]
+Time range (s)
+[Chinese]
+时间范围 (秒)
+====================
+[English]
+Time range (s):
+[Chinese]
+时间范围 (秒)：
+====================
+[English]
+Time step (s)
+[Chinese]
+时间步长 (秒)
+====================
+[English]
+Time step settings
+[Chinese]
+时间步长设置
+====================
+[English]
+Time step settings...
+[Chinese]
+时间步长设置...
+====================
+[English]
+Time step strategy
+[Chinese]
+时间步长策略
+====================
+[English]
+Time:
+[Chinese]
+时间：
+====================
+[English]
+Times
+[Chinese]
+Times 罗马体
+====================
+[English]
+To BarkSpectrogram...
+[Chinese]
+转为 Bark 声谱图...
+====================
+[English]
+To Cochleagram...
+[Chinese]
+转为耳蜗图...
+====================
+[English]
+To CrossCorrelationTable (combined)...
+[Chinese]
+转为互相关表 (合并)...
+====================
+[English]
+To CrossCorrelationTable...
+[Chinese]
+转为互相关表...
+====================
+[English]
+To DTW...
+[Chinese]
+转为动态时间规整 (DTW)...
+====================
+[English]
+To DurationTier
+[Chinese]
+转为时长层
+====================
+[English]
+To DurationTier...
+[Chinese]
+转为时长层...
+====================
+[English]
+To Formant
+[Chinese]
+转为共振峰
+====================
+[English]
+To Formant (burg)...
+[Chinese]
+转为共振峰 (Burg)...
+====================
+[English]
+To Formant (hack)
+[Chinese]
+转为共振峰 (Hack)
+====================
+[English]
+To Formant (hack)...
+[Chinese]
+转为共振峰 (Hack)...
+====================
+[English]
+To Formant...
+[Chinese]
+转为共振峰...
+====================
+[English]
+To FormantPath (burg)...
+[Chinese]
+转为共振峰路径 (Burg)...
+====================
+[English]
+To Harmonicity (ac)...
+[Chinese]
+转为谐噪比 (ac)...
+====================
+[English]
+To Harmonicity (cc)...
+[Chinese]
+转为谐噪比 (cc)...
+====================
+[English]
+To Harmonicity (gne)...
+[Chinese]
+转为谐噪比 (gne)...
+====================
+[English]
+To Intensity
+[Chinese]
+转为音强
+====================
+[English]
+To Intensity...
+[Chinese]
+转为音强...
+====================
+[English]
+To KlattGrid (simple)...
+[Chinese]
+转为 KlattGrid (简单)...
+====================
+[English]
+To LPC
+[Chinese]
+转为 LPC
+====================
+[English]
+To LPC...
+[Chinese]
+转为 LPC...
+====================
+[English]
+To Ltas (pitch-corrected)...
+[Chinese]
+转为长期平均谱 (音高修正)...
+====================
+[English]
+To Ltas...
+[Chinese]
+转为长期平均谱 (Ltas)...
+====================
+[English]
+To MFCC...
+[Chinese]
+转为 倒谱系数 (MFCC)...
+====================
+[English]
+To Manipulation...
+[Chinese]
+转为 操控对象...
+====================
+[English]
+To Matrix
+[Chinese]
+转为矩阵
+====================
+[English]
+To Matrix...
+[Chinese]
+转为矩阵...
+====================
+[English]
+To MelSpectrogram...
+[Chinese]
+转为 Mel 声谱图...
+====================
+[English]
+To ParamCurve
+[Chinese]
+转为参数曲线 (ParamCurve)
+====================
+[English]
+To Pitch
+[Chinese]
+转为音高
+====================
+[English]
+To Pitch (SPINET)...
+[Chinese]
+转为音高 (SPINET)...
+====================
+[English]
+To Pitch (filtered autocorrelation)...
+[Chinese]
+转为音高 (滤波自相关)...
+====================
+[English]
+To Pitch (filtered cross-correlation)...
+[Chinese]
+转为音高 (滤波互相关)...
+====================
+[English]
+To Pitch (raw autocorrelation)...
+[Chinese]
+转为音高 (原始自相关)...
+====================
+[English]
+To Pitch (raw cross-correlation)...
+[Chinese]
+转为音高 (原始互相关)...
+====================
+[English]
+To Pitch (shs)...
+[Chinese]
+转为音高 (SHS)...
+====================
+[English]
+To Pitch...
+[Chinese]
+转为音高...
+====================
+[English]
+To PointProcess
+[Chinese]
+转为点过程
+====================
+[English]
+To PointProcess (extrema)...
+[Chinese]
+转为点过程 (极值)...
+====================
+[English]
+To PointProcess (periodic, cc)...
+[Chinese]
+转为点过程 (周期性, cc)...
+====================
+[English]
+To PointProcess (periodic, peaks)...
+[Chinese]
+转为点过程 (周期性, 峰值)...
+====================
+[English]
+To PointProcess (zeroes)...
+[Chinese]
+转为点过程 (零点)...
+====================
+[English]
+To PointProcess...
+[Chinese]
+转为点过程...
+====================
+[English]
+To PowerCepstrogram...
+[Chinese]
+转为倒谱图 (PowerCepstrogram)...
+====================
+[English]
+To RealTier
+[Chinese]
+转为实数层
+====================
+[English]
+To RealTier...
+[Chinese]
+转为实数层...
+====================
+[English]
+To Sound
+[Chinese]
+转为声音
+====================
+[English]
+To Sound (bss)...
+[Chinese]
+转为声音 (盲源分离 bss)...
+====================
+[English]
+To Sound (derivative)...
+[Chinese]
+转为声音 (求导)...
+====================
+[English]
+To Sound (white channels)...
+[Chinese]
+转为声音 (白噪声通道)...
+====================
+[English]
+To Sound...
+[Chinese]
+转为声音...
+====================
+[English]
+To Spectrogram
+[Chinese]
+转为声谱图
+====================
+[English]
+To Spectrogram (pitch-dependent)...
+[Chinese]
+转为声谱图 (音高相关)...
+====================
+[English]
+To Spectrogram...
+[Chinese]
+转为声谱图...
+====================
+[English]
+To Spectrum (resampled)...
+[Chinese]
+转为频谱 (重采样)...
+====================
+[English]
+To Spectrum...
+[Chinese]
+转为频谱 (Spectrum)...
+====================
+[English]
+To Table
+[Chinese]
+转为表格
+====================
+[English]
+To Table (text alignment)...
+[Chinese]
+转为表格 (文本对齐)...
+====================
+[English]
+To Table...
+[Chinese]
+转为表格...
+====================
+[English]
+To TableOfReal
+[Chinese]
+转为实数表
+====================
+[English]
+To TableOfReal...
+[Chinese]
+转为实数表...
+====================
+[English]
+To TextGrid
+[Chinese]
+转为 TextGrid
+====================
+[English]
+To TextGrid (silences)...
+[Chinese]
+转为 TextGrid (静音检测)...
+====================
+[English]
+To TextGrid (speech activity, LTSF)...
+[Chinese]
+转为 TextGrid (语音活动检测, LTSF)...
+====================
+[English]
+To TextGrid (speech activity, Silero)...
+[Chinese]
+转为 TextGrid (语音活动检测, Silero)...
+====================
+[English]
+To TextGrid...
+[Chinese]
+转为 TextGrid...
+====================
+[English]
+Total duration
+[Chinese]
+总时长
+====================
+[English]
+Trace threads
+[Chinese]
+追踪线程
+====================
+[English]
+Transcribe interval
+[Chinese]
+转写区间
+====================
+[English]
+Transcribe interval...
+[Chinese]
+转写区间...
+====================
+[English]
+Transcription settings...
+[Chinese]
+转写设置...
+====================
+[English]
+Type any numeric formula or string formula
+[Chinese]
+输入任何数值公式或字符串公式
+====================
+[English]
+Types of objects
+[Chinese]
+对象类型
+====================
+[English]
+Undo
+[Chinese]
+撤销
+====================
+[English]
+Unit
+[Chinese]
+单位
+====================
+[English]
+Use multi-threading
+[Chinese]
+使用多线程
+====================
+[English]
+Values:
+[Chinese]
+值：
+====================
+[English]
+Vertical column
+[Chinese]
+垂直列
+====================
+[English]
+Vertical column(s)
+[Chinese]
+垂直列 (s)
+====================
+[English]
+Vertical range:
+[Chinese]
+垂直范围：
+====================
+[English]
+Very accurate
+[Chinese]
+非常精确
+====================
+[English]
+View & Edit
+[Chinese]
+查看与编辑
+====================
+[English]
+View & Edit alone
+[Chinese]
+单独查看与编辑
+====================
+[English]
+View & Edit alone || View & Edit || Edit
+[Chinese]
+单独查看与编辑 || 查看与编辑 || 编辑
+====================
+[English]
+View & Edit with Sound?
+[Chinese]
+与声音一起查看与编辑？
+====================
+[English]
+View & Edit || Edit
+[Chinese]
+查看与编辑 || 编辑
+====================
+[English]
+View & Edit || Edit || Open
+[Chinese]
+查看与编辑 || 编辑 || 打开
+====================
+[English]
+View & Edit...
+[Chinese]
+查看与编辑...
+====================
+[English]
+View & Edit... || Edit...
+[Chinese]
+查看与编辑... || 编辑...
+====================
+[English]
+View range (Hz)
+[Chinese]
+视图范围 (Hz)
+====================
+[English]
+View range (dB)
+[Chinese]
+显示范围 (dB)
+====================
+[English]
+View range (units)
+[Chinese]
+显示范围 (单位)
+====================
+[English]
+View spectral slice
+[Chinese]
+查看频谱切片
+====================
+[English]
+Viewport text...
+[Chinese]
+视口文本...
+====================
+[English]
+Viewport...
+[Chinese]
+视口...
+====================
+[English]
+Visible part
+[Chinese]
+可见部分
+====================
+[English]
+VocalTract Formula
+[Chinese]
+声道公式
+====================
+[English]
+VocalTract help
+[Chinese]
+声道帮助
+====================
+[English]
+Voice report
+[Chinese]
+嗓音报告
+====================
+[English]
+Voice report...
+[Chinese]
+嗓音报告...
+====================
+[English]
+Voiced / unvoiced cost
+[Chinese]
+浊音/清音转换惩罚
+====================
+[English]
+Voicing
+[Chinese]
+浊音化
+====================
+[English]
+Voicing threshold
+[Chinese]
+浊音阈值
+====================
+[English]
+Vowel marks...
+[Chinese]
+元音标记...
+====================
+[English]
+Weight
+[Chinese]
+权重
+====================
+[English]
+Welch (parabolic)
+[Chinese]
+韦尔奇窗 (Welch/parabolic)
+====================
+[English]
+What's new?
+[Chinese]
+新特性?
+====================
+[English]
+What’s new?
+[Chinese]
+新特性?
+====================
+[English]
+Where to search...
+[Chinese]
+搜索范围...
+====================
+[English]
+Which of these are point tiers?
+[Chinese]
+哪些层是点层？
+====================
+[English]
+White
+[Chinese]
+白色
+====================
+[English]
+Widen or shrink selection
+[Chinese]
+扩大或缩小选择范围
+====================
+[English]
+Widen or shrink selection...
+[Chinese]
+扩大或缩小选择范围...
+====================
+[English]
+Width 1
+[Chinese]
+宽度 1
+====================
+[English]
+Width 2
+[Chinese]
+宽度 2
+====================
+[English]
+Width 3
+[Chinese]
+宽度 3
+====================
+[English]
+Window length (s)
+[Chinese]
+窗长 (秒)
+====================
+[English]
+Window shape
+[Chinese]
+窗形状
+====================
+[English]
+Window shape:
+[Chinese]
+窗形状：
+====================
+[English]
+Word
+[Chinese]
+单词
+====================
+[English]
+World
+[Chinese]
+绘制
+====================
+[English]
+Write error.
+[Chinese]
+写入错误。
+====================
+[English]
+Write left channel to AIFC file...
+[Chinese]
+将左声道写入 AIFC 文件...
+====================
+[English]
+Write left channel to AIFF file...
+[Chinese]
+将左声道写入 AIFF 文件...
+====================
+[English]
+Write left channel to FLAC file...
+[Chinese]
+将左声道写入 FLAC 文件...
+====================
+[English]
+Write left channel to NIST file...
+[Chinese]
+将左声道写入 NIST 文件...
+====================
+[English]
+Write left channel to NeXT/Sun file...
+[Chinese]
+将左声道写入 NeXT/Sun 文件...
+====================
+[English]
+Write left channel to WAV file...
+[Chinese]
+将左声道写入 WAV 文件...
+====================
+[English]
+Write name at top:
+[Chinese]
+在顶部写入名称：
+====================
+[English]
+Write part to audio file...
+[Chinese]
+将部分写入音频文件...
+====================
+[English]
+Write right channel to AIFC file...
+[Chinese]
+将右声道写入 AIFC 文件...
+====================
+[English]
+Write right channel to AIFF file...
+[Chinese]
+将右声道写入 AIFF 文件...
+====================
+[English]
+Write right channel to FLAC file...
+[Chinese]
+将右声道写入 FLAC 文件...
+====================
+[English]
+Write right channel to NIST file...
+[Chinese]
+将右声道写入 NIST 文件...
+====================
+[English]
+Write right channel to NeXT/Sun file...
+[Chinese]
+将右声道写入 NeXT/Sun 文件...
+====================
+[English]
+Write right channel to WAV file...
+[Chinese]
+将右声道写入 WAV 文件...
+====================
+[English]
+Write to AIFC file...
+[Chinese]
+写入 AIFC 文件...
+====================
+[English]
+Write to AIFF file...
+[Chinese]
+写入 AIFF 文件...
+====================
+[English]
+Write to FLAC file...
+[Chinese]
+写入 FLAC 文件...
+====================
+[English]
+Write to Kay sound file...
+[Chinese]
+写入为 Kay 声音文件...
+====================
+[English]
+Write to NIST file...
+[Chinese]
+写入 NIST 文件...
+====================
+[English]
+Write to NeXT/Sun file...
+[Chinese]
+写入 NeXT/Sun 文件...
+====================
+[English]
+Write to WAV file...
+[Chinese]
+写入 WAV 文件...
+====================
+[English]
+Write to binary file...
+[Chinese]
+写入二进制文件...
+====================
+[English]
+Write to raw 8-bit signed file...
+[Chinese]
+写入到原始 8 位有符号文件...
+====================
+[English]
+Write to raw 8-bit unsigned file...
+[Chinese]
+写入到原始 8 位无符号文件...
+====================
+[English]
+Write to short text file...
+[Chinese]
+写入短文本文件...
+====================
+[English]
+Write to text file...
+[Chinese]
+写入文本文件...
+====================
+[English]
+X1 column
+[Chinese]
+X1 列
+====================
+[English]
+X2 column
+[Chinese]
+X2 列
+====================
+[English]
+Y cursor at (Hz)
+[Chinese]
+Y 光标 at (Hz)
+====================
+[English]
+Y1 column
+[Chinese]
+Y1 列
+====================
+[English]
+Y2 column
+[Chinese]
+Y2 列
+====================
+[English]
+Yellow
+[Chinese]
+黄色
+====================
+[English]
+You have objects in your list!
+[Chinese]
+您的列表中还有对象！
+====================
+[English]
+You have objects in your list, and unsaved scripts or notebooks!
+[Chinese]
+您的列表中还有对象，并且有未保存的脚本或笔记本！
+====================
+[English]
+You have unsaved scripts or notebooks!
+[Chinese]
+您有未保存的脚本或笔记本！
+====================
+[English]
+Zoom
+[Chinese]
+缩放
+====================
+[English]
+Zoom and scroll settings
+[Chinese]
+缩放与滚动设置
+====================
+[English]
+Zoom and scroll settings...
+[Chinese]
+缩放与滚动设置...
+====================
+[English]
+Zoom back
+[Chinese]
+返回上一次缩放
+====================
+[English]
+Zoom in
+[Chinese]
+放大
+====================
+[English]
+Zoom out
+[Chinese]
+缩小
+====================
+[English]
+Zoom to selection
+[Chinese]
+缩放到选择部分
+====================
+[English]
+Zoom...
+[Chinese]
+缩放...
+====================
+[English]
+`x` is time
+[Chinese]
+`x` is 时间
+====================
+[English]
+all
+[Chinese]
+全部
+====================
+[English]
+aspiration
+[Chinese]
+送气
+====================
+[English]
+automatic
+[Chinese]
+自动
+====================
+[English]
+average
+[Chinese]
+平均
+====================
+[English]
+average (s[i][j] = (c[i][j]+c[j][i])/2)
+[Chinese]
+平均 (s[i][j] = (c[i][j]+c[j][i])/2)
+====================
+[English]
+back
+[Chinese]
+返回
+====================
+[English]
+bak
+[Chinese]
+返回
+====================
+[English]
+bottom
+[Chinese]
+下
+====================
+[English]
+by whole
+[Chinese]
+全局缩放 (by whole)
+====================
+[English]
+by window
+[Chinese]
+视口缩放 (by window)
+====================
+[English]
+by window and channel
+[Chinese]
+视口与通道独立缩放
+====================
+[English]
+centre
+[Chinese]
+中心化
+====================
+[English]
+centre time
+[Chinese]
+中心化时间
+====================
+[English]
+channel.
+[Chinese]
+通道.
+====================
+[English]
+channels.
+[Chinese]
+通道.
+====================
+[English]
+columns
+[Chinese]
+列
+====================
+[English]
+columns.
+[Chinese]
+列.
+====================
+[English]
+correlation
+[Chinese]
+相关
+====================
+[English]
+covariance
+[Chinese]
+协方差
+====================
+[English]
+end
+[Chinese]
+终点
+====================
+[English]
+end time
+[Chinese]
+结束时间
+====================
+[English]
+fixed height
+[Chinese]
+固定高度 (fixed height)
+====================
+[English]
+fixed range
+[Chinese]
+固定数值范围 (fixed range)
+====================
+[English]
+frames.
+[Chinese]
+帧.
+====================
+[English]
+frication
+[Chinese]
+摩擦
+====================
+[English]
+gender
+[Chinese]
+性别
+====================
+[English]
+in
+[Chinese]
+放大
+====================
+[English]
+in row
+[Chinese]
+in 行
+====================
+[English]
+including statistical functions and acoustics-auditory conversions.
+[Chinese]
+包括统计函数以及声学-听觉转换。
+====================
+[English]
+interval
+[Chinese]
+区间
+====================
+[English]
+is singular.
+[Chinese]
+is 奇异.
+====================
+[English]
+label
+[Chinese]
+标签
+====================
+[English]
+labels).
+[Chinese]
+标签).
+====================
+[English]
+left
+[Chinese]
+左
+====================
+[English]
+left Columns
+[Chinese]
+左列
+====================
+[English]
+left Row 1
+[Chinese]
+左 第 1 行
+====================
+[English]
+left Row 2
+[Chinese]
+左 第 2 行
+====================
+[English]
+left Start time
+[Chinese]
+左开始时间
+====================
+[English]
+left Start time (s)
+[Chinese]
+左开始时间 (s)
+====================
+[English]
+list
+[Chinese]
+列表
+====================
+[English]
+logHertz
+[Chinese]
+对数赫兹 (logHertz)
+====================
+[English]
+matrix.
+[Chinese]
+矩阵.
+====================
+[English]
+mean dB
+[Chinese]
+平均分贝 (dB)
+====================
+[English]
+mean energy
+[Chinese]
+平均能量
+====================
+[English]
+mean sones
+[Chinese]
+平均宋 (sones)
+====================
+[English]
+median
+[Chinese]
+中位数
+====================
+[English]
+no
+[Chinese]
+否
+====================
+[English]
+of column “
+[Chinese]
+of 列“
+====================
+[English]
+of tableau
+[Chinese]
+of 表格
+====================
+[English]
+of tier
+[Chinese]
+of 层
+====================
+[English]
+open
+[Chinese]
+打开
+====================
+[English]
+or raise the "longest analysis" setting with "Show analyses" in the Analyses menu.)
+[Chinese]
+或者在“分析”菜单中使用“显示分析”来调大“最长分析”设置。）
+====================
+[English]
+or raise the “longest analysis” setting with “Show analyses” in the Analyses menu.)
+[Chinese]
+或者在“分析”菜单中使用“显示分析”来调大“最长分析”设置。）
+====================
+[English]
+out
+[Chinese]
+缩小
+====================
+[English]
+right
+[Chinese]
+右
+====================
+[English]
+right Columns
+[Chinese]
+右列
+====================
+[English]
+right End time
+[Chinese]
+右结束时间
+====================
+[English]
+right End time (s)
+[Chinese]
+右结束时间 (s)
+====================
+[English]
+right Row 1
+[Chinese]
+右 第 1 行
+====================
+[English]
+right Row 2
+[Chinese]
+右 第 2 行
+====================
+[English]
+row
+[Chinese]
+行
+====================
+[English]
+rows
+[Chinese]
+行
+====================
+[English]
+rows in a Table.
+[Chinese]
+行 in a 表格.
+====================
+[English]
+rows.
+[Chinese]
+行.
+====================
+[English]
+seconds
+[Chinese]
+秒
+====================
+[English]
+sel
+[Chinese]
+选择
+====================
+[English]
+select that Sound and choose "To TextGrid...".
+[Chinese]
+请选择该声音对象并选择“To TextGrid...”命令。
+====================
+[English]
+semitones re 1 Hz
+[Chinese]
+半音 (基准 1 Hz)
+====================
+[English]
+semitones re 100 Hz
+[Chinese]
+半音 (基准 100 Hz)
+====================
+[English]
+semitones re 200 Hz
+[Chinese]
+半音 (基准 200 Hz)
+====================
+[English]
+semitones re 440 Hz
+[Chinese]
+半音 (基准 440 Hz)
+====================
+[English]
+sound
+[Chinese]
+声音
+====================
+[English]
+square (rectangular)
+[Chinese]
+矩形窗 (square/rectangular)
+====================
+[English]
+start
+[Chinese]
+起点
+====================
+[English]
+start time
+[Chinese]
+开始时间
+====================
+[English]
+tiers.
+[Chinese]
+层.
+====================
+[English]
+top
+[Chinese]
+上
+====================
+[English]
+untitled
+[Chinese]
+无标题
+====================
+[English]
+use Windows mixer without meters
+[Chinese]
+在没有电平表时使用 Windows 混音器
+====================
+[English]
+voicing
+[Chinese]
+浊音化
+====================
+[English]
+y := 1;   row := 1;
+[Chinese]
+y := 1;   row := 1;
+====================
+[English]
+y := 2;   row := 2;
+[Chinese]
+y := 2;   row := 2;
+====================
+[English]
+yes
+[Chinese]
+是
+====================
+[English]
+» in formula
+[Chinese]
+» in 公式
+====================
+[English]
+» in formula.
+[Chinese]
+» in 公式.
+====================
