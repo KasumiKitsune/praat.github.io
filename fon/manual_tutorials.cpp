@@ -416,21 +416,15 @@ most commands in any @@Query submenu@ also write into the Info window.
 "Inspect"
 © Paul Boersma 1996
 
-One of the fixed buttons in the @@Objects window@.
+@@Objects window|对象窗口@中的固定按钮之一。
 
-You can use this command after selecting one object in the list.
+在列表中选中一个对象后，您可以使用此命令。
 
-The contents of the selected object will become visible in a Data Editor.
-You can then view and change the data in the object,
-but beware: changing the data directly in this way may render them inconsistent.
+选中对象的内容将在数据编辑器（Data Editor）中显示。您可以查看并更改对象中的数据，但请注意：直接以这种方式更改数据可能会导致数据不一致。
 
-Changes that you make to the data with another Editor (e.g., a SoundEditor),
-or with the commands under #Modify,
-are immediately reflected in the top-level Data Editor;
-any subeditors are destroyed, however, because they may now refer to invalid data.
+您使用另一个编辑器（例如 @SoundEditor）或通过 #Modify 菜单下的命令对数据所做的更改，会立即反映在顶层的数据编辑器中；然而，任何子编辑器都将被销毁，因为它们现在可能会引用无效的数据。
 
-Changes that you make to the data with a Data Editor,
-are immediately reflected in any open type-specific Editors (e.g., a SoundEditor).
+您使用数据编辑器对数据所做的更改，会立即反映在任何已打开的特定类型编辑器（例如 @SoundEditor）中。
 
 ################################################################################
 "Intro"

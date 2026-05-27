@@ -480,49 +480,48 @@ NORMAL (U"the target duration in seconds.")
 MAN_END
 
 MAN_BEGIN (U"DurationTierEditor", U"ppgb", 20110128)
-INTRO (U"One of the @editors in the Praat program, for viewing and editing a @DurationTier object. "
-	"To create a DurationTierEditor window, select a DurationTier and click ##View & Edit#.")
+INTRO (U"Praat 中的@@Editors|编辑器@之一，用于查看和编辑 @@DurationTier|DurationTier@（时长层）对象。要创建 DurationTierEditor 窗口，请选择一个 DurationTier 对象并点击 ##View & Edit#。")
 MAN_END
 
 MAN_BEGIN (U"Editors", U"ppgb", 20110128)
-INTRO (U"Many @@types of objects@ in Praat can be viewed and edited in their own windows.")
-ENTRY (U"Editor windows")
-LIST_ITEM (U"• @SoundEditor")
-LIST_ITEM (U"• @LongSoundEditor")
-LIST_ITEM (U"• @TextGridEditor")
-LIST_ITEM (U"• @ManipulationEditor")
-LIST_ITEM (U"• @SpectrumEditor")
-LIST_ITEM (U"• @PitchEditor")
-LIST_ITEM (U"• @PointEditor")
-LIST_ITEM (U"• @PitchTierEditor")
-LIST_ITEM (U"• @IntensityTierEditor")
-LIST_ITEM (U"• @DurationTierEditor")
-LIST_ITEM (U"• #SpectrogramEditor")
-LIST_ITEM (U"• #ArtwordEditor")
-LIST_ITEM (U"• @OTGrammarEditor")
-LIST_ITEM (U"• (any type: @Inspect)")
-ENTRY (U"How to open an editor for an object")
-NORMAL (U"To open an editor window for an object in the list, select the object and choose ##View & Edit# "
-	"(if the ##View & Edit# button exists, it is usually at the top of the @@Dynamic menu@). "
-	"The name of the object will appear as the title of the editor window.")
-NORMAL (U"Objects that cannot be modified (e.g. LongSound) just have the command #View instead of ##View & Edit#.")
-ENTRY (U"General behaviour")
-NORMAL (U"Changes that you make to an object in its editor window will take effect immediately. "
-	"For instance, you do not have close the editor window before saving the changed object to disk.")
-NORMAL (U"If you @Remove an object that you are viewing or editing from the @@List of Objects@, "
-	"the editor window will automatically disappear from the screen.")
-NORMAL (U"All editors are independent windows: you can minimize and maximize them; "
-	"if an editor window goes hiding behind another window, "
-	"you can raise it by choosing the ##View & Edit# command again.")
-NORMAL (U"If you rename an object that you are viewing or editing (with @@Rename...@), "
-	"the title of the editor window immediately changes to the new name.")
-ENTRY (U"Ways to control an editor window")
-LIST_ITEM (U"• @@Click")
-LIST_ITEM (U"• @@Shift-click")
-LIST_ITEM (U"• @@Drag")
-LIST_ITEM (U"• @@Shift-drag")
-LIST_ITEM (U"• @@Time selection")
-LIST_ITEM (U"• @@Keyboard shortcuts")
+INTRO (U"Praat 中的许多@@types of objects|对象类型@都可以在各自专属的窗口中进行查看和编辑。")
+ENTRY (U"编辑器窗口")
+LIST_ITEM (U"• @@SoundEditor|SoundEditor (声音编辑器)@")
+LIST_ITEM (U"• @@LongSoundEditor|LongSoundEditor (长声音编辑器)@")
+LIST_ITEM (U"• @@TextGridEditor|TextGridEditor (TextGrid 编辑器)@")
+LIST_ITEM (U"• @@ManipulationEditor|ManipulationEditor (操纵编辑器)@")
+LIST_ITEM (U"• @@SpectrumEditor|SpectrumEditor (频谱编辑器)@")
+LIST_ITEM (U"• @@PitchEditor|PitchEditor (音高编辑器)@")
+LIST_ITEM (U"• @@PointEditor|PointEditor (点标记编辑器)@")
+LIST_ITEM (U"• @@PitchTierEditor|PitchTierEditor (音高层编辑器)@")
+LIST_ITEM (U"• @@IntensityTierEditor|IntensityTierEditor (音强层编辑器)@")
+LIST_ITEM (U"• @@DurationTierEditor|DurationTierEditor (时长层编辑器)@")
+LIST_ITEM (U"• ##SpectrogramEditor (声谱图编辑器)#")
+LIST_ITEM (U"• ##ArtwordEditor (Artword 编辑器)#")
+LIST_ITEM (U"• @@OTGrammarEditor|OTGrammarEditor (优选论语法编辑器)@")
+LIST_ITEM (U"• (任意类型：@@Inspect|Inspect (检查)@)")
+ENTRY (U"如何打开一个对象的编辑器")
+NORMAL (U"要为列表中的对象打开编辑器窗口，请在列表中选中该对象并选择 ##View & Edit（查看与编辑）# "
+	"（如果存在 ##View & Edit# 按钮，它通常位于 @@Dynamic menu|动态菜单@的顶部）。"
+	"该对象的名称将显示为编辑器窗口的标题。")
+NORMAL (U"无法被修改的对象（例如 LongSound）通常只有 #View（查看） 命令，而没有 ##View & Edit#。")
+ENTRY (U"通用行为")
+NORMAL (U"您在编辑器窗口中对对象所做的更改将立即生效。"
+	"例如，您无需关闭编辑器窗口便可将更改后的对象保存到磁盘。")
+NORMAL (U"如果您在@@List of Objects|对象列表@中将正在查看或编辑的对象@@Remove|删除@，"
+	"该编辑器窗口将自动从屏幕上消失。")
+NORMAL (U"所有编辑器都是独立的窗口：您可以将它们最小化或最大化；"
+	"如果某个编辑器窗口隐藏在其他窗口后面，"
+	"您可以通过再次选择 ##View & Edit# 命令将其置顶显示。")
+NORMAL (U"如果您重命名正在查看或编辑的对象（使用 @@Rename...|重命名...@），"
+	"编辑器窗口的标题将立即更改为新名称。")
+ENTRY (U"控制编辑器窗口的方式")
+LIST_ITEM (U"• @@Click|单击@")
+LIST_ITEM (U"• @@Shift-click|Shift-单击@")
+LIST_ITEM (U"• @@Drag|拖动@")
+LIST_ITEM (U"• @@Shift-drag|Shift-拖动@")
+LIST_ITEM (U"• @@Time selection|时间选择@")
+LIST_ITEM (U"• @@Keyboard shortcuts|键盘快捷键@")
 MAN_END
 
 MAN_BEGIN (U"Excitation", U"ppgb", 20030316)
@@ -802,8 +801,7 @@ NORMAL (U"The times of all the points are trivially copied, and so is the time d
 MAN_END
 
 MAN_BEGIN (U"IntensityTierEditor", U"ppgb", 20110128)
-INTRO (U"One of the @editors in the Praat program, for viewing and editing an @IntensityTier object. "
-	"To create a IntensityTierEditor window, select an IntensityTier and click ##View & Edit#.")
+INTRO (U"Praat 中的@@Editors|编辑器@之一，用于查看和编辑 @@IntensityTier|IntensityTier@（音强层）对象。要创建 IntensityTierEditor 窗口，请选择一个 IntensityTier 对象并点击 ##View & Edit#。")
 MAN_END
 
 MAN_BEGIN (U"Command-click", U"ppgb", 20210228)
@@ -1094,54 +1092,37 @@ INTRO (U"A command to replace the original sound in the selected @Manipulation o
 MAN_END
 
 MAN_BEGIN (U"ManipulationEditor", U"ppgb", 20030316)  // 2023-06-08
-	INTRO (U"One of the @Editors in Praat, for viewing and manipulating a @Manipulation object.")
-ENTRY (U"Objects")
-	NORMAL (U"The editor shows:")
-	LIST_ITEM (U"• The original @Sound.")
-	LIST_ITEM (U"• The @PointProcess that represents the glottal %pulses. "
-		"You can edit it for improving the pitch analysis.")
-	LIST_ITEM (U"• A pitch contour based on the locations of the pulses, for comparison (drawn as grey dots). "
-		"Changes shape if you edit the pulses.")
-	LIST_ITEM (U"• The @PitchTier that determines the pitch contour of the resynthesized @Sound (drawn as blue circles). "
-		"At the creation of the @Manipulation object, it is computed from the original pitch contour. "
-		"You can manipulate it by simplifying it (i.e., removing targets), "
-		"or by moving parts of it up and down, and back and forth.")
-	LIST_ITEM (U"• A @DurationTier for manipulating the relative durations of the voiced parts of the sound.")
-ENTRY (U"Playing")
-	NORMAL (U"To play (a part of) the %resynthesized sound (by any of the methods shown in the #Synth menu, "
-		"like @@overlap-add@ and #LPC), @click any of the 1 to 8 buttons below and above the drawing area "
-		"or use the commands from the Play menu.")
-	NORMAL (U"To play the %original sound instead, use ##Shift-click#.")
-ENTRY (U"Pulses")
-	TERM (U"To add:")
-	DEFINITION (U"#click at the desired time location, and choose ##Add pulse at cursor# or type @@Keyboard shortcuts|Command-P@.")
-	TERM (U"To remove:")
-	DEFINITION (U"make a @@time selection@, and choose ##Remove pulse(s)# or type @@Keyboard shortcuts|Option-Command-P@. "
-		"If there is no selection, the pulse nearest to the cursor is removed.")
-ENTRY (U"Pitch points")
-	TERM (U"To add one at a specified %%time and frequency%:")
-	DEFINITION (U"#click at the desired time-frequency location, and choose ##Add pitch point at cursor# or type @@Keyboard shortcuts|Command-t@.")
-	TERM (U"To add one at a specified %time only:")
-	DEFINITION (U"#click at the desired time, and choose ##Add pitch point at time slice#. ManipulationEditor tries to compute the frequency from the "
-		"intervals between the pulses, basically by a median-of-three method.")
-	TERM (U"To remove:")
-	DEFINITION (U"make a @@time selection@, and choose ##Remove pitch point(s)# or type @@Keyboard shortcuts|Option-Command-t@. "
-		"If there is no selection, the pitch point nearest to the cursor is removed.")
-	TERM (U"To move %some:")
-	DEFINITION (U"make a @@time selection@ (the points become red) and ##Shift-drag# the points across the window. "
-		"You cannot drag them across adjacent points, or below 50 Hz, or above the maximum frequency. "
-		"You can only drag them horizontally if the %%dragging strategy% is ##All# or ##Only horizontal#, "
-		"and you can drag them vertically if the dragging strategy is not ##Only horizontal#. "
-		"You can change the dragging strategy with ##Set pitch dragging strategy...# from the #Pitch menu.")
-	TERM (U"To move %one:")
-	DEFINITION (U"@drag that point across the window. "
-		"You can only drag it horizontally if the dragging strategy is not ##Only vertical#, "
-		"and you can drag it vertically if the dragging strategy is not ##Only horizontal#.")
-ENTRY (U"Duration points")
-	NORMAL (U"Work pretty much the same as pitch points.")
-ENTRY (U"Stylization")
-	NORMAL (U"Before editing the Pitch points, you may want to reduce their number by choosing any of the #Stylize "
-		"commands from the #Pitch menu.")
+	INTRO (U"Praat 中的@@Editors|编辑器@之一，用于查看和操纵 @@Manipulation|Manipulation@（声音操纵）对象。")
+ENTRY (U"显示的内容")
+	NORMAL (U"该编辑器显示：")
+	LIST_ITEM (U"• 原始 @@Sound|Sound@（声音）对象。")
+	LIST_ITEM (U"• 表示声门%%pulses%（脉冲）的 @@PointProcess|PointProcess@（点标记过程）对象。您可以对其进行编辑以改善音高分析。")
+	LIST_ITEM (U"• 基于脉冲位置的音高曲线，用于对比（绘制为灰色圆点）。如果编辑脉冲，其形状会发生改变。")
+	LIST_ITEM (U"• 决定重合成 @@Sound|Sound@ 的音高曲线的 @@PitchTier|PitchTier@（音高层）对象（绘制为蓝色圆圈）。在创建 @@Manipulation|Manipulation@ 对象时，它会从原始音高曲线计算得出。您可以通过简化它（例如删除目标点），或者上下、前后移动它的各个部分来对其进行操纵。")
+	LIST_ITEM (U"• 用于操纵声音有声部分相对时长的 @@DurationTier|DurationTier@（时长层）对象。")
+ENTRY (U"播放")
+	NORMAL (U"若要播放（一部分）%%resynthesized%（重合成）声音（通过 #Synth 菜单中显示的任何方法，例如 @@overlap-add|重叠相加法@ 和 #LPC），请@@Click|单击@绘制区域下方和上方的 1 到 8 个播放按钮，或者使用 Play（播放）菜单中的命令。")
+	NORMAL (U"若要播放%%original%（原始）声音，请使用 ##Shift-click#（Shift-单击）。")
+ENTRY (U"脉冲")
+	TERM (U"添加：")
+	DEFINITION (U"在所需的时间位置@@Click|单击@，然后选择 ##Add pulse at cursor#（在光标处添加脉冲）或键入 @@Keyboard shortcuts|Command-P@。")
+	TERM (U"移除：")
+	DEFINITION (U"进行 @@time selection|时间选择@，联同选择 ##Remove pulse(s)#（移除脉冲）或键入 @@Keyboard shortcuts|Option-Command-P@。如果没有进行选择，则移除最靠近光标的脉冲。")
+ENTRY (U"音高点")
+	TERM (U"在指定的%%time and frequency%（时间和频率）处添加点：")
+	DEFINITION (U"在所需的时间-频率位置@@Click|单击@，然后选择 ##Add pitch point at cursor#（在光标处添加音高点）或键入 @@Keyboard shortcuts|Command-t@。")
+	TERM (U"仅在指定%time（时间）处添加点：")
+	DEFINITION (U"在所需的时间处@@Click|单击@，然后选择 ##Add pitch point at time slice#（在时间片处添加音高点）。ManipulationEditor 会尝试根据脉冲之间的间隔来计算频率，基本上采用的是三值中值法。")
+	TERM (U"移除：")
+	DEFINITION (U"进行 @@time selection|时间选择@，然后选择 ##Remove pitch point(s)#（移除音高点）或键入 @@Keyboard shortcuts|Option-Command-t@。如果没有进行选择，则移除最靠近光标的音高点。")
+	TERM (U"移动多个点：")
+	DEFINITION (U"进行 @@time selection|时间选择@（被选中的点会变为红色），然后按住 ##Shift-drag#（Shift-拖动）在窗口中移动这些点。您不能将它们拖过相邻的点，或者拖到 50 Hz 以下或最大频率以上。如果%%dragging strategy%（拖动策略）是 ##All#（所有）或 ##Only horizontal#（仅水平），则您只能水平拖动它们；如果拖动策略不是 ##Only horizontal#，则您可以垂直拖动它们。您可以通过 #Pitch 菜单中的 ##Set pitch dragging strategy...#（设置音高拖动策略...）来更改拖动策略。")
+	TERM (U"移动单个点：")
+	DEFINITION (U"使用鼠标@@Drag|拖动@该点。如果拖动策略不是 ##Only vertical#（仅垂直），则您只能水平拖动它；如果拖动策略不是 ##Only horizontal#（仅水平），则您可以垂直拖动它。")
+ENTRY (U"时长点")
+	NORMAL (U"其工作方式与音高点基本相同。")
+ENTRY (U"简化（Stylization）")
+	NORMAL (U"在编辑音高点之前，您可能希望通过选择 #Pitch 菜单中的任何 #Stylize（简化）命令来减少点数。")
 MAN_END
 
 MAN_BEGIN (U"Matrix", U"ppgb", 20240712)

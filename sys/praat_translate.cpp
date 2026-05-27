@@ -4,6 +4,7 @@
 
 static const std::unordered_map<std::u32string, std::u32string> g_translation_map = {
 	{ U"\nPlease change its name or remove it.", U"\n\u8bf7\u66f4\u6539\u5176\u540d\u79f0\u6216\u5c06\u5176\u5220\u9664\u3002" },
+	{ U" seconds,", U" \u79d2\uff0c" },
 	{ U"\" of column", U"\u201d \u5217" },
 	{ U"\" of row", U"\u201d \u884c" },
 	{ U"& Sound: To TextGrid?", U"& \u58f0\u97f3\uff1a \u8f6c\u4e3a TextGrid\uff1f" },

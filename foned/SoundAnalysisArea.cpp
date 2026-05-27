@@ -26,6 +26,7 @@
 #include "VoiceAnalysis.h"
 #include "EditorM.h"
 #include "praat_script.h"
+#include "praat_translate.h"
 
 Thing_implement (SoundAnalysisArea, FunctionArea, 0);
 
@@ -2568,8 +2569,8 @@ static void SoundAnalysisArea_v_draw_analysis (SoundAnalysisArea me) {
 		Graphics_setFont (my graphics(), kGraphics_font::HELVETICA);
 		Graphics_setFontSize (my graphics(), 10);
 		Graphics_setTextAlignment (my graphics(), Graphics_CENTRE, Graphics_HALF);
-		Graphics_text (my graphics(), 0.5, 0.67,   U"(To see the analyses, zoom in to at most ", Melder_half (my instancePref_longestAnalysis()), U" seconds,");
-		Graphics_text (my graphics(), 0.5, 0.33,   U"or raise the “longest analysis” setting with “Show analyses” in the Analyses menu.)");
+		Graphics_text (my graphics(), 0.5, 0.67,   praat_translate (U"(To see the analyses, zoom in to at most "), Melder_half (my instancePref_longestAnalysis()), praat_translate (U" seconds,"));
+		Graphics_text (my graphics(), 0.5, 0.33,   praat_translate (U"or raise the “longest analysis” setting with “Show analyses” in the Analyses menu.)"));
 		Graphics_setFontSize (my graphics(), 12);
 		return;
 	}
@@ -2678,7 +2679,7 @@ static void SoundAnalysisArea_v_draw_analysis (SoundAnalysisArea me) {
 			Graphics_setTextAlignment (my graphics(), Graphics_CENTRE, Graphics_HALF);
 			Graphics_setFontSize (my graphics(), 10);
 			Graphics_text (my graphics(), 0.5 * (my startWindow() + my endWindow()), 0.5 * (pitchViewFrom_hidden + pitchViewTo_hidden),
-					U"(Cannot show pitch contour. Zoom out or change bottom of pitch range in pitch settings.)");
+					praat_translate (U"(Cannot show pitch contour. Zoom out or change bottom of pitch range in pitch settings.)"));
 			Graphics_setFontSize (my graphics(), 12);
 		}
 		Graphics_setColour (my graphics(), Melder_BLACK);

@@ -2066,6 +2066,7 @@ EXACT_MAP = {
     "rows in a Table.": "行 in a 表格.",
     "rows.": "行.",
     "seconds": "秒",
+    " seconds,": " 秒，",
     "sel": "选择",
     "select that Sound and choose \"To TextGrid...\".": "请选择该声音对象并选择“To TextGrid...”命令。",
     "semitones re 1 Hz": "半音 (基准 1 Hz)",
