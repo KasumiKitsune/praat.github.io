@@ -11,15 +11,15 @@
 <table border=0 cellpadding=0 cellspacing=0><tr><td bgcolor="#CCCC00"><table border=4 cellpadding=9><tr><td align=middle bgcolor="#000000"><font face="Palatino,Times" size=6 color="#999900"><b>
 Independent Component Analysis on EEG
 </b></font></table></table>
-<p>Independent Component Analysis (ICA) is often used to improve <a href="EEG.html">EEG</a> signals. See <a href="blind_source_separation.html">blind source separation</a> for the algorithm.</p>
-<h2>1. Selecting your channels</h2>
-<p>You typically will not want to do ICA on all 80 channels of your signal, some of which may not even be EEG channels. To create a smaller EEG with e.g. only the 64 scalp channels, use <b>EEG: Extract channels...</b>. From here on we will assume that your reduced EEG has 64 channels.</p>
-<h2>2. How to get a MixingMatrix</h2>
-<p>Once you have your reduced EEG, you can start to do ICA on it. This starts by creating a <a href="MixingMatrix.html">MixingMatrix</a>: select your EEG object and choose <b>To MixingMatrix...</b>. The resulting MixingMatrix has one row for each of your 64 EEG channels, and columns called &#8220;ic1&#8221; through &#8220;ic64&#8221;.</p>
-<h2>3. How to see the independent components</h2>
-<p>Select your EEG and your MixingMatrix together and choose <b>Unmix</b>. The resulting ICA-EEG will have 64 channels called &#8220;ic1&#8221; through &#8220;ic64&#8221;.</p>
-<h2>4. Just checking back</h2>
-<p>If you select your ICA-EEG together with your MixingMatrix and choose <b>Mix</b>, the resulting EEG should be very similar to your original 64-channel EEG.</p>
+<p>&#29420;&#31435;&#25104;&#20998;&#20998;&#26512;&#65288;ICA&#65289;&#24120;&#29992;&#20110;&#25913;&#21892; <a href="EEG.html">EEG</a> &#20449;&#21495;&#12290; &#31639;&#27861;&#21442;&#35265; <a href="blind_source_separation.html">&#30450;&#28304;&#20998;&#31163;</a>&#12290;</p>
+<h2>1. &#36873;&#25321;&#36890;&#36947;</h2>
+<p>&#24744;&#36890;&#24120;&#19981;&#24076;&#26395;&#23545;&#20449;&#21495;&#30340;&#25152;&#26377; 80 &#20010;&#36890;&#36947;&#37117;&#36827;&#34892; ICA&#65292;&#20854;&#20013;&#19968;&#20123;&#29978;&#33267;&#21487;&#33021;&#19981;&#26159; EEG &#36890;&#36947;&#12290; &#22914;&#26524;&#24819;&#21019;&#24314;&#19968;&#20010;&#20363;&#22914;&#20165;&#21253;&#21547; 64 &#20010;&#22836;&#30382;&#36890;&#36947;&#30340;&#36739;&#23567; EEG&#65292;&#35831;&#20351;&#29992; <b>EEG: Extract channels...</b>&#65288;&#25552;&#21462;&#36890;&#36947;&#65289;&#25353;&#38062;&#12290; &#20174;&#36825;&#37324;&#24320;&#22987;&#65292;&#25105;&#20204;&#20551;&#35774;&#24744;&#31616;&#21270;&#21518;&#30340; EEG &#20855;&#26377; 64 &#20010;&#36890;&#36947;&#12290;</p>
+<h2>2. &#22914;&#20309;&#33719;&#21462;&#28151;&#21512;&#30697;&#38453;&#65288;MixingMatrix&#65289;</h2>
+<p>&#33719;&#24471;&#31616;&#21270;&#21518;&#30340; EEG &#20043;&#21518;&#65292;&#24744;&#23601;&#21487;&#20197;&#24320;&#22987;&#23545;&#20854;&#36827;&#34892; ICA &#20102;&#12290; &#39318;&#20808;&#38656;&#35201;&#21019;&#24314;&#19968;&#20010; <a href="MixingMatrix.html">MixingMatrix</a>&#65288;&#28151;&#21512;&#30697;&#38453;&#65289;&#65306;&#36873;&#25321;&#24744;&#30340; EEG &#23545;&#35937;&#24182;&#28857;&#20987; <b>To MixingMatrix...</b> &#25353;&#38062;&#12290; &#29983;&#25104;&#30340; MixingMatrix &#23545;&#35937;&#23558;&#21253;&#21547; 64 &#34892;&#65288;&#23545;&#24212;&#24744;&#30340; 64 &#20010; EEG &#36890;&#36947;&#65289;&#65292;&#21015;&#21517;&#20026; &#8220;ic1&#8221; &#21040; &#8220;ic64&#8221;&#12290;</p>
+<h2>3. &#22914;&#20309;&#26597;&#30475;&#29420;&#31435;&#25104;&#20998;</h2>
+<p>&#21516;&#26102;&#36873;&#20013;&#24744;&#30340; EEG &#23545;&#35937;&#21644; MixingMatrix &#23545;&#35937;&#65292;&#28982;&#21518;&#28857;&#20987; <b>Unmix</b> &#25353;&#38062;&#12290; &#29983;&#25104;&#30340; ICA-EEG &#23558;&#21253;&#21547; 64 &#20010;&#21517;&#20026; &#8220;ic1&#8221; &#21040; &#8220;ic64&#8221; &#30340;&#36890;&#36947;&#12290;</p>
+<h2>4. &#36870;&#21521;&#26816;&#26597;&#39564;&#35777;</h2>
+<p>&#22914;&#26524;&#24744;&#21516;&#26102;&#36873;&#25321; ICA-EEG &#23545;&#35937;&#21644; MixingMatrix &#23545;&#35937;&#24182;&#28857;&#20987; <b>Mix</b> &#25353;&#38062;&#65292; &#29983;&#25104;&#30340;&#26032; EEG &#23545;&#35937;&#24212;&#35813;&#19982;&#24744;&#21407;&#26469;&#30340; 64 &#36890;&#36947; EEG &#38750;&#24120;&#30456;&#20284;&#12290;</p>
 <h3>Links to this page</h3>
 <ul>
 <li><a href="What_was_new_in_6_1_.html">What was new in 6.1?</a>

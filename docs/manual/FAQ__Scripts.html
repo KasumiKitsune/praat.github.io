@@ -11,17 +11,17 @@
 <table border=0 cellpadding=0 cellspacing=0><tr><td bgcolor="#CCCC00"><table border=4 cellpadding=9><tr><td align=middle bgcolor="#000000"><font face="Palatino,Times" size=6 color="#999900"><b>
 FAQ: Scripts
 </b></font></table></table>
-<p><b>Question</b>: how do I do something to all the files in a directory?</p>
-<p>Answer: look at <a href="_fileNames-S-H_.html"><b><code><font size=+1>fileNames$#</font></code></b></a> () or <a href="Create_Strings_as_file_list___.html">Create Strings as file list...</a>.</p>
+<p><b>&#38382;&#39064;</b>&#65306;&#22914;&#20309;&#23545;&#19968;&#20010;&#25991;&#20214;&#22841;&#20013;&#30340;&#25152;&#26377;&#25991;&#20214;&#25191;&#34892;&#30456;&#21516;&#30340;&#25805;&#20316;&#65311;</p>
+<p>&#22238;&#31572;&#65306;&#21442;&#32771; <a href="_fileNames-S-H_.html"><b><code><font size=+1>fileNames$#</font></code></b></a> () &#20989;&#25968;&#25110;&#32773; <a href="Create_Strings_as_file_list___.html">Create Strings as file list...</a> &#33756;&#21333;&#21629;&#20196;&#12290;</p>
 <dl>
 <dd style="position:relative;padding-left:1em;text-indent:-2em">&nbsp;</dd>
 </dl>
-<p><b>Question</b>: why doesn't the editor window react to my commands?</p>
-<p>Your commands are probably something like:</p>
+<p><b>&#38382;&#39064;</b>&#65306;&#20026;&#20160;&#20040;&#32534;&#36753;&#22120;&#31383;&#21475;&#23545;&#25105;&#30340;&#33050;&#26412;&#21629;&#20196;&#27809;&#26377;&#21453;&#24212;&#65311;</p>
+<p>&#24744;&#30340;&#33050;&#26412;&#21629;&#20196;&#21487;&#33021;&#20889;&#25104;&#31867;&#20284;&#36825;&#26679;&#65306;</p>
 <code>   Read from file: “hello.wav”<br></code>
 <code>   View &amp; Edit<br></code>
 <code>   Zoom: 0.3, 0.5<br></code>
-<p>Answer: Praat doesn&#8217;t know it has to send the <b>Zoom</b> command to the editor window called <b>14. Sound hello</b>. There could be several Sound editor windows on your screen. According to <a href="Scripting_7_1__Scripting_an_editor_from_a_shell_script.html">Scripting 7.1. Scripting an editor from a shell script</a>, you will have to say this explicitly:</p>
+<p>&#22238;&#31572;&#65306;Praat &#24182;&#19981;&#30693;&#36947;&#23427;&#24517;&#39035;&#25226; <b>Zoom</b> &#21629;&#20196;&#21457;&#36865;&#32473;&#21517;&#20026; <b>14. Sound hello</b> &#30340;&#32534;&#36753;&#22120;&#31383;&#21475;&#12290;&#22240;&#20026;&#24744;&#30340;&#23631;&#24149;&#19978;&#21487;&#33021;&#21516;&#26102;&#25171;&#24320;&#20102;&#22810;&#20010;&#22768;&#38899;&#32534;&#36753;&#22120;&#31383;&#21475;&#12290;&#26681;&#25454; <a href="Scripting_7_1__Scripting_an_editor_from_a_shell_script.html">Scripting 7.1. Scripting an editor from a shell script</a>&#65292;&#24744;&#24517;&#39035;&#26174;&#24335;&#25351;&#23450;&#30446;&#26631;&#32534;&#36753;&#22120;&#31383;&#21475;&#65306;</p>
 <code>   Read from file: “hello.wav”<br></code>
 <code>   View &amp; Edit<br></code>
 <code>   editor: “Sound hello”<br></code>
@@ -29,20 +29,20 @@ FAQ: Scripts
 <dl>
 <dd style="position:relative;padding-left:1em;text-indent:-2em">&nbsp;</dd>
 </dl>
-<p><b>Problem</b>: a line like &#8220;<i><code><font size=+1>Number = 1</font></code></i>&#8221; does not work.</p>
-<p>Solution: names of variables should start with a lower-case letter.</p>
+<p><b>&#38382;&#39064;</b>&#65306;&#20687; &#8220;<i><code><font size=+1>Number = 1</font></code></i>&#8221; &#36825;&#26679;&#30340;&#19968;&#34892;&#26080;&#27861;&#24037;&#20316;&#12290;</p>
+<p>&#35299;&#31572;&#65306;&#21464;&#37327;&#30340;&#21517;&#31216;&#24212;&#24403;&#20197;&#23567;&#20889;&#23383;&#27597;&#24320;&#22836;&#12290;</p>
 <dl>
 <dd style="position:relative;padding-left:1em;text-indent:-2em">&nbsp;</dd>
 </dl>
-<p><b>Question</b>: why do names of variables have to start with a lower-case letter? I would like to do things like &#8220;<code><font size=+1>F0 = Get mean pitch</font></code>&#8221;.</p>
-<p>Answer: Praat scripts combine button commands with things that only occur in scripts. Button commands always start with a capital letter, e.g. <code><font size=+1>Play</font></code> (there is a button <b>Play</b>). Script commands always start with lower case, e.g. <code><font size=+1>writeInfoLine: “Hello”</font></code> (<code><font size=+1>writeInfoLine</font></code> is a built-in function). A minimal pair is &#8220;<code><font size=+1>select</font></code>&#8221;, which simulates a mouse click in the object list, versus &#8220;<code><font size=+1>Select...</font></code>&#8221;, which sets the selection in editor windows. If we allowed initial capitals, variable names would become rather ambiguous in assignments, as in &#8220;<code><font size=+1>x = Get</font></code>&#8221;, where &#8220;<i><code><font size=+1>Get</font></code></i>&#8221; would be a variable, versus &#8220;<code><font size=+1>x = Get mean</font></code>&#8221;, where <b>Get mean</b> is a button command. To prevent this confusion, Praat enforces a rigorous lower-case/upper-case distinction.</p>
+<p><b>&#38382;&#39064;</b>&#65306;&#20026;&#20160;&#20040;&#21464;&#37327;&#21517;&#31216;&#24517;&#39035;&#20197;&#23567;&#20889;&#23383;&#27597;&#24320;&#22836;&#65311;&#25105;&#24819;&#20351;&#29992;&#20687; &#8220;<code><font size=+1>F0 = Get mean pitch</font></code>&#8221; &#36825;&#26679;&#30340;&#20889;&#27861;&#12290;</p>
+<p>&#22238;&#31572;&#65306;Praat &#33050;&#26412;&#23558;&#25353;&#38062;&#21629;&#20196;&#19982;&#21482;&#22312;&#33050;&#26412;&#20013;&#21457;&#29983;&#30340;&#21151;&#33021;&#32467;&#21512;&#22312;&#19968;&#36215;&#12290;&#25353;&#38062;&#21629;&#20196;&#24635;&#26159;&#20197;&#22823;&#20889;&#23383;&#27597;&#24320;&#22836;&#65292;&#20363;&#22914; <code><font size=+1>Play</font></code>&#65288;&#22240;&#20026;&#22312;&#30028;&#38754;&#20013;&#26377;&#19968;&#20010;&#21517;&#20026; <b>Play</b> &#30340;&#25353;&#38062;&#65289;&#12290;&#33050;&#26412;&#19987;&#23646;&#21629;&#20196;&#21017;&#24635;&#26159;&#20197;&#23567;&#20889;&#23383;&#27597;&#24320;&#22836;&#65292;&#20363;&#22914; <code><font size=+1>writeInfoLine: “Hello”</font></code>&#65288;<code><font size=+1>writeInfoLine</font></code> &#26159;&#19968;&#20010;&#20869;&#32622;&#20989;&#25968;&#65289;&#12290; &#19968;&#20010;&#20856;&#22411;&#30340;&#20363;&#23376;&#26159; &#8220;<code><font size=+1>select</font></code>&#8221;&#65288;&#23427;&#22312;&#33050;&#26412;&#20013;&#27169;&#25311;&#23545;&#35937;&#21015;&#34920;&#20013;&#30340;&#40736;&#26631;&#28857;&#20987;&#65289;&#65292;&#19982; &#8220;<code><font size=+1>Select...</font></code>&#8221;&#65288;&#23427;&#22312;&#32534;&#36753;&#22120;&#31383;&#21475;&#20013;&#35774;&#23450;&#36873;&#25321;&#33539;&#22260;&#65289;&#20043;&#38388;&#30340;&#21306;&#21035;&#12290;&#22914;&#26524;&#25105;&#20204;&#20801;&#35768;&#21464;&#37327;&#21517;&#39318;&#23383;&#27597;&#22823;&#20889;&#65292;&#22312;&#36171;&#20540;&#26102;&#23601;&#20250;&#21464;&#24471;&#30456;&#24403;&#21547;&#31946;&#12290;&#20363;&#22914;&#22312; &#8220;<code><font size=+1>x = Get</font></code>&#8221; &#20013;&#65292;&#8220;<i><code><font size=+1>Get</font></code></i>&#8221; &#20250;&#26159;&#19968;&#20010;&#21464;&#37327;&#65307;&#32780;&#22312; &#8220;<code><font size=+1>x = Get mean</font></code>&#8221; &#20013;&#65292;<b>Get mean</b> &#26159;&#19968;&#20010;&#30028;&#38754;&#25353;&#38062;&#21629;&#20196;&#12290;&#20026;&#20102;&#38450;&#27490;&#36825;&#31181;&#28151;&#28102;&#65292;Praat &#24378;&#21046;&#25191;&#34892;&#20102;&#20005;&#26684;&#30340;&#22823;&#23567;&#20889;&#21306;&#20998;&#35268;&#21017;&#12290;</p>
 <dl>
 <dd style="position:relative;padding-left:1em;text-indent:-2em">&nbsp;</dd>
 </dl>
-<p><b>Question</b>: how do I convert a number into a string?</p>
-<p>Answer: <code><font size=+1>a$ = string$ (a)</font></code></p>
-<p><b>Question</b>: how do I convert a string into a number?</p>
-<p>Answer: <code><font size=+1>a = number (a$)</font></code></p>
+<p><b>&#38382;&#39064;</b>&#65306;&#22914;&#20309;&#23558;&#25968;&#23383;&#36716;&#25442;&#20026;&#23383;&#31526;&#20018;&#65311;</p>
+<p>&#22238;&#31572;&#65306;<code><font size=+1>a$ = string$ (a)</font></code></p>
+<p><b>&#38382;&#39064;</b>&#65306;&#22914;&#20309;&#23558;&#23383;&#31526;&#20018;&#36716;&#25442;&#20026;&#25968;&#23383;&#65311;</p>
+<p>&#22238;&#31572;&#65306;<code><font size=+1>a = number (a$)</font></code></p>
 <h3>Links to this page</h3>
 <ul>
 <li><a href="FAQ__Frequently_Asked_Questions_.html">FAQ (Frequently Asked Questions)</a>

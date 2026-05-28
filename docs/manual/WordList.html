@@ -11,19 +11,19 @@
 <table border=0 cellpadding=0 cellspacing=0><tr><td bgcolor="#CCCC00"><table border=4 cellpadding=9><tr><td align=middle bgcolor="#000000"><font face="Palatino,Times" size=6 color="#999900"><b>
 WordList
 </b></font></table></table>
-<p>One of the <a href="Types_of_objects.html">types of objects</a> in Praat. An object of class WordList contains a sorted list of strings in a system-independent format. WordList objects can be used for spelling checking after conversion to a <a href="SpellingChecker.html">SpellingChecker</a> object.</p>
-<h2>1. How to create a WordList object</h2>
-<p>You will normally create a WordList object by reading a binary WordList file. You'll use the generic <a href="Read_from_file___.html">Read from file...</a> command from the <b>Open</b> menu.</p>
-<p>See below under 3 for how to create such a file.</p>
-<h2>2. What you can do with a Wordlist object</h2>
-<p>The main functionality of a WordList is its ability to tell you whether it contains a certain string. If you select a WordList, you can query the existence of a specific word by using the <b>Has word</b> command. You supply the word and press OK. If the WordList does contain the word, the value "1" will be written to the Info window; otherwise, the value "0" will be written.</p>
-<h2>3. How to create a binary WordList file</h2>
-<p>You can create a binary WordList file from a simple text file that contains a long list of words. Perhaps such a text file has been supplied by a lexicographic institution in your country; because of copyright issues, such word lists cannot be distributed with the Praat program. To convert the simple text file into a compressed WordList file, you basically take the following steps:</p>
+<p>Praat &#20013;&#30340; <a href="Types_of_objects.html">&#23545;&#35937;&#31867;&#22411;</a> &#20043;&#19968;&#12290; WordList &#31867;&#30340;&#23545;&#35937;&#20197;&#31995;&#32479;&#26080;&#20851;&#30340;&#26684;&#24335;&#21253;&#21547;&#19968;&#20010;&#25490;&#24207;&#30340;&#23383;&#31526;&#20018;&#21015;&#34920;&#12290; WordList &#23545;&#35937;&#22312;&#36716;&#25442;&#20026; <a href="SpellingChecker.html">SpellingChecker&#65288;&#25340;&#20889;&#26816;&#26597;&#22120;&#65289;</a> &#23545;&#35937;&#21518;&#65292;&#21487;&#29992;&#20110;&#25340;&#20889;&#26816;&#26597;&#12290;</p>
+<h2>1. &#22914;&#20309;&#21019;&#24314; WordList &#23545;&#35937;</h2>
+<p>&#24744;&#36890;&#24120;&#20250;&#36890;&#36807;&#35835;&#21462;&#20108;&#36827;&#21046; WordList file &#26469;&#21019;&#24314; WordList &#23545;&#35937;&#12290; &#24744;&#23558;&#20351;&#29992; <b>Open</b> &#33756;&#21333;&#20013;&#30340;&#36890;&#29992; <a href="Read_from_file___.html">&#20174;&#25991;&#20214;&#35835;&#21462;...</a> &#21629;&#20196;&#12290;</p>
+<p>&#22914;&#20309;&#21019;&#24314;&#27492;&#31867;&#25991;&#20214;&#65292;&#35831;&#21442;&#38405;&#19979;&#38754;&#30340;&#31532; 3 &#28857;&#12290;</p>
+<h2>2. &#24744;&#21487;&#20197;&#20351;&#29992; WordList &#23545;&#35937;&#20570;&#20160;&#20040;</h2>
+<p>WordList &#30340;&#20027;&#35201;&#21151;&#33021;&#26159;&#33021;&#22815;&#21578;&#35785;&#24744;&#23427;&#26159;&#21542;&#21253;&#21547;&#26576;&#20010;&#29305;&#23450;&#30340;&#23383;&#31526;&#20018;&#12290; &#22914;&#26524;&#24744;&#36873;&#20013;&#19968;&#20010; WordList&#65292;&#24744;&#21487;&#20197;&#20351;&#29992; <b>Has word</b> &#21629;&#20196;&#26597;&#35810;&#26159;&#21542;&#23384;&#22312;&#29305;&#23450;&#21333;&#35789;&#12290;&#24744;&#36755;&#20837;&#21333;&#35789;&#24182;&#25353;&#19979;&#8220;&#30830;&#23450;&#8221;&#12290;&#22914;&#26524; WordList &#30830;&#23454;&#21253;&#21547;&#35813;&#21333;&#35789;&#65292; &#25968;&#20540; "1" &#23558;&#34987;&#20889;&#20837;&#20449;&#24687;&#31383;&#21475;&#65307;&#21542;&#21017;&#65292;&#23558;&#20889;&#20837;&#25968;&#20540; "0"&#12290;</p>
+<h2>3. &#22914;&#20309;&#21019;&#24314;&#20108;&#36827;&#21046; WordList &#25991;&#20214;</h2>
+<p>&#24744;&#21487;&#20197;&#20174;&#21253;&#21547;&#38271;&#21333;&#35789;&#21015;&#34920;&#30340;&#31616;&#21333;&#25991;&#26412;&#25991;&#20214;&#21019;&#24314;&#20108;&#36827;&#21046; WordList &#25991;&#20214;&#12290; &#27492;&#31867;&#25991;&#26412;&#25991;&#20214;&#21487;&#33021;&#30001;&#24744;&#22269;&#23478;&#30340;&#36766;&#20070;&#26426;&#26500;&#25552;&#20379;&#65307; &#30001;&#20110;&#29256;&#26435;&#38382;&#39064;&#65292;&#27492;&#31867;&#21333;&#35789;&#21015;&#34920;&#26080;&#27861;&#38543; Praat &#31243;&#24207;&#19968;&#36215;&#20998;&#21457;&#12290; &#35201;&#23558;&#31616;&#21333;&#25991;&#26412;&#25991;&#20214;&#36716;&#25442;&#20026;&#21387;&#32553;&#30340; WordList &#25991;&#20214;&#65292;&#24744;&#22522;&#26412;&#19978;&#38656;&#35201;&#25191;&#34892;&#20197;&#19979;&#27493;&#39588;&#65306;</p>
 <code>   Read Strings from raw text file: "lexicon.txt"<br></code>
 <code>   Sort<br></code>
 <code>   To WordList<br></code>
 <code>   Save as binary file: "lexicon.WordList"<br></code>
-<p>I'll explain these steps in detail. For instance, a simple text file may contain the following list of words:</p>
+<p>&#25105;&#23558;&#35814;&#32454;&#35299;&#37322;&#36825;&#20123;&#27493;&#39588;&#12290; &#20363;&#22914;&#65292;&#19968;&#20010;&#31616;&#21333;&#30340;&#25991;&#26412;&#25991;&#20214;&#21487;&#33021;&#21253;&#21547;&#20197;&#19979;&#21333;&#35789;&#21015;&#34920;&#65306;</p>
 <code>   cook<br></code>
 <code>   cooked<br></code>
 <code>   cookie<br></code>
@@ -35,11 +35,11 @@ WordList
 <code>   München<br></code>
 <code>   Munich<br></code>
 <code>   ångström<br></code>
-<p>These are just 11 words, but the procedure will work fine if you have a million of them, and enough memory in your computer.</p>
-<p>You can read the file into a <a href="Strings.html">Strings</a> object with <a href="Read_Strings_from_raw_text_file___.html">Read Strings from raw text file...</a> from the <b>Open</b> menu in the Objects window. The resulting <a href="Strings.html">Strings</a> object contains 11 strings in the above order, as you can verify by viewing them with <a href="Inspect.html">Inspect</a>.</p>
-<p>If you select the Strings, you can click the <b>To WordList</b> button. However, you will get the following complaint:</p>
+<p>&#36825;&#21482;&#26377; 11 &#20010;&#21333;&#35789;&#65292;&#20294;&#22914;&#26524;&#24744;&#30340;&#30005;&#33041;&#26377;&#36275;&#22815;&#30340;&#20869;&#23384;&#65292;&#21363;&#20351;&#24744;&#26377;&#19968;&#30334;&#19975;&#20010;&#21333;&#35789;&#65292;&#35813;&#31243;&#24207;&#20063;&#33021;&#27491;&#24120;&#36816;&#34892;&#12290;</p>
+<p>&#24744;&#21487;&#20197;&#20351;&#29992;&#23545;&#35937;&#31383;&#21475;&#20013; <b>Open</b> &#33756;&#21333;&#19979;&#30340; <a href="Read_Strings_from_raw_text_file___.html">&#20174;&#21407;&#22987;&#25991;&#26412;&#25991;&#20214;&#35835;&#21462; Strings...</a> &#21629;&#20196;&#23558;&#35813;&#25991;&#20214;&#35835;&#21462;&#21040;&#19968;&#20010; <a href="Strings.html">Strings&#65288;&#23383;&#31526;&#20018;&#21015;&#34920;&#65289;</a> &#23545;&#35937;&#20013;&#12290;&#29983;&#25104;&#30340; <a href="Strings.html">Strings</a> &#23545;&#35937;&#25353;&#19978;&#36848;&#39034;&#24207;&#21253;&#21547; 11 &#20010;&#23383;&#31526;&#20018;&#65292; &#24744;&#21487;&#20197;&#36890;&#36807;&#20351;&#29992; <a href="Inspect.html">Inspect&#65288;&#26816;&#26597;&#65289;</a> &#26597;&#30475;&#23427;&#20204;&#26469;&#39564;&#35777;&#36825;&#19968;&#28857;&#12290;</p>
+<p>&#22914;&#26524;&#36873;&#20013;&#35813; Strings &#23545;&#35937;&#65292;&#24744;&#21487;&#20197;&#28857;&#20987; <b>To WordList</b> &#25353;&#38062;&#12290; &#20294;&#26159;&#65292;&#24744;&#20250;&#25910;&#21040;&#20197;&#19979;&#25265;&#24616;&#25552;&#31034;&#65306;</p>
 <code>      String "Copenhagen" not sorted. Please sort first.<br></code>
-<p>This complaint means that the strings have not been sorted in Unicode sorting order. So you click <b>Sort</b>, and the Strings object becomes:</p>
+<p>&#35813;&#25552;&#31034;&#24847;&#21619;&#30528;&#36825;&#20123;&#23383;&#31526;&#20018;&#23578;&#26410;&#25353;&#29031; Unicode &#25490;&#24207;&#39034;&#24207;&#36827;&#34892;&#25490;&#24207;&#12290; &#25152;&#20197;&#24744;&#28857;&#20987; <b>Sort</b>&#65292;Strings &#23545;&#35937;&#21464;&#20026;&#65306;</p>
 <code>   Copenhagen<br></code>
 <code>   København<br></code>
 <code>   Munich<br></code>
@@ -51,8 +51,8 @@ WordList
 <code>   cooking<br></code>
 <code>   cooks<br></code>
 <code>   ångström<br></code>
-<p>The strings are now in Unicode sorting order, in which capitals come before lower-case letters, and composite characters follow the latter.</p>
-<p>Clicking <b>To WordList</b> now succeeds, and a WordList object appears in the list. If you save it to a text file (with the Save menu), you will get the following file:</p>
+<p>&#36825;&#20123;&#23383;&#31526;&#20018;&#29616;&#22312;&#25353;&#29031; Unicode &#25490;&#24207;&#39034;&#24207;&#25490;&#21015;&#65292;&#20854;&#20013;&#22823;&#20889;&#23383;&#27597;&#25490;&#22312;&#23567;&#20889;&#23383;&#27597;&#20043;&#21069;&#65292; &#22797;&#21512;&#23383;&#31526;&#36319;&#22312;&#21518;&#32773;&#21518;&#38754;&#12290;</p>
+<p>&#29616;&#22312;&#28857;&#20987; <b>To WordList</b> &#25104;&#21151;&#65292;&#24182;&#19988;&#21015;&#34920;&#20013;&#20986;&#29616;&#19968;&#20010; WordList &#23545;&#35937;&#12290; &#22914;&#26524;&#23558;&#20854;&#20445;&#23384;&#20026;&#25991;&#26412;&#25991;&#20214;&#65288;&#20351;&#29992; Save &#33756;&#21333;&#65289;&#65292;&#24744;&#23558;&#24471;&#21040;&#20197;&#19979;&#25991;&#20214;&#65306;</p>
 <code>   File type = "ooTextFile"<br></code>
 <code>   Object class = "WordList"<br></code>
 <code>   <br></code>
@@ -67,9 +67,9 @@ WordList
 <code>   cooking<br></code>
 <code>   cooks<br></code>
 <code>   ångström\" <br></code>
-<p>Note that any double quotes (") that appear inside the strings, will be doubled, as is done everywhere inside strings in Praat text files.</p>
-<p>After you have created a WordList text file, you can create a WordList object just by reading this file with <a href="Read_from_file___.html">Read from file...</a> from the <b>Open</b> menu.</p>
-<p>The WordList object has the advantage over the Strings object that it won't take up more memory than the original word list. This is because the WordList is stored as a single string: a contiguous list of strings, separated by new-line symbols.</p>
+<p>&#35831;&#27880;&#24847;&#65292;&#23383;&#31526;&#20018;&#20869;&#37096;&#20986;&#29616;&#30340;&#20219;&#20309;&#21452;&#24341;&#21495; (") &#37117;&#23558;&#21452;&#20889;&#65292; &#23601;&#20687; Praat &#25991;&#26412;&#25991;&#20214;&#20013;&#25152;&#26377;&#23383;&#31526;&#20018;&#20869;&#37096;&#25152;&#20570;&#30340;&#19968;&#26679;&#12290;</p>
+<p>&#21019;&#24314; WordList &#25991;&#26412;&#25991;&#20214;&#21518;&#65292;&#24744;&#21482;&#38656;&#36890;&#36807; <b>Open</b> &#33756;&#21333;&#20013;&#30340; <a href="Read_from_file___.html">&#20174;&#25991;&#20214;&#35835;&#21462;...</a> &#21629;&#20196; &#35835;&#21462;&#27492;&#25991;&#20214;&#21363;&#21487;&#21019;&#24314; WordList &#23545;&#35937;&#12290;</p>
+<p>&#19982; Strings &#23545;&#35937;&#30456;&#27604;&#65292;WordList &#23545;&#35937;&#30340;&#20248;&#21183;&#22312;&#20110;&#23427;&#19981;&#20250;&#21344;&#29992;&#27604;&#21407;&#22987;&#21333;&#35789;&#21015;&#34920;&#26356;&#22810;&#30340; &#20869;&#23384;&#12290;&#36825;&#26159;&#22240;&#20026; WordList &#34987;&#23384;&#20648;&#20026;&#21333;&#20010;&#23383;&#31526;&#20018;&#65306; &#20197;&#25442;&#34892;&#31526;&#20998;&#38548;&#30340;&#36830;&#32493;&#23383;&#31526;&#20018;&#21015;&#34920;&#12290;</p>
 <hr>
 <address>
 	<p>© ppgb 20190616</p>

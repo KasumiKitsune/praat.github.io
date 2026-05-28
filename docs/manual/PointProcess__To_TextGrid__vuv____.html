@@ -11,16 +11,16 @@
 <table border=0 cellpadding=0 cellspacing=0><tr><td bgcolor="#CCCC00"><table border=4 cellpadding=9><tr><td align=middle bgcolor="#000000"><font face="Palatino,Times" size=6 color="#999900"><b>
 PointProcess: To TextGrid (vuv)...
 </b></font></table></table>
-<p>A command to create a <a href="TextGrid.html">TextGrid</a> with voiced/unvoiced information from every selected <a href="PointProcess.html">PointProcess</a>.</p>
-<h2>Settings</h2>
+<p>&#20174;&#27599;&#20010;&#36873;&#23450;&#30340; <a href="PointProcess.html">PointProcess&#65288;&#28857;&#36807;&#31243;&#65289;</a> &#23545;&#35937;&#21019;&#24314;&#19968;&#20010;&#21253;&#21547;&#27978;&#38899;/&#28165;&#38899;&#65288;voiced/unvoiced&#65289;&#20449;&#24687;&#30340; <a href="TextGrid.html">TextGrid</a>&#12290;</p>
+<h2>&#35774;&#32622;</h2>
 <dl>
-<dt><b>Maximum period (s)</b>
-<dd>the maximum interval that will be consider part of a larger voiced interval.</dd>
-<dt><b>Mean period (s)</b>
-<dd>half of this value will be taken to be the amount to which a voiced interval will extend beyond its initial and final points. <b>Mean period</b> should be less than <b>Maximum period</b>, or you may get intervals with negative durations.</dd>
+<dt><b>Maximum period (s)</b>&#65288;&#26368;&#22823;&#21608;&#26399;&#65292;&#31186;&#65289;
+<dd>&#23558;&#34987;&#35270;&#20026;&#36739;&#22823;&#27978;&#38899;&#21306;&#38388;&#19968;&#37096;&#20998;&#30340;&#26368;&#22823;&#38388;&#38548;&#12290;</dd>
+<dt><b>Mean period (s)</b>&#65288;&#24179;&#22343;&#21608;&#26399;&#65292;&#31186;&#65289;
+<dd>&#35813;&#20540;&#30340;&#19968;&#21322;&#23558;&#34987;&#35270;&#20026;&#27978;&#38899;&#21306;&#38388;&#36229;&#20986;&#20854;&#36215;&#22987;&#28857;&#21644;&#32456;&#28857;&#30340;&#24310;&#20280;&#37327;&#12290;<b>Mean period</b> &#24212;&#23567;&#20110; <b>Maximum period</b>&#65292;&#21542;&#21017;&#24744;&#21487;&#33021;&#20250;&#24471;&#21040;&#36127;&#26102;&#38271;&#30340;&#21306;&#38388;&#12290;</dd>
 </dl>
-<h2>Example</h2>
-<p>If <b>Maximum period</b> is 0.02 s, and <b>Mean period</b> is 0.01 s, and the point process is 0.1 seconds long, with points at 20, 28, 39, 61, and 72 milliseconds, the resulting TextGrid object will contain an interval tier with "U" intervals at [0 ms, 15 ms], [44 ms, 56 ms], and [77 ms, 100 ms], and "V" intervals at [15 ms, 44 ms] and [56 ms, 77 ms].</p>
+<h2>&#31034;&#20363;</h2>
+<p>&#22914;&#26524; <b>Maximum period</b> &#20026; 0.02 &#31186;&#65292;&#19988; <b>Mean period</b> &#20026; 0.01 &#31186;&#65292;&#28857;&#36807;&#31243;&#26102;&#38271;&#20026; 0.1 &#31186;&#65292;&#33033;&#20914;&#28857;&#20998;&#21035;&#20301;&#20110; 20&#12289;28&#12289;39&#12289;61 &#21644; 72 &#27627;&#31186;&#22788;&#65292;&#21017;&#29983;&#25104;&#30340; TextGrid &#23545;&#35937;&#23558;&#21253;&#21547;&#19968;&#20010;&#21306;&#38388;&#23618;&#65292;&#20854;&#20013; "U"&#65288;&#28165;&#38899;&#65289;&#21306;&#38388;&#20301;&#20110; [0 ms, 15 ms]&#12289;[44 ms, 56 ms] &#21644; [77 ms, 100 ms]&#65292;&#32780; "V"&#65288;&#27978;&#38899;&#65289;&#21306;&#38388;&#20301;&#20110; [15 ms, 44 ms] &#21644; [56 ms, 77 ms]&#12290;</p>
 <h3>Links to this page</h3>
 <ul>
 <li><a href="What_was_new_in_3_7_.html">What was new in 3.7?</a>

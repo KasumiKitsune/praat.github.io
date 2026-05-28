@@ -11,18 +11,18 @@
 <table border=0 cellpadding=0 cellspacing=0><tr><td bgcolor="#CCCC00"><table border=4 cellpadding=9><tr><td align=middle bgcolor="#000000"><font face="Palatino,Times" size=6 color="#999900"><b>
 Save as text file...
 </b></font></table></table>
-<p>One of the commands in the <a href="Save_menu.html">Save menu</a>.</p>
-<h2>Availability</h2>
-<p>You can choose this command after selecting one or more <a href="objects.html">objects</a>.</p>
-<h2>Behaviour</h2>
-<p>The Objects window will ask you for a file name. After you click OK, the objects will be written to a text file on disk.</p>
-<h2>File format</h2>
-<p>If you selected a single object, e.g., of type Pitch, the file will start with the lines:</p>
+<p><a href="Save_menu.html">Save &#33756;&#21333;</a> &#20013;&#30340;&#21629;&#20196;&#20043;&#19968;&#12290;</p>
+<h2>&#21487;&#29992;&#24615;</h2>
+<p>&#24744;&#21487;&#20197;&#22312;&#36873;&#25321;&#19968;&#20010;&#25110;&#22810;&#20010; <a href="objects.html">objects</a> &#23545;&#35937;&#21518;&#36873;&#25321;&#27492;&#21629;&#20196;&#12290;</p>
+<h2>&#34892;&#20026;</h2>
+<p>&#23545;&#35937;&#31383;&#21475;&#23558;&#35810;&#38382;&#24744;&#25991;&#20214;&#21517;&#12290; &#22312;&#24744;&#28857;&#20987; OK &#20043;&#21518;&#65292;&#36873;&#20013;&#30340;&#23545;&#35937;&#23558;&#34987;&#20889;&#20837;&#30913;&#30424;&#19978;&#30340;&#25991;&#26412;&#25991;&#20214;&#20013;&#12290;</p>
+<h2>&#25991;&#20214;&#26684;&#24335;</h2>
+<p>&#22914;&#26524;&#24744;&#21482;&#36873;&#25321;&#20102;&#19968;&#20010;&#23545;&#35937;&#65292;&#20363;&#22914; Pitch &#31867;&#22411;&#30340;&#23545;&#35937;&#65292; &#25991;&#20214;&#23558;&#20197;&#20197;&#19979;&#20960;&#34892;&#24320;&#22987;&#65306;</p>
 <code>   File type = "ooTextFile"<br></code>
 <code>   Object class = "Pitch"<br></code>
-<p>After this, the pitch data will follow.</p>
+<p>&#22312;&#27492;&#20043;&#21518;&#65292;&#38899;&#39640;&#65288;Pitch&#65289;&#25968;&#25454;&#23558;&#32039;&#38543;&#20854;&#21518;&#12290;</p>
 <dl>
-<dd style="position:relative;padding-left:1em;text-indent:-2em">If you selected more than one object, e.g., &#8220;Pitch hallo&#8221; and &#8220;Polygon kromme&#8221;, the file will look like:</dd>
+<dd style="position:relative;padding-left:1em;text-indent:-2em">&#22914;&#26524;&#24744;&#36873;&#20013;&#20102;&#22810;&#20010;&#23545;&#35937;&#65292;&#20363;&#22914; &#8220;Pitch hallo&#8221; &#21644; &#8220;Polygon kromme&#8221;&#65292; &#35813;&#25991;&#20214;&#23558;&#30475;&#36215;&#26469;&#20687;&#65306;</dd>
 </dl>
 <code>   File type = "ooTextFile"<br></code>
 <code>   Object class = "Collection"<br></code>
@@ -36,12 +36,12 @@ Save as text file...
 <code>           class = "Polygon"<br></code>
 <code>           name = "kromme"<br></code>
 <code>           (polygon data...)<br></code>
-<p>The file can be read again with <a href="Read_from_file___.html">Read from file...</a>, which, by the way, does not need the verbosity of the above example. The following minimal format will also be read correctly:</p>
+<p>&#35813;&#25991;&#20214;&#21487;&#20197;&#20351;&#29992; <a href="Read_from_file___.html">Read from file...</a> &#37325;&#26032;&#35835;&#21462;&#65292; &#39034;&#20415;&#35828;&#19968;&#21477;&#65292;&#37325;&#26032;&#35835;&#21462;&#24182;&#19981;&#38656;&#35201;&#19978;&#36848;&#31034;&#20363;&#20013;&#30340;&#20887;&#38271;&#26684;&#24335;&#12290; &#20197;&#19979;&#26368;&#31616;&#26684;&#24335;&#20063;&#23558;&#34987;&#27491;&#30830;&#35835;&#21462;&#65306;</p>
 <code>   "ooTextFile"<br></code>
 <code>   "Collection"  2<br></code>
 <code>   "Pitch"  "hallo"  (pitch data...)<br></code>
 <code>   "Polygon"  "kromme"  (polygon data...)<br></code>
-<p>Thus, all text that is not a free-standing number and is not enclosed in double quotes or &lt; &gt;, is considered a comment, as is all text following an exclamation mark (&#8220;!&#8221;) on the same line.</p>
+<p>&#22240;&#27492;&#65292;&#25152;&#26377;&#19981;&#26159;&#29420;&#31435;&#25968;&#23383;&#12289;&#20063;&#19981;&#21253;&#21547;&#22312;&#21452;&#24341;&#21495;&#25110; &lt; &gt; &#20013;&#30340;&#25991;&#26412;&#65292; &#22343;&#34987;&#35270;&#20026;&#27880;&#37322;&#65292;&#22312;&#21516;&#19968;&#34892;&#24863;&#21497;&#21495;&#65288;&#8220;!&#8221;&#65289;&#20043;&#21518;&#30340;&#20219;&#20309;&#25991;&#26412;&#20063;&#26159;&#22914;&#27492;&#12290;</p>
 <h3>Links to this page</h3>
 <ul>
 <li><a href="ExperimentMFC_2_9__How_an_experiment_proceeds.html">ExperimentMFC 2.9. How an experiment proceeds</a>

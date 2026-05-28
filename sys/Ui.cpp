@@ -205,7 +205,7 @@ UiOption UiForm_addOption (UiForm me, conststring32 optionText) {
 	if (! you)
 		return nullptr;
 	Melder_assert (your type == _kUiField_type::CHOICE_ || your type == _kUiField_type::OPTIONMENU_);
-	autoUiOption option = UiOption_create (praat_translate (optionText));
+	autoUiOption option = UiOption_create (optionText);
 	return your options. addItem_move (option.move());
 }
 
@@ -1664,7 +1664,7 @@ void UiForm_finish (UiForm me) {
 				GuiRadioGroup_begin ();
 				for (integer ibutton = 1; ibutton <= thy options.size; ibutton ++) {
 					UiOption button = thy options.at [ibutton];
-					MelderString_copy (& theFinishBuffer, button -> name.get());
+					MelderString_copy (& theFinishBuffer, praat_translate (button -> name.get()));
 					button -> radioButton = GuiRadioButton_createShown (form,
 						fieldX, dialogWidth /* allow to extend into the margin */,
 						thy y + (ibutton - 1) * (Gui_RADIOBUTTON_HEIGHT + Gui_RADIOBUTTON_SPACING),
@@ -1688,7 +1688,7 @@ void UiForm_finish (UiForm me) {
 				thy optionMenu = GuiOptionMenu_createShown (form, fieldX, fieldX + fieldWidth, thy y, thy y + Gui_OPTIONMENU_HEIGHT, 0);
 				for (integer ibutton = 1; ibutton <= thy options.size; ibutton ++) {
 					UiOption button = thy options.at [ibutton];
-					MelderString_copy (& theFinishBuffer, button -> name.get());
+					MelderString_copy (& theFinishBuffer, praat_translate (button -> name.get()));
 					GuiOptionMenu_addOption (thy optionMenu, theFinishBuffer.string);
 				}
 			}

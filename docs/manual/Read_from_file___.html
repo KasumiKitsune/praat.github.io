@@ -11,22 +11,22 @@
 <table border=0 cellpadding=0 cellspacing=0><tr><td bgcolor="#CCCC00"><table border=4 cellpadding=9><tr><td align=middle bgcolor="#000000"><font face="Palatino,Times" size=6 color="#999900"><b>
 Read from file...
 </b></font></table></table>
-<p>One of the commands in the <a href="Open_menu.html">Open menu</a>.</p>
-<h2>Purpose</h2>
-<p>To read one or more <a href="objects.html">objects</a> from a file on disk.</p>
-<h2>Behaviour</h2>
-<p>Many kinds of files are recognized:</p>
+<p><a href="Open_menu.html">Open &#33756;&#21333;</a> &#20013;&#30340;&#21629;&#20196;&#20043;&#19968;&#12290;</p>
+<h2>&#30446;&#30340;</h2>
+<p>&#20174;&#30913;&#30424;&#25991;&#20214;&#20013;&#35835;&#21462;&#19968;&#20010;&#25110;&#22810;&#20010; <a href="objects.html">objects</a> &#25968;&#25454;&#23545;&#35937;&#12290;</p>
+<h2>&#34892;&#20026;</h2>
+<p>&#21487;&#20197;&#35782;&#21035;&#22810;&#31181;&#31867;&#22411;&#30340;&#25991;&#20214;&#65306;</p>
 <dl>
-<dd style="position:relative;padding-left:1em;text-indent:-2em">1. Text files that are structured as described under <a href="Save_as_text_file___.html">Save as text file...</a>; these can contain an object of any type, or a collection of objects.</dd>
-<dd style="position:relative;padding-left:1em;text-indent:-2em">2. Files that were produced by <a href="Save_as_binary_file___.html">Save as binary file...</a> (any type).</dd>
-<dd style="position:relative;padding-left:1em;text-indent:-2em">3. Files in a LISP text format (only for object types that can be written to a LISP file).</dd>
-<dd style="position:relative;padding-left:1em;text-indent:-2em">4. Files that were made recognizable by the libraries built on Praat. For instance, the phonetics library adds recognizers for many kinds of sound files.</dd>
+<dd style="position:relative;padding-left:1em;text-indent:-2em">1. &#32467;&#26500;&#22914; <a href="Save_as_text_file___.html">Save as text file...</a> &#20013;&#25152;&#36848;&#30340;&#25991;&#26412;&#25991;&#20214;&#65307; &#36825;&#20123;&#25991;&#20214;&#21487;&#20197;&#21253;&#21547;&#20219;&#20309;&#31867;&#22411;&#30340;&#23545;&#35937;&#65292;&#25110;&#32773;&#22810;&#20010;&#23545;&#35937;&#30340;&#38598;&#21512;&#12290;</dd>
+<dd style="position:relative;padding-left:1em;text-indent:-2em">2. &#20351;&#29992; <a href="Save_as_binary_file___.html">Save as binary file...</a> &#29983;&#25104;&#30340;&#20108;&#36827;&#21046;&#25991;&#20214;&#65288;&#20219;&#20309;&#31867;&#22411;&#65289;&#12290;</dd>
+<dd style="position:relative;padding-left:1em;text-indent:-2em">3. LISP &#25991;&#26412;&#26684;&#24335;&#30340;&#25991;&#20214;&#65288;&#20165;&#36866;&#29992;&#20110;&#21487;&#20197;&#20889;&#20837; LISP &#25991;&#20214;&#30340;&#23545;&#35937;&#31867;&#22411;&#65289;&#12290;</dd>
+<dd style="position:relative;padding-left:1em;text-indent:-2em">4. &#33021;&#22815;&#34987; Praat &#20869;&#37096;&#24211;&#25152;&#35782;&#21035;&#30340;&#25991;&#20214;&#12290; &#20363;&#22914;&#65292;&#35821;&#38899;&#23398;&#24211;&#22686;&#21152;&#20102;&#23545;&#35768;&#22810;&#31867;&#22411;&#22768;&#38899;&#25991;&#20214;&#30340;&#35782;&#21035;&#22120;&#12290;</dd>
 </dl>
-<p>If the file contains more than one object, these objects will appear in the list, and their names will be the same as the names that they had when they were saved with <b>Save as text file...</b> or <b>Save as binary file...</b>.</p>
-<h2>Examples</h2>
+<p>&#22914;&#26524;&#25991;&#20214;&#21253;&#21547;&#22810;&#20010;&#23545;&#35937;&#65292;&#36825;&#20123;&#23545;&#35937;&#23558;&#20986;&#29616;&#22312;&#21015;&#34920;&#20013;&#65292; &#24182;&#19988;&#23427;&#20204;&#30340;&#21517;&#31216;&#23558;&#19982;&#20351;&#29992; <b>Save as text file...</b> &#25110; <b>Save as binary file...</b> &#20445;&#23384;&#23427;&#20204;&#26102;&#30340;&#21517;&#31216;&#23436;&#20840;&#19968;&#33268;&#12290;</p>
+<h2>&#31034;&#20363;</h2>
 <dl>
-<dd style="position:relative;padding-left:1em;text-indent:-2em">&#8226; If the file contains only one Pitch object and is called "hallo.pit", an object with the name "Pitch hallo" will appear in the list of objects. You may have more objects with the same name.</dd>
-<dd style="position:relative;padding-left:1em;text-indent:-2em">&#8226; If the file contains one object of type Pitch, named "hallo", and one object of type Polygon, named "kromme", there will appear two objects in the list, called "Pitch hallo" and "Polygon kromme".</dd>
+<dd style="position:relative;padding-left:1em;text-indent:-2em">&#8226; &#22914;&#26524;&#25991;&#20214;&#20165;&#21253;&#21547;&#19968;&#20010; Pitch &#23545;&#35937;&#24182;&#19988;&#25991;&#20214;&#21517;&#20026; "hallo.pit"&#65292; &#21017;&#23545;&#35937;&#21015;&#34920;&#20013;&#20250;&#20986;&#29616;&#19968;&#20010;&#21517;&#20026; "Pitch hallo" &#30340;&#23545;&#35937;&#12290; &#21015;&#34920;&#20013;&#21487;&#20197;&#23384;&#22312;&#22810;&#20010;&#20855;&#26377;&#30456;&#21516;&#21517;&#31216;&#30340;&#23545;&#35937;&#12290;</dd>
+<dd style="position:relative;padding-left:1em;text-indent:-2em">&#8226; &#22914;&#26524;&#25991;&#20214;&#21253;&#21547;&#19968;&#20010;&#21517;&#20026; "hallo" &#30340; Pitch &#31867;&#22411;&#23545;&#35937;&#65292; &#20197;&#21450;&#19968;&#20010;&#21517;&#20026; "kromme" &#30340; Polygon &#31867;&#22411;&#23545;&#35937;&#65292; &#21017;&#23545;&#35937;&#21015;&#34920;&#20013;&#20250;&#20986;&#29616;&#20004;&#20010;&#23545;&#35937;&#65292; &#20998;&#21035;&#31216;&#20026; "Pitch hallo" &#21644; "Polygon kromme".</dd>
 </dl>
 <h3>Links to this page</h3>
 <ul>

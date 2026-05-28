@@ -11,26 +11,26 @@
 <table border=0 cellpadding=0 cellspacing=0><tr><td bgcolor="#CCCC00"><table border=4 cellpadding=9><tr><td align=middle bgcolor="#000000"><font face="Palatino,Times" size=6 color="#999900"><b>
 SoundEditor
 </b></font></table></table>
-<p>An <a href="Editors.html">Editor</a> for viewing and editing a <a href="Sound.html">Sound</a> object. Most of the functions of this editor are described in the <a href="Intro.html">Intro</a>.</p>
-<h2>The markers</h2>
-<p>To set the cursor, use the left mouse button. A short horizontal line will also be shown at the left edge (in cyan); the extension of this line crosses the cursor line at the sound's function value (seen as a cyan dot). This function value (shown at the left in cyan) is the sinc-interpolated value, and is generally different from the value that you would expect when looking at the linearly interpolated version of the sampled sound.</p>
-<p>To select a part of the time domain, use the <a href="time_selection.html">time selection</a> mechanism.</p>
-<h2>Playing</h2>
-<p>To play any part of the sound, click in one of the rectangles below or above the sound window (there can be 1 to 8 of these rectangles), or choose a command from the Play menu.</p>
-<p>To mute one or more channels (of a multi-channel sound), <a href="Command-click.html">Command-click</a> on the &#128264; icon at the right side of the corresponding channel number. The icon will turn to &#128263;. In subsequent playing actions, the channel will not be played. Another <a href="Command-click.html">Command-click</a> on a muted channel icon will activate the channel again.</p>
-<h2>Publishing</h2>
-<p>To perform analyses on the selection, or save it to a file, create an independent Sound as a copy of the selection, by clicking on the button that will copy the selection to the List of Objects; the resulting Sound will be called &#8220;Sound untitled&#8221;.</p>
-<h2>Editing</h2>
+<p>&#29992;&#20110;&#26597;&#30475;&#21644;&#32534;&#36753; <a href="Sound.html">Sound</a>&#65288;&#22768;&#38899;&#65289;&#23545;&#35937;&#30340; <a href="Editors.html">&#32534;&#36753;&#22120;</a>&#12290; &#35813;&#32534;&#36753;&#22120;&#30340;&#32477;&#22823;&#37096;&#20998;&#21151;&#33021;&#37117;&#22312; <a href="Intro.html">Intro</a>&#65288;&#20837;&#38376;&#20171;&#32461;&#65289;&#20013;&#36827;&#34892;&#20102;&#35828;&#26126;&#12290;</p>
+<h2>&#26631;&#35760;&#19982;&#25351;&#31034;</h2>
+<p>&#20351;&#29992;&#40736;&#26631;&#24038;&#38190;&#21487;&#20197;&#23450;&#20301;&#20809;&#26631;&#12290;&#23450;&#20301;&#21518;&#65292;&#31383;&#21475;&#24038;&#20391;&#36793;&#32536;&#20250;&#26174;&#31034;&#19968;&#26465;&#38738;&#33394;&#30701;&#27178;&#32447;&#65307; &#35813;&#27178;&#32447;&#30340;&#24310;&#38271;&#32447;&#19982;&#20809;&#26631;&#31446;&#32447;&#30340;&#20132;&#28857;&#21363;&#20026;&#24403;&#21069;&#26102;&#21051;&#30340;&#22768;&#38899;&#20989;&#25968;&#20540;&#65288;&#26174;&#31034;&#20026;&#38738;&#33394;&#22278;&#28857;&#65289;&#12290; &#24038;&#20391;&#26174;&#31034;&#30340;&#20989;&#25968;&#20540;&#26159;&#22522;&#20110; sinc &#20989;&#25968;&#25554;&#20540;&#35745;&#31639;&#20986;&#26469;&#30340;&#65292;&#23427;&#36890;&#24120;&#19982;&#24744;&#30452;&#25509;&#30475;&#25240;&#32447;&#36830;&#25509;&#65288;&#32447;&#24615;&#25554;&#20540;&#65289;&#30340;&#37319;&#26679;&#27874;&#24418;&#22270;&#26102;&#30452;&#35266;&#39044;&#26399;&#30340;&#25968;&#20540;&#26377;&#25152;&#19981;&#21516;&#12290;</p>
+<p>&#33509;&#35201;&#36873;&#25321;&#29305;&#23450;&#26102;&#38388;&#27573;&#65292;&#35831;&#20351;&#29992; <a href="time_selection.html">&#26102;&#38388;&#36873;&#21306;</a> &#25805;&#20316;&#12290;</p>
+<h2>&#22768;&#38899;&#25773;&#25918;</h2>
+<p>&#28857;&#20987;&#22768;&#38899;&#27874;&#24418;&#31383;&#21475;&#19979;&#26041;&#25110;&#19978;&#26041;&#30340;&#25511;&#21046;&#30697;&#24418;&#26465;&#65288;&#36890;&#24120;&#26377; 1 &#21040; 8 &#20010;&#25773;&#25918;&#26465;&#65289;&#65292;&#21487;&#20197;&#25773;&#25918;&#23545;&#24212;&#27573;&#30340;&#22768;&#38899;&#65292; &#25110;&#32773;&#20063;&#21487;&#20197;&#30452;&#25509;&#20174; Play&#65288;&#25773;&#25918;&#65289;&#33756;&#21333;&#20013;&#36873;&#25321;&#30456;&#24212;&#21629;&#20196;&#12290;</p>
+<p>&#33509;&#35201;&#38745;&#38899;&#22810;&#22768;&#36947;&#22768;&#38899;&#20013;&#30340;&#26576;&#20010;&#22768;&#36947;&#65292;&#21487;&#20197;&#25353;&#20303; <a href="Command-click.html">Ctrl &#38190;&#21333;&#20987;</a> &#35813;&#22768;&#36947;&#32534;&#21495;&#21491;&#20391;&#30340; &#128264; &#22270;&#26631;&#12290; &#22270;&#26631;&#20250;&#21464;&#20026; &#128263;&#12290;&#20043;&#21518;&#22312;&#25773;&#25918;&#22768;&#38899;&#26102;&#65292;&#35813;&#22768;&#36947;&#23558;&#19981;&#20877;&#21457;&#22768;&#12290;&#20877;&#27425;&#25353;&#20303; <a href="Command-click.html">Ctrl &#38190;&#21333;&#20987;</a> &#24050;&#38745;&#38899;&#30340;&#22768;&#36947;&#22270;&#26631;&#21363;&#21487;&#37325;&#26032;&#28608;&#27963;&#23427;&#12290;</p>
+<h2>&#25968;&#25454;&#25552;&#21462;/&#36755;&#20986;</h2>
+<p>&#33509;&#35201;&#23545;&#36873;&#21306;&#36827;&#34892;&#20998;&#26512;&#25110;&#23558;&#20854;&#20445;&#23384;&#21040;&#25991;&#20214;&#20013;&#65292;&#24744;&#38656;&#35201;&#28857;&#20987;&#25353;&#38062;&#65292;&#23558;&#35813;&#36873;&#21306;&#20316;&#20026;&#21103;&#26412;&#25552;&#21462;&#21040;&#23545;&#35937;&#21015;&#34920;&#65288;List of Objects&#65289;&#20013;&#65292; &#29983;&#25104;&#19968;&#20010;&#29420;&#31435;&#30340;&#22768;&#38899;&#23545;&#35937;&#65292;&#20854;&#40664;&#35748;&#21517;&#31216;&#20026; &#8220;Sound untitled&#8221;&#65288;&#26410;&#21629;&#21517;&#22768;&#38899;&#65289;&#12290;</p>
+<h2>&#32534;&#36753;&#25805;&#20316;</h2>
 <dl>
-<dd style="position:relative;padding-left:1em;text-indent:-2em">&#8226; Cut: cut the selection to the clipboard, for later pasting into the same or another Sound.</dd>
-<dd style="position:relative;padding-left:1em;text-indent:-2em">&#8226; Copy selection to Sound clipboard: copy the selection to the clipboard, for later pasting into the same or another Sound.</dd>
-<dd style="position:relative;padding-left:1em;text-indent:-2em">&#8226; Paste after selection: paste the clipboard to the cursor or after the selection.</dd>
-<dd style="position:relative;padding-left:1em;text-indent:-2em">&#8226; Set selection to zero: set the selected samples to zero.</dd>
-<dd style="position:relative;padding-left:1em;text-indent:-2em">&#8226; Reverse selection: reverse the selected part of the sound.</dd>
+<dd style="position:relative;padding-left:1em;text-indent:-2em">&#8226; Cut&#65306;&#23558;&#25152;&#36873;&#22768;&#38899;&#21098;&#20999;&#21040;&#21098;&#36148;&#26495;&#65292;&#20197;&#20415;&#31245;&#21518;&#31896;&#36148;&#21040;&#24403;&#21069;&#25110;&#21478;&#19968;&#20010;&#22768;&#38899;&#23545;&#35937;&#20013;&#12290;</dd>
+<dd style="position:relative;padding-left:1em;text-indent:-2em">&#8226; Copy selection to Sound clipboard&#65306;&#23558;&#25152;&#36873;&#37096;&#20998;&#22797;&#21046;&#21040;&#22768;&#38899;&#21098;&#36148;&#26495;&#65292;&#20197;&#20415;&#31245;&#21518;&#31896;&#36148;&#12290;</dd>
+<dd style="position:relative;padding-left:1em;text-indent:-2em">&#8226; Paste after selection&#65306;&#23558;&#21098;&#36148;&#26495;&#20013;&#30340;&#22768;&#38899;&#31896;&#36148;&#21040;&#20809;&#26631;&#20301;&#32622;&#25110;&#24403;&#21069;&#36873;&#21306;&#20043;&#21518;&#12290;</dd>
+<dd style="position:relative;padding-left:1em;text-indent:-2em">&#8226; Set selection to zero&#65306;&#23558;&#25152;&#36873;&#33539;&#22260;&#20869;&#30340;&#37319;&#26679;&#20540;&#24402;&#38646;&#12290;</dd>
+<dd style="position:relative;padding-left:1em;text-indent:-2em">&#8226; Reverse selection&#65306;&#23558;&#25152;&#36873;&#37096;&#20998;&#30340;&#22768;&#38899;&#36827;&#34892;&#20498;&#25918;&#22788;&#29702;&#12290;</dd>
 </dl>
-<p>You can undo these commands with Undo (<a href="Keyboard_shortcuts.html">Command-Z</a>).</p>
-<h2>The Group button</h2>
-<p>To synchronize a SoundEditor window with other windows that show a time signal, push the Group button in all the windows that you want to synchronize. You cannot Cut from or Paste into a synchronized SoundEditor window.</p>
+<p>&#24744;&#21487;&#20197;&#20351;&#29992; Undo&#65288;&#25764;&#38144;&#65292;&#24555;&#25463;&#38190;&#65306;<a href="Keyboard_shortcuts.html">Command-Z</a>&#65289;&#26469;&#25764;&#38144;&#19978;&#36848;&#25805;&#20316;&#12290;</p>
+<h2>Group&#65288;&#32676;&#32452;&#32852;&#32467;&#65289;&#25353;&#38062;</h2>
+<p>&#33509;&#35201;&#23558;&#24403;&#21069;&#30340; SoundEditor &#31383;&#21475;&#19982;&#26174;&#31034;&#26102;&#38388;&#20449;&#21495;&#30340;&#20854;&#20182;&#31383;&#21475;&#21516;&#27493;&#65288;&#23454;&#29616;&#32852;&#21160;&#32553;&#25918;&#21644;&#28378;&#21160;&#65289;&#65292; &#35831;&#22312;&#25152;&#26377;&#38656;&#35201;&#32852;&#21160;&#30340;&#31383;&#21475;&#20013;&#25353;&#19979; Group &#25353;&#38062;&#12290; &#22312;&#22788;&#20110;&#32676;&#32452;&#21516;&#27493;&#29366;&#24577; of SoundEditor &#31383;&#21475;&#20013;&#65292;&#23558;&#26080;&#27861;&#25191;&#34892;&#21098;&#20999;&#21644;&#31896;&#36148;&#25805;&#20316;&#12290;</p>
 <h3>Links to this page</h3>
 <ul>
 <li><a href="Advanced_pulses_settings___.html">Advanced pulses settings...</a>
@@ -44,6 +44,7 @@ SoundEditor
 <li><a href="Get_first_formant.html">Get first formant</a>
 <li><a href="Get_pitch.html">Get pitch</a>
 <li><a href="Get_second_formant.html">Get second formant</a>
+<li><a href="Inspect.html">Inspect</a>
 <li><a href="Intro_2_2__Viewing_and_editing_a_sound.html">Intro 2.2. Viewing and editing a sound</a>
 <li><a href="Intro_3_1__Viewing_a_spectrogram.html">Intro 3.1. Viewing a spectrogram</a>
 <li><a href="Intro_3_6__Viewing_a_spectral_slice.html">Intro 3.6. Viewing a spectral slice</a>
@@ -74,6 +75,9 @@ SoundEditor
 <li><a href="Time_step_settings___.html">Time step settings...</a>
 <li><a href="Types_of_objects.html">Types of objects</a>
 <li><a href="Voice.html">Voice</a>
+<li><a href="Voice_1__Voice_breaks.html">Voice 1. Voice breaks</a>
+<li><a href="Voice_2__Jitter.html">Voice 2. Jitter</a>
+<li><a href="Voice_3__Shimmer.html">Voice 3. Shimmer</a>
 <li><a href="What_was_new_in_3_6_.html">What was new in 3.6?</a>
 </ul>
 <hr>

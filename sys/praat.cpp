@@ -1839,6 +1839,7 @@ void praat_init (conststring32 title,
 ) {
 	setThePraatLocale ();
 	Melder_init ();
+	g_melder_translate = praat_translate;
 	const bool weWereStartedFromTheCommandLine = tryToAttachToTheCommandLine ();
 	MelderConsole_init ();
 

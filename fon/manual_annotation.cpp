@@ -22,149 +22,145 @@ void manual_annotation_init (ManPages me);
 void manual_annotation_init (ManPages me) {
 
 MAN_BEGIN (U"Create TextGrid...", U"ppgb", 20101228) // 2025
-INTRO (U"A command to create a @TextGrid from scratch.")
-ENTRY (U"Settings")
-TERM (U"##Start time (s)")
-DEFINITION (U"the start time, usually 0 seconds.")
-TERM (U"##End time (s)")
-DEFINITION (U"the end time in seconds, usually the duration.")
-TERM (U"##Tier names")
-DEFINITION (U"a list of the names of the tiers that you want to create, separated by spaces.")
-TERM (U"##Point tiers")
-DEFINITION (U"a list of the names of the tiers that you want to be %%point tiers%; "
-	"the rest of the tiers will be %%interval tiers%. "
-	"If you want to create no point tiers, you can leave this setting empty.")
+INTRO (U"从头创建一个新的 @@TextGrid|TextGrid（标注网格）@。")
+ENTRY (U"设置")
+TERM (U"##Start time (s)#（开始时间，秒）")
+DEFINITION (U"起始时间，通常为 0 秒。")
+TERM (U"##End time (s)#（结束时间，秒）")
+DEFINITION (U"以秒为单位的结束时间，通常是音频的时长。")
+TERM (U"##Tier names#（层名称）")
+DEFINITION (U"您想创建的层的名称列表，以空格分隔。")
+TERM (U"##Point tiers#（点层）")
+DEFINITION (U"您想设为%%点层（point tiers）%的层级名称列表；"
+	"其余的层将为%%区间层（interval tiers）%。"
+	"如果您不想创建点层，可以将此设置留空。")
 MAN_END
 
 MAN_BEGIN (U"PointProcess: To TextGrid...", U"ppgb", 19980113) // 2025
-INTRO (U"A command to create an empty @TextGrid from every selected @PointProcess.")
-NORMAL (U"The only information in the PointProcess that is used, is its starting and finishing times.")
-ENTRY (U"Settings")
-TERM (U"##Tier names")
-DEFINITION (U"a list of the names of the tiers that you want to create, separated by spaces.")
-TERM (U"##Point tiers")
-DEFINITION (U"a list of the names of the tiers that you want to be %%point tiers%; "
-	"the rest of the tiers will be %%interval tiers%. "
-	"If you want to create no point tiers, you can leave this setting empty.")
-ENTRY (U"Example")
-NORMAL (U"If ##Tier names# is \"a b c\", and ##Point tiers# is \"b\", "
-	"the resulting TextGrid object will contain an interval tier named \"a\", "
-	"a point tier named \"b\", and another interval tier named \"c\".")
+INTRO (U"从每个选定的 @@PointProcess|PointProcess（点过程）@ 对象创建一个空的 @@TextGrid|TextGrid@。")
+NORMAL (U"在此操作中，PointProcess 对象唯一被使用的信息是其起始和结束时间。")
+ENTRY (U"设置")
+TERM (U"##Tier names#（层名称）")
+DEFINITION (U"您想创建的层的名称列表，以空格分隔。")
+TERM (U"##Point tiers#（点层）")
+DEFINITION (U"您想设为%%点层（point tiers）%的层级名称列表；"
+	"其余的层将为%%区间层（interval tiers）%。"
+	"如果您不想创建点层，可以将此设置留空。")
+ENTRY (U"示例")
+NORMAL (U"如果 ##Tier names# 为 \"a b c\"，且 ##Point tiers# 为 \"b\"，"
+	"则生成的 TextGrid 对象将包含一个名为 \"a\" 的区间层，"
+	"一个名为 \"b\" 的点层，以及另一个名为 \"c\" 的区间层。")
 MAN_END
 
 MAN_BEGIN (U"PointProcess: To TextGrid (vuv)...", U"ppgb", 19980210)
-INTRO (U"A command to create a @TextGrid with voiced/unvoiced information "
-	"from every selected @PointProcess.")
-ENTRY (U"Settings")
-TERM (U"##Maximum period (s)")
-DEFINITION (U"the maximum interval that will be consider part of a larger voiced interval.")
-TERM (U"##Mean period (s)")
-DEFINITION (U"half of this value will be taken to be the amount to which a voiced interval "
-	"will extend beyond its initial and final points. ##Mean period# should be less than "
-	"##Maximum period#, or you may get intervals with negative durations.")
-ENTRY (U"Example")
-NORMAL (U"If ##Maximum period# is 0.02 s, and ##Mean period# is 0.01 s, "
-	"and the point process is 0.1 seconds long, with points at 20, 28, 39, 61, and 72 milliseconds, "
-	"the resulting TextGrid object will contain an interval tier "
-	"with \"U\" intervals at [0 ms, 15 ms], [44 ms, 56 ms], and [77 ms, 100 ms], "
-	"and \"V\" intervals at [15 ms, 44 ms] and [56 ms, 77 ms].")
+INTRO (U"从每个选定的 @@PointProcess|PointProcess（点过程）@ 对象创建一个包含浊音/清音（voiced/unvoiced）信息的 @@TextGrid|TextGrid@。")
+ENTRY (U"设置")
+TERM (U"##Maximum period (s)#（最大周期，秒）")
+DEFINITION (U"将被视为较大浊音区间一部分的最大间隔。")
+TERM (U"##Mean period (s)#（平均周期，秒）")
+DEFINITION (U"该值的一半将被视为浊音区间超出其起始点和终点的延伸量。##Mean period# 应小于 "
+	"##Maximum period#，否则您可能会得到负时长的区间。")
+ENTRY (U"示例")
+NORMAL (U"如果 ##Maximum period# 为 0.02 秒，且 ##Mean period# 为 0.01 秒，"
+	"点过程时长为 0.1 秒，脉冲点分别位于 20、28、39、61 和 72 毫秒处，"
+	"则生成的 TextGrid 对象将包含一个区间层，"
+	"其中 \"U\"（清音）区间位于 [0 ms, 15 ms]、[44 ms, 56 ms] 和 [77 ms, 100 ms]，"
+	"而 \"V\"（浊音）区间位于 [15 ms, 44 ms] 和 [56 ms, 77 ms]。")
 MAN_END
 
 MAN_BEGIN (U"PointProcess: Up to TextGrid...", U"ppgb", 20101230)
-INTRO (U"A command to promote every selected @PointProcess to a @TextGrid with a single text tier in it.")
-ENTRY (U"Setting")
-TERM (U"##Text")
-DEFINITION (U"the text that will be placed in every point.")
-ENTRY (U"Behaviour")
-NORMAL (U"The times of all the points are trivially copied, and so is the time domain. "
-	"The text information will be the same for every point.")
+INTRO (U"将每个选定的 @@PointProcess|PointProcess（点过程）@ 提升为一个包含单个文本层的 @@TextGrid|TextGrid@。")
+ENTRY (U"设置")
+TERM (U"##Text#（文本）")
+DEFINITION (U"将放置在每个点中的文本。")
+ENTRY (U"行为")
+NORMAL (U"所有点的时间位置以及时间域都会被直接复制。"
+	"每个点中的文本信息都将是相同的。")
 MAN_END
 
 MAN_BEGIN (U"Sound: To TextGrid...", U"ppgb", 19980730)  // 2025
-INTRO (U"A command to create a @TextGrid without any labels, copying the time domain from the selected @Sound.")
-ENTRY (U"Settings")
-TERM (U"%%Tier names")
-DEFINITION (U"a list of the names of the tiers that you want to create, separated by spaces.")
-TERM (U"%%Point tiers")
-DEFINITION (U"a list of the names of the tiers that you want to be %%point tiers%; "
-	"the rest of the tiers will be %%interval tiers%. "
-	"If you want to create no point tiers, you can leave this setting empty.")
-ENTRY (U"Example")
-NORMAL (U"If ##Tier names# is \"a b c\", and ##Point tiers# is \"b\", "
-	"the resulting TextGrid object will contain an interval tier named \"a\", "
-	"a point tier named \"b\", and another interval tier named \"c\".")
+INTRO (U"创建一个没有任何标签的 @@TextGrid|TextGrid@，复制所选 @@Sound|Sound（声音）@ 对象的时间域。")
+ENTRY (U"设置")
+TERM (U"%%Tier names#（层名称）")
+DEFINITION (U"您想创建的层的名称列表，以空格分隔。")
+TERM (U"%%Point tiers#（点层）")
+DEFINITION (U"您想设为%%点层（point tiers）%的层级名称列表；"
+	"其余的层将为%%区间层（interval tiers）%。"
+	"如果您不想创建点层，可以将此设置留空。")
+ENTRY (U"示例")
+NORMAL (U"如果 ##Tier names# 为 \"a b c\"，且 ##Point tiers# 为 \"b\"，"
+	"则生成的 TextGrid 对象将包含一个名为 \"a\" 的区间层，"
+	"一个名为 \"b\" 的点层，以及另一个名为 \"c\" 的区间层。")
 MAN_END
 
 MAN_BEGIN (U"SpellingChecker", U"ppgb", 20190616)
-INTRO (U"One of the @@types of objects@ in Praat. For checking the spelling in texts and @TextGrid objects.")
-ENTRY (U"1. How to create a SpellingChecker object")
-NORMAL (U"You normally read in a SpellingChecker with @@Read from file...@ from the #Open menu.")
-ENTRY (U"2. How to check the spelling of a @TextGrid")
-NORMAL (U"A SpellingChecker object can be used fur purposes of spelling checking. In order "
-	"to check the spellings in a @TextGrid object, you first view the TextGrid in an editor window by selecting "
-	"the TextGrid together with the SpellingChecker object, and clicking ##View & Edit#. In most cases, you will also want "
-	"to select a @Sound or @LongSound object before clicking ##View & Edit#, so that a representation of the sound "
-	"is also visible (and audible) in the editor. Thus, you typically select three objects and click ##View & Edit#. "
-	"The editor then allows you to check the spellings "
-	"(commands ##Check spelling in tier# and ##Check spelling in interval# from the #Spell menu).")
-ENTRY (U"3. How to create a SpellingChecker object for the first time")
-NORMAL (U"If you are the maintainer of a word list for spelling checking, you will want "
-	"to convert this list to a SpellingChecker object that you can distribute among the transcribers of your corpus.")
-NORMAL (U"The first step is to create a @WordList object from your text file, as described on the @WordList man page. "
-	"Then you simply click ##To SpellingChecker#. A button labelled ##View & Edit...# appears. "
-	"This command allows you to set the following attributes of the SpellingChecker object:")
+INTRO (U"Praat 的 @@types of objects|对象类型@ 之一。用于检查文本和 @@TextGrid|TextGrid@ 对象中的拼写。")
+ENTRY (U"1. 如何创建 SpellingChecker 对象")
+NORMAL (U"您通常使用 #Open 菜单中的 @@Read from file...|从文件读取...@ 命令来载入 SpellingChecker。")
+ENTRY (U"2. 如何检查 @TextGrid 的拼写")
+NORMAL (U"SpellingChecker 对象可用于拼写检查。为了 "
+	"检查 @@TextGrid|TextGrid@ 对象中的拼写，您需要同时选中该 TextGrid 和 SpellingChecker 对象，然后点击 ##View & Edit# 在编辑器窗口中查看。在大多数情况下，您还需要 "
+	"在点击 ##View & Edit# 之前选中 @@Sound|Sound@ 或 @@LongSound|LongSound@ 对象，以便在编辑器中同时显示（和播放）声音。因此，您通常需要选择三个对象并点击 ##View & Edit#。 "
+	"然后，在编辑器中，您就可以检查拼写 "
+	"（#Spell 菜单中的 ##Check spelling in tier# 和 ##Check spelling in interval# 命令）。")
+ENTRY (U"3. 如何首次创建 SpellingChecker 对象")
+NORMAL (U"如果您是用于拼写检查的单词列表的维护者，您会希望 "
+	"将此列表转换为 SpellingChecker 对象，以便分发给您的语料库转录人员。")
+NORMAL (U"第一步是根据 @@WordList|WordList@ 帮助页面上的描述，从您的文本文件创建一个 @@WordList|WordList@ 对象。 "
+	"然后您只需点击 ##To SpellingChecker#。接着会出现一个名为 ##View & Edit...# 的按钮。 "
+	"该命令允许您设置 SpellingChecker 对象的以下属性：")
 /*TERM (U"##Check matching parentheses")
 DEFINITION (U"determines whether it is considered a spelling error if parentheses do not match, as in the string \"Hi) there\".")*/
-TERM (U"##Allow all parenthesized")
-DEFINITION (U"this flag determines whether text between parentheses is ignored in spelling checking. "
-	"This would allow the transcriber to mark utterances in foreign languages, which cannot be found in the lexicon.")
-TERM (U"##Separating characters")
-DEFINITION (U"determines the set of characters (apart from the space character) that separate words. "
-	"The standard is \".,;:()\". If a string like \"error-prone\" should be considered two separate words, "
-	"you will like to change this to \".,;:()-\". "
-	"For the Corpus of Spoken Dutch (CGN), the hyphen is not a separator, since words like \"mee-eter\" should be checked as a whole. "
-	"If a string like \"Mary's\" should be considered two separate words, include the apostrophe.")
+TERM (U"##Allow all parenthesized#（允许所有括号内容）")
+DEFINITION (U"此标记决定在拼写检查中是否忽略括号之间的文本。 "
+	"这将允许转录人员标记外语发音，这些词汇在词典中是找不到的。")
+TERM (U"##Separating characters#（分隔符字符）")
+DEFINITION (U"确定分隔单词的字符集（空格字符除外）。 "
+	"标准是 \".,;:()\"。如果类似于 \"error-prone\" 的字符串应被视为两个独立的单词， "
+	"您可能需要将其更改为 \".,;:()-\"。 "
+	"对于荷兰语口语语料库（CGN），连字符不是分隔符，因为诸如 \"mee-eter\" 之类的词应作为一个整体进行检查。 "
+	"如果类似于 \"Mary's\" 的字符串应被视为两个独立的单词，请包含单引号。")
 /*TERM (U"##Forbidden strings")
 DEFINITION (U"this will mainly contain characters that are not allowed in your corpus. For the CGN, this is \": ; \\\" \".")*/
-TERM (U"##Allow all names")
-DEFINITION (U"determines whether all words that start with a capital are allowed. For the CGN, this is on, "
-	"since the lexicon does not contain many names.")
-TERM (U"##Name prefixes")
-DEFINITION (U"a space-separated list that determines what small groups of characters can precede names. For the CGN, "
-	"this is \"'s- d' l'\", since names like %%'s-Gravenhage%, %%d'Ancona%, and %%l'H\\o^pital% should be ignored by the spelling checker.")
-TERM (U"##Allow all words containing")
-DEFINITION (U"a space-separated list of strings that make a word correct even if not in the lexicon. "
-	"For the CGN, this is \"* xxx\", since words like %%keuje*d% and %%verxxxing% should be ignored by the spelling checker.")
-TERM (U"##Allow all words starting with")
-DEFINITION (U"a space-separated list of prefixes that make a word correct even if not in the lexicon. "
-	"For the CGN, this is empty.")
-TERM (U"##Allow all words ending in")
-DEFINITION (U"a space-separated list of suffixes that make a word correct even if not in the lexicon. "
-	"For the CGN, this is \"-\", since the first word in %%verzekerings- en bankwezen% should be ignored by the spelling checker.")
+TERM (U"##Allow all names#（允许所有名称）")
+DEFINITION (U"确定是否允许所有以大写字母开头的单词。对于 CGN，此项为开启， "
+	"因为词库中不包含很多名称。")
+TERM (U"##Name prefixes#（名称前缀）")
+DEFINITION (U"一个以空格分隔的列表，确定哪些小字符组可以出现在名称之前。对于 CGN， "
+	"这是 \"'s- d' l'\"，因为像 %%'s-Gravenhage%、%%d'Ancona% 和 %%l'H\\o^pital% 这样的名称应该被拼写检查器忽略。")
+TERM (U"##Allow all words containing#（允许包含以下内容的所有单词）")
+DEFINITION (U"一个以空格分隔的字符串列表，即使单词不在词库中，也使其正确。 "
+	"对于 CGN，这是 \"* xxx\"，因为像 %%keuje*d% 和 %%verxxxing% 这样的单词应该被拼写检查器忽略。")
+TERM (U"##Allow all words starting with#（允许以以下内容开头的所有单词）")
+DEFINITION (U"一个以空格分隔的前缀列表，即使单词不在词库中，也使其正确。 "
+	"对于 CGN，这为空。")
+TERM (U"##Allow all words ending in#（允许以以下内容结尾的所有单词）")
+DEFINITION (U"一个以空格分隔的后缀列表，即使单词不在词库中，也使其正确。 "
+	"对于 CGN，这是 \"-\"，因为 %%verzekerings- en bankwezen% 中的第一个词应该被拼写检查器忽略。")
 MAN_END
 
 MAN_BEGIN (U"TextGrid", U"ppgb", 20110128 2025)
-INTRO (U"One of the @@types of objects@ in Praat, used for %annotation (segmentation and labelling). "
-	"For tutorial information, see @@Intro 7. Annotation@.")
-ENTRY (U"Description")
-NORMAL (U"A #TextGrid object consists of a number of %tiers. There are two kinds of tiers: "
-	"an %%interval tier% is a connected sequence of labelled intervals, with %boundaries in between. "
-	"A %%point tier% is a sequence of labelled points.")
-ENTRY (U"How to create a TextGrid")
-TERM (U"From scratch:")
-LIST_ITEM (U"@@Sound: To TextGrid...@ (takes the time domain from the Sound)")
-LIST_ITEM (U"@@LongSound: To TextGrid...@ (takes the time domain from the LongSound)")
-LIST_ITEM (U"@@PointProcess: To TextGrid...@ (takes the time domain from the PointProcess)")
-LIST_ITEM (U"@@PointProcess: To TextGrid (vuv)...@ (labels voiced and unvoiced intervals)")
+INTRO (U"Praat 中的 @@types of objects|对象类型@ 之一，用于%标注（分段和打标签）。"
+	"有关教程信息，请参见 @@Intro 7. Annotation|语音标注简介@。")
+ENTRY (U"描述")
+NORMAL (U"一个 #TextGrid 对象包含若干个%层（tiers）。层有两种类型："
+	"一个%%区间层（interval tier）%是首尾相连的已标注区间的序列，区间之间有%边界（boundaries）。"
+	"一个%%点层（point tier）%是已标注时间点的序列。")
+ENTRY (U"如何创建 TextGrid")
+TERM (U"从头创建：")
+LIST_ITEM (U"@@Sound: To TextGrid...@（从 Sound 声音对象复制时间域）")
+LIST_ITEM (U"@@LongSound: To TextGrid...@（从 LongSound 长音频对象复制时间域）")
+LIST_ITEM (U"@@PointProcess: To TextGrid...@（从 PointProcess 点过程对象复制时间域）")
+LIST_ITEM (U"@@PointProcess: To TextGrid (vuv)...@（标注浊音和清音区间）")
 LIST_ITEM (U"@@Create TextGrid...@")
-TERM (U"From merging existing TextGrids with each other:")
+TERM (U"通过合并现有的 TextGrid 对象：")
 LIST_ITEM (U"@@TextGrids: Merge...@")
-ENTRY (U"How to edit a TextGrid")
-NORMAL (U"You select a TextGrid alone or together with a @Sound or @LongSound, and click ##View & Edit#. "
-	"A @TextGridEditor will appear on your screen, containing the TextGrid "
-	"and an optional copy of the Sound or LongSound.")
-ENTRY (U"How to draw a TextGrid")
-TERM (U"You can draw a TextGrid to the @@Picture window@ with:")
+ENTRY (U"如何编辑 TextGrid")
+NORMAL (U"您可以单独选中一个 TextGrid，或者同时选中 TextGrid 与 @@Sound|Sound@ 或 @@LongSound|LongSound@，然后点击 ##View & Edit#。 "
+	"屏幕上会出现一个 @@TextGridEditor|TextGrid 图像编辑器@，其中包含该 TextGrid "
+	"以及声音或长音频的拷贝。")
+ENTRY (U"如何绘制 TextGrid")
+TERM (U"您可以使用以下命令将 TextGrid 绘制到 @@Picture window|图像窗口@：")
 LIST_ITEM (U"##TextGrid: Draw...")
 LIST_ITEM (U"##TextGrid & Sound: Draw...")
 LIST_ITEM (U"##TextGrid & Pitch: Draw...")
@@ -172,37 +168,33 @@ LIST_ITEM (U"##TextGrid & Pitch: Draw separately...")
 MAN_END
 
 MAN_BEGIN (U"TextGrid: Count labels...", U"ppgb", 20140421)
-INTRO (U"A command to ask the selected @TextGrid object how many of the specified labels "
-	"it contains in the specified tier.")
-ENTRY (U"Settings")
-TERM (U"##Tier number")
-DEFINITION (U"the number (1, 2, 3...) of the tier whose labels you want to investigate.")
-TERM (U"##Label text")
-DEFINITION (U"the text on the labels that you want to count.")
-ENTRY (U"Behaviour")
-NORMAL (U"The number of intervals or points with label %%Label text% in tier %%Tier number% "
-	"is written into the @@Info window@. If the specified tier does not exist, the number will be 0.")
-ENTRY (U"Scripting")
-NORMAL (U"You can use this command to put the number into a script variable:")
+INTRO (U"查询选定的 @@TextGrid|TextGrid@ 对象中指定的层包含多少个指定的标签。")
+ENTRY (U"设置")
+TERM (U"##Tier number#（层编号）")
+DEFINITION (U"您想查询的层的编号（1, 2, 3...）。")
+TERM (U"##Label text#（标签文本）")
+DEFINITION (U"您想计数的标签文本内容。")
+ENTRY (U"行为")
+NORMAL (U"层级 ##Tier number# 中包含 %%Label text% 标签的区间或点的数量 "
+	"将被写入到 @@Info window|信息窗口@ 中。如果指定的层不存在，则数量为 0。")
+ENTRY (U"脚本编写")
+NORMAL (U"您可以使用此命令将数量赋值给脚本变量：")
 CODE (U"selectObject: \"TextGrid hallo\"")
 CODE (U"number_of_a = Count labels: 1, \"a\"")
-NORMAL (U"In this case, the value will not be written into the Info window.")
+NORMAL (U"在此情况下，结果数值将不会写入到信息窗口中。")
 MAN_END
  
 MAN_BEGIN (U"TextGrids: Merge", U"ppgb", 20101230)
-INTRO (U"An obsolete command to merge all selected @TextGrid objects into a new @TextGrid.")
-NORMAL (U"The same as @@TextGrids: Merge...@ with “Equalize domains” set to false.")
+INTRO (U"一个过时的命令，用于将所有选定的 @@TextGrid|TextGrid@ 对象合并为一个新的 @@TextGrid|TextGrid@。")
+NORMAL (U"这与将 “Equalize domains” 设置为 false 的 @@TextGrids: Merge...@ 相同。")
 MAN_END
 
 MAN_BEGIN (U"TextGrids: Merge...", U"ppgb", 2025)
-INTRO (U"A command to merge all selected @TextGrid objects into a new @TextGrid.")
-NORMAL (U"The time domain of the resulting TextGrid will be the union of the time domains "
-	"of the constituent TextGrids.")
-TERM (U"##Equalize time domains# (default: on)")
-DEFINITION (U"If on, then the time domain of each tier will be made equal to the time domain of the resulting TextGrid. "
-	"If this leads to a change in the end time of an interval tier, a new empty interval will be added "
-	"between the original end time of the tier and its new end time (an analogous insertion could happen at the start of the tier, "
-	"though that is quite rare in practice, because usually all tiers start at 0 seconds).")
+INTRO (U"将所有选定的 @@TextGrid|TextGrid@ 对象合并为一个新的 @@TextGrid|TextGrid@。")
+NORMAL (U"合并后的 TextGrid 的时间域将是组成它的各 TextGrid 时间域的并集。")
+TERM (U"##Equalize time domains#（对齐时间域，默认：开启）")
+DEFINITION (U"如果开启，每个层级的时间域将被调整为与合并后生成的 TextGrid 的时间域相同。 "
+	"如果这导致区间层级的结束时间发生改变，则会在该层级的原始结束时间与新结束时间之间添加一个新的空区间（在层级开始处也有可能发生类似的插入，但在实践中这非常罕见，因为通常所有层级都从 0 秒开始）。")
 MAN_END
 
 MAN_BEGIN (U"TextGridEditor", U"ppgb", 20210228)
@@ -253,29 +245,29 @@ NORMAL (U"您可以在启动编辑器时同时选中 TextGrid 对象、(Long)Sou
 MAN_END
 
 MAN_BEGIN (U"WordList", U"ppgb", 20190616)
-INTRO (U"One of the @@types of objects@ in Praat. "
-	"An object of class WordList contains a sorted list of strings in a system-independent format. "
-	"WordList objects can be used for spelling checking after conversion to a @SpellingChecker object.")
-ENTRY (U"1. How to create a WordList object")
-NORMAL (U"You will normally create a WordList object by reading a binary WordList file. "
-	"You'll use the generic @@Read from file...@ command from the #Open menu.")
-NORMAL (U"See below under 3 for how to create such a file.")
-ENTRY (U"2. What you can do with a Wordlist object")
-NORMAL (U"The main functionality of a WordList is its ability to tell you whether it contains a certain string. "
-	"If you select a WordList, you can query the existence of a specific word by using the ##Has word# "
-	"command. You supply the word and press OK. If the WordList does contain the word, "
-	"the value \"1\" will be written to the Info window; otherwise, the value \"0\" will be written.")
-ENTRY (U"3. How to create a binary WordList file")
-NORMAL (U"You can create a binary WordList file from a simple text file that contains a long list of words. "
-	"Perhaps such a text file has been supplied by a lexicographic institution in your country; "
-	"because of copyright issues, such word lists cannot be distributed with the Praat program. "
-	"To convert the simple text file into a compressed WordList file, you basically take the following steps:")
+INTRO (U"Praat 中的 @@types of objects|对象类型@ 之一。 "
+	"WordList 类的对象以系统无关的格式包含一个排序的字符串列表。 "
+	"WordList 对象在转换为 @@SpellingChecker|SpellingChecker（拼写检查器）@ 对象后，可用于拼写检查。")
+ENTRY (U"1. 如何创建 WordList 对象")
+NORMAL (U"您通常会通过读取二进制 WordList file 来创建 WordList 对象。 "
+	"您将使用 #Open 菜单中的通用 @@Read from file...|从文件读取...@ 命令。")
+NORMAL (U"如何创建此类文件，请参阅下面的第 3 点。")
+ENTRY (U"2. 您可以使用 WordList 对象做什么")
+NORMAL (U"WordList 的主要功能是能够告诉您它是否包含某个特定的字符串。 "
+	"如果您选中一个 WordList，您可以使用 ##Has word# "
+	"命令查询是否存在特定单词。您输入单词并按下“确定”。如果 WordList 确实包含该单词， "
+	"数值 \"1\" 将被写入信息窗口；否则，将写入数值 \"0\"。")
+ENTRY (U"3. 如何创建二进制 WordList 文件")
+NORMAL (U"您可以从包含长单词列表的简单文本文件创建二进制 WordList 文件。 "
+	"此类文本文件可能由您国家的辞书机构提供； "
+	"由于版权问题，此类单词列表无法随 Praat 程序一起分发。 "
+	"要将简单文本文件转换为压缩的 WordList 文件，您基本上需要执行以下步骤：")
 CODE (U"Read Strings from raw text file: \"lexicon.txt\"")
 CODE (U"Sort")
 CODE (U"To WordList")
 CODE (U"Save as binary file: \"lexicon.WordList\"")
-NORMAL (U"I'll explain these steps in detail. "
-	"For instance, a simple text file may contain the following list of words:")
+NORMAL (U"我将详细解释这些步骤。 "
+	"例如，一个简单的文本文件可能包含以下单词列表：")
 CODE (U"cook")
 CODE (U"cooked")
 CODE (U"cookie")
@@ -287,16 +279,15 @@ CODE (U"København")
 CODE (U"München")
 CODE (U"Munich")
 CODE (U"ångström")
-NORMAL (U"These are just 11 words, but the procedure will work fine if you have a million of them, "
-	"and enough memory in your computer.")
-NORMAL (U"You can read the file into a @Strings object with @@Read Strings from raw text file...@ "
-	"from the #Open menu in the Objects window. The resulting @Strings object contains 11 strings in the above order, "
-	"as you can verify by viewing them with @Inspect.")
-NORMAL (U"If you select the Strings, you can click the ##To WordList# button. "
-	"However, you will get the following complaint:")
+NORMAL (U"这只有 11 个单词，但如果您的电脑有足够的内存，即使您有一百万个单词，该程序也能正常运行。")
+NORMAL (U"您可以使用对象窗口中 #Open 菜单下的 @@Read Strings from raw text file...|从原始文本文件读取 Strings...@ "
+	"命令将该文件读取到一个 @@Strings|Strings（字符串列表）@ 对象中。生成的 @Strings 对象按上述顺序包含 11 个字符串， "
+	"您可以通过使用 @@Inspect|Inspect（检查）@ 查看它们来验证这一点。")
+NORMAL (U"如果选中该 Strings 对象，您可以点击 ##To WordList# 按钮。 "
+	"但是，您会收到以下抱怨提示：")
 CODE1 (U"String \"Copenhagen\" not sorted. Please sort first.")
-NORMAL (U"This complaint means that the strings have not been sorted in Unicode sorting order. "
-	"So you click #Sort, and the Strings object becomes:")
+NORMAL (U"该提示意味着这些字符串尚未按照 Unicode 排序顺序进行排序。 "
+	"所以您点击 #Sort，Strings 对象变为：")
 CODE (U"Copenhagen")
 CODE (U"København")
 CODE (U"Munich")
@@ -308,10 +299,10 @@ CODE (U"cookies")
 CODE (U"cooking")
 CODE (U"cooks")
 CODE (U"ångström")
-NORMAL (U"The strings are now in Unicode sorting order, in which capitals come before lower-case letters, "
-	"and composite characters follow the latter.")
-NORMAL (U"Clicking ##To WordList# now succeeds, and a WordList object appears in the list. "
-	"If you save it to a text file (with the Save menu), you will get the following file:")
+NORMAL (U"这些字符串现在按照 Unicode 排序顺序排列，其中大写字母排在小写字母之前， "
+	"复合字符跟在后者后面。")
+NORMAL (U"现在点击 ##To WordList# 成功，并且列表中出现一个 WordList 对象。 "
+	"如果将其保存为文本文件（使用 Save 菜单），您将得到以下文件：")
 CODE (U"File type = \"ooTextFile\"")
 CODE (U"Object class = \"WordList\"")
 CODE (U"")
@@ -326,13 +317,13 @@ CODE (U"cookies")
 CODE (U"cooking")
 CODE (U"cooks")
 CODE (U"ångström\\\" ")
-NORMAL (U"Note that any double quotes (\\\" ) that appear inside the strings, will be doubled, "
-	"as is done everywhere inside strings in Praat text files.")
-NORMAL (U"After you have created a WordList text file, you can create a WordList object just by reading this file "
-	"with @@Read from file...@ from the #Open menu.")
-NORMAL (U"The WordList object has the advantage over the Strings object that it won't take up more "
-	"memory than the original word list. This is because the WordList is stored as a single string: "
-	"a contiguous list of strings, separated by new-line symbols.")
+NORMAL (U"请注意，字符串内部出现的任何双引号 (\\\" ) 都将双写， "
+	"就像 Praat 文本文件中所有字符串内部所做的一样。")
+NORMAL (U"创建 WordList 文本文件后，您只需通过 #Open 菜单中的 @@Read from file...|从文件读取...@ 命令 "
+	"读取此文件即可创建 WordList 对象。")
+NORMAL (U"与 Strings 对象相比，WordList 对象的优势在于它不会占用比原始单词列表更多的 "
+	"内存。这是因为 WordList 被存储为单个字符串： "
+	"以换行符分隔的连续字符串列表。")
 MAN_END
 
 /*

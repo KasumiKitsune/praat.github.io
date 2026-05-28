@@ -22,6 +22,13 @@ tryToAppendFile
 <p>Upon success (i.e. the file already existed and can be appended to, or the file didn&#8217;t exist yet but was successfully created), this function returns 1 (true). Otherwise, the function returns 0 (false); this can happen if the folder in the path does not exist, or if the file is (or would be) on a read-only device.</p>
 <p>For instance, if my TIMIT database is in a read-only disk image called <code><font size=+1>TIMIT.dmg</font></code>, and I mounted that disk image on my Mac (by double-clicking <code><font size=+1>TIMIT.dmg</font></code>), then trying</p>
 <code>   <b>tryToAppendFile</b> ("/Volumes/TIMIT/readme.doc")<br></code>
+<code style="color:red">=&gt;</code><br>
+<code style="color:red">   <b>**AN ERROR OCCURRED IN THIS CODE CHUNK:**</b><br></code>
+<code style="color:red">   We expected a script or a notebook.<br></code>
+<code style="color:red">   Formula not run.<br></code>
+<code style="color:red">   Script line 1 not performed or completed:<br></code>
+<code style="color:red">   « tryToAppendFile ("/Volumes/TIMIT/readme.doc") »<br></code>
+<code style="color:red">   <br></code>
 <p>would return 0.</p>
 <h2>Related function</h2>
 <p>For a non-destructive version of this function, see <code><font size=+1>tryToWriteFile</font></code>.</p>
