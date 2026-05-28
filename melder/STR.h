@@ -1,7 +1,7 @@
 #pragma once
 /* STR.h
  *
- * Copyright (C) 1992-2018,2020,2021,2024,2025 Paul Boersma
+ * Copyright (C) 1992-2018,2020,2021,2024-2026 Paul Boersma
  *
  * This code is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,6 +19,10 @@
 
 autostring8 hex_STR8 (conststring8 str, uint64 key = 0);
 autostring32 hex_STR (conststring32 str, uint64 key = 0);
+
+autostring32 flatten_STR (constSTRVEC const& value, conststring32 separator);   // TODO: make available in Formulas
+
+autostring32 horizontal_STR (constSTRVEC const& value);
 
 autostring32 left_STR (conststring32 str, integer newLength = 1);
 
@@ -66,5 +70,7 @@ autostring32 unhex_STR (conststring32 str, uint64 key = 0);
 autostring32 upperCase_STR (conststring32 str);
 autostring32 upperCamelCase_STR (conststring32 str);
 autostring32 upperSnakeCase_STR (conststring32 str);
+
+autostring32 vertical_STR (constSTRVEC const& strvec);
 
 /* End of file STR.h */

@@ -88,6 +88,9 @@
 ##########################
 
 # First try: explicit setting of the OS via argument or environment variable PRAAT_OS.
+PREFIX ?= /usr/local
+BINDIR ?= $(PREFIX)/bin
+DATADIR ?= $(PREFIX)/share
 ifeq ($(PRAAT_OS),windows)
   OS_IS_WINDOWS := 1
   $(info OS given as Windows)
@@ -342,7 +345,17 @@ else ifeq ($(OS_IS_LINUX),1)
   ICON =
   MAIN_ICON =
 
-  INSTALL = install -p praat /usr/local/bin
+  INSTALL = install -pDm0755 praat -t $(BINDIR)
+  INSTALL_METAINFO = install -Dm0644 org.praat.Praat.metainfo.xml -t $(DATADIR)/metainfo
+  INSTALL_DESKTOP = install -Dm0644 main/praat.desktop $(DATADIR)/applications/org.praat.Praat.desktop
+  INSTALL_ICONS = \
+	install -Dm0644 main/praat-480.svg $(DATADIR)/icons/hicolor/scalable/apps/org.praat.Praat.svg && \
+	install -Dm0644 main/praat-16.png $(DATADIR)/icons/hicolor/16x16/apps/org.praat.Praat.png && \
+	install -Dm0644 main/praat-32.png $(DATADIR)/icons/hicolor/32x32/apps/org.praat.Praat.png && \
+	install -Dm0644 main/praat-48.png $(DATADIR)/icons/hicolor/48x48/apps/org.praat.Praat.png && \
+	install -Dm0644 main/praat-128.png $(DATADIR)/icons/hicolor/128x128/apps/org.praat.Praat.png && \
+	install -Dm0644 main/praat-256.png $(DATADIR)/icons/hicolor/256x256/apps/org.praat.Praat.png && \
+	install -Dm0644 main/praat-512.png $(DATADIR)/icons/hicolor/512x512/apps/org.praat.Praat.png
 endif
 
 # Export some variables to the makefiles in the subdirectories.
@@ -445,3 +458,6 @@ clean-self:
 
 install:
 	$(INSTALL)
+	$(INSTALL_METAINFO)
+	$(INSTALL_DESKTOP)
+	$(INSTALL_ICONS)

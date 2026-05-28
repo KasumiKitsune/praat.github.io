@@ -319,7 +319,7 @@ static void gui_crash (conststring32 message) {
 	#elif motif
 		MessageBox (nullptr, Melder_peek32toW (message), L"Crashing bug", MB_OK | MB_TOPMOST | MB_ICONSTOP);
 	#elif cocoa
-		mac_message (NSCriticalAlertStyle, message);
+		mac_message (NSAlertStyleCritical, message);
 		SysError (11);
 	#endif
 }
@@ -345,7 +345,7 @@ static void gui_error (conststring32 message) {
 	#elif motif
 		MessageBox (nullptr, Melder_peek32toW (message), L"Message", MB_OK | MB_TOPMOST | MB_ICONWARNING);   // or (HWND) XtWindow ((GuiObject) Melder_topShell)
 	#elif cocoa
-		mac_message (NSWarningAlertStyle, message);
+		mac_message (NSAlertStyleWarning, message);
 	#endif
 	if (memoryIsLow) {
 		theMessageFund = (char *) malloc (theMessageFund_SIZE);
@@ -358,7 +358,7 @@ static void gui_error (conststring32 message) {
 			#elif motif
 				MessageBox (nullptr, L"Praat is very low on memory.\nSave your work and quit Praat.\nIf you don't do that, Praat may crash.", L"Message", MB_OK);
 			#elif cocoa
-				mac_message (NSCriticalAlertStyle, U"Praat is very low on memory.\nSave your work and quit Praat.\nIf you don't do that, Praat may crash.");
+				mac_message (NSAlertStyleCritical, U"Praat is very low on memory.\nSave your work and quit Praat.\nIf you don't do that, Praat may crash.");
 			#endif
 		}
 	}
@@ -374,7 +374,7 @@ static void gui_warning (conststring32 message) {
 	#elif motif
 		MessageBox (nullptr, Melder_peek32toW (message), L"Warning", MB_OK | MB_TOPMOST | MB_ICONINFORMATION);
 	#elif cocoa
-		mac_message (NSInformationalAlertStyle, message);
+		mac_message (NSAlertStyleInformational, message);
 	#endif
 }
 
@@ -383,12 +383,10 @@ static void gui_trust (void *void_interpreter, conststring32 action) {
 	if (interpreter) {
 		Script script = interpreter -> scriptReference;
 		Notebook notebook = interpreter -> notebookReference;
-		if (! script && ! notebook)
-			Melder_throw (U"We expected a script or a notebook.");
 		if (script && script -> trusted || notebook && notebook -> trusted)
 			return;   // the request should be granted
 /**********/
-//return;   // comment out before Praat version 7.0
+//return;   // remove this line from Praat version 7.0
 /**********/
 		conststring32 paragraphs [1+5] = { };
 		if (script) {
@@ -419,9 +417,8 @@ static void gui_trust (void *void_interpreter, conststring32 action) {
 				"including saving, deleting, calling system commands, and internetting), because I FULLY TRUST\n"
 				"the skills and intentions of the authors of the notebook AND of all the scripts and notebooks called by it."
 			:
-				U"Yes, and I even allow this script or notebook to CONTROL MY COMPUTER from now on (i.e. to perform any action,\n"
-				"including saving, deleting, calling system commands, and internetting), because I FULLY TRUST\n"
-				"the skills and intentions of the authors of it AND of all the scripts and notebooks called by it.";
+				U"(The option to allow this script or notebook to control your computer will be available\n"
+				"after you save the script or notebook. Until then, clicking here will allow only this one action.)";
 		const integer buttonClicked = GuiTrust_get (nullptr, nullptr,
 			paragraphs [1], paragraphs [2], paragraphs [3], paragraphs [4], paragraphs [5],
 			option1, option2, option3, nullptr, nullptr, interpreter

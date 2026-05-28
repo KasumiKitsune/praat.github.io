@@ -8,6 +8,6 @@ Comment=Analyze, synthesize and manipulate speech
 Comment[en_GB]=Analyse, synthesise and manipulate speech
 Type=Application
 Exec=praat
-Icon=praat
+Icon=org.praat.Praat
 Categories=Education;Science;
 Keywords=audio;sound;speech;phonetics

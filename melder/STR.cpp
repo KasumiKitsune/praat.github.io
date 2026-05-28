@@ -22,6 +22,17 @@ static char hexSymbols [] = "0123456789ABCDEF";
 
 static uint64 hexSecret = UINT64_C (5'847'171'831'059'823'557);
 
+autostring32 flatten_STR (constSTRVEC const& value, conststring32 separator) {
+	autoMelderString string;
+	MelderString_empty (& string);
+	if (! NUMisEmpty (value)) {
+		for (integer i = 1; i < value.size; i ++)
+			MelderString_append (& string, value [i], separator);
+		MelderString_append (& string, value [value.size]);
+	}
+	return Melder_dup (string. string);
+}
+
 autostring8 hex_STR8 (conststring8 string, uint64 key) {
 	if (key != 0)
 		NUMrandom_initializeWithSeedUnsafelyButPredictably (key ^ hexSecret);
@@ -45,6 +56,10 @@ autostring32 hex_STR (conststring32 string, uint64 key) {
 	autostring8 string8 = Melder_32to8 (string);
 	string8 = hex_STR8 (string8.get(), key);
 	return Melder_8to32_e (string8.get());
+}
+
+autostring32 horizontal_STR (constSTRVEC const& value) {
+	return flatten_STR (value, U" ");
 }
 
 autostring32 left_STR (conststring32 string, integer newLength) {
@@ -442,6 +457,10 @@ autostring32 upperSnakeCase_STR (conststring32 string) {
 		}
 	}
 	return result;
+}
+
+autostring32 vertical_STR (constSTRVEC const& value) {
+	return flatten_STR (value, U"\n");
 }
 
 /* End of file STR.cpp */

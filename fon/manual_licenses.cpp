@@ -117,6 +117,7 @@ Finally we thank:
 , Daniel Hirst and Daniel McCloy, for managing the Praat Users List.
 , Rafael Laboissière and Andreas Tille, for maintaining the Debian package.
 , Jason Bacon and Adriaan de Groot, for maintaining the FreeBSD port.
+, Anna Simmons, for maintaining the Flathub package.
 , José Joaquín Atria and Ingmar Steiner, for setting up the source-code repository on GitHub.
 , Hundreds of Praat users, for sending suggestions and notifying us of problems and thus helping us to improve Praat.
 
