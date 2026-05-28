@@ -3505,6 +3505,25 @@ def main():
                     
         print(f"Logged {candidates_count} candidate suggestions to {CANDIDATE_OUTPUT}")
 
+    # Load Simplified to Traditional mapping table
+    st_map = {}
+    st_file = ROOT / "STCharacters.txt"
+    if st_file.exists():
+        with open(st_file, "r", encoding="utf-8") as f:
+            for line in f:
+                line_str = line.strip()
+                if not line_str or line_str.startswith("#"):
+                    continue
+                parts = line_str.split("\t")
+                if len(parts) >= 2:
+                    sc_char = parts[0]
+                    tc_char = parts[1].split()[0]
+                    if len(sc_char) == 1 and len(tc_char) == 1:
+                        st_map[sc_char] = tc_char
+        print(f"Loaded {len(st_map)} Simplified to Traditional character mappings.")
+    else:
+        print("Warning: STCharacters.txt not found! Traditional Chinese might not be fully functional.")
+
     # Generate the praat_translate.cpp code
     cpp_lines = [
         '#include "praat_translate.h"',
@@ -3526,12 +3545,42 @@ def main():
     cpp_lines.extend([
         '};',
         '',
+        '// Simplified to Traditional Chinese character-level mapping',
+        'static const std::unordered_map<char32_t, char32_t> g_s2t_map = {'
+    ])
+
+    s2t_map_lines = []
+    for sc_char, tc_char in sorted(st_map.items()):
+        sc_ord = ord(sc_char)
+        tc_ord = ord(tc_char)
+        sc_esc = f"\\u{sc_ord:04x}" if sc_ord <= 0xFFFF else f"\\U{sc_ord:08x}"
+        tc_esc = f"\\u{tc_ord:04x}" if tc_ord <= 0xFFFF else f"\\U{tc_ord:08x}"
+        s2t_map_lines.append(f"\t{{ U'{sc_esc}', U'{tc_esc}' }},")
+        
+    if s2t_map_lines:
+        s2t_map_lines[-1] = s2t_map_lines[-1][:-1]
+        cpp_lines.extend(s2t_map_lines)
+
+    cpp_lines.extend([
+        '};',
+        '',
+        'static std::u32string translate_to_traditional (const std::u32string& sc_str) {',
+        '\tstd::u32string tc_str = sc_str;',
+        '\tfor (size_t i = 0; i < tc_str.length(); ++i) {',
+        '\t\tauto it = g_s2t_map.find(tc_str[i]);',
+        '\t\tif (it != g_s2t_map.end()) {',
+        '\t\t\ttc_str[i] = it->second;',
+        '\t\t}',
+        '\t}',
+        '\treturn tc_str;',
+        '}',
+        '',
         '#include <mutex>',
         'static std::unordered_map<std::u32string, std::u32string> g_dynamic_cache;',
         'static std::unordered_map<std::u32string, std::u32string> g_reverse_translation_map;',
         'static std::mutex g_cache_mutex;',
         '',
-        'int g_language_choice = 1; // 0 = English, 1 = Chinese',
+        'int g_language_choice = 1; // 0 = English, 1 = Chinese, 2 = Traditional Chinese',
         '',
         'static void ensure_reverse_translation_map () {',
         '\tif (! g_reverse_translation_map.empty()) {',
@@ -3556,11 +3605,6 @@ def main():
         '\t\treturn text;',
         '\t}',
         '',
-        '\tauto it = g_translation_map.find(key);',
-        '\tif (it != g_translation_map.end()) {',
-        '\t\treturn it->second.c_str();',
-        '\t}',
-        '\t',
         '\t{',
         '\t\tstd::lock_guard<std::mutex> lock(g_cache_mutex);',
         '\t\tauto it_cache = g_dynamic_cache.find(key);',
@@ -3568,24 +3612,37 @@ def main():
         '\t\t\treturn it_cache->second.c_str();',
         '\t\t}',
         '\t}',
-        '\t',
-        '\tsize_t leading_spaces = 0;',
-        '\twhile (leading_spaces < key.length() && key[leading_spaces] == U\' \') {',
-        '\t\tleading_spaces++;',
-        '\t}',
-        '\t',
-        '\tif (leading_spaces > 0) {',
-        '\t\tstd::u32string stripped_key = key.substr(leading_spaces);',
-        '\t\tauto it_stripped = g_translation_map.find(stripped_key);',
-        '\t\tif (it_stripped != g_translation_map.end()) {',
-        '\t\t\tstd::u32string translated = key.substr(0, leading_spaces) + it_stripped->second;',
-        '\t\t\tstd::lock_guard<std::mutex> lock(g_cache_mutex);',
-        '\t\t\tg_dynamic_cache[key] = translated;',
-        '\t\t\treturn g_dynamic_cache[key].c_str();',
+        '',
+        '\tstd::u32string translated;',
+        '\tauto it = g_translation_map.find(key);',
+        '\tif (it != g_translation_map.end()) {',
+        '\t\ttranslated = it->second;',
+        '\t} else {',
+        '\t\tsize_t leading_spaces = 0;',
+        '\t\twhile (leading_spaces < key.length() && key[leading_spaces] == U\' \') {',
+        '\t\t\tleading_spaces++;',
+        '\t\t}',
+        '\t\t',
+        '\t\tif (leading_spaces > 0) {',
+        '\t\t\tstd::u32string stripped_key = key.substr(leading_spaces);',
+        '\t\t\tauto it_stripped = g_translation_map.find(stripped_key);',
+        '\t\t\tif (it_stripped != g_translation_map.end()) {',
+        '\t\t\t\ttranslated = key.substr(0, leading_spaces) + it_stripped->second;',
+        '\t\t\t}',
         '\t\t}',
         '\t}',
-        '\t',
-        '\treturn text;',
+        '',
+        '\tif (translated.empty()) {',
+        '\t\ttranslated = key;',
+        '\t}',
+        '',
+        '\tif (g_language_choice == 2) {',
+        '\t\ttranslated = translate_to_traditional(translated);',
+        '\t}',
+        '',
+        '\tstd::lock_guard<std::mutex> lock(g_cache_mutex);',
+        '\tg_dynamic_cache[key] = translated;',
+        '\treturn g_dynamic_cache[key].c_str();',
         '}',
         '',
         'const char32* praat_translate_manual (const char32* text) {',

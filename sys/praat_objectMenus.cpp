@@ -479,6 +479,7 @@ FORM (SETTINGS__LanguageSettings, U"Language settings (语言设置)", nullptr) 
 	OPTIONMENU (language, U"Language", 2)
 		OPTION (U"English")
 		OPTION (U"简体中文 (Simplified Chinese)")
+		OPTION (U"繁体中文 (Traditional Chinese)")
 OK
 	SET_OPTION (language, g_language_choice + 1)
 DO
