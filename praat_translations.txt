@@ -1,4 +1,4 @@
-=== Praat Chinese Translation Database (Total: 1988 entries) ===
+=== Praat Chinese Translation Database (Total: 2956 entries) ===
 Format: [English] block followed by [Chinese] block, separated by '===================='.
 This structure prevents ambiguity with newlines or special characters in the text.
 
@@ -10,6 +10,21 @@ Please change its name or remove it.
 请更改其名称或将其删除。
 ====================
 [English]
+ -- Pitch
+[Chinese]
+ -- 音高
+====================
+[English]
+ -- Pitch (hum)
+[Chinese]
+ -- 音高 (蜂鸣声)
+====================
+[English]
+ seconds,
+[Chinese]
+ 秒，
+====================
+[English]
 " of column
 [Chinese]
 ” 列
@@ -18,6 +33,11 @@ Please change its name or remove it.
 " of row
 [Chinese]
 ” 行
+====================
+[English]
+& Manipulation: Replace?
+[Chinese]
+& 操控：是否替换？
 ====================
 [English]
 & Sound: To TextGrid?
@@ -537,9 +557,24 @@ Cannot play sound.
 0 (= 在开头)
 ====================
 [English]
+0 (= auto)
+[Chinese]
+0 (= 自动)
+====================
+[English]
 0 (= automatic)
 [Chinese]
 0 (= 自动)
+====================
+[English]
+0 (= no page numbers)
+[Chinese]
+0 (= 无页码)
+====================
+[English]
+0 (= unlimited)
+[Chinese]
+0 (= 无限制)
 ====================
 [English]
 0.0 (= all)
@@ -1282,6 +1317,16 @@ Add on tier 8
 在第 8 层上添加
 ====================
 [English]
+Add one point
+[Chinese]
+添加one point
+====================
+[English]
+Add one point to DurationTier
+[Chinese]
+添加one point to 时长层
+====================
+[English]
 Add open phase point...
 [Chinese]
 添加开放相位点...
@@ -1332,6 +1377,11 @@ Add point...
 添加点...
 ====================
 [English]
+Add points...
+[Chinese]
+添加points...
+====================
+[English]
 Add pulse at cursor
 [Chinese]
 在光标处添加脉冲
@@ -1367,6 +1417,11 @@ Add to menu...
 添加到菜单...
 ====================
 [English]
+Add word to user dictionary
+[Chinese]
+添加word to 用户词典
+====================
+[English]
 Add...
 [Chinese]
 添加...
@@ -1385,6 +1440,21 @@ Advanced formant settings
 Advanced formant settings...
 [Chinese]
 高级共振峰设置...
+====================
+[English]
+Advanced pitch settings (filtered AC and CC)...
+[Chinese]
+高级音高设置 (滤波自相关与互相关)...
+====================
+[English]
+Advanced pitch settings (raw AC and CC)...
+[Chinese]
+高级音高设置 (原始自相关与互相关)...
+====================
+[English]
+Advanced pitch settings...
+[Chinese]
+高级音高设置...
 ====================
 [English]
 Advanced pulses settings
@@ -1432,6 +1502,26 @@ All tier names
 所有层名称
 ====================
 [English]
+Allow silences
+[Chinese]
+允许静音
+====================
+[English]
+Allow speakers overlap
+[Chinese]
+允许说话人声音重叠
+====================
+[English]
+Amplitude range
+[Chinese]
+振幅范围
+====================
+[English]
+Amplitude range:
+[Chinese]
+振幅范围：
+====================
+[English]
 Amplitude scale in dB
 [Chinese]
 振幅刻度 (dB)
@@ -1447,14 +1537,59 @@ AmplitudeTier: Add point...
 振幅层： 添加点...
 ====================
 [English]
+AmplitudeTier: Formula
+[Chinese]
+振幅层：公式
+====================
+[English]
 AmplitudeTier: Formula...
 [Chinese]
 振幅层： 公式...
 ====================
 [English]
+AmplitudeTier: Get shimmer (apq11)
+[Chinese]
+振幅层：获取振幅微扰 (shimmer) (apq11)
+====================
+[English]
+AmplitudeTier: Get shimmer (apq3)
+[Chinese]
+振幅层：获取振幅微扰 (shimmer) (apq3)
+====================
+[English]
+AmplitudeTier: Get shimmer (apq5)
+[Chinese]
+振幅层：获取振幅微扰 (shimmer) (apq5)
+====================
+[English]
+AmplitudeTier: Get shimmer (dda)
+[Chinese]
+振幅层：获取振幅微扰 (shimmer) (dda)
+====================
+[English]
+AmplitudeTier: Get shimmer (local)
+[Chinese]
+振幅层：获取振幅微扰 (shimmer) (local)
+====================
+[English]
+AmplitudeTier: Get shimmer (local, dB)
+[Chinese]
+振幅层：获取振幅微扰 (shimmer) (local, dB)
+====================
+[English]
+AmplitudeTier: To IntensityTier
+[Chinese]
+振幅层：转为音强层
+====================
+[English]
 AmplitudeTier: To IntensityTier...
 [Chinese]
 振幅层： 转为音强层...
+====================
+[English]
+AmplitudeTier: To Sound (pulse train)
+[Chinese]
+振幅层：转为声音 (pulse train)
 ====================
 [English]
 Analyse
@@ -1597,6 +1732,11 @@ Autocorrelate...
 自相关...
 ====================
 [English]
+Autodetect language
+[Chinese]
+自动检测语言
+====================
+[English]
 Average
 [Chinese]
 平均
@@ -1650,6 +1790,11 @@ Begin column
 Begin row
 [Chinese]
 起始行
+====================
+[English]
+Best matches
+[Chinese]
+最佳匹配
 ====================
 [English]
 Bilingual
@@ -1789,6 +1934,16 @@ Cannot open picture file
 无法打开图像文件
 ====================
 [English]
+Cast
+[Chinese]
+类型强转
+====================
+[English]
+Cast -
+[Chinese]
+类型强转 -
+====================
+[English]
 Ceiling (Hz)
 [Chinese]
 上限 (Hz)
@@ -1817,6 +1972,11 @@ Centre x
 Centre y
 [Chinese]
 中心化 y
+====================
+[English]
+Cepstral smoothing...
+[Chinese]
+倒谱 smoothing...
 ====================
 [English]
 Change
@@ -1904,6 +2064,16 @@ Close
 关闭
 ====================
 [English]
+Close   
+[Chinese]
+关闭   
+====================
+[English]
+Clustering threshold (0-2)
+[Chinese]
+聚类阈值 (0-2)
+====================
+[English]
 Cochleagram Formula
 [Chinese]
 耳蜗图公式
@@ -1932,6 +2102,11 @@ Collapse rows...
 Collect
 [Chinese]
 收集
+====================
+[English]
+Collect to Table
+[Chinese]
+Collect to 表格
 ====================
 [English]
 Collision phase
@@ -1984,9 +2159,39 @@ Combine to stereo
 合并为双声道
 ====================
 [English]
+Combine two Matrices -
+[Chinese]
+Combine two 矩阵 -
+====================
+[English]
 Compress frequency domain...
 [Chinese]
 压缩频率域...
+====================
+[English]
+Compute horizontal distance in millimetres
+[Chinese]
+计算水平距离 (毫米)
+====================
+[English]
+Compute horizontal distance in world coordinates
+[Chinese]
+计算水平距离 (世界坐标)
+====================
+[English]
+Compute trend line...
+[Chinese]
+计算趋势线... (Compute trend line)
+====================
+[English]
+Compute vertical distance in millimetres
+[Chinese]
+计算垂直距离 (毫米)
+====================
+[English]
+Compute vertical distance in world coordinates
+[Chinese]
+计算垂直距离 (世界坐标)
 ====================
 [English]
 Concatenate
@@ -2002,6 +2207,16 @@ Concatenate recoverably
 Concatenate with overlap...
 [Chinese]
 重叠连接 (overlap)...
+====================
+[English]
+Concatenate?
+[Chinese]
+是否连接？
+====================
+[English]
+Confirm Quit
+[Chinese]
+确认退出
 ====================
 [English]
 Conflate
@@ -2064,14 +2279,29 @@ Convert to C string
 转换为 C 字符串
 ====================
 [English]
+Convert to Sound
+[Chinese]
+Convert to 声音
+====================
+[English]
 Convert to Unicode
 [Chinese]
 转换为 Unicode
 ====================
 [English]
+Convert to Unicode || Nativize
+[Chinese]
+转为 Unicode || 本地化
+====================
+[English]
 Convert to backslash trigraphs
 [Chinese]
 转换为反斜杠三元字符
+====================
+[English]
+Convert to backslash trigraphs || Genericize
+[Chinese]
+转为反斜杠三合字符 || 通用化
 ====================
 [English]
 Convert to mono
@@ -2104,6 +2334,11 @@ Copy
 复制
 ====================
 [English]
+Copy last played to list
+[Chinese]
+复制最近播放的到列表
+====================
+[English]
 Copy object
 [Chinese]
 复制对象
@@ -2129,6 +2364,11 @@ Copy...
 复制...
 ====================
 [English]
+Copy   
+[Chinese]
+复制   
+====================
+[English]
 Correlation
 [Chinese]
 相关
@@ -2144,6 +2384,11 @@ Count differences
 计数差异
 ====================
 [English]
+Count intervals
+[Chinese]
+计数区间
+====================
+[English]
 Count intervals where...
 [Chinese]
 计数区间，当...
@@ -2157,6 +2402,11 @@ Count labels
 Count labels...
 [Chinese]
 计数标签...
+====================
+[English]
+Count points
+[Chinese]
+计数点
 ====================
 [English]
 Count points where...
@@ -2229,6 +2479,11 @@ Create Configuration...
 创建配置...
 ====================
 [English]
+Create Corpus
+[Chinese]
+创建语料库
+====================
+[English]
 Create Corpus...
 [Chinese]
 创建语料库...
@@ -2262,6 +2517,11 @@ Create FormantGrid...
 Create FormantTier...
 [Chinese]
 创建共振峰层...
+====================
+[English]
+Create H1H2 table (Keating & Esposito 2006)
+[Chinese]
+创建 H1H2 表 (Keating & Esposito 2006)
 ====================
 [English]
 Create INDSCAL Carroll Wish example...
@@ -2379,6 +2639,11 @@ Create PitchTier...
 创建音高层...
 ====================
 [English]
+Create Poisson process
+[Chinese]
+创建泊松 process
+====================
+[English]
 Create Poisson process...
 [Chinese]
 创建泊松过程...
@@ -2392,6 +2657,16 @@ Create Polygon (random points)...
 Create Polygon (random vertices)...
 [Chinese]
 创建多边形(随机顶点)...
+====================
+[English]
+Create Polygon from values
+[Chinese]
+创建多边形 from values
+====================
+[English]
+Create Polygon from values...
+[Chinese]
+从数值创建多边形...
 ====================
 [English]
 Create Polynomial from product terms...
@@ -2454,6 +2729,11 @@ Create Sound from VowelEditor...
 从元音编辑器创建声音...
 ====================
 [English]
+Create Sound from formula
+[Chinese]
+创建声音 from formula
+====================
+[English]
 Create Sound from formula...
 [Chinese]
 通过公式创建声音...
@@ -2494,14 +2774,34 @@ Create SpeechSynthesizer...
 创建语音合成器...
 ====================
 [English]
+Create Strings as file list
+[Chinese]
+创建字符串列表 as file list
+====================
+[English]
 Create Strings as file list...
 [Chinese]
 从文件列表创建字符串...
 ====================
 [English]
+Create Strings as folder list
+[Chinese]
+创建字符串列表 as folder list
+====================
+[English]
 Create Strings as folder list...
 [Chinese]
 从文件夹列表创建字符串...
+====================
+[English]
+Create Strings as folder list... || Create Strings as directory list...
+[Chinese]
+创建字符串列表 as folder list... || 创建字符串列表 as directory list...
+====================
+[English]
+Create Strings from texts
+[Chinese]
+创建字符串列表 from texts
 ====================
 [English]
 Create Strings from texts...
@@ -2512,6 +2812,11 @@ Create Strings from texts...
 Create Strings from tokens...
 [Chinese]
 从分词创建字符串...
+====================
+[English]
+Create Table (Ganong 1980)
+[Chinese]
+创建表格 (Ganong 1980)
 ====================
 [English]
 Create Table with column names...
@@ -2544,6 +2849,26 @@ Create TableOfReal
 创建实数表
 ====================
 [English]
+Create TableOfReal (Pols 1973)...
+[Chinese]
+创建实数表 (Pols 1973)...
+====================
+[English]
+Create TableOfReal (Sandwell 1987)
+[Chinese]
+创建实数表 (Sandwell 1987)
+====================
+[English]
+Create TableOfReal (Van Nierop 1973)...
+[Chinese]
+创建实数表 (Van Nierop 1973)...
+====================
+[English]
+Create TableOfReal (Weenink 1985)...
+[Chinese]
+创建实数表 (Weenink 1985)...
+====================
+[English]
 Create TableOfReal...
 [Chinese]
 创建实数表...
@@ -2569,9 +2894,34 @@ Create a Speaker
 创建 a 说话人
 ====================
 [English]
+Create an empty PointProcess
+[Chinese]
+创建an empty 点过程
+====================
+[English]
+Create empty AmplitudeTier
+[Chinese]
+创建空振幅层
+====================
+[English]
+Create empty DurationTier
+[Chinese]
+创建空时长层
+====================
+[English]
 Create empty EditCostsTable...
 [Chinese]
 创建空编辑代价表...
+====================
+[English]
+Create empty FormantTier
+[Chinese]
+创建空共振峰层
+====================
+[English]
+Create empty IntensityTier
+[Chinese]
+创建空音强层
 ====================
 [English]
 Create empty Network...
@@ -2579,9 +2929,39 @@ Create empty Network...
 创建空网络...
 ====================
 [English]
+Create empty PitchTier
+[Chinese]
+创建空音高层
+====================
+[English]
 Create empty PointProcess...
 [Chinese]
 创建空点过程...
+====================
+[English]
+Create empty RealTier
+[Chinese]
+创建空实数层
+====================
+[English]
+Create formant table (Peterson & Barney 1952)
+[Chinese]
+创建共振峰表 (Peterson & Barney 1952)
+====================
+[English]
+Create formant table (Pols & Van Nierop 1973)
+[Chinese]
+创建共振峰表 (Pols & Van Nierop 1973)
+====================
+[English]
+Create formant table (Weenink 1985)
+[Chinese]
+创建共振峰表 (Weenink 1985)
+====================
+[English]
+Create iris data set
+[Chinese]
+创建鸢尾花数据集
 ====================
 [English]
 Create iris example...
@@ -2644,14 +3024,49 @@ Create simple Covariance...
 创建简单协方差矩阵...
 ====================
 [English]
+Create simple Matrix
+[Chinese]
+创建simple 矩阵
+====================
+[English]
+Create simple Matrix from values
+[Chinese]
+创建simple 矩阵 from values
+====================
+[English]
+Create simple Matrix from values...
+[Chinese]
+从数值创建简单矩阵...
+====================
+[English]
+Create simple Matrix...
+[Chinese]
+创建简单矩阵...
+====================
+[English]
 Create simple Permutation...
 [Chinese]
 创建简单置换...
 ====================
 [English]
+Create simple Photo
+[Chinese]
+创建simple 照片
+====================
+[English]
+Create simple Photo...
+[Chinese]
+创建简单照片...
+====================
+[English]
 Create tongue-root grammar...
 [Chinese]
 创建舌根语法...
+====================
+[English]
+Cross-correlate (short)
+[Chinese]
+计算互相关 (短)
 ====================
 [English]
 Cross-correlate...
@@ -2674,6 +3089,11 @@ Cut text
 剪切文本
 ====================
 [English]
+Cut   
+[Chinese]
+剪切   
+====================
+[English]
 Cyan
 [Chinese]
 青色
@@ -2694,6 +3114,16 @@ Data sets from the literature
 来自文献的数据集
 ====================
 [English]
+De-emphasize (in-place)...
+[Chinese]
+去加重 (就地)...
+====================
+[English]
+De-emphasize (in-place)... || De-emphasize (in-line)...
+[Chinese]
+去加重 (就地)... || 去加重 (行)...
+====================
+[English]
 Debug multi-threading
 [Chinese]
 调试多线程
@@ -2707,6 +3137,11 @@ Debug multi-threading...
 Debug...
 [Chinese]
 调试...
+====================
+[English]
+Deepen band modulation
+[Chinese]
+加深频带调制
 ====================
 [English]
 Deepen band modulation...
@@ -2732,6 +3167,11 @@ Demo window
 Diarization settings...
 [Chinese]
 说话人分离设置...
+====================
+[English]
+Diarization...
+[Chinese]
+说话人分离...
 ====================
 [English]
 Diarize interval
@@ -2769,6 +3209,11 @@ Do you still want to quit?
 您确定要退出吗？
 ====================
 [English]
+Does word occur in list?
+[Chinese]
+单词是否在列表中？
+====================
+[English]
 Domain
 [Chinese]
 域
@@ -2794,14 +3239,79 @@ Double pulsing
 双脉冲
 ====================
 [English]
+Down
+[Chinese]
+向下
+====================
+[English]
+Down to FormantGrid
+[Chinese]
+降为共振峰网格
+====================
+[English]
+Down to FormantTier
+[Chinese]
+降为共振峰层
+====================
+[English]
+Down to IntensityTier
+[Chinese]
+降为音强层
+====================
+[English]
 Down to Matrix
 [Chinese]
 降为矩阵
 ====================
 [English]
+Down to PitchTier
+[Chinese]
+降为音高层
+====================
+[English]
+Down to PointProcess
+[Chinese]
+降为点过程
+====================
+[English]
+Down to RealTier
+[Chinese]
+降为实数层
+====================
+[English]
+Down to Table
+[Chinese]
+降为表格
+====================
+[English]
+Down to Table...
+[Chinese]
+降为表格...
+====================
+[English]
+Down to TableOfReal
+[Chinese]
+降为实数表
+====================
+[English]
+Down to TableOfReal (any)
+[Chinese]
+Down to 实数表 (any)
+====================
+[English]
+Down to TableOfReal...
+[Chinese]
+降为实数表...
+====================
+[English]
 Draw
 [Chinese]
 绘制
+====================
+[English]
+Draw (log freq)...
+[Chinese]
+绘制(log freq)...
 ====================
 [English]
 Draw -
@@ -2844,6 +3354,11 @@ Draw TextGrid to picture window:
 绘制 TextGrid 到图像窗口：
 ====================
 [English]
+Draw altitude contours
+[Chinese]
+绘制等高线 (海拔) 等高线/曲线
+====================
+[English]
 Draw arc...
 [Chinese]
 绘制圆弧...
@@ -2859,6 +3374,16 @@ Draw as grid...
 绘制为网格...
 ====================
 [English]
+Draw as numbers
+[Chinese]
+绘制as numbers
+====================
+[English]
+Draw as numbers...
+[Chinese]
+绘制as numbers...
+====================
+[English]
 Draw circle (mm)...
 [Chinese]
 绘制圆形 (毫米)...
@@ -2867,6 +3392,16 @@ Draw circle (mm)...
 Draw circle...
 [Chinese]
 绘制圆形...
+====================
+[English]
+Draw circles...
+[Chinese]
+绘制circles...
+====================
+[English]
+Draw closed...
+[Chinese]
+绘制closed...
 ====================
 [English]
 Draw confusion...
@@ -2879,9 +3414,24 @@ Draw connection...
 绘制连接...
 ====================
 [English]
+Draw contours...
+[Chinese]
+绘制等高线/曲线...
+====================
+[English]
 Draw ellipse...
 [Chinese]
 绘制椭圆...
+====================
+[English]
+Draw erb...
+[Chinese]
+绘制erb...
+====================
+[English]
+Draw formant tracks
+[Chinese]
+绘制共振峰 tracks
 ====================
 [English]
 Draw formants to picture window:
@@ -2929,14 +3479,34 @@ Draw line...
 绘制直线...
 ====================
 [English]
+Draw logarithmic...
+[Chinese]
+绘制logarithmic...
+====================
+[English]
 Draw mel...
 [Chinese]
 绘制 mel...
 ====================
 [English]
+Draw one altitude contour
+[Chinese]
+绘制one 等高线 (海拔) 等高线/曲线
+====================
+[English]
+Draw one contour...
+[Chinese]
+绘制one 等高线/曲线...
+====================
+[English]
 Draw only those parts where the following condition holds:
 [Chinese]
 仅绘制符合以下条件的区域：
+====================
+[English]
+Draw parametrized curve
+[Chinese]
+绘制parametrized curve
 ====================
 [English]
 Draw pitch to picture window:
@@ -2994,6 +3564,21 @@ Draw selection times
 绘制选定时间
 ====================
 [English]
+Draw semitones (re 100 Hz)... || Draw semitones...
+[Chinese]
+绘制semitones (re 100 Hz)... || 绘制semitones...
+====================
+[English]
+Draw semitones (re 200 Hz)...
+[Chinese]
+绘制semitones (re 200 Hz)...
+====================
+[English]
+Draw semitones (re 440 Hz)...
+[Chinese]
+绘制semitones (re 440 Hz)...
+====================
+[English]
 Draw sound to picture window:
 [Chinese]
 绘制声音到图像窗口：
@@ -3027,6 +3612,11 @@ Draw tableau
 Draw tableau...
 [Chinese]
 绘制表格...
+====================
+[English]
+Draw tracks...
+[Chinese]
+绘制tracks...
 ====================
 [English]
 Draw trajectory...
@@ -3092,6 +3682,16 @@ Draw vocal tract...
 Draw where...
 [Chinese]
 绘制于指定条件...
+====================
+[English]
+Draw with Pitch?
+[Chinese]
+随音高绘制？
+====================
+[English]
+Draw with Sound?
+[Chinese]
+随声音绘制？
 ====================
 [English]
 Draw with sound...
@@ -3244,6 +3844,11 @@ Edit spectral tilt tier
 编辑频谱倾斜层
 ====================
 [English]
+Edit spelling checker
+[Chinese]
+编辑拼写检查器
+====================
+[English]
 Edit voicing amplitude tier
 [Chinese]
 编辑浊音化振幅层
@@ -3267,6 +3872,11 @@ Editor info
 Editors
 [Chinese]
 编辑器
+====================
+[English]
+Eigen
+[Chinese]
+特征值与特征向量
 ====================
 [English]
 Encoding of 8-bit text files
@@ -3299,6 +3909,21 @@ End time (s)
 结束时间 (s)
 ====================
 [English]
+Equal?
+[Chinese]
+是否相等？
+====================
+[English]
+Erase
+[Chinese]
+擦除
+====================
+[English]
+Erase all
+[Chinese]
+全部擦除
+====================
+[English]
 Erase first
 [Chinese]
 先擦除
@@ -3317,6 +3942,16 @@ Excitation help
 Excitation: Formula...
 [Chinese]
 激励：公式...
+====================
+[English]
+Expand include files
+[Chinese]
+展开包含文件
+====================
+[English]
+Extend time...
+[Chinese]
+延长时间...
 ====================
 [English]
 Extend-select left
@@ -3384,6 +4019,16 @@ Extract Trajectory as Table
 提取轨迹为表格
 ====================
 [English]
+Extract WordList
+[Chinese]
+提取单词列表
+====================
+[English]
+Extract all Sounds
+[Chinese]
+提取all声音
+====================
+[English]
 Extract all channels
 [Chinese]
 提取所有通道
@@ -3402,6 +4047,11 @@ Extract amplitude tier...
 Extract aspiration amplitude tier
 [Chinese]
 提取送气振幅层
+====================
+[English]
+Extract blue
+[Chinese]
+提取蓝色
 ====================
 [English]
 Extract breathiness amplitude tier
@@ -3459,6 +4109,11 @@ Extract frication bypass tier
 提取摩擦旁路层
 ====================
 [English]
+Extract green
+[Chinese]
+提取绿色
+====================
+[English]
 Extract intensity to objects window
 [Chinese]
 提取音强到对象窗口
@@ -3499,6 +4154,11 @@ Extract open phase tier
 提取开放相位层
 ====================
 [English]
+Extract original sound
+[Chinese]
+提取原始声音
+====================
+[English]
 Extract part -
 [Chinese]
 提取部分-
@@ -3524,9 +4184,24 @@ Extract pitch to objects window:
 提取音高到对象窗口：
 ====================
 [English]
+Extract pulses
+[Chinese]
+提取脉冲
+====================
+[English]
 Extract pulses to objects window:
 [Chinese]
 提取脉冲到对象窗口：
+====================
+[English]
+Extract red
+[Chinese]
+提取红色
+====================
+[English]
+Extract results
+[Chinese]
+提取results
 ====================
 [English]
 Extract right channel
@@ -3594,6 +4269,16 @@ Extract to objects window:
 提取到对象窗口：
 ====================
 [English]
+Extract transparency
+[Chinese]
+提取透明度
+====================
+[English]
+Extract user dictionary
+[Chinese]
+提取userdictionary
+====================
+[English]
 Extract visible formant contour
 [Chinese]
 提取可见共振峰曲线
@@ -3654,6 +4339,11 @@ File too short.
 文件太短。
 ====================
 [English]
+Fill...
+[Chinese]
+填充...
+====================
+[English]
 Filter
 [Chinese]
 滤波
@@ -3704,6 +4394,16 @@ Filter by vocal tract...
 根据声道滤波...
 ====================
 [English]
+Filter with one formant (in-place)...
+[Chinese]
+单共振峰滤波 (就地)...
+====================
+[English]
+Filter with one formant (in-place)... || Filter with one formant (in-line)...
+[Chinese]
+Filter with one 共振峰 (in-place)... || Filter with one 共振峰 (in-line)...
+====================
+[English]
 Filter...
 [Chinese]
 滤波...
@@ -3717,6 +4417,11 @@ Filtering tutorial
 Find
 [Chinese]
 寻找
+====================
+[English]
+Find again
+[Chinese]
+再次查找
 ====================
 [English]
 Find first
@@ -3739,9 +4444,19 @@ First frequency (Hz)
 第一频率 (Hz)
 ====================
 [English]
+First page number
+[Chinese]
+起始页码
+====================
+[English]
 First table
 [Chinese]
 第一表格
+====================
+[English]
+Fixed number of speakers...
+[Chinese]
+固定说话人数量...
 ====================
 [English]
 Fixed time step (s)
@@ -3839,6 +4554,16 @@ Formant settings...
 共振峰设置...
 ====================
 [English]
+Formant tracker
+[Chinese]
+共振峰跟踪器
+====================
+[English]
+Formant: Down to Table
+[Chinese]
+Formant: Down to 表格
+====================
+[English]
 Formant: Formula
 [Chinese]
 共振峰：公式
@@ -3849,6 +4574,16 @@ Formant: Formula (
 共振峰：公式(
 ====================
 [English]
+Formant: Formula (bandwidths)
+[Chinese]
+共振峰：公式 (带宽)
+====================
+[English]
+Formant: Formula (frequencies)
+[Chinese]
+共振峰：公式 (频率)
+====================
+[English]
 Formant: Get bandwidth
 [Chinese]
 共振峰：获取带宽
@@ -3857,6 +4592,56 @@ Formant: Get bandwidth
 Formant: Get bandwidth at time...
 [Chinese]
 Formant：获取指定时间的 bandwidth
+====================
+[English]
+Formant: Get maximum
+[Chinese]
+Formant：获取最大值
+====================
+[English]
+Formant: Get mean
+[Chinese]
+Formant：获取平均值
+====================
+[English]
+Formant: Get minimum
+[Chinese]
+Formant：获取最小值
+====================
+[English]
+Formant: Get number of formants
+[Chinese]
+Formant：获取共振峰数量
+====================
+[English]
+Formant: Get quantile
+[Chinese]
+Formant：获取分位数
+====================
+[English]
+Formant: Get quantile of bandwidth
+[Chinese]
+Formant：获取分位数 of bandwidth
+====================
+[English]
+Formant: Get standard deviation
+[Chinese]
+Formant：获取标准差
+====================
+[English]
+Formant: Get time of maximum
+[Chinese]
+Formant：获取time of 最大值
+====================
+[English]
+Formant: Get time of minimum
+[Chinese]
+Formant：获取time of 最小值
+====================
+[English]
+Formant: Get value
+[Chinese]
+Formant：获取value
 ====================
 [English]
 Formant: List
@@ -3884,9 +4669,34 @@ FormantGrid help
 共振峰网格帮助
 ====================
 [English]
+FormantGrid: Add bandwidth point
+[Chinese]
+共振峰网格: 添加bandwidth point
+====================
+[English]
+FormantGrid: Add formant point
+[Chinese]
+共振峰网格: 添加共振峰 point
+====================
+[English]
 FormantGrid: Draw
 [Chinese]
 共振峰网格：绘制
+====================
+[English]
+FormantGrid: Formula (bandwidths)
+[Chinese]
+共振峰网格: Formula (bandwidths)
+====================
+[English]
+FormantGrid: Formula (frequencies)
+[Chinese]
+共振峰网格: Formula (frequencies)
+====================
+[English]
+FormantGrid: To Formant
+[Chinese]
+共振峰网格：转为Formant
 ====================
 [English]
 FormantTier: Get bandwidth
@@ -3899,6 +4709,11 @@ FormantTier: Get bandwidth at time...
 FormantTier：获取指定时间的 bandwidth
 ====================
 [English]
+FormantTier: Get value
+[Chinese]
+共振峰层：获取value
+====================
+[English]
 Formants
 [Chinese]
 共振峰
@@ -3909,9 +4724,39 @@ Formula (
 公式(
 ====================
 [English]
+Formula (bandwidths)...
+[Chinese]
+公式 (带宽)...
+====================
+[English]
+Formula (blue)...
+[Chinese]
+Formula (蓝色)...
+====================
+[English]
+Formula (frequencies)...
+[Chinese]
+公式 (频率)...
+====================
+[English]
+Formula (green)...
+[Chinese]
+Formula (绿色)...
+====================
+[English]
 Formula (part)...
 [Chinese]
 公式(部分)...
+====================
+[English]
+Formula (red)...
+[Chinese]
+Formula (红色)...
+====================
+[English]
+Formula (transparency)...
+[Chinese]
+Formula (透明度)...
 ====================
 [English]
 Formula...
@@ -3922,6 +4767,11 @@ Formula...
 Formulas tutorial
 [Chinese]
 公式教程
+====================
+[English]
+Forward
+[Chinese]
+前进
 ====================
 [English]
 Fourier
@@ -3949,6 +4799,11 @@ Frequency domain
 频率域
 ====================
 [English]
+Frequency sampling
+[Chinese]
+频率采样
+====================
+[English]
 Frequency shift
 [Chinese]
 频率移动
@@ -3962,6 +4817,31 @@ Frequently asked questions
 Frication bypass
 [Chinese]
 摩擦旁路
+====================
+[English]
+From Cochleagram to Excitation
+[Chinese]
+从耳蜗图到激励
+====================
+[English]
+From Excitation to Formant
+[Chinese]
+从激励到共振峰
+====================
+[English]
+From Formant to Matrix
+[Chinese]
+From Formant to 矩阵
+====================
+[English]
+From end to centre
+[Chinese]
+从末尾到中心
+====================
+[English]
+From start to centre
+[Chinese]
+从开始到中心
 ====================
 [English]
 Functions
@@ -3994,9 +4874,64 @@ Get
 获取
 ====================
 [English]
+Get AmplitudeTier value
+[Chinese]
+获取振幅层 value
+====================
+[English]
+Get DurationTier value
+[Chinese]
+获取时长层 value
+====================
+[English]
+Get IntensityTier value
+[Chinese]
+获取音强层 value
+====================
+[English]
+Get RealTier value
+[Chinese]
+获取实数层 value
+====================
+[English]
+Get Whisper model name
+[Chinese]
+获取Whisper model name
+====================
+[English]
 Get absolute extremum...
 [Chinese]
 获取绝对极值...
+====================
+[English]
+Get all candidates in frame...
+[Chinese]
+获取all candidates in frame...
+====================
+[English]
+Get all values
+[Chinese]
+获取all values
+====================
+[English]
+Get all values in column
+[Chinese]
+获取all values in column
+====================
+[English]
+Get all values in column...
+[Chinese]
+获取all values in column...
+====================
+[English]
+Get all values in row
+[Chinese]
+获取all values in row
+====================
+[English]
+Get all values in row...
+[Chinese]
+获取all values in row...
 ====================
 [English]
 Get amplitude at time...
@@ -4019,6 +4954,26 @@ Get average...
 获取平均...
 ====================
 [English]
+Get band density difference...
+[Chinese]
+获取band density difference...
+====================
+[English]
+Get band density...
+[Chinese]
+获取band density...
+====================
+[English]
+Get band energy difference...
+[Chinese]
+获取band energy difference...
+====================
+[English]
+Get band energy...
+[Chinese]
+获取band energy...
+====================
+[English]
 Get bandwidth at time...
 [Chinese]
 获取指定时间的 bandwidth
@@ -4034,9 +4989,34 @@ Get begin of selection
 获取选区起点
 ====================
 [English]
+Get bin number from frequency... || Get band from frequency...
+[Chinese]
+获取bin number from frequency... || 获取band from frequency...
+====================
+[English]
+Get bin number from frequency... || Get bin from frequency...
+[Chinese]
+获取bin number from frequency... || 获取bin from frequency...
+====================
+[English]
+Get bin width
+[Chinese]
+获取bin width
+====================
+[English]
+Get bin width || Get band width
+[Chinese]
+获取bin width || 获取band width
+====================
+[English]
 Get breathiness amplitude at time...
 [Chinese]
 获取指定时间的 breathiness amplitude
+====================
+[English]
+Get central moment...
+[Chinese]
+获取central moment...
 ====================
 [English]
 Get centre of gravity...
@@ -4052,6 +5032,11 @@ Get centre points...
 Get collision phase at time...
 [Chinese]
 获取指定时间的 collision phase
+====================
+[English]
+Get column distance
+[Chinese]
+获取column distance
 ====================
 [English]
 Get column label
@@ -4134,6 +5119,11 @@ Get end time of interval... || Get end point...
 获取区间结束时间... || 获取结束点...
 ====================
 [English]
+Get end time || Get finishing time
+[Chinese]
+获取结束时间 || 获取结束时间
+====================
+[English]
 Get end time...
 [Chinese]
 获取结束时间...
@@ -4147,6 +5137,11 @@ Get energy in air
 Get energy...
 [Chinese]
 获取能量...
+====================
+[English]
+Get entropy
+[Chinese]
+获取entropy
 ====================
 [English]
 Get first bandwidth
@@ -4184,9 +5179,29 @@ Get fourth formant
 获取第四共振峰
 ====================
 [English]
+Get frame number from time
+[Chinese]
+获取frame number from time
+====================
+[English]
+Get frame number from time... || Get frame from time...
+[Chinese]
+获取frame number from time... || 获取frame from time...
+====================
+[English]
 Get frequency at frequency cursor
 [Chinese]
 获取频率光标处的频率
+====================
+[English]
+Get frequency from bin number... || Get frequency from band...
+[Chinese]
+获取frequency from bin number... || 获取frequency from band...
+====================
+[English]
+Get frequency from bin number... || Get frequency from bin...
+[Chinese]
+获取frequency from bin number... || 获取frequency from bin...
 ====================
 [English]
 Get frequency in Bark...
@@ -4197,6 +5212,21 @@ Get frequency in Bark...
 Get frequency in mel...
 [Chinese]
 获取频率 in mel...
+====================
+[English]
+Get frequency of maximum...
+[Chinese]
+获取frequency of maximum...
+====================
+[English]
+Get frequency of minimum...
+[Chinese]
+获取frequency of minimum...
+====================
+[English]
+Get frequency of nearest maximum...
+[Chinese]
+获取frequency of nearest maximum...
 ====================
 [English]
 Get frequency of row
@@ -4219,14 +5249,44 @@ Get gain in frame...
 获取增益 in 帧...
 ====================
 [English]
+Get high index
+[Chinese]
+获取high index
+====================
+[English]
 Get high index from time...
 [Chinese]
 从时间获取高层索引...
 ====================
 [English]
+Get high index...
+[Chinese]
+获取high index...
+====================
+[English]
 Get high interval at time...
 [Chinese]
 获取指定时间的 high interval
+====================
+[English]
+Get highest frequency
+[Chinese]
+获取最高频率
+====================
+[English]
+Get highest x
+[Chinese]
+获取highest x
+====================
+[English]
+Get highest y
+[Chinese]
+获取highest y
+====================
+[English]
+Get imaginary value in bin...
+[Chinese]
+获取imaginary value in bin...
 ====================
 [English]
 Get index from time...
@@ -4264,6 +5324,36 @@ Get interval...
 获取区间...
 ====================
 [English]
+Get jitter (ddp)...
+[Chinese]
+获取基频微扰 (jitter) (ddp)...
+====================
+[English]
+Get jitter (local)...
+[Chinese]
+获取基频微扰 (jitter) (local)...
+====================
+[English]
+Get jitter (local, absolute)...
+[Chinese]
+获取基频微扰 (jitter) (local, absolute)...
+====================
+[English]
+Get jitter (ppq5)...
+[Chinese]
+获取基频微扰 (jitter) (ppq5)...
+====================
+[English]
+Get jitter (rap)...
+[Chinese]
+获取基频微扰 (jitter) (rap)...
+====================
+[English]
+Get kurtosis...
+[Chinese]
+获取kurtosis...
+====================
+[English]
 Get label of interval
 [Chinese]
 获取区间标签
@@ -4274,6 +5364,11 @@ Get label of interval...
 获取区间标签...
 ====================
 [English]
+Get label of point
+[Chinese]
+获取label of point
+====================
+[English]
 Get label of point...
 [Chinese]
 获取点的标签...
@@ -4282,6 +5377,11 @@ Get label of point...
 Get label...
 [Chinese]
 获取标签...
+====================
+[English]
+Get language name
+[Chinese]
+获取language name
 ====================
 [English]
 Get length
@@ -4304,9 +5404,29 @@ Get length of visible part
 获取可见部分长度
 ====================
 [English]
+Get local peak height...
+[Chinese]
+获取local peak height...
+====================
+[English]
+Get loudness
+[Chinese]
+获取loudness
+====================
+[English]
+Get low index
+[Chinese]
+获取low index
+====================
+[English]
 Get low index from time...
 [Chinese]
 从时间获取低层索引...
+====================
+[English]
+Get low index...
+[Chinese]
+获取low index...
 ====================
 [English]
 Get low interval at time...
@@ -4314,9 +5434,34 @@ Get low interval at time...
 获取指定时间的 low interval
 ====================
 [English]
+Get lowest frequency
+[Chinese]
+获取最低频率
+====================
+[English]
+Get lowest x
+[Chinese]
+获取lowest x
+====================
+[English]
+Get lowest y
+[Chinese]
+获取lowest y
+====================
+[English]
+Get maximum
+[Chinese]
+获取maximum
+====================
+[English]
 Get maximum intensity
 [Chinese]
 获取最大音强
+====================
+[English]
+Get maximum number of formants
+[Chinese]
+获取maximum number of formants
 ====================
 [English]
 Get maximum pitch
@@ -4329,14 +5474,44 @@ Get maximum...
 获取最大值...
 ====================
 [English]
+Get mean (curve)...
+[Chinese]
+获取mean (curve)...
+====================
+[English]
+Get mean (points)...
+[Chinese]
+获取mean (points)...
+====================
+[English]
+Get mean absolute slope...
+[Chinese]
+获取mean absolute slope...
+====================
+[English]
+Get mean period...
+[Chinese]
+获取mean period...
+====================
+[English]
 Get mean...
 [Chinese]
 获取均值...
 ====================
 [English]
+Get minimum
+[Chinese]
+获取minimum
+====================
+[English]
 Get minimum intensity
 [Chinese]
 获取最小音强
+====================
+[English]
+Get minimum number of formants
+[Chinese]
+获取minimum number of formants
 ====================
 [English]
 Get minimum pitch
@@ -4349,9 +5524,19 @@ Get minimum...
 获取最小值...
 ====================
 [English]
+Get nearest index
+[Chinese]
+获取nearest index
+====================
+[English]
 Get nearest index from time...
 [Chinese]
 从时间获取最近索引...
+====================
+[English]
+Get nearest index...
+[Chinese]
+获取nearest index...
 ====================
 [English]
 Get nearest level crossing...
@@ -4364,9 +5549,34 @@ Get nearest zero crossing...
 获取最近的零交叉点...
 ====================
 [English]
+Get number of bins
+[Chinese]
+获取number of bins
+====================
+[English]
+Get number of bins || Get number of bands
+[Chinese]
+获取number of bins || 获取number of bands
+====================
+[English]
 Get number of channels
 [Chinese]
 获取通道数
+====================
+[English]
+Get number of columns
+[Chinese]
+获取列数
+====================
+[English]
+Get number of formants...
+[Chinese]
+获取number of formants...
+====================
+[English]
+Get number of frames
+[Chinese]
+获取number of frames
 ====================
 [English]
 Get number of intervals
@@ -4379,6 +5589,11 @@ Get number of intervals...
 获取区间数量...
 ====================
 [English]
+Get number of periods...
+[Chinese]
+获取number of periods...
+====================
+[English]
 Get number of points
 [Chinese]
 获取点数量
@@ -4389,14 +5604,29 @@ Get number of points...
 获取点数量...
 ====================
 [English]
+Get number of rows
+[Chinese]
+获取行数
+====================
+[English]
 Get number of samples
 [Chinese]
 获取采样数
 ====================
 [English]
+Get number of strings
+[Chinese]
+获取number of strings
+====================
+[English]
 Get number of tiers
 [Chinese]
 获取层数量
+====================
+[English]
+Get number of trials
+[Chinese]
+获取number of trials
 ====================
 [English]
 Get open phase at time...
@@ -4414,9 +5644,24 @@ Get pitch at time...
 获取指定时间的 pitch
 ====================
 [English]
+Get points
+[Chinese]
+获取points
+====================
+[English]
+Get points (followed)
+[Chinese]
+获取points (followed)
+====================
+[English]
 Get points (followed)...
 [Chinese]
 获取后面的点...
+====================
+[English]
+Get points (preceded)
+[Chinese]
+获取points (preceded)
 ====================
 [English]
 Get points (preceded)...
@@ -4429,6 +5674,11 @@ Get points...
 获取点...
 ====================
 [English]
+Get power at...
+[Chinese]
+获取power at...
+====================
+[English]
 Get power in air
 [Chinese]
 获取空气中的功率
@@ -4439,9 +5689,44 @@ Get power...
 获取功率...
 ====================
 [English]
+Get quantile of bandwidth...
+[Chinese]
+获取quantile of bandwidth...
+====================
+[English]
+Get quantile...
+[Chinese]
+获取quantile...
+====================
+[English]
+Get real value in bin...
+[Chinese]
+获取real value in bin...
+====================
+[English]
+Get response...
+[Chinese]
+获取response...
+====================
+[English]
+Get resynthesis (LPC)
+[Chinese]
+获取resynthesis (LPC)
+====================
+[English]
+Get resynthesis (overlap-add) || Get resynthesis (PSOLA)
+[Chinese]
+获取resynthesis (overlap-add) || 获取resynthesis (PSOLA)
+====================
+[English]
 Get root-mean-square...
 [Chinese]
 获取均方根 (RMS)...
+====================
+[English]
+Get row distance
+[Chinese]
+获取row distance
 ====================
 [English]
 Get row label
@@ -4457,6 +5742,11 @@ Get row label...
 Get sample duration
 [Chinese]
 获取采样时长
+====================
+[English]
+Get sample number from time
+[Chinese]
+获取sample number from time
 ====================
 [English]
 Get sample number from time...
@@ -4514,9 +5804,54 @@ Get selection length
 获取选择长度
 ====================
 [English]
+Get shimmer (apq11)...
+[Chinese]
+获取振幅微扰 (shimmer) (apq11)...
+====================
+[English]
+Get shimmer (apq3)...
+[Chinese]
+获取振幅微扰 (shimmer) (apq3)...
+====================
+[English]
+Get shimmer (apq5)...
+[Chinese]
+获取振幅微扰 (shimmer) (apq5)...
+====================
+[English]
+Get shimmer (dda)...
+[Chinese]
+获取振幅微扰 (shimmer) (dda)...
+====================
+[English]
+Get shimmer (local)...
+[Chinese]
+获取振幅微扰 (shimmer) (local)...
+====================
+[English]
+Get shimmer (local_dB)...
+[Chinese]
+Get 振幅微扰 (shimmer) (local_dB)...
+====================
+[English]
+Get skewness...
+[Chinese]
+获取skewness...
+====================
+[English]
+Get slope without octave jumps
+[Chinese]
+获取slope without octave jumps
+====================
+[English]
 Get slope...
 [Chinese]
 获取斜率...
+====================
+[English]
+Get sound pressure level of nearest maximum...
+[Chinese]
+获取sound pressure level of nearest maximum...
 ====================
 [English]
 Get spectral power at cursor cross
@@ -4527,6 +5862,21 @@ Get spectral power at cursor cross
 Get spectral tilt at time...
 [Chinese]
 获取指定时间的 spectral tilt
+====================
+[English]
+Get spreading...
+[Chinese]
+获取spreading...
+====================
+[English]
+Get standard deviation (curve)...
+[Chinese]
+获取standard deviation (curve)...
+====================
+[English]
+Get standard deviation (points)...
+[Chinese]
+获取standard deviation (points)...
 ====================
 [English]
 Get standard deviation...
@@ -4574,6 +5924,11 @@ Get start time of interval... || Get starting point... || Get start point...
 获取区间起始时间... || 获取起始点... || 获取起始点...
 ====================
 [English]
+Get start time || Get starting time
+[Chinese]
+获取开始时间 || 获取开始时间
+====================
+[English]
 Get start time...
 [Chinese]
 获取开始时间...
@@ -4597,6 +5952,41 @@ Get starting point...
 Get starting points...
 [Chinese]
 获取起点...
+====================
+[English]
+Get stdev period...
+[Chinese]
+获取stdev period...
+====================
+[English]
+Get stimulus...
+[Chinese]
+获取stimulus...
+====================
+[English]
+Get string
+[Chinese]
+获取string
+====================
+[English]
+Get string...
+[Chinese]
+获取string...
+====================
+[English]
+Get sum
+[Chinese]
+获取sum
+====================
+[English]
+Get target duration
+[Chinese]
+获取target duration
+====================
+[English]
+Get target duration...
+[Chinese]
+获取target duration...
 ====================
 [English]
 Get third bandwidth
@@ -4629,9 +6019,24 @@ Get time
 获取时间
 ====================
 [English]
+Get time from frame number
+[Chinese]
+获取time from frame number
+====================
+[English]
+Get time from frame number... || Get time from frame...
+[Chinese]
+获取time from frame number... || 获取time from frame...
+====================
+[English]
 Get time from index...
 [Chinese]
 通过索引获取时间...
+====================
+[English]
+Get time from sample number
+[Chinese]
+获取time from sample number
 ====================
 [English]
 Get time from sample number...
@@ -4664,9 +6069,29 @@ Get time of point...
 获取点的时间...
 ====================
 [English]
+Get time step || Get frame length || Get frame duration
+[Chinese]
+获取time step || 获取frame length || 获取frame duration
+====================
+[English]
 Get total duration of intervals where...
 [Chinese]
 获取区间总时长，当...
+====================
+[English]
+Get total duration || Get duration
+[Chinese]
+获取总时长 || 获取时长
+====================
+[English]
+Get value at frequency...
+[Chinese]
+获取value at frequency...
+====================
+[English]
+Get value at index...
+[Chinese]
+获取value at index...
 ====================
 [English]
 Get value at sample number...
@@ -4674,9 +6099,44 @@ Get value at sample number...
 获取指定采样点号的数值...
 ====================
 [English]
+Get value at sample number... || Get value at index...
+[Chinese]
+获取value at sample number... || 获取value at index...
+====================
+[English]
 Get value at time...
 [Chinese]
 获取指定时间的 value
+====================
+[English]
+Get value at xy...
+[Chinese]
+获取value at xy...
+====================
+[English]
+Get value in bin
+[Chinese]
+获取value in bin
+====================
+[English]
+Get value in bin... || Get value in band...
+[Chinese]
+获取value in bin... || 获取value in band...
+====================
+[English]
+Get value in cell...
+[Chinese]
+获取value in cell...
+====================
+[English]
+Get value in frame
+[Chinese]
+获取value in frame
+====================
+[English]
+Get value in frame...
+[Chinese]
+获取value in frame...
 ====================
 [English]
 Get voicing amplitude at time...
@@ -4714,6 +6174,21 @@ Get y time...
 获取 y 时间...
 ====================
 [English]
+Get zeroes
+[Chinese]
+获取zeroes
+====================
+[English]
+Go to
+[Chinese]
+转到
+====================
+[English]
+Go to line...
+[Chinese]
+转到行...
+====================
+[English]
 Go to manual page
 [Chinese]
 转到手册页
@@ -4749,6 +6224,16 @@ Group...
 分组...
 ====================
 [English]
+Hack
+[Chinese]
+Hack (临时补丁)
+====================
+[English]
+Hack -
+[Chinese]
+Hack (临时补丁) -
+====================
+[English]
 Hamming (raised sine-squared)
 [Chinese]
 海明窗 (Hamming/raised sine-squared)
@@ -4772,6 +6257,46 @@ Harmonicity help
 Harmonicity: Formula...
 [Chinese]
 谐噪比：公式...
+====================
+[English]
+Harmonicity: Get maximum
+[Chinese]
+Harmonicity：获取最大值
+====================
+[English]
+Harmonicity: Get mean
+[Chinese]
+Harmonicity：获取平均值
+====================
+[English]
+Harmonicity: Get minimum
+[Chinese]
+Harmonicity：获取最小值
+====================
+[English]
+Harmonicity: Get standard deviation
+[Chinese]
+Harmonicity：获取标准差
+====================
+[English]
+Harmonicity: Get time of maximum
+[Chinese]
+Harmonicity：获取time of 最大值
+====================
+[English]
+Harmonicity: Get time of minimum
+[Chinese]
+Harmonicity：获取time of 最小值
+====================
+[English]
+Harmonicity: Get value
+[Chinese]
+Harmonicity：获取value
+====================
+[English]
+Has word...
+[Chinese]
+包含单词...
 ====================
 [English]
 Height
@@ -4829,6 +6354,21 @@ Hint: to label or segment an existing Sound,
 提示：若要对现有声音进行标注或切分，
 ====================
 [English]
+Home
+[Chinese]
+主页
+====================
+[English]
+Horizontal mm to world coordinates... || Horizontal mm to wc...
+[Chinese]
+水平毫米转世界坐标... || 水平毫米转 wc...
+====================
+[English]
+Horizontal world coordinates to mm... || Horizontal wc to mm...
+[Chinese]
+水平世界坐标转毫米... || 水平 wc 转毫米...
+====================
+[English]
 How to choose a pitch analysis method
 [Chinese]
 如何选择音高分析方法
@@ -4852,6 +6392,11 @@ How to preprocess the sound...
 How to view...
 [Chinese]
 显示方式...
+====================
+[English]
+Hum
+[Chinese]
+蜂鸣声
 ====================
 [English]
 ISpline help
@@ -4879,6 +6424,16 @@ In-place filter
 就地滤波
 ====================
 [English]
+In-place filters
+[Chinese]
+就地滤波
+====================
+[English]
+Include diarization
+[Chinese]
+包含说话人分离
+====================
+[English]
 Include empty intervals
 [Chinese]
 包含空区间
@@ -4889,9 +6444,19 @@ Include line number
 包含行号
 ====================
 [English]
+Include phonemes
+[Chinese]
+包含音素
+====================
+[English]
 Include tier names
 [Chinese]
 包含层名称
+====================
+[English]
+Include words
+[Chinese]
+包含单词
 ====================
 [English]
 Info
@@ -4939,6 +6504,11 @@ Insert point...
 插入点...
 ====================
 [English]
+Insert string...
+[Chinese]
+插入字符串...
+====================
+[English]
 Inspect
 [Chinese]
 检查
@@ -4984,6 +6554,46 @@ Intensity settings...
 音强设置...
 ====================
 [English]
+Intensity: Get maximum
+[Chinese]
+Intensity：获取最大值
+====================
+[English]
+Intensity: Get mean
+[Chinese]
+Intensity：获取平均值
+====================
+[English]
+Intensity: Get minimum
+[Chinese]
+Intensity：获取最小值
+====================
+[English]
+Intensity: Get quantile
+[Chinese]
+Intensity：获取分位数
+====================
+[English]
+Intensity: Get standard deviation
+[Chinese]
+Intensity：获取标准差
+====================
+[English]
+Intensity: Get time of maximum
+[Chinese]
+Intensity：获取time of 最大值
+====================
+[English]
+Intensity: Get time of minimum
+[Chinese]
+Intensity：获取time of 最小值
+====================
+[English]
+Intensity: Get value
+[Chinese]
+Intensity：获取value
+====================
+[English]
 IntensityTier help
 [Chinese]
 音强层帮助
@@ -4999,9 +6609,24 @@ IntensityTier: Formula...
 音强层：公式...
 ====================
 [English]
+Internal
+[Chinese]
+内部
+====================
+[English]
 Interoperability
 [Chinese]
 互操作性
+====================
+[English]
+Interpolate
+[Chinese]
+插值
+====================
+[English]
+Interpolate quadratically...
+[Chinese]
+二次插值...
 ====================
 [English]
 Interrupt playing
@@ -5009,9 +6634,19 @@ Interrupt playing
 中断播放
 ====================
 [English]
+Intersection
+[Chinese]
+交集
+====================
+[English]
 Interval
 [Chinese]
 区间
+====================
+[English]
+Interval number
+[Chinese]
+区间号
 ====================
 [English]
 Interval:
@@ -5019,9 +6654,59 @@ Interval:
 区间：
 ====================
 [English]
+IntervalTier help
+[Chinese]
+区间层帮助
+====================
+[English]
+IntervalTier: Down to TableOfReal
+[Chinese]
+IntervalTier: Down to 实数表
+====================
+[English]
+IntervalTier: Get centre points
+[Chinese]
+IntervalTier：获取centre points
+====================
+[English]
+IntervalTier: Get end points
+[Chinese]
+IntervalTier：获取end points
+====================
+[English]
+IntervalTier: Get starting points
+[Chinese]
+IntervalTier：获取starting points
+====================
+[English]
+Into TextGrid
+[Chinese]
+转为 TextGrid
+====================
+[English]
 Intro
 [Chinese]
 简介
+====================
+[English]
+Intro 3.2. Configuring the spectrogram
+[Chinese]
+Intro 3.2. 配置声谱图
+====================
+[English]
+Intro 4.2. Configuring the pitch contour
+[Chinese]
+Intro 4.2. 配置音高曲线
+====================
+[English]
+Intro 5.2. Configuring the formant contours
+[Chinese]
+Intro 5.2. 配置共振峰曲线
+====================
+[English]
+Intro 6.2. Configuring the intensity contour
+[Chinese]
+Intro 6.2. 配置音强曲线
 ====================
 [English]
 Is interval tier...
@@ -5029,9 +6714,34 @@ Is interval tier...
 是否为区间层？...
 ====================
 [English]
+Is word allowed...
+[Chinese]
+单词是否被允许...
+====================
+[English]
+Is word allowed?
+[Chinese]
+单词是否被允许？
+====================
+[English]
+Kill octave jumps
+[Chinese]
+消除倍频程跳变
+====================
+[English]
 KlattGrid help
 [Chinese]
 KlattGrid 帮助
+====================
+[English]
+LPC -- Pitch  ("LPC pitch manipulation")
+[Chinese]
+LPC -- 音高 ("LPC 音高操控")
+====================
+[English]
+LPC smoothing...
+[Chinese]
+LPC 平滑...
 ====================
 [English]
 Label
@@ -5049,9 +6759,49 @@ Labels
 标签
 ====================
 [English]
+Language
+[Chinese]
+语言
+====================
+[English]
+Language settings
+[Chinese]
+语言设置
+====================
+[English]
+Language settings (语言设置)
+[Chinese]
+语言设置 (Language settings)
+====================
+[English]
+Language settings...
+[Chinese]
+语言设置...
+====================
+[English]
+Language settings... || Language preferences...
+[Chinese]
+语言设置... || 语言偏好设置...
+====================
+[English]
+Learn
+[Chinese]
+学习
+====================
+[English]
 Left
 [Chinese]
 左
+====================
+[English]
+Left or inside footer
+[Chinese]
+左页脚或内侧页脚
+====================
+[English]
+Left or inside header
+[Chinese]
+左页眉或内侧页眉
 ====================
 [English]
 LegendreSeries help
@@ -5067,6 +6817,11 @@ LegendreSeries(x) = c[1] P[0](x) + c[2] P[1](x) + ... c[n+1] P[n](x)
 Lengthen (overlap-add)...
 [Chinese]
 拉长 (重叠相加)...
+====================
+[English]
+Lengthen (overlap-add)... || Lengthen (PSOLA)...
+[Chinese]
+拉长 (重叠相加)... || 拉长 (PSOLA)...
 ====================
 [English]
 License
@@ -5087,6 +6842,26 @@ Line width...
 Linear
 [Chinese]
 线性
+====================
+[English]
+Links to this page
+[Chinese]
+指向此页面的链接
+====================
+[English]
+List all frame times
+[Chinese]
+列出所有帧时间
+====================
+[English]
+List all sample times || Get sample times
+[Chinese]
+列出所有采样时间 || 获取采样时间
+====================
+[English]
+List all strings
+[Chinese]
+列出所有字符串
 ====================
 [English]
 List formant slope...
@@ -5114,6 +6889,16 @@ List values
 列表值
 ====================
 [English]
+List values at times...
+[Chinese]
+列出values at times...
+====================
+[English]
+List values in all frames...
+[Chinese]
+列出values in all frames...
+====================
+[English]
 List...
 [Chinese]
 列表...
@@ -5127,6 +6912,11 @@ Log 1
 Log 2
 [Chinese]
 记录 2
+====================
+[English]
+Log files
+[Chinese]
+记录文件
 ====================
 [English]
 Log script 3 (...)
@@ -5154,6 +6944,26 @@ Logarithmic marks
 对数刻度标记
 ====================
 [English]
+Logarithmic marks bottom...
+[Chinese]
+底部对数标记...
+====================
+[English]
+Logarithmic marks left...
+[Chinese]
+左侧对数标记...
+====================
+[English]
+Logarithmic marks right...
+[Chinese]
+右侧对数标记...
+====================
+[English]
+Logarithmic marks top...
+[Chinese]
+顶部对数标记...
+====================
+[English]
 LongSound help
 [Chinese]
 LongSound 帮助
@@ -5162,6 +6972,11 @@ LongSound 帮助
 LongSound preferences...
 [Chinese]
 长音频偏好设置...
+====================
+[English]
+LongSound settings
+[Chinese]
+长音频设置
 ====================
 [English]
 LongSound settings...
@@ -5174,6 +6989,36 @@ LongSound settings... || LongSound preferences...
 长音频设置... || 长音频偏好设置...
 ====================
 [English]
+LongSound: Extract part
+[Chinese]
+长音频：提取part
+====================
+[English]
+LongSound: Get sample index from time
+[Chinese]
+LongSound：获取sample index from time
+====================
+[English]
+LongSound: Get time from sample index
+[Chinese]
+LongSound：获取time from sample index
+====================
+[English]
+LongSound: Play part
+[Chinese]
+长音频：播放part
+====================
+[English]
+LongSound: Save part as audio file
+[Chinese]
+长音频：Save part as audio file
+====================
+[English]
+LongSound: To TextGrid...
+[Chinese]
+LongSound：转为TextGrid...
+====================
+[English]
 LongSoundEditor help
 [Chinese]
 LongSoundEditor 帮助
@@ -5182,6 +7027,86 @@ LongSoundEditor 帮助
 Longest analysis (s)
 [Chinese]
 最长分析时间 (秒)
+====================
+[English]
+Ltas Formula
+[Chinese]
+Ltas 公式
+====================
+[English]
+Ltas help
+[Chinese]
+Ltas 帮助
+====================
+[English]
+Ltas: Compute trend line
+[Chinese]
+Ltas：Compute trend line
+====================
+[English]
+Ltas: Draw
+[Chinese]
+Ltas：Draw
+====================
+[English]
+Ltas: Get band from frequency
+[Chinese]
+Ltas：获取band from frequency
+====================
+[English]
+Ltas: Get frequency from bin number
+[Chinese]
+Ltas：获取frequency from bin number
+====================
+[English]
+Ltas: Get frequency of maximum
+[Chinese]
+Ltas：获取frequency of 最大值
+====================
+[English]
+Ltas: Get frequency of minimum
+[Chinese]
+Ltas：获取frequency of 最小值
+====================
+[English]
+Ltas: Get local peak height
+[Chinese]
+Ltas：获取local peak height
+====================
+[English]
+Ltas: Get maximum
+[Chinese]
+Ltas：获取最大值
+====================
+[English]
+Ltas: Get mean
+[Chinese]
+Ltas：获取平均值
+====================
+[English]
+Ltas: Get minimum
+[Chinese]
+Ltas：获取最小值
+====================
+[English]
+Ltas: Get slope
+[Chinese]
+Ltas：获取slope
+====================
+[English]
+Ltas: Get standard deviation
+[Chinese]
+Ltas：获取标准差
+====================
+[English]
+Ltas: Get value
+[Chinese]
+Ltas：获取value
+====================
+[English]
+Ltas: Subtract trend line
+[Chinese]
+Ltas：Subtract trend line
 ====================
 [English]
 MSpline help
@@ -5204,6 +7129,16 @@ Manipulate -
 操作 -
 ====================
 [English]
+Manipulation help
+[Chinese]
+操纵对象帮助
+====================
+[English]
+Manual help
+[Chinese]
+手册帮助
+====================
+[English]
 Margins
 [Chinese]
 页边距
@@ -5224,9 +7159,19 @@ Marks bottom every...
 底部每隔...标出刻度...
 ====================
 [English]
+Marks bottom...
+[Chinese]
+底部标记...
+====================
+[English]
 Marks left every...
 [Chinese]
 左侧每隔...标出刻度...
+====================
+[English]
+Marks left...
+[Chinese]
+左侧标记...
 ====================
 [English]
 Marks right every...
@@ -5234,9 +7179,19 @@ Marks right every...
 右侧每隔...标出刻度...
 ====================
 [English]
+Marks right...
+[Chinese]
+右侧标记...
+====================
+[English]
 Marks top every...
 [Chinese]
 顶部每隔...标出刻度...
+====================
+[English]
+Marks top...
+[Chinese]
+顶部标记...
 ====================
 [English]
 Maroon
@@ -5264,6 +7219,16 @@ Matrix: Formula...
 矩阵：公式...
 ====================
 [English]
+Matrix: Get value at xy
+[Chinese]
+矩阵：获取value at xy
+====================
+[English]
+Matrix: Get value in cell
+[Chinese]
+矩阵：获取value in cell
+====================
+[English]
 Matrix: Get x of column
 [Chinese]
 Matrix：获取列的 x 坐标
@@ -5274,9 +7239,49 @@ Matrix: Get y of row
 Matrix：获取行的 y 坐标
 ====================
 [English]
+Matrix: Paint 3-D surface plot
+[Chinese]
+矩阵: Paint 3-D surface plot
+====================
+[English]
+Matrix: Paint altitude contours with greys
+[Chinese]
+矩阵: Paint 等高线 (海拔) 等高线/曲线 with greys
+====================
+[English]
+Matrix: Paint cells with greys
+[Chinese]
+矩阵: Paint cells with greys
+====================
+[English]
+Matrix: Paint grey image
+[Chinese]
+矩阵: Paint grey image
+====================
+[English]
+Matrix: Power...
+[Chinese]
+矩阵: Power...
+====================
+[English]
 Matrix: Scatter plot
 [Chinese]
 矩阵：散点图
+====================
+[English]
+Matrix: Set value
+[Chinese]
+矩阵: Set value
+====================
+[English]
+Matrix: To RealTier
+[Chinese]
+矩阵：转为实数层
+====================
+[English]
+Matrix: To Sound (mono)
+[Chinese]
+矩阵：转为声音 (mono)
 ====================
 [English]
 Max. number of candidates
@@ -5329,6 +7334,16 @@ Mel
 美尔
 ====================
 [English]
+Merge
+[Chinese]
+合并
+====================
+[English]
+Merge (append rows)
+[Chinese]
+合并 (追加行)
+====================
+[English]
 Merge...
 [Chinese]
 合并...
@@ -5339,6 +7354,31 @@ Method
 方法
 ====================
 [English]
+Middle footer
+[Chinese]
+中间页脚
+====================
+[English]
+Middle header
+[Chinese]
+中间页眉
+====================
+[English]
+Min. non-speech interval (s)
+[Chinese]
+最小非言语区间长度 (秒)
+====================
+[English]
+Min. speech interval (s)
+[Chinese]
+最小言语区间长度 (秒)
+====================
+[English]
+Minimize   
+[Chinese]
+最小化   
+====================
+[English]
 Minimum number of frames per thread
 [Chinese]
 每个线程的最小帧数
@@ -5347,6 +7387,11 @@ Minimum number of frames per thread
 Minimum:
 [Chinese]
 最小值：
+====================
+[English]
+Mirror even/odd headers
+[Chinese]
+镜像奇偶页眉
 ====================
 [English]
 MixingMatrix
@@ -5377,6 +7422,16 @@ Modify Sound
 Modify TextGrid
 [Chinese]
 修改 TextGrid
+====================
+[English]
+Modify interval tier
+[Chinese]
+修改区间层
+====================
+[English]
+Modify point tier
+[Chinese]
+修改点层
 ====================
 [English]
 Modify sound:
@@ -5504,6 +7559,11 @@ Move start of selection to nearest zero crossing
 移动选区起点到最近的零交叉点
 ====================
 [English]
+Movie: Paint one image
+[Chinese]
+电影：绘制单帧图像
+====================
+[English]
 Multidimensional scaling
 [Chinese]
 多维标度分析
@@ -5517,6 +7577,11 @@ Multidimensional scaling tutorial
 Multiply by window...
 [Chinese]
 乘窗...
+====================
+[English]
+Multiply frequencies...
+[Chinese]
+乘频率...
 ====================
 [English]
 Multiply...
@@ -5589,6 +7654,21 @@ New name
 新名称
 ====================
 [English]
+Next not allowed word...
+[Chinese]
+下一个不允许的单词...
+====================
+[English]
+Next not allowed word?
+[Chinese]
+下一个不允许的单词？
+====================
+[English]
+Next page
+[Chinese]
+下一页
+====================
+[English]
 No channel
 [Chinese]
 无通道
@@ -5637,6 +7717,11 @@ No text selected.
 No tier
 [Chinese]
 无层
+====================
+[English]
+Non-speech interval label
+[Chinese]
+非言语区间标签
 ====================
 [English]
 Note that you can include many special functions in your formula,
@@ -5709,6 +7794,11 @@ Objects window
 对象窗口
 ====================
 [English]
+Objects window help
+[Chinese]
+对象窗口帮助
+====================
+[English]
 Objects:
 [Chinese]
 对象：
@@ -5732,6 +7822,26 @@ Olive
 One logarithmic mark
 [Chinese]
 单个对数刻度标记
+====================
+[English]
+One logarithmic mark bottom...
+[Chinese]
+底部单个对数标记...
+====================
+[English]
+One logarithmic mark left...
+[Chinese]
+左侧单个对数标记...
+====================
+[English]
+One logarithmic mark right...
+[Chinese]
+右侧单个对数标记...
+====================
+[English]
+One logarithmic mark top...
+[Chinese]
+顶部单个对数标记...
 ====================
 [English]
 One mark bottom...
@@ -5789,6 +7899,11 @@ Open long sound file...
 打开长音频文件...
 ====================
 [English]
+Open movie file...
+[Chinese]
+打开电影文件...
+====================
+[English]
 Open...
 [Chinese]
 打开...
@@ -5804,6 +7919,46 @@ Override sampling frequency...
 覆盖采样频率...
 ====================
 [English]
+Override sampling frequency... || Override sample rate...
+[Chinese]
+覆盖采样频率... || 覆盖采样率...
+====================
+[English]
+Padding around speech segments (s)
+[Chinese]
+语音分段留白时长 (秒)
+====================
+[English]
+Page
+[Chinese]
+页面
+====================
+[English]
+Page down
+[Chinese]
+向下翻页
+====================
+[English]
+Page setup...
+[Chinese]
+页面设置...
+====================
+[English]
+Page up
+[Chinese]
+向上翻页
+====================
+[English]
+Paint Cochleagram
+[Chinese]
+绘制耳蜗图
+====================
+[English]
+Paint cells...
+[Chinese]
+绘制单元格...
+====================
+[English]
 Paint circle (mm)...
 [Chinese]
 填充圆形 (毫米)...
@@ -5812,6 +7967,16 @@ Paint circle (mm)...
 Paint circle...
 [Chinese]
 填充圆形...
+====================
+[English]
+Paint circles...
+[Chinese]
+绘制圆圈...
+====================
+[English]
+Paint contours...
+[Chinese]
+绘制曲线...
 ====================
 [English]
 Paint ellipse...
@@ -5824,6 +7989,16 @@ Paint enclosed...
 对闭合区域着色...
 ====================
 [English]
+Paint image...
+[Chinese]
+绘制图像...
+====================
+[English]
+Paint one image...
+[Chinese]
+绘制单帧图像...
+====================
+[English]
 Paint rectangle...
 [Chinese]
 填充矩形...
@@ -5832,6 +8007,11 @@ Paint rectangle...
 Paint rounded rectangle...
 [Chinese]
 填充圆角矩形...
+====================
+[English]
+Paint surface...
+[Chinese]
+绘制表面...
 ====================
 [English]
 Paint visible spectrogram...
@@ -5844,9 +8024,19 @@ Paint where...
 着色于指定条件...
 ====================
 [English]
+Paint...
+[Chinese]
+绘制...
+====================
+[English]
 Palatino
 [Chinese]
 Palatino 优雅体
+====================
+[English]
+ParamCurve help
+[Chinese]
+参数曲线帮助
 ====================
 [English]
 Paste
@@ -5864,6 +8054,11 @@ Paste before selection
 粘贴到选择之前
 ====================
 [English]
+Paste history
+[Chinese]
+粘贴历史
+====================
+[English]
 Paste over selection
 [Chinese]
 覆盖粘贴到选择
@@ -5872,6 +8067,11 @@ Paste over selection
 Paste text
 [Chinese]
 粘贴文本
+====================
+[English]
+Paste   
+[Chinese]
+粘贴   
 ====================
 [English]
 Pause
@@ -5919,6 +8119,36 @@ Photo
 照片
 ====================
 [English]
+Photo Formula (blue)
+[Chinese]
+照片 Formula (蓝色)
+====================
+[English]
+Photo Formula (green)
+[Chinese]
+照片 Formula (绿色)
+====================
+[English]
+Photo Formula (red)
+[Chinese]
+照片 Formula (红色)
+====================
+[English]
+Photo Formula (transparency)
+[Chinese]
+照片 Formula (透明度)
+====================
+[English]
+Photo: Paint cells with colour
+[Chinese]
+照片: Paint cells with colour
+====================
+[English]
+Photo: Paint colour image
+[Chinese]
+照片: Paint colour image
+====================
+[English]
 Picture
 [Chinese]
 图像
@@ -5927,6 +8157,11 @@ Picture
 Picture info
 [Chinese]
 图像属性信息
+====================
+[English]
+Picture info || Picture settings report
+[Chinese]
+图像信息 || 图像设置报告
 ====================
 [English]
 Picture window help
@@ -5947,6 +8182,11 @@ Pink
 Pitch
 [Chinese]
 音高
+====================
+[English]
+Pitch & TextTier to PitchTier
+[Chinese]
+Pitch & TextTier to 音高层
 ====================
 [English]
 Pitch (Hz)
@@ -6034,9 +8274,34 @@ Pitch: Draw
 音高：绘制
 ====================
 [English]
+Pitch: Draw erb
+[Chinese]
+音高：绘制erb
+====================
+[English]
+Pitch: Draw logarithmic
+[Chinese]
+音高：绘制logarithmic
+====================
+[English]
 Pitch: Draw mel
 [Chinese]
 音高：绘制 mel
+====================
+[English]
+Pitch: Draw semitones (re 100 Hz)
+[Chinese]
+音高：绘制semitones (re 100 Hz)
+====================
+[English]
+Pitch: Draw semitones (re 200 Hz)
+[Chinese]
+音高：绘制semitones (re 200 Hz)
+====================
+[English]
+Pitch: Draw semitones (re 440 Hz)
+[Chinese]
+音高：绘制semitones (re 440 Hz)
 ====================
 [English]
 Pitch: Draw...
@@ -6049,6 +8314,126 @@ Pitch: Formula
 音高：公式
 ====================
 [English]
+Pitch: Get all candidates in frame
+[Chinese]
+Pitch：获取all candidates in frame
+====================
+[English]
+Pitch: Get maximum
+[Chinese]
+Pitch：获取最大值
+====================
+[English]
+Pitch: Get mean
+[Chinese]
+Pitch：获取平均值
+====================
+[English]
+Pitch: Get mean absolute slope
+[Chinese]
+Pitch：获取平均值 absolute slope
+====================
+[English]
+Pitch: Get minimum
+[Chinese]
+Pitch：获取最小值
+====================
+[English]
+Pitch: Get quantile
+[Chinese]
+Pitch：获取分位数
+====================
+[English]
+Pitch: Get standard deviation
+[Chinese]
+Pitch：获取标准差
+====================
+[English]
+Pitch: Get time of maximum
+[Chinese]
+Pitch：获取time of 最大值
+====================
+[English]
+Pitch: Get time of minimum
+[Chinese]
+Pitch：获取time of 最小值
+====================
+[English]
+Pitch: Get value at time
+[Chinese]
+Pitch：获取指定时间的值
+====================
+[English]
+Pitch: Get value in frame
+[Chinese]
+Pitch：获取指定帧的值
+====================
+[English]
+Pitch: List values at times
+[Chinese]
+音高：列出values at times
+====================
+[English]
+Pitch: List values in all frames
+[Chinese]
+音高：列出values in all frames
+====================
+[English]
+Pitch: Smooth
+[Chinese]
+音高：Smooth
+====================
+[English]
+Pitch: Speckle
+[Chinese]
+音高：Speckle
+====================
+[English]
+Pitch: Speckle erb
+[Chinese]
+音高：Speckle erb
+====================
+[English]
+Pitch: Speckle logarithmic
+[Chinese]
+音高：Speckle logarithmic
+====================
+[English]
+Pitch: Speckle mel
+[Chinese]
+音高：Speckle mel
+====================
+[English]
+Pitch: Speckle semitones (re 100 Hz)
+[Chinese]
+音高：Speckle semitones (re 100 Hz)
+====================
+[English]
+Pitch: Speckle semitones (re 200 Hz)
+[Chinese]
+音高：Speckle semitones (re 200 Hz)
+====================
+[English]
+Pitch: Speckle semitones (re 440 Hz)
+[Chinese]
+音高：Speckle semitones (re 440 Hz)
+====================
+[English]
+Pitch: Tabulate candidates in frame
+[Chinese]
+音高：Tabulate candidates in frame
+====================
+[English]
+Pitch: To Sound (sine)
+[Chinese]
+Pitch：转为声音 (sine)
+====================
+[English]
+Pitch: subtract linear fit
+[Chinese]
+音高：subtract linear fit
+====================
+[English]
 PitchTier & Pitch: Draw
 [Chinese]
 音高层&音高：绘制
@@ -6057,6 +8442,16 @@ PitchTier & Pitch: Draw
 PitchTier help
 [Chinese]
 音高层帮助
+====================
+[English]
+PitchTier: Add point
+[Chinese]
+音高层: 添加point
+====================
+[English]
+PitchTier: Down to TableOfReal
+[Chinese]
+音高层: Down to 实数表
 ====================
 [English]
 PitchTier: Draw
@@ -6074,6 +8469,51 @@ PitchTier: Formula...
 音高层：公式...
 ====================
 [English]
+PitchTier: Get mean (curve)
+[Chinese]
+音高层：获取平均值 (curve)
+====================
+[English]
+PitchTier: Get mean (points)
+[Chinese]
+音高层：获取平均值 (points)
+====================
+[English]
+PitchTier: Get standard deviation (curve)
+[Chinese]
+音高层：获取标准差 (curve)
+====================
+[English]
+PitchTier: Get standard deviation (points)
+[Chinese]
+音高层：获取标准差 (points)
+====================
+[English]
+PitchTier: Get value at index
+[Chinese]
+音高层：获取value at index
+====================
+[English]
+PitchTier: Get value at time
+[Chinese]
+音高层：获取指定时间的值
+====================
+[English]
+PitchTier: Interpolate quadratically
+[Chinese]
+音高层: Interpolate quadratically
+====================
+[English]
+PitchTier: Multiply frequencies
+[Chinese]
+音高层: Multiply frequencies
+====================
+[English]
+PitchTier: Shift frequencies
+[Chinese]
+音高层: Shift frequencies
+====================
+[English]
 PitchTier: Stylize
 [Chinese]
 音高层：样式化
@@ -6084,14 +8524,59 @@ PitchTier: Stylize...
 音高层：样式化...
 ====================
 [English]
+PitchTier: To Sound (phonation)
+[Chinese]
+音高层：转为声音 (phonation)
+====================
+[English]
+PitchTier: To Sound (pulse train)
+[Chinese]
+音高层：转为声音 (pulse train)
+====================
+[English]
+PitchTier: To Sound (sine)
+[Chinese]
+音高层：转为声音 (sine)
+====================
+[English]
+Plain line
+[Chinese]
+实线 (普通线)
+====================
+[English]
 Play
 [Chinese]
 播放
 ====================
 [English]
+Play (LPC)
+[Chinese]
+播放(LPC)
+====================
+[English]
+Play (overlap-add) || Play (PSOLA)
+[Chinese]
+播放(overlap-add) || 播放(PSOLA)
+====================
+[English]
 Play -
 [Chinese]
 播放-
+====================
+[English]
+Play as pulse train
+[Chinese]
+播放为脉冲串
+====================
+[English]
+Play movie
+[Chinese]
+播放电影
+====================
+[English]
+Play movie || Movie
+[Chinese]
+播放电影 || Movie
 ====================
 [English]
 Play or stop
@@ -6104,9 +8589,19 @@ Play part...
 播放部分...
 ====================
 [English]
+Play pulses
+[Chinese]
+播放脉冲
+====================
+[English]
 Play reverse
 [Chinese]
 播放反转
+====================
+[English]
+Play sine
+[Chinese]
+播放正弦波
 ====================
 [English]
 Play special...
@@ -6134,14 +8629,89 @@ Point
 点
 ====================
 [English]
+PointProcess & Sound: Get shimmer (apq)
+[Chinese]
+点过程 & 声音: Get 振幅微扰 (shimmer) (apq)
+====================
+[English]
+PointProcess & Sound: Get shimmer (apq11)
+[Chinese]
+点过程 & 声音: Get 振幅微扰 (shimmer) (apq11)
+====================
+[English]
+PointProcess & Sound: Get shimmer (apq3)
+[Chinese]
+点过程 & 声音: Get 振幅微扰 (shimmer) (apq3)
+====================
+[English]
+PointProcess & Sound: Get shimmer (dda)
+[Chinese]
+点过程 & 声音: Get 振幅微扰 (shimmer) (dda)
+====================
+[English]
+PointProcess & Sound: Get shimmer (local)
+[Chinese]
+点过程 & 声音: Get 振幅微扰 (shimmer) (local)
+====================
+[English]
+PointProcess & Sound: Get shimmer (local, dB)
+[Chinese]
+点过程 & 声音: Get 振幅微扰 (shimmer) (local, dB)
+====================
+[English]
+PointProcess & Sound: To AmplitudeTier (period)
+[Chinese]
+点过程 & 声音: To 振幅层 (period)
+====================
+[English]
+PointProcess & Sound: To H1minusH2Tier
+[Chinese]
+点过程 & 声音: To H1minusH2Tier
+====================
+[English]
+PointProcess & Sound: To Ltas
+[Chinese]
+点过程 & 声音: To Ltas
+====================
+[English]
+PointProcess & Sound: To Ltas (harmonics
+[Chinese]
+点过程 & 声音: To Ltas (harmonics
+====================
+[English]
 PointProcess help
 [Chinese]
 点过程帮助
 ====================
 [English]
+PointProcess: Add point
+[Chinese]
+点过程: 添加point
+====================
+[English]
+PointProcess: Add points
+[Chinese]
+点过程: 添加points
+====================
+[English]
 PointProcess: Draw
 [Chinese]
 点过程：绘制
+====================
+[English]
+PointProcess: Fill
+[Chinese]
+点过程: Fill
+====================
+[English]
+PointProcess: Fill unvoiced parts
+[Chinese]
+点过程: Fill unvoiced parts
+====================
+[English]
+PointProcess: Get high index
+[Chinese]
+点过程：获取high index
 ====================
 [English]
 PointProcess: Get interval
@@ -6152,6 +8722,116 @@ PointProcess: Get interval
 PointProcess: Get interval...
 [Chinese]
 点过程：获取区间...
+====================
+[English]
+PointProcess: Get jitter (ddp)
+[Chinese]
+点过程：获取基频微扰 (jitter) (ddp)
+====================
+[English]
+PointProcess: Get jitter (local)
+[Chinese]
+点过程：获取基频微扰 (jitter) (local)
+====================
+[English]
+PointProcess: Get jitter (local, absolute)
+[Chinese]
+点过程：获取基频微扰 (jitter) (local, absolute)
+====================
+[English]
+PointProcess: Get jitter (ppq5)
+[Chinese]
+点过程：获取基频微扰 (jitter) (ppq5)
+====================
+[English]
+PointProcess: Get jitter (rap)
+[Chinese]
+点过程：获取基频微扰 (jitter) (rap)
+====================
+[English]
+PointProcess: Get low index
+[Chinese]
+点过程：获取low index
+====================
+[English]
+PointProcess: Get mean period
+[Chinese]
+点过程：获取平均值 period
+====================
+[English]
+PointProcess: Get nearest index
+[Chinese]
+点过程：获取nearest index
+====================
+[English]
+PointProcess: Get number of periods
+[Chinese]
+点过程：获取number of periods
+====================
+[English]
+PointProcess: Get stdev period
+[Chinese]
+点过程：获取stdev period
+====================
+[English]
+PointProcess: Remove point
+[Chinese]
+点过程: Remove point
+====================
+[English]
+PointProcess: Remove point near
+[Chinese]
+点过程: Remove point near
+====================
+[English]
+PointProcess: Remove points
+[Chinese]
+点过程: Remove points
+====================
+[English]
+PointProcess: Remove points between
+[Chinese]
+点过程: Remove points between
+====================
+[English]
+PointProcess: To PitchTier
+[Chinese]
+点过程：转为音高层
+====================
+[English]
+PointProcess: To Sound (phonation)
+[Chinese]
+点过程：转为声音 (phonation)
+====================
+[English]
+PointProcess: To Sound (pulse train)
+[Chinese]
+点过程：转为声音 (pulse train)
+====================
+[English]
+PointProcess: To TextGrid (vuv)...
+[Chinese]
+点过程：转为TextGrid (vuv)...
+====================
+[English]
+PointProcess: To TextGrid...
+[Chinese]
+点过程：转为TextGrid...
+====================
+[English]
+PointProcess: Up to IntensityTier
+[Chinese]
+点过程: Up to 音强层
+====================
+[English]
+PointProcess: Up to PitchTier
+[Chinese]
+点过程: Up to 音高层
+====================
+[English]
+PointProcess: Up to TextTier
+[Chinese]
+点过程: Up to TextTier
 ====================
 [English]
 Polygon
@@ -6174,6 +8854,31 @@ Polygon: Draw
 多边形：绘制
 ====================
 [English]
+Polygon: Draw circles
+[Chinese]
+多边形: Draw circles
+====================
+[English]
+Polygon: Find shortest path
+[Chinese]
+多边形: Find shortest path
+====================
+[English]
+Polygon: Paint
+[Chinese]
+多边形: Paint
+====================
+[English]
+Polygon: Paint circles
+[Chinese]
+多边形: Paint circles
+====================
+[English]
+Polygons: Draw connection
+[Chinese]
+多边形：绘制connection
+====================
+[English]
 Polynomial
 [Chinese]
 多项式
@@ -6189,6 +8894,41 @@ PortAudio cannot open sound output:
 PortAudio 无法打开声音输出：
 ====================
 [English]
+PostScript settings
+[Chinese]
+PostScript 设置
+====================
+[English]
+PostScript settings...
+[Chinese]
+PostScript 设置...
+====================
+[English]
+PostScript text width (mm)...
+[Chinese]
+PostScript 文本宽度 (毫米)...
+====================
+[English]
+PostScript text width (world coordinates)... || PostScript text width (wc)...
+[Chinese]
+PostScript 文本宽度 (世界坐标)... || PostScript 文本宽度 (wc)...
+====================
+[English]
+PostScript text width in millimetres
+[Chinese]
+PostScript 文本宽度 (毫米)
+====================
+[English]
+PostScript text width in world coordinates
+[Chinese]
+PostScript 文本宽度 (世界坐标)
+====================
+[English]
+Power...
+[Chinese]
+乘方 (能量)...
+====================
+[English]
 Praat
 [Chinese]
 Praat
@@ -6199,9 +8939,289 @@ Praat Intro
 Praat 简介
 ====================
 [English]
+Praat picture: Arrow size
+[Chinese]
+Praat图像：Arrow size
+====================
+[English]
+Praat picture: Axes
+[Chinese]
+Praat图像：Axes
+====================
+[English]
+Praat picture: Colour
+[Chinese]
+Praat图像：Colour
+====================
+[English]
+Praat picture: Draw arc
+[Chinese]
+Praat图像：绘制 arc
+====================
+[English]
+Praat picture: Draw arrow
+[Chinese]
+Praat图像：绘制 arrow
+====================
+[English]
+Praat picture: Draw circle
+[Chinese]
+Praat图像：绘制 circle
+====================
+[English]
+Praat picture: Draw circle (mm)
+[Chinese]
+Praat图像：绘制 circle (mm)
+====================
+[English]
+Praat picture: Draw double arrow
+[Chinese]
+Praat图像：绘制 double arrow
+====================
+[English]
+Praat picture: Draw ellipse
+[Chinese]
+Praat图像：绘制 ellipse
+====================
+[English]
+Praat picture: Draw function
+[Chinese]
+Praat图像：绘制 function
+====================
+[English]
+Praat picture: Draw line
+[Chinese]
+Praat图像：绘制 line
+====================
+[English]
+Praat picture: Draw rectangle
+[Chinese]
+Praat图像：绘制 rectangle
+====================
+[English]
+Praat picture: Draw rounded rectangle
+[Chinese]
+Praat图像：绘制 rounded rectangle
+====================
+[English]
+Praat picture: Font size
+[Chinese]
+Praat图像：Font size
+====================
+[English]
+Praat picture: Insert picture from file
+[Chinese]
+Praat图像：Insert picture from file
+====================
+[English]
+Praat picture: Insert picture from file (embedded)
+[Chinese]
+Praat图像：Insert picture from file (embedded)
+====================
+[English]
+Praat picture: Line width
+[Chinese]
+Praat图像：Line width
+====================
+[English]
+Praat picture: Logarithmic marks bottom
+[Chinese]
+Praat图像：Logarithmic marks bottom
+====================
+[English]
+Praat picture: Logarithmic marks left
+[Chinese]
+Praat图像：Logarithmic marks left
+====================
+[English]
+Praat picture: Logarithmic marks right
+[Chinese]
+Praat图像：Logarithmic marks right
+====================
+[English]
+Praat picture: Logarithmic marks top
+[Chinese]
+Praat图像：Logarithmic marks top
+====================
+[English]
+Praat picture: Marks bottom
+[Chinese]
+Praat图像：Marks bottom
+====================
+[English]
+Praat picture: Marks bottom every...
+[Chinese]
+Praat图像：Marks bottom every...
+====================
+[English]
+Praat picture: Marks left
+[Chinese]
+Praat图像：Marks left
+====================
+[English]
+Praat picture: Marks left every...
+[Chinese]
+Praat图像：Marks left every...
+====================
+[English]
+Praat picture: Marks right
+[Chinese]
+Praat图像：Marks right
+====================
+[English]
+Praat picture: Marks right every...
+[Chinese]
+Praat图像：Marks right every...
+====================
+[English]
+Praat picture: Marks top
+[Chinese]
+Praat图像：Marks top
+====================
+[English]
+Praat picture: Marks top every...
+[Chinese]
+Praat图像：Marks top every...
+====================
+[English]
+Praat picture: One logarithmic mark bottom
+[Chinese]
+Praat图像：One logarithmic mark bottom
+====================
+[English]
+Praat picture: One logarithmic mark left
+[Chinese]
+Praat图像：One logarithmic mark left
+====================
+[English]
+Praat picture: One logarithmic mark right
+[Chinese]
+Praat图像：One logarithmic mark right
+====================
+[English]
+Praat picture: One logarithmic mark top
+[Chinese]
+Praat图像：One logarithmic mark top
+====================
+[English]
+Praat picture: One mark bottom
+[Chinese]
+Praat图像：One mark bottom
+====================
+[English]
+Praat picture: One mark left
+[Chinese]
+Praat图像：One mark left
+====================
+[English]
+Praat picture: One mark right
+[Chinese]
+Praat图像：One mark right
+====================
+[English]
+Praat picture: One mark top
+[Chinese]
+Praat图像：One mark top
+====================
+[English]
+Praat picture: Paint circle
+[Chinese]
+Praat图像：填充 circle
+====================
+[English]
+Praat picture: Paint circle (mm)
+[Chinese]
+Praat图像：填充 circle (mm)
+====================
+[English]
+Praat picture: Paint ellipse
+[Chinese]
+Praat图像：填充 ellipse
+====================
+[English]
+Praat picture: Paint rectangle
+[Chinese]
+Praat图像：填充 rectangle
+====================
+[English]
+Praat picture: Paint rounded rectangle
+[Chinese]
+Praat图像：填充 rounded rectangle
+====================
+[English]
+Praat picture: Rectangle text (maximal fit)
+[Chinese]
+Praat图像：Rectangle text (maximal fit)
+====================
+[English]
+Praat picture: Rectangle text (wrap & truncate)
+[Chinese]
+Praat图像：Rectangle text (wrap & truncate)
+====================
+[English]
+Praat picture: Select inner viewport
+[Chinese]
+Praat图像：Select inner viewport
+====================
+[English]
+Praat picture: Select outer viewport
+[Chinese]
+Praat图像：Select outer viewport
+====================
+[English]
+Praat picture: Speckle size
+[Chinese]
+Praat图像：Speckle size
+====================
+[English]
+Praat picture: Text
+[Chinese]
+Praat图像：文本
+====================
+[English]
+Praat picture: Text bottom
+[Chinese]
+Praat图像：文本 bottom
+====================
+[English]
+Praat picture: Text left
+[Chinese]
+Praat图像：文本 left
+====================
+[English]
+Praat picture: Text right
+[Chinese]
+Praat图像：文本 right
+====================
+[English]
+Praat picture: Text special
+[Chinese]
+Praat图像：文本 special
+====================
+[English]
+Praat picture: Text top
+[Chinese]
+Praat图像：文本 top
+====================
+[English]
+Praat picture: Viewport text
+[Chinese]
+Praat图像：Viewport text
+====================
+[English]
+Praat test
+[Chinese]
+Praat 测试
+====================
+[English]
 Praat test...
 [Chinese]
 Praat 测试...
+====================
+[English]
+PraatLib: Create C header or file
+[Chinese]
+PraatLib: 创建C header or file
 ====================
 [English]
 Pre-emphasis (dB/oct)
@@ -6219,6 +9239,11 @@ Pre-emphasis from (Hz)
 预加重起点 (Hz)
 ====================
 [English]
+Pre-emphasize (in-place)... || Pre-emphasize (in-line)...
+[Chinese]
+预加重 (就地)... || 预加重 (行)...
+====================
+[English]
 Preferences
 [Chinese]
 偏好设置
@@ -6232,6 +9257,36 @@ Preferences...
 Preserve times
 [Chinese]
 保留时间
+====================
+[English]
+Previous page
+[Chinese]
+上一页
+====================
+[English]
+Print
+[Chinese]
+打印
+====================
+[English]
+Print all pages whose title starts with
+[Chinese]
+打印所有标题以此开头的页面
+====================
+[English]
+Print manual...
+[Chinese]
+打印手册...
+====================
+[English]
+Print page...
+[Chinese]
+打印页面...
+====================
+[English]
+Print range
+[Chinese]
+打印范围
 ====================
 [English]
 Print...
@@ -6259,6 +9314,11 @@ Publish
 发布
 ====================
 [English]
+Publish resynthesis
+[Chinese]
+发布合成声音
+====================
+[English]
 Pulse listing
 [Chinese]
 脉冲列表
@@ -6269,9 +9329,29 @@ Pulses
 脉冲
 ====================
 [English]
+Pulses & LPC -- ("LPC resynthesis")
+[Chinese]
+脉冲 & LPC -- ("LPC 合成")
+====================
+[English]
+Pulses (hum) --
+[Chinese]
+脉冲 (蜂鸣声) --
+====================
+[English]
+Pulses --
+[Chinese]
+脉冲 --
+====================
+[English]
 Pulses -- Pitch
 [Chinese]
 脉冲 -- 音高
+====================
+[English]
+Pulses -- Pitch (hum)
+[Chinese]
+脉冲 -- 音高 (蜂鸣声)
 ====================
 [English]
 Pulses settings...
@@ -6334,6 +9414,11 @@ Query pitch:
 查询音高：
 ====================
 [English]
+Query point tier
+[Chinese]
+查询点层
+====================
+[English]
 Query pulses:
 [Chinese]
 查询脉冲：
@@ -6382,6 +9467,16 @@ Quit
 Quit Praat
 [Chinese]
 退出 Praat
+====================
+[English]
+Randomize
+[Chinese]
+随机化
+====================
+[English]
+Read Matrix from LVS AP file...
+[Chinese]
+读取矩阵 from LVS AP file...
 ====================
 [English]
 Read Matrix from raw text file
@@ -6519,6 +9614,11 @@ Read TableOfReal from headerless spreadsheet file...
 从无表头电子表格文件读取实数表...
 ====================
 [English]
+Read TextGrid from ESPS label file
+[Chinese]
+读取TextGrid from ESPS label file
+====================
+[English]
 Read TextGrid from ESPS label file...
 [Chinese]
 从 ESPS 标签文件读取 TextGrid...
@@ -6582,6 +9682,16 @@ Read separate channels from sound file... || Read two Sounds from stereo file...
 Read two Sounds from stereo file...
 [Chinese]
 从双声道文件读取两个声音...
+====================
+[English]
+Read with adjacent annotations (Buckeye)
+[Chinese]
+读取with adjacent annotations (Buckeye)
+====================
+[English]
+Read with adjacent annotations (TIMIT)
+[Chinese]
+读取with adjacent annotations (TIMIT)
 ====================
 [English]
 RealTier help
@@ -6654,6 +9764,16 @@ Remove
 移除
 ====================
 [English]
+Remove bandwidth points between
+[Chinese]
+删除bandwidth 控制点 between
+====================
+[English]
+Remove bandwidth points between...
+[Chinese]
+删除bandwidth 控制点 between...
+====================
+[English]
 Remove boundary at time...
 [Chinese]
 移除指定时间的边界...
@@ -6689,14 +9809,49 @@ Remove constraint...
 移除约束...
 ====================
 [English]
+Remove formant points between
+[Chinese]
+删除共振峰 控制点 between
+====================
+[English]
+Remove formant points between...
+[Chinese]
+删除共振峰 控制点 between...
+====================
+[English]
 Remove left boundary...
 [Chinese]
 移除左边界...
 ====================
 [English]
+Remove one point
+[Chinese]
+删除一个控制点
+====================
+[English]
+Remove point near...
+[Chinese]
+删除point near...
+====================
+[English]
 Remove point...
 [Chinese]
 移除点...
+====================
+[English]
+Remove points
+[Chinese]
+删除控制点
+====================
+[English]
+Remove points below...
+[Chinese]
+删除控制点 below...
+====================
+[English]
+Remove points between...
+[Chinese]
+删除控制点 between...
 ====================
 [English]
 Remove points...
@@ -6719,6 +9874,11 @@ Remove row...
 移除行...
 ====================
 [English]
+Remove string...
+[Chinese]
+删除string...
+====================
+[English]
 Remove tier
 [Chinese]
 删除层
@@ -6727,6 +9887,11 @@ Remove tier
 Remove tier...
 [Chinese]
 删除层...
+====================
+[English]
+Remove unshared stimuli
+[Chinese]
+删除未共享刺激
 ====================
 [English]
 Rename object
@@ -6749,14 +9914,44 @@ Rename...
 重命名...
 ====================
 [English]
+Reopen from disk
+[Chinese]
+从磁盘重新打开
+====================
+[English]
+Replace again
+[Chinese]
+再次替换
+====================
+[English]
+Replace all...
+[Chinese]
+全部替换...
+====================
+[English]
+Replace duration tier?
+[Chinese]
+是否替换时长层？
+====================
+[English]
 Replace interval texts...
 [Chinese]
 替换区间文本...
 ====================
 [English]
+Replace pitch tier?
+[Chinese]
+Replace 音高 tier?
+====================
+[English]
 Replace point texts...
 [Chinese]
 替换点文本...
+====================
+[English]
+Replace...
+[Chinese]
+替换...
 ====================
 [English]
 Report app properties
@@ -6799,6 +9994,11 @@ Report memory use
 报告内存占用
 ====================
 [English]
+Report sound server properties
+[Chinese]
+报告声音服务器属性
+====================
+[English]
 Report system properties
 [Chinese]
 报告系统属性
@@ -6822,6 +10022,16 @@ Reporting a problem?
 Resample...
 [Chinese]
 重采样...
+====================
+[English]
+ResultsMFC: Get response
+[Chinese]
+ResultsMFC：获取response
+====================
+[English]
+ResultsMFC: Get stimulus
+[Chinese]
+ResultsMFC：获取stimulus
 ====================
 [English]
 Reverse
@@ -6864,6 +10074,16 @@ Right
 右
 ====================
 [English]
+Right or outside footer
+[Chinese]
+右页脚或外侧页脚
+====================
+[English]
+Right or outside header
+[Chinese]
+右页眉或外侧页眉
+====================
+[English]
 Roots help
 [Chinese]
 根帮助
@@ -6889,9 +10109,34 @@ Run
 运行
 ====================
 [English]
+Run chunk
+[Chinese]
+运行代码块
+====================
+[English]
 Run script...
 [Chinese]
 运行脚本...
+====================
+[English]
+Run selection
+[Chinese]
+运行选区 (代码)
+====================
+[English]
+Salesperson...
+[Chinese]
+旅行商问题 (TSP)...
+====================
+[English]
+Sample number
+[Chinese]
+采样号
+====================
+[English]
+Sampling
+[Chinese]
+采样
 ====================
 [English]
 Sampling frequency:
@@ -6979,6 +10224,11 @@ Save as AIFF file... || Write to AIFF file...
 保存为 AIFF 文件... || 写入 AIFF 文件...
 ====================
 [English]
+Save as Apple icon file...
+[Chinese]
+保存为Apple icon file...
+====================
+[English]
 Save as EPS file
 [Chinese]
 保存为 EPS 矢量图
@@ -6989,6 +10239,11 @@ Save as EPS file...
 保存为 EPS 矢量图...
 ====================
 [English]
+Save as EPS file... || Write to EPS file...
+[Chinese]
+保存为EPS file... || 写入EPS file...
+====================
+[English]
 Save as FLAC file...
 [Chinese]
 保存为 FLAC 文件...
@@ -6997,6 +10252,21 @@ Save as FLAC file...
 Save as FLAC file... || Write to FLAC file...
 [Chinese]
 保存为 FLAC 文件... || 写入 FLAC 文件...
+====================
+[English]
+Save as GIF file...
+[Chinese]
+保存为GIF file...
+====================
+[English]
+Save as HTML file
+[Chinese]
+保存为 HTML 文件
+====================
+[English]
+Save as JPEG-2000 file...
+[Chinese]
+保存为JPEG-2000 file...
 ====================
 [English]
 Save as Kay sound file...
@@ -7029,6 +10299,36 @@ Save as NeXT/Sun file... || Write to NeXT/Sun file...
 保存为 NeXT/Sun 文件... || 写入 NeXT/Sun 文件...
 ====================
 [English]
+Save as PDF file... || Write to PDF file...
+[Chinese]
+保存为PDF file... || 写入PDF file...
+====================
+[English]
+Save as PNG file...
+[Chinese]
+保存为PNG file...
+====================
+[English]
+Save as PitchTier spreadsheet file... || Write to PitchTier spreadsheet file...
+[Chinese]
+保存为音高层 spreadsheet file... || 写入音高层 spreadsheet file...
+====================
+[English]
+Save as Sesam file... || Write to Sesam file...
+[Chinese]
+保存为Sesam file... || 写入Sesam file...
+====================
+[English]
+Save as Sun audio file... || Write to Sun audio file...
+[Chinese]
+保存为Sun audio file... || 写入Sun audio file...
+====================
+[English]
+Save as TIFF file...
+[Chinese]
+保存为TIFF file...
+====================
+[English]
 Save as WAV file...
 [Chinese]
 保存为 WAV 文件...
@@ -7039,9 +10339,34 @@ Save as WAV file... || Write to WAV file...
 保存为 WAV 文件... || 写入 WAV 文件...
 ====================
 [English]
+Save as Windows bitmap file...
+[Chinese]
+保存为Windows bitmap file...
+====================
+[English]
+Save as Windows icon file...
+[Chinese]
+保存为Windows icon file...
+====================
+[English]
 Save as Windows metafile...
 [Chinese]
 保存为 Windows 图元文件 (WMF)...
+====================
+[English]
+Save as Windows metafile... || Write to Windows metafile...
+[Chinese]
+保存为Windows metafile... || 写入Windows metafile...
+====================
+[English]
+Save as Xwaves label file... || Write to Xwaves label file...
+[Chinese]
+保存为Xwaves label file... || 写入Xwaves label file...
+====================
+[English]
+Save as binary file without Sound... || Write to binary file without Sound...
+[Chinese]
+保存为binary file without 声音... || 写入binary file without 声音...
 ====================
 [English]
 Save as binary file...
@@ -7054,9 +10379,29 @@ Save as binary file... || Write to binary file...
 保存为二进制文件... || 写入二进制文件...
 ====================
 [English]
+Save as chronological text file...
+[Chinese]
+保存为chronological text file...
+====================
+[English]
 Save as comma-separated file...
 [Chinese]
 另存为逗号分隔文件...
+====================
+[English]
+Save as fontless EPS file (SILIPA)... || Write to fontless EPS file (SILIPA)...
+[Chinese]
+保存为fontless EPS file (SILIPA)... || 写入fontless EPS file (SILIPA)...
+====================
+[English]
+Save as fontless EPS file (XIPA)... || Write to fontless EPS file (XIPA)...
+[Chinese]
+保存为fontless EPS file (XIPA)... || 写入fontless EPS file (XIPA)...
+====================
+[English]
+Save as headerless spreadsheet file... || Write to headerless spreadsheet file...
+[Chinese]
+保存为headerless spreadsheet file... || 写入headerless spreadsheet file...
 ====================
 [English]
 Save as highest quality MP3 file...
@@ -7064,9 +10409,24 @@ Save as highest quality MP3 file...
 保存为最高品质 MP3 文件...
 ====================
 [English]
+Save as lossy JPEG file...
+[Chinese]
+保存为lossy JPEG file...
+====================
+[English]
+Save as matrix text file... || Write to matrix text file...
+[Chinese]
+保存为matrix text file... || 写入matrix text file...
+====================
+[English]
 Save as praat picture file...
 [Chinese]
 保存为 Praat Picture 文件...
+====================
+[English]
+Save as praat picture file... || Write to praat picture file...
+[Chinese]
+保存为praat picture file... || 写入praat picture file...
 ====================
 [English]
 Save as raw 16-bit big-endian file...
@@ -7119,6 +10479,16 @@ Save as raw 8-bit unsigned file... || Write to raw 8-bit unsigned file...
 保存为原始 8 位无符号文件... || 写入到原始 8 位无符号文件...
 ====================
 [English]
+Save as raw sound file
+[Chinese]
+保存为raw sound file
+====================
+[English]
+Save as raw text file... || Write to raw text file...
+[Chinese]
+保存为raw text file... || 写入raw text file...
+====================
+[English]
 Save as semicolon-separated file...
 [Chinese]
 另存为分号分隔文件...
@@ -7132,6 +10502,11 @@ Save as short text file...
 Save as short text file... || Write to short text file...
 [Chinese]
 保存为短文本文件... || 写入短文本文件...
+====================
+[English]
+Save as text file without Sound... || Write to text file without Sound...
+[Chinese]
+保存为text file without 声音... || 写入text file without 声音...
 ====================
 [English]
 Save as text file...
@@ -7209,9 +10584,19 @@ Save left channel as WAV file... || Write left channel to WAV file...
 将左声道保存为 WAV 文件... || 将左声道写入 WAV 文件...
 ====================
 [English]
+Save manual to HTML directory...
+[Chinese]
+保存手册到 HTML 目录...
+====================
+[English]
 Save manual to HTML folder...
 [Chinese]
 保存手册到 HTML 文件夹...
+====================
+[English]
+Save page as HTML file...
+[Chinese]
+保存页面为 HTML 文件...
 ====================
 [English]
 Save part as audio file...
@@ -7394,14 +10779,29 @@ Scale peak...
 缩放峰值...
 ====================
 [English]
+Scale peak... || Scale...
+[Chinese]
+缩放峰值... || 缩放...
+====================
+[English]
 Scale times
 [Chinese]
 缩放时间
 ====================
 [English]
+Scale times by
+[Chinese]
+按比例缩放时间
+====================
+[English]
 Scale times by...
 [Chinese]
 缩放时间 (相对值)...
+====================
+[English]
+Scale times to
+[Chinese]
+缩放时间到
 ====================
 [English]
 Scale times to...
@@ -7459,6 +10859,21 @@ Search Praat manual...
 搜索 Praat 手册...
 ====================
 [English]
+Search for page
+[Chinese]
+搜索页面
+====================
+[English]
+Search for page (list)...
+[Chinese]
+搜索页面 (列表)...
+====================
+[English]
+Search for page...
+[Chinese]
+搜索页面...
+====================
+[English]
 Search for strings (separate with spaces)
 [Chinese]
 搜索字符串 (用空格分隔)
@@ -7472,6 +10887,16 @@ Search manual
 Search manual...
 [Chinese]
 搜索手册...
+====================
+[English]
+Search:
+[Chinese]
+搜索:
+====================
+[English]
+Segmentation step (0-1)
+[Chinese]
+分段步长 (0-1)
 ====================
 [English]
 Select
@@ -7686,6 +11111,11 @@ Set selection:
 设置选择部分：
 ====================
 [English]
+Set string...
+[Chinese]
+设置string...
+====================
+[English]
 Set tier name...
 [Chinese]
 设置层名称...
@@ -7694,6 +11124,16 @@ Set tier name...
 Set value at sample number...
 [Chinese]
 设置采样点处的数值...
+====================
+[English]
+Set value at sample number... || Set value at index...
+[Chinese]
+设置value at sample number... || 设置value at index...
+====================
+[English]
+Set value...
+[Chinese]
+设置value...
 ====================
 [English]
 Set visible part:
@@ -7736,6 +11176,11 @@ Shift by (Hz)
 按频率偏移 (Hz)
 ====================
 [English]
+Shift frequencies...
+[Chinese]
+移动频率...
+====================
+[English]
 Shift left
 [Chinese]
 移动左
@@ -7746,14 +11191,34 @@ Shift right
 移动右
 ====================
 [English]
+Shift times by
+[Chinese]
+移动时间 by
+====================
+[English]
 Shift times by...
 [Chinese]
 偏移时间 (相对量)...
 ====================
 [English]
+Shift times to
+[Chinese]
+移动时间 to
+====================
+[English]
+Shift times to between zero and physical duration
+[Chinese]
+平移时间至0与物理时长之间
+====================
+[English]
 Shift times to...
 [Chinese]
 偏移时间 (绝对量)...
+====================
+[English]
+Shift to zero
+[Chinese]
+移动到零
 ====================
 [English]
 Shift trajectory...
@@ -7789,6 +11254,11 @@ Show analyses
 Show analyses...
 [Chinese]
 显示分析...
+====================
+[English]
+Show boundaries
+[Chinese]
+显示边界
 ====================
 [English]
 Show formants
@@ -7841,6 +11311,11 @@ Slope constraint
 斜率约束
 ====================
 [English]
+Smooth...
+[Chinese]
+平滑...
+====================
+[English]
 Smoothing parameter
 [Chinese]
 平滑参数
@@ -7856,9 +11331,34 @@ Solid line
 实线
 ====================
 [English]
+Sort
+[Chinese]
+排序
+====================
+[English]
 Sound
 [Chinese]
 声音
+====================
+[English]
+Sound & IntervalTier: Multiply
+[Chinese]
+声音 & IntervalTier: Multiply
+====================
+[English]
+Sound & Pitch: To PointProcess (peaks)
+[Chinese]
+声音 & Pitch: To 点过程 (peaks)
+====================
+[English]
+Sound & PointProcess: To SoundEnsemble (correlate)
+[Chinese]
+声音 & 点过程: To SoundEnsemble (correlate)
+====================
+[English]
+Sound & Pulses -- Pitch & Duration  ("Overlap-add manipulation")
+[Chinese]
+声音 & 脉冲 -- 音高 & 时长 ("重叠相加操控")
 ====================
 [English]
 Sound -
@@ -7891,6 +11391,11 @@ Sound playing preferences...
 播放偏好...
 ====================
 [English]
+Sound playing settings
+[Chinese]
+声音 playing settings
+====================
+[English]
 Sound playing settings...
 [Chinese]
 播放设置...
@@ -7904,6 +11409,11 @@ Sound playing settings... || Sound playing preferences...
 Sound recording preferences...
 [Chinese]
 录音偏好...
+====================
+[English]
+Sound recording settings
+[Chinese]
+声音 recording settings
 ====================
 [English]
 Sound recording settings...
@@ -7946,6 +11456,11 @@ Sound: Autocorrelate...
 声音：自相关...
 ====================
 [English]
+Sound: De-emphasize (in-place)
+[Chinese]
+声音: De-emphasize (in-place)
+====================
+[English]
 Sound: Draw
 [Chinese]
 声音：绘制
@@ -7976,14 +11491,49 @@ Sound: Extract part
 声音：提取部分
 ====================
 [English]
+Sound: Extract part for overlap
+[Chinese]
+声音: Extract part for overlap
+====================
+[English]
 Sound: Extract part...
 [Chinese]
 声音：提取部分...
 ====================
 [English]
+Sound: Filter (de-emphasis)
+[Chinese]
+声音: Filter (de-emphasis)
+====================
+[English]
 Sound: Filter (formula)...
 [Chinese]
 声音：滤波(公式)...
+====================
+[English]
+Sound: Filter (one formant)
+[Chinese]
+声音: Filter (one 共振峰)
+====================
+[English]
+Sound: Filter (pass Hann band)
+[Chinese]
+声音: Filter (pass Hann band)
+====================
+[English]
+Sound: Filter (pre-emphasis)
+[Chinese]
+声音: Filter (pre-emphasis)
+====================
+[English]
+Sound: Filter (stop Hann band)
+[Chinese]
+声音: Filter (stop Hann band)
+====================
+[English]
+Sound: Filter with one formant (in-place)
+[Chinese]
+声音: Filter with one 共振峰 (in-place)
 ====================
 [English]
 Sound: Formula
@@ -7999,6 +11549,256 @@ Sound: Formula (part)
 Sound: Formula...
 [Chinese]
 声音：公式...
+====================
+[English]
+Sound: Get absolute extremum
+[Chinese]
+声音：获取absolute extremum
+====================
+[English]
+Sound: Get energy
+[Chinese]
+声音：获取energy
+====================
+[English]
+Sound: Get maximum
+[Chinese]
+声音：获取最大值
+====================
+[English]
+Sound: Get mean
+[Chinese]
+声音：获取平均值
+====================
+[English]
+Sound: Get minimum
+[Chinese]
+声音：获取最小值
+====================
+[English]
+Sound: Get nearest zero crossing
+[Chinese]
+声音：获取nearest zero crossing
+====================
+[English]
+Sound: Get power
+[Chinese]
+声音：获取power
+====================
+[English]
+Sound: Get root-mean-square
+[Chinese]
+声音：获取root-平均值-square
+====================
+[English]
+Sound: Get standard deviation
+[Chinese]
+声音：获取标准差
+====================
+[English]
+Sound: Get time of maximum
+[Chinese]
+声音：获取time of 最大值
+====================
+[English]
+Sound: Get time of minimum
+[Chinese]
+声音：获取time of 最小值
+====================
+[English]
+Sound: Get value at sample number
+[Chinese]
+声音：获取value at sample number
+====================
+[English]
+Sound: Get value at time
+[Chinese]
+声音：获取指定时间的值
+====================
+[English]
+Sound: Lengthen (overlap-add)
+[Chinese]
+声音: Lengthen (overlap-add)
+====================
+[English]
+Sound: Multiply
+[Chinese]
+声音: Multiply
+====================
+[English]
+Sound: Multiply by window
+[Chinese]
+声音: Multiply by window
+====================
+[English]
+Sound: Override sampling frequency
+[Chinese]
+声音: Override sampling frequency
+====================
+[English]
+Sound: Pre-emphasize (in-place)
+[Chinese]
+声音: Pre-emphasize (in-place)
+====================
+[English]
+Sound: Resample
+[Chinese]
+声音: Resample
+====================
+[English]
+Sound: Scale intensity
+[Chinese]
+声音: Scale 音强
+====================
+[English]
+Sound: Scale peak
+[Chinese]
+声音: Scale peak
+====================
+[English]
+Sound: Set part to zero
+[Chinese]
+声音: Set part to zero
+====================
+[English]
+Sound: Set value at sample number
+[Chinese]
+声音: Set value at sample number
+====================
+[English]
+Sound: To Cochleagram
+[Chinese]
+声音：转为Cochleagram
+====================
+[English]
+Sound: To Cochleagram (De Boer, Meddis & Hewitt)
+[Chinese]
+声音：转为Cochleagram (De Boer, Meddis & Hewitt)
+====================
+[English]
+Sound: To Formant (Burg method)
+[Chinese]
+声音：转为Formant (Burg method)
+====================
+[English]
+Sound: To Formant (keep all)
+[Chinese]
+声音：转为Formant (keep all)
+====================
+[English]
+Sound: To Formant (split Levinson (Willems))
+[Chinese]
+声音：转为Formant (split Levinson (Willems))
+====================
+[English]
+Sound: To Harmonicity (ac)
+[Chinese]
+声音：转为Harmonicity (ac)
+====================
+[English]
+Sound: To Harmonicity (cc)
+[Chinese]
+声音：转为Harmonicity (cc)
+====================
+[English]
+Sound: To Harmonicity (gne)
+[Chinese]
+声音：转为Harmonicity (gne)
+====================
+[English]
+Sound: To Intensity
+[Chinese]
+声音：转为Intensity
+====================
+[English]
+Sound: To IntensityTier
+[Chinese]
+声音：转为音强层
+====================
+[English]
+Sound: To Ltas (pitch-corrected)
+[Chinese]
+声音：转为Ltas (音高-corrected)
+====================
+[English]
+Sound: To Manipulation
+[Chinese]
+声音：转为Manipulation
+====================
+[English]
+Sound: To Pitch
+[Chinese]
+声音：转为Pitch
+====================
+[English]
+Sound: To Pitch (ac)
+[Chinese]
+声音：转为Pitch (ac)
+====================
+[English]
+Sound: To Pitch (cc)
+[Chinese]
+声音：转为Pitch (cc)
+====================
+[English]
+Sound: To Pitch (filtered autocorrelation)
+[Chinese]
+声音：转为Pitch (filtered autocorrelation)
+====================
+[English]
+Sound: To Pitch (filtered cross-correlation)
+[Chinese]
+声音：转为Pitch (filtered cross-correlation)
+====================
+[English]
+Sound: To Pitch (raw autocorrelation)
+[Chinese]
+声音：转为Pitch (raw autocorrelation)
+====================
+[English]
+Sound: To Pitch (raw cross-correlation)
+[Chinese]
+声音：转为Pitch (raw cross-correlation)
+====================
+[English]
+Sound: To PointProcess (extrema)
+[Chinese]
+声音：转为点过程 (extrema)
+====================
+[English]
+Sound: To PointProcess (periodic, cc)
+[Chinese]
+声音：转为点过程 (periodic, cc)
+====================
+[English]
+Sound: To PointProcess (periodic, peaks)
+[Chinese]
+声音：转为点过程 (periodic, peaks)
+====================
+[English]
+Sound: To Spectrogram
+[Chinese]
+声音：转为Spectrogram
+====================
+[English]
+Sound: To Spectrum
+[Chinese]
+声音：转为Spectrum
+====================
+[English]
+Sound: To TextGrid
+[Chinese]
+声音：转为TextGrid
+====================
+[English]
+Sound: To TextGrid (speech activity, Silero)
+[Chinese]
+声音：转为TextGrid (speech activity, Silero)
+====================
+[English]
+Sound: To long-term average spectrum
+[Chinese]
+声音：转为long-term average 频谱
 ====================
 [English]
 Sound: autocorrelate
@@ -8021,6 +11821,26 @@ SoundRecorder (stereo)
 录音机 (双声道)
 ====================
 [English]
+SoundSet & Table: Get randomized patterns
+[Chinese]
+SoundSet & 表格: Get randomized patterns
+====================
+[English]
+Sounds: Concatenate with overlap
+[Chinese]
+声音: Concatenate with overlap
+====================
+[English]
+Sounds: Convolve
+[Chinese]
+声音: Convolve
+====================
+[English]
+Sounds: Cross-correlate
+[Chinese]
+声音：计算互相关
+====================
+[English]
 Speaker
 [Chinese]
 说话人
@@ -8031,9 +11851,44 @@ Speaker help
 说话人帮助
 ====================
 [English]
+Speckle erb...
+[Chinese]
+绘制散点图 (等效矩形带宽/ERB)...
+====================
+[English]
+Speckle logarithmic...
+[Chinese]
+绘制散点图 (对数)...
+====================
+[English]
+Speckle mel...
+[Chinese]
+绘制散点图 (梅尔/mel)...
+====================
+[English]
+Speckle semitones (re 100 Hz)... || Speckle semitones...
+[Chinese]
+绘制散点图 (半音，基准 100 Hz)... || 绘制散点图 (半音)...
+====================
+[English]
+Speckle semitones (re 200 Hz)...
+[Chinese]
+绘制散点图 (半音，基准 200 Hz)...
+====================
+[English]
+Speckle semitones (re 440 Hz)...
+[Chinese]
+绘制散点图 (半音，基准 440 Hz)...
+====================
+[English]
 Speckle size...
 [Chinese]
 斑点大小...
+====================
+[English]
+Speckle...
+[Chinese]
+绘制散点图...
 ====================
 [English]
 Spectral tilt
@@ -8091,6 +11946,26 @@ Spectrogram: Formula...
 声谱图：公式...
 ====================
 [English]
+Spectrogram: Get power at (time, frequency)
+[Chinese]
+Spectrogram：获取power at (time, frequency)
+====================
+[English]
+Spectrogram: Paint
+[Chinese]
+声谱图：绘制
+====================
+[English]
+Spectrogram: To Sound
+[Chinese]
+Spectrogram：转为声音
+====================
+[English]
+Spectrogram: To Spectrum (slice)
+[Chinese]
+Spectrogram：转为Spectrum (slice)
+====================
+[English]
 Spectrum
 [Chinese]
 频谱
@@ -8099,6 +11974,11 @@ Spectrum
 Spectrum help
 [Chinese]
 频谱帮助
+====================
+[English]
+Spectrum: Cepstral smoothing
+[Chinese]
+频谱：倒谱 smoothing
 ====================
 [English]
 Spectrum: Compress frequency domain
@@ -8111,6 +11991,26 @@ Spectrum: Draw
 频谱：绘制
 ====================
 [English]
+Spectrum: Draw (log freq)
+[Chinese]
+频谱：绘制(log freq)
+====================
+[English]
+Spectrum: Filter (pass Hann band)
+[Chinese]
+频谱：Filter (pass Hann band)
+====================
+[English]
+Spectrum: Filter (pass Hann band)...
+[Chinese]
+频谱：滤波 (带通 Hanning 窗)...
+====================
+[English]
+Spectrum: Filter (stop Hann band)
+[Chinese]
+频谱：Filter (stop Hann band)
+====================
+[English]
 Spectrum: Formula
 [Chinese]
 频谱：公式
@@ -8121,6 +12021,36 @@ Spectrum: Formula...
 频谱：公式...
 ====================
 [English]
+Spectrum: Get band density
+[Chinese]
+Spectrum：获取band density
+====================
+[English]
+Spectrum: Get band density difference
+[Chinese]
+Spectrum：获取band density difference
+====================
+[English]
+Spectrum: Get band energy
+[Chinese]
+Spectrum：获取band energy
+====================
+[English]
+Spectrum: Get band energy difference
+[Chinese]
+Spectrum：获取band energy difference
+====================
+[English]
+Spectrum: Get bin number from frequency
+[Chinese]
+Spectrum：获取bin number from frequency
+====================
+[English]
+Spectrum: Get central moment
+[Chinese]
+Spectrum：获取central moment
+====================
+[English]
 Spectrum: Get centre of gravity
 [Chinese]
 频谱：获取谱重心
@@ -8129,6 +12059,101 @@ Spectrum: Get centre of gravity
 Spectrum: Get centre of gravity...
 [Chinese]
 频谱：获取谱重心...
+====================
+[English]
+Spectrum: Get frequency from bin
+[Chinese]
+Spectrum：获取frequency from bin
+====================
+[English]
+Spectrum: Get frequency of nearest maximum
+[Chinese]
+Spectrum：获取frequency of nearest 最大值
+====================
+[English]
+Spectrum: Get imaginary value in bin
+[Chinese]
+Spectrum：获取imaginary value in bin
+====================
+[English]
+Spectrum: Get kurtosis
+[Chinese]
+Spectrum：获取kurtosis
+====================
+[English]
+Spectrum: Get real value in bin
+[Chinese]
+Spectrum：获取real value in bin
+====================
+[English]
+Spectrum: Get skewness
+[Chinese]
+Spectrum：获取skewness
+====================
+[English]
+Spectrum: Get sound pressure level of nearest maximum
+[Chinese]
+Spectrum：获取sound pressure level of nearest 最大值
+====================
+[English]
+Spectrum: Get standard deviation
+[Chinese]
+Spectrum：获取标准差
+====================
+[English]
+Spectrum: LPC smoothing
+[Chinese]
+频谱：LPC smoothing
+====================
+[English]
+Spectrum: Tabulate
+[Chinese]
+频谱：Tabulate
+====================
+[English]
+Spectrum: To Excitation
+[Chinese]
+Spectrum：转为Excitation
+====================
+[English]
+Spectrum: To Formant (peaks)
+[Chinese]
+Spectrum：转为Formant (peaks)
+====================
+[English]
+Spectrum: To Long-term average spectrum
+[Chinese]
+Spectrum：转为Long-term average 频谱
+====================
+[English]
+SpectrumTier: Draw
+[Chinese]
+频谱层：绘制
+====================
+[English]
+SpectrumTier: List
+[Chinese]
+频谱层：列表
+====================
+[English]
+SpectrumTier: Remove points below
+[Chinese]
+频谱层：删除下方的点
+====================
+[English]
+Speech activity detection...
+[Chinese]
+语音活动检测...
+====================
+[English]
+Speech interval label
+[Chinese]
+言语区间标签
+====================
+[English]
+Speech probability threshold (0-1)
+[Chinese]
+言语概率阈值 (0-1)
 ====================
 [English]
 Speech-to-text recognition
@@ -8211,6 +12236,31 @@ Strings
 字符串
 ====================
 [English]
+Strings help
+[Chinese]
+字符串列表 help
+====================
+[English]
+Strings: Insert string
+[Chinese]
+字符串：插入字符串
+====================
+[English]
+Strings: Remove string
+[Chinese]
+字符串列表: Remove string
+====================
+[English]
+Strings: Replace all
+[Chinese]
+字符串：全部替换
+====================
+[English]
+Strings: Set string
+[Chinese]
+字符串列表: Set string
+====================
+[English]
 Stylize pitch (2 st)
 [Chinese]
 样式化音高(2 st)
@@ -8226,6 +12276,11 @@ Stylize...
 样式化...
 ====================
 [English]
+Subtract linear fit...
+[Chinese]
+减去线性拟合...
+====================
+[English]
 Subtract mean
 [Chinese]
 减去均值
@@ -8234,6 +12289,16 @@ Subtract mean
 Subtract mean pressure
 [Chinese]
 减去平均声压
+====================
+[English]
+Subtract trend line...
+[Chinese]
+减去趋势线...
+====================
+[English]
+Suppress "Links to this page"
+[Chinese]
+取消“指向此页面的链接”
 ====================
 [English]
 Symmetric
@@ -8356,6 +12421,11 @@ Tables
 表格
 ====================
 [English]
+Tabulate (verbose)
+[Chinese]
+制表 (详细)
+====================
+[English]
 Tabulate -
 [Chinese]
 制表 -
@@ -8371,9 +12441,24 @@ Tabulate SpeechSynthesizer voice properties
 列表显示语音合成器声音属性
 ====================
 [English]
+Tabulate candidates
+[Chinese]
+列出候选
+====================
+[English]
+Tabulate candidates in frame...
+[Chinese]
+列出帧中的候选...
+====================
+[English]
 Tabulate occurrences...
 [Chinese]
 列表显示出现次数...
+====================
+[English]
+Tabulate...
+[Chinese]
+制表...
 ====================
 [English]
 Teal
@@ -8431,6 +12516,26 @@ Text top...
 在顶部添加文本...
 ====================
 [English]
+Text width (mm)...
+[Chinese]
+文本 width (mm)...
+====================
+[English]
+Text width (world coordinates)... || Text width (wc)...
+[Chinese]
+文本 width (world coordinates)... || 文本 width (wc)...
+====================
+[English]
+Text width in millimetres
+[Chinese]
+文本 width in millimetres
+====================
+[English]
+Text width in world coordinates
+[Chinese]
+文本 width in world coordinates
+====================
+[English]
 Text writing preferences...
 [Chinese]
 文本写入偏好...
@@ -8476,9 +12581,99 @@ TextGrid & Pitch: Draw
 TextGrid&音高：绘制
 ====================
 [English]
+TextGrid & Pitch: Draw erb
+[Chinese]
+TextGrid & 音高：绘制erb
+====================
+[English]
+TextGrid & Pitch: Draw logarithmic
+[Chinese]
+TextGrid & 音高：绘制logarithmic
+====================
+[English]
 TextGrid & Pitch: Draw mel
 [Chinese]
 TextGrid&音高：绘制 mel
+====================
+[English]
+TextGrid & Pitch: Draw semitones
+[Chinese]
+TextGrid & 音高：绘制semitones
+====================
+[English]
+TextGrid & Pitch: Draw separately
+[Chinese]
+TextGrid & 音高：绘制separately
+====================
+[English]
+TextGrid & Pitch: Draw separately erb
+[Chinese]
+TextGrid & 音高：绘制separately erb
+====================
+[English]
+TextGrid & Pitch: Draw separately logarithmic
+[Chinese]
+TextGrid & 音高：绘制separately logarithmic
+====================
+[English]
+TextGrid & Pitch: Draw separately mel
+[Chinese]
+TextGrid & 音高：绘制separately mel
+====================
+[English]
+TextGrid & Pitch: Draw separately semitones
+[Chinese]
+TextGrid & 音高：绘制separately semitones
+====================
+[English]
+TextGrid & Pitch: Speckle
+[Chinese]
+TextGrid & 音高：Speckle
+====================
+[English]
+TextGrid & Pitch: Speckle erb
+[Chinese]
+TextGrid & 音高：Speckle erb
+====================
+[English]
+TextGrid & Pitch: Speckle logarithmic
+[Chinese]
+TextGrid & 音高：Speckle logarithmic
+====================
+[English]
+TextGrid & Pitch: Speckle mel
+[Chinese]
+TextGrid & 音高：Speckle mel
+====================
+[English]
+TextGrid & Pitch: Speckle semitones
+[Chinese]
+TextGrid & 音高：Speckle semitones
+====================
+[English]
+TextGrid & Pitch: Speckle separately
+[Chinese]
+TextGrid & 音高：Speckle separately
+====================
+[English]
+TextGrid & Pitch: Speckle separately erb
+[Chinese]
+TextGrid & 音高：Speckle separately erb
+====================
+[English]
+TextGrid & Pitch: Speckle separately logarithmic
+[Chinese]
+TextGrid & 音高：Speckle separately logarithmic
+====================
+[English]
+TextGrid & Pitch: Speckle separately mel
+[Chinese]
+TextGrid & 音高：Speckle separately mel
+====================
+[English]
+TextGrid & Pitch: Speckle separately semitones
+[Chinese]
+TextGrid & 音高：Speckle separately semitones
 ====================
 [English]
 TextGrid & Sound: Align interval
@@ -8486,9 +12681,34 @@ TextGrid & Sound: Align interval
 TextGrid&声音：对齐区间
 ====================
 [English]
+TextGrid & Sound: Diarize interval
+[Chinese]
+TextGrid&声音：说话人分离
+====================
+[English]
 TextGrid & Sound: Draw...
 [Chinese]
 TextGrid&声音：绘制...
+====================
+[English]
+TextGrid & Sound: Extract all intervals
+[Chinese]
+TextGrid & 声音: Extract all intervals
+====================
+[English]
+TextGrid & Sound: Extract intervals
+[Chinese]
+TextGrid & 声音: Extract intervals
+====================
+[English]
+TextGrid & Sound: Extract non-empty intervals
+[Chinese]
+TextGrid & 声音: Extract non-empty intervals
+====================
+[English]
+TextGrid & Sound: Transcribe interval
+[Chinese]
+TextGrid&声音：转写区间
 ====================
 [English]
 TextGrid help
@@ -8521,9 +12741,24 @@ TextGrid: Count labels...
 TextGrid：计数标签...
 ====================
 [English]
+TextGrid: Down to Table
+[Chinese]
+TextGrid：降为表格
+====================
+[English]
 TextGrid: Draw
 [Chinese]
 TextGrid：绘制
+====================
+[English]
+TextGrid: Duplicate tier
+[Chinese]
+TextGrid：Duplicate tier
+====================
+[English]
+TextGrid: Extract one tier
+[Chinese]
+TextGrid：提取onetier
 ====================
 [English]
 TextGrid: Extract part
@@ -8536,9 +12771,24 @@ TextGrid: Extract tier
 TextGrid：提取层
 ====================
 [English]
+TextGrid: Get centre points
+[Chinese]
+TextGrid：获取centre points
+====================
+[English]
+TextGrid: Get end points
+[Chinese]
+TextGrid：获取end points
+====================
+[English]
 TextGrid: Get end time of interval
 [Chinese]
 TextGrid：获取结束时间 of 区间
+====================
+[English]
+TextGrid: Get high interval at time
+[Chinese]
+TextGrid：获取high interval at time
 ====================
 [English]
 TextGrid: Get interval at time
@@ -8546,14 +12796,79 @@ TextGrid: Get interval at time
 TextGrid：获取指定时间的 interval
 ====================
 [English]
+TextGrid: Get interval boundary from time
+[Chinese]
+TextGrid：获取interval boundary from time
+====================
+[English]
+TextGrid: Get interval edge from time
+[Chinese]
+TextGrid：获取interval edge from time
+====================
+[English]
 TextGrid: Get label of interval
 [Chinese]
 TextGrid：获取标签 of 区间
 ====================
 [English]
+TextGrid: Get label of point
+[Chinese]
+TextGrid：获取label of point
+====================
+[English]
+TextGrid: Get low interval at time
+[Chinese]
+TextGrid：获取low interval at time
+====================
+[English]
+TextGrid: Get number of intervals
+[Chinese]
+TextGrid：获取number of intervals
+====================
+[English]
+TextGrid: Get number of points
+[Chinese]
+TextGrid：获取number of points
+====================
+[English]
 TextGrid: Get start time of interval
 [Chinese]
 TextGrid：获取开始时间 of 区间
+====================
+[English]
+TextGrid: Get starting points
+[Chinese]
+TextGrid：获取starting points
+====================
+[English]
+TextGrid: Get tier name
+[Chinese]
+TextGrid：获取tier name
+====================
+[English]
+TextGrid: Get time of point
+[Chinese]
+TextGrid：获取time of point
+====================
+[English]
+TextGrid: Insert boundary
+[Chinese]
+TextGrid：插入边界
+====================
+[English]
+TextGrid: Insert interval tier
+[Chinese]
+TextGrid：Insert interval tier
+====================
+[English]
+TextGrid: Insert point
+[Chinese]
+TextGrid：Insert point
+====================
+[English]
+TextGrid: Insert point tier
+[Chinese]
+TextGrid：Insert point tier
 ====================
 [English]
 TextGrid: Is interval tier?
@@ -8566,14 +12881,84 @@ TextGrid: List
 TextGrid：列表
 ====================
 [English]
+TextGrid: Remove boundary at time
+[Chinese]
+TextGrid：删除boundary at time
+====================
+[English]
+TextGrid: Remove left boundary
+[Chinese]
+TextGrid：删除left boundary
+====================
+[English]
+TextGrid: Remove point
+[Chinese]
+TextGrid：删除point
+====================
+[English]
+TextGrid: Remove right boundary
+[Chinese]
+TextGrid：删除right boundary
+====================
+[English]
 TextGrid: Remove tier
 [Chinese]
 TextGrid：移除层
 ====================
 [English]
+TextGrid: Set interval text
+[Chinese]
+TextGrid：设置interval text
+====================
+[English]
+TextGrid: Set point text
+[Chinese]
+TextGrid：设置point text
+====================
+[English]
+TextGrid: Tabulate occurrences
+[Chinese]
+TextGrid：统计出现次数
+====================
+[English]
+TextGrid: View & Edit with callback
+[Chinese]
+TextGrid：View & 编辑with callback
+====================
+[English]
 TextGridEditor help
 [Chinese]
 TextGrid 编辑器帮助
+====================
+[English]
+TextGrids: Merge
+[Chinese]
+TextGrid：合并
+====================
+[English]
+TextTier help
+[Chinese]
+文本层帮助
+====================
+[English]
+TextTier: Add point
+[Chinese]
+TextTier: 添加point
+====================
+[English]
+TextTier: Down to TableOfReal
+[Chinese]
+TextTier: Down to 实数表
+====================
+[English]
+Textgrid...
+[Chinese]
+TextGrid...
+====================
+[English]
+The best matches to your query seem to be:
+[Chinese]
+以下似乎是与您的查询最匹配的项：
 ====================
 [English]
 The column totals should be positive.
@@ -8614,6 +12999,11 @@ Tier
 Tier end time (s)
 [Chinese]
 层结束时间 (s)
+====================
+[English]
+Tier number
+[Chinese]
+层号
 ====================
 [English]
 Tier start time (s)
@@ -8701,9 +13091,34 @@ Times
 Times 罗马体
 ====================
 [English]
+To AmplitudeTier
+[Chinese]
+转为振幅层
+====================
+[English]
 To BarkSpectrogram...
 [Chinese]
 转为 Bark 声谱图...
+====================
+[English]
+To Categories (responses)
+[Chinese]
+转为Categories (responses)
+====================
+[English]
+To Categories (stimuli)
+[Chinese]
+转为Categories (stimuli)
+====================
+[English]
+To Cochleagram
+[Chinese]
+转为Cochleagram
+====================
+[English]
+To Cochleagram (edb)...
+[Chinese]
+转为Cochleagram (edb)...
 ====================
 [English]
 To Cochleagram...
@@ -8726,6 +13141,11 @@ To DTW...
 转为动态时间规整 (DTW)...
 ====================
 [English]
+To Distributions
+[Chinese]
+转为Distributions
+====================
+[English]
 To DurationTier
 [Chinese]
 转为时长层
@@ -8734,6 +13154,21 @@ To DurationTier
 To DurationTier...
 [Chinese]
 转为时长层...
+====================
+[English]
+To Excitation
+[Chinese]
+转为Excitation
+====================
+[English]
+To Excitation (slice)...
+[Chinese]
+转为Excitation (slice)...
+====================
+[English]
+To Excitation...
+[Chinese]
+转为Excitation...
 ====================
 [English]
 To Formant
@@ -8756,6 +13191,26 @@ To Formant (hack)...
 转为共振峰 (Hack)...
 ====================
 [English]
+To Formant (keep all)...
+[Chinese]
+转为共振峰 (保留全部)...
+====================
+[English]
+To Formant (peaks)...
+[Chinese]
+转为Formant (peaks)...
+====================
+[English]
+To Formant (robust)...
+[Chinese]
+转为共振峰 (鲁棒)...
+====================
+[English]
+To Formant (sl)...
+[Chinese]
+转为共振峰 (sl)...
+====================
+[English]
 To Formant...
 [Chinese]
 转为共振峰...
@@ -8764,6 +13219,16 @@ To Formant...
 To FormantPath (burg)...
 [Chinese]
 转为共振峰路径 (Burg)...
+====================
+[English]
+To FormantPath...
+[Chinese]
+转为共振峰路径...
+====================
+[English]
+To Harmonicity
+[Chinese]
+转为Harmonicity
 ====================
 [English]
 To Harmonicity (ac)...
@@ -8791,6 +13256,31 @@ To Intensity...
 转为音强...
 ====================
 [English]
+To IntensityTier
+[Chinese]
+转为音强层
+====================
+[English]
+To IntensityTier (peaks)
+[Chinese]
+转为音强层 (peaks)
+====================
+[English]
+To IntensityTier (valleys)
+[Chinese]
+转为音强层 (valleys)
+====================
+[English]
+To IntensityTier...
+[Chinese]
+转为音强层...
+====================
+[English]
+To IntervalTier
+[Chinese]
+转为IntervalTier
+====================
+[English]
 To KlattGrid (simple)...
 [Chinese]
 转为 KlattGrid (简单)...
@@ -8801,9 +13291,44 @@ To LPC
 转为 LPC
 ====================
 [English]
+To LPC (autocorrelation)...
+[Chinese]
+转为 LPC (自相关)...
+====================
+[English]
+To LPC (burg)...
+[Chinese]
+转为 LPC (burg)...
+====================
+[English]
+To LPC (covariance)...
+[Chinese]
+转为 LPC (协方差)...
+====================
+[English]
+To LPC (marple)...
+[Chinese]
+转为 LPC (marple)...
+====================
+[English]
+To LPC (robust)...
+[Chinese]
+转为 LPC (鲁棒)...
+====================
+[English]
 To LPC...
 [Chinese]
 转为 LPC...
+====================
+[English]
+To Ltas
+[Chinese]
+转为Ltas
+====================
+[English]
+To Ltas (1-to-1)
+[Chinese]
+转为Ltas (1-to-1)
 ====================
 [English]
 To Ltas (pitch-corrected)...
@@ -8856,9 +13381,24 @@ To Pitch (SPINET)...
 转为音高 (SPINET)...
 ====================
 [English]
+To Pitch (ac)...
+[Chinese]
+转为Pitch (ac)...
+====================
+[English]
+To Pitch (cc)...
+[Chinese]
+转为Pitch (cc)...
+====================
+[English]
 To Pitch (filtered autocorrelation)...
 [Chinese]
 转为音高 (滤波自相关)...
+====================
+[English]
+To Pitch (filtered autocorrelation)... || To Pitch (filtered ac)...
+[Chinese]
+转为Pitch (filtered autocorrelation)... || 转为Pitch (filtered ac)...
 ====================
 [English]
 To Pitch (filtered cross-correlation)...
@@ -8866,14 +13406,29 @@ To Pitch (filtered cross-correlation)...
 转为音高 (滤波互相关)...
 ====================
 [English]
+To Pitch (filtered cross-correlation)... || To Pitch (filtered cc)...
+[Chinese]
+转为Pitch (filtered cross-correlation)... || 转为Pitch (filtered cc)...
+====================
+[English]
 To Pitch (raw autocorrelation)...
 [Chinese]
 转为音高 (原始自相关)...
 ====================
 [English]
+To Pitch (raw autocorrelation)... || To Pitch (raw ac)...
+[Chinese]
+转为Pitch (raw autocorrelation)... || 转为Pitch (raw ac)...
+====================
+[English]
 To Pitch (raw cross-correlation)...
 [Chinese]
 转为音高 (原始互相关)...
+====================
+[English]
+To Pitch (raw cross-correlation)... || To Pitch (raw cc)...
+[Chinese]
+转为Pitch (raw cross-correlation)... || 转为Pitch (raw cc)...
 ====================
 [English]
 To Pitch (shs)...
@@ -8884,6 +13439,16 @@ To Pitch (shs)...
 To Pitch...
 [Chinese]
 转为音高...
+====================
+[English]
+To PitchTier
+[Chinese]
+转为音高层
+====================
+[English]
+To PitchTier...
+[Chinese]
+转为音高层...
 ====================
 [English]
 To PointProcess
@@ -8916,6 +13481,11 @@ To PointProcess...
 转为点过程...
 ====================
 [English]
+To Polygon
+[Chinese]
+转为多边形
+====================
+[English]
 To PowerCepstrogram...
 [Chinese]
 转为倒谱图 (PowerCepstrogram)...
@@ -8946,9 +13516,44 @@ To Sound (derivative)...
 转为声音 (求导)...
 ====================
 [English]
+To Sound (hum)
+[Chinese]
+转为声音 (hum)
+====================
+[English]
+To Sound (phonation)...
+[Chinese]
+转为声音 (phonation)...
+====================
+[English]
+To Sound (pulse train)...
+[Chinese]
+转为声音 (pulse train)...
+====================
+[English]
+To Sound (pulses)
+[Chinese]
+转为声音 (脉冲)
+====================
+[English]
+To Sound (sine)...
+[Chinese]
+转为声音 (sine)...
+====================
+[English]
+To Sound (slice)...
+[Chinese]
+转为声音 (slice)...
+====================
+[English]
 To Sound (white channels)...
 [Chinese]
 转为声音 (白噪声通道)...
+====================
+[English]
+To Sound || To Sound (fft)
+[Chinese]
+转为声音 || 转为声音 (fft)
 ====================
 [English]
 To Sound...
@@ -8971,14 +13576,44 @@ To Spectrogram...
 转为声谱图...
 ====================
 [English]
+To Spectrum
+[Chinese]
+转为Spectrum
+====================
+[English]
+To Spectrum (dft)
+[Chinese]
+转为Spectrum (dft)
+====================
+[English]
+To Spectrum (fft)
+[Chinese]
+转为Spectrum (fft)
+====================
+[English]
 To Spectrum (resampled)...
 [Chinese]
 转为频谱 (重采样)...
 ====================
 [English]
+To Spectrum (slice)...
+[Chinese]
+转为Spectrum (slice)...
+====================
+[English]
 To Spectrum...
 [Chinese]
 转为频谱 (Spectrum)...
+====================
+[English]
+To SpectrumTier (peaks)
+[Chinese]
+转为SpectrumTier (peaks)
+====================
+[English]
+To Strings
+[Chinese]
+转为字符串列表
 ====================
 [English]
 To Table
@@ -9026,9 +13661,49 @@ To TextGrid (speech activity, Silero)...
 转为 TextGrid (语音活动检测, Silero)...
 ====================
 [English]
+To TextGrid (vuv)...
+[Chinese]
+转为TextGrid (vuv)...
+====================
+[English]
 To TextGrid...
 [Chinese]
 转为 TextGrid...
+====================
+[English]
+To TextTier
+[Chinese]
+转为TextTier
+====================
+[English]
+To Transition
+[Chinese]
+转为转移
+====================
+[English]
+To Transition (noise)
+[Chinese]
+转为转移 (noise)
+====================
+[English]
+To Transition (noise)...
+[Chinese]
+转为转移 (noise)...
+====================
+[English]
+To Transition...
+[Chinese]
+转为转移...
+====================
+[English]
+To VocalTract
+[Chinese]
+转为VocalTract
+====================
+[English]
+To WordList
+[Chinese]
+转为单词列表
 ====================
 [English]
 Total duration
@@ -9039,6 +13714,11 @@ Total duration
 Trace threads
 [Chinese]
 追踪线程
+====================
+[English]
+Track...
+[Chinese]
+跟踪...
 ====================
 [English]
 Transcribe interval
@@ -9056,6 +13736,21 @@ Transcription settings...
 转写设置...
 ====================
 [English]
+Transcription...
+[Chinese]
+转写...
+====================
+[English]
+Transition help
+[Chinese]
+转移 help
+====================
+[English]
+Transition: Power...
+[Chinese]
+转移：乘方 (能量)...
+====================
+[English]
 Type any numeric formula or string formula
 [Chinese]
 输入任何数值公式或字符串公式
@@ -9071,14 +13766,49 @@ Undo
 撤销
 ====================
 [English]
+Union
+[Chinese]
+并集
+====================
+[English]
 Unit
 [Chinese]
 单位
 ====================
 [English]
+Up to IntensityTier...
+[Chinese]
+Up to 音强层...
+====================
+[English]
+Up to PitchTier...
+[Chinese]
+Up to 音高层...
+====================
+[English]
+Up to SpellingChecker
+[Chinese]
+Up to 拼写检查器
+====================
+[English]
+Up to TextTier...
+[Chinese]
+升为文本层...
+====================
+[English]
 Use multi-threading
 [Chinese]
 使用多线程
+====================
+[English]
+Use selection for find
+[Chinese]
+使用选区进行查找
+====================
+[English]
+Use text styles
+[Chinese]
+使用文本样式
 ====================
 [English]
 Values:
@@ -9096,14 +13826,29 @@ Vertical column(s)
 垂直列 (s)
 ====================
 [English]
+Vertical mm to world coordinates... || Vertical mm to wc...
+[Chinese]
+垂直毫米转世界坐标... || 垂直毫米转 wc...
+====================
+[English]
 Vertical range:
 [Chinese]
 垂直范围：
 ====================
 [English]
+Vertical world coordinates to mm... || Vertical wc to mm...
+[Chinese]
+垂直世界坐标转毫米... || 垂直 wc 转毫米...
+====================
+[English]
 Very accurate
 [Chinese]
 非常精确
+====================
+[English]
+View
+[Chinese]
+查看
 ====================
 [English]
 View & Edit
@@ -9136,6 +13881,11 @@ View & Edit || Edit || Open
 查看与编辑 || 编辑 || 打开
 ====================
 [English]
+View & Edit || View & Edit alone || Edit alone
+[Chinese]
+View & Edit || View & 编辑alone || 编辑alone
+====================
+[English]
 View & Edit...
 [Chinese]
 查看与编辑...
@@ -9164,6 +13914,11 @@ View range (units)
 View spectral slice
 [Chinese]
 查看频谱切片
+====================
+[English]
+View || Open
+[Chinese]
+查看 || Open
 ====================
 [English]
 Viewport text...
@@ -9199,6 +13954,11 @@ Voice report
 Voice report...
 [Chinese]
 嗓音报告...
+====================
+[English]
+Voice...
+[Chinese]
+发声...
 ====================
 [English]
 Voiced / unvoiced cost
@@ -9241,6 +14001,11 @@ What’s new?
 新特性?
 ====================
 [English]
+Where am I?
+[Chinese]
+当前坐标 (Where am I)？
+====================
+[English]
 Where to search...
 [Chinese]
 搜索范围...
@@ -9249,6 +14014,11 @@ Where to search...
 Which of these are point tiers?
 [Chinese]
 哪些层是点层？
+====================
+[English]
+Whisper model
+[Chinese]
+Whisper 模型
 ====================
 [English]
 White
@@ -9421,6 +14191,11 @@ Write to binary file...
 写入二进制文件...
 ====================
 [English]
+Write to chronological text file...
+[Chinese]
+写入chronological text file...
+====================
+[English]
 Write to raw 8-bit signed file...
 [Chinese]
 写入到原始 8 位有符号文件...
@@ -9434,6 +14209,36 @@ Write to raw 8-bit unsigned file...
 Write to short text file...
 [Chinese]
 写入短文本文件...
+====================
+[English]
+Write to stereo AIFC file...
+[Chinese]
+写入stereo AIFC file...
+====================
+[English]
+Write to stereo AIFF file...
+[Chinese]
+写入stereo AIFF file...
+====================
+[English]
+Write to stereo FLAC file...
+[Chinese]
+写入stereo FLAC file...
+====================
+[English]
+Write to stereo NIST file...
+[Chinese]
+写入stereo NIST file...
+====================
+[English]
+Write to stereo NeXT/Sun file...
+[Chinese]
+写入双声道 NeXT/Sun 文件...
+====================
+[English]
+Write to stereo WAV file...
+[Chinese]
+写入stereo WAV file...
 ====================
 [English]
 Write to text file...
@@ -9526,6 +14331,11 @@ Zoom...
 缩放...
 ====================
 [English]
+Zoom   
+[Chinese]
+缩放   
+====================
+[English]
 `x` is time
 [Chinese]
 `x` is 时间
@@ -9564,6 +14374,11 @@ back
 bak
 [Chinese]
 返回
+====================
+[English]
+bars
+[Chinese]
+条形
 ====================
 [English]
 bottom
@@ -9624,6 +14439,11 @@ correlation
 covariance
 [Chinese]
 协方差
+====================
+[English]
+curve
+[Chinese]
+曲线
 ====================
 [English]
 end
@@ -9699,6 +14519,11 @@ labels).
 left
 [Chinese]
 左
+====================
+[English]
+left ... or range of numbers of speakers
+[Chinese]
+左 ... 或说话人数量范围
 ====================
 [English]
 left Columns
@@ -9801,9 +14626,19 @@ out
 缩小
 ====================
 [English]
+poles
+[Chinese]
+杆状
+====================
+[English]
 right
 [Chinese]
 右
+====================
+[English]
+right ... or range of numbers of speakers
+[Chinese]
+右 ... 或说话人数量范围
 ====================
 [English]
 right Columns
@@ -9889,6 +14724,11 @@ semitones re 440 Hz
 sound
 [Chinese]
 声音
+====================
+[English]
+speckles
+[Chinese]
+斑点
 ====================
 [English]
 square (rectangular)

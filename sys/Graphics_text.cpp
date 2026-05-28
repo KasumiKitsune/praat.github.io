@@ -1184,35 +1184,64 @@ static void drawOneCell (Graphics me, int xDC, int yDC, _Graphics_widechar lc []
 			for (plc = lc; plc -> kar >= U' '; plc ++) {
 				x += plc -> width;
 				if (x > xmax) {   // wrap (if wrapWidth is too small, each word will be on a separate line)
+					_Graphics_widechar *overflowLc = plc;
 					while (plc >= lastlc) {
 						if (plc -> kar == U' ' && ! plc -> link)   // keep links contiguous
 							break;
 						plc --;
 					}
-					if (plc <= lastlc)
-						break;   // hopeless situation: no spaces; get over it
-					lastlc = plc;
-					plc -> kar = U'\n';   // replace space with newline
-					#if quartz || cairo
-						if (my screen) {
-							/*
-								This part is needed when using the non-`charSize()` variant of `charSizes()`,
-								because otherwise you'll see extra spaces
-								before the first font switch on each non-initial line.
-							*/
-							_Graphics_widechar *next = plc + 1;
-							if (next->style != plc->style ||
-								next->baseline != plc->baseline || next->size != plc->size || next->link != plc->link ||
-								next->font.integer_ != plc->font.integer_ || next->font.string != plc->font.string ||
-								next->rightToLeft != plc->rightToLeft)
-							{
-								// nothing
-							} else {
-								next -> width -= 0.25 * my fontSize * my resolution / 72.0;   // subtract the width of one space
+					if (plc <= lastlc) {
+						// Hopeless situation: no spaces. For CJK/Chinese text, wrap at character level.
+						_Graphics_widechar *wrapLc = overflowLc;
+						_Graphics_widechar *boundary = ( lastlc == lc ? lastlc : lastlc + 1 );
+						if (wrapLc > boundary) {
+							// Shift elements right by 1 to make room for U'\n'
+							_Graphics_widechar *end = wrapLc;
+							while (end -> kar != U'\0') {
+								end ++;
 							}
+							for (_Graphics_widechar *shift = end; shift >= wrapLc; shift --) {
+								* (shift + 1) = * shift;
+							}
+							plc = wrapLc;
+							plc -> kar = U'\n';
+							plc -> code = U'\n';
+							plc -> karInfo = Longchar_getInfoFromNative (U'\n');
+							plc -> width = 0.0;
+							plc -> link = 0;
+							plc -> rightToLeft = 0;
+							
+							lastlc = plc;
+							x = xDC + dx + my secondIndent * my scaleX;
+						} else {
+							// We are at the very beginning of the line, so we cannot wrap before this character.
+							// Let it draw on the current line.
+							plc = overflowLc;
 						}
-					#endif
-					x = xDC + dx + my secondIndent * my scaleX;
+					} else {
+						lastlc = plc;
+						plc -> kar = U'\n';   // replace space with newline
+						#if quartz || cairo
+							if (my screen) {
+								/*
+									This part is needed when using the non-`charSize()` variant of `charSizes()`,
+									because otherwise you'll see extra spaces
+									before the first font switch on each non-initial line.
+								*/
+								_Graphics_widechar *next = plc + 1;
+								if (next->style != plc->style ||
+									next->baseline != plc->baseline || next->size != plc->size || next->link != plc->link ||
+									next->font.integer_ != plc->font.integer_ || next->font.string != plc->font.string ||
+									next->rightToLeft != plc->rightToLeft)
+								{
+									// nothing
+								} else {
+									next -> width -= 0.25 * my fontSize * my resolution / 72.0;   // subtract the width of one space
+								}
+							}
+						#endif
+						x = xDC + dx + my secondIndent * my scaleX;
+					}
 				}
 			}
 			xbegin = x = xDC + dx;   // re-initialize for second pass
