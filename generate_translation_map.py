@@ -34,7 +34,81 @@ def to_cpp_unicode_literal(s):
 
 # 1. Exact string mappings for critical GUI items
 EXACT_MAP = {
-    "\nPlease change its name or remove it.": "\n请更改其名称或将其删除。",
+    # Context menus in TextGridArea.cpp
+    "- Modify tier:": "- 修改层：",
+    "- Extract to list of objects:": "- 提取至对象列表：",
+    "New tier:": "新建层：",
+    "Remove all text from tier": "清除层中的所有文本",
+    "Remove entire tier": "删除整层",
+    "Extract entire selected tier": "提取整个所选层",
+    "- Save TextGrid to disk:": "- 保存 TextGrid 至磁盘：",
+    "Save whole TextGrid as text file": "保存整个 TextGrid 为文本文件",
+    "Save whole TextGrid as text file... || Save TextGrid as text file... || Write TextGrid to text file...": "保存整个 TextGrid 为文本文件... || 保存 TextGrid 为文本文件... || 写入 TextGrid 为文本文件...",
+    "TextGrid info": "TextGrid 信息",
+
+    # TextGrid & Sound: Extract intervals dialog and kMelder_string operators
+    "TextGrid & Sound: Extract intervals": "TextGrid & 声音：提取区间",
+    "Extract every interval whose label...": "提取所有符合此标签的区间...",
+    "...the text": "……文本：",
+    " ...the text": " ……文本：",
+    "is equal to": "等于",
+    "is not equal to": "不等于",
+    "contains": "包含",
+    "does not contain": "不包含",
+    "starts with": "开头是",
+    "does not start with": "开头不是",
+    "ends with": "结尾是",
+    "does not end with": "结尾不是",
+    "contains a word equal to": "包含单词等于",
+    "does not contain a word equal to": "不包含单词等于",
+    "contains a word starting with": "包含单词开头是",
+    "does not contain a word starting with": "不包含单词开头是",
+    "contains a word ending with": "包含单词结尾是",
+    "does not contain a word ending with": "不包含单词结尾是",
+    "contains ink equal to": "包含可见字符等于",
+    "does not contain ink equal to": "不包含可见字符等于",
+    "contains ink starting with": "包含可见字符开头是",
+    "does not contain ink starting with": "不包含可见字符开头不是",
+    "contains ink ending with": "包含可见字符结尾是",
+    "does not contain ink ending with": "不包含可见字符结尾不是",
+    "matches (regex)": "匹配 (正则表达式)",
+
+    # Format enums
+    "(formula)": "(公式)",
+    "(ranges)": "(范围)",
+    "(one row per line)": "(每行一行)",
+    "(comma-separated)": "(以逗号分隔)",
+    "(semicolon-separated)": "(以分号分隔)",
+    "(pipe-separated)": "(以竖线分隔)",
+    "(one per line)": "(每行一个)",
+
+    # TextGrid: To DurationTier dialog
+    "TextGrid: To DurationTier": "TextGrid：转为时长层 (DurationTier)",
+    "Time scale factor": "时间缩放比例",
+    "Left transition duration (s)": "左过渡时长 (s)",
+    "Right transition duration (s)": "右过渡时长 (s)",
+    "Scale intervals whose label... ": "缩放符合此标签的区间...",
+    "Scale intervals whose label...": "缩放符合此标签的区间...",
+
+    # TextGrid settings dialog
+    "TextGrid settings": "TextGrid 设置",
+    "Font size (points)": "字体大小 (点)",
+    "Text alignment in intervals": "区间内文本对齐方式",
+    "The symbols %#_^ in labels": "标签中的符号 %#_^",
+    "are shown as typed": "按键入内容显示",
+    "mean italic/bold/sub/super": "表示斜体/粗体/下角标/上角标",
+    "With the shift key, you drag": "配合 Shift 键，可以拖拽",
+    "a single boundary": "单个边界",
+    "multiple boundaries": "多个边界",
+    "Show number of": "显示编号",
+    "nothing": "不显示",
+    "intervals or points": "区间或点",
+    "non-empty intervals or points": "非空区间或点",
+    "Paint intervals green whose label...": "将区间标绿，若其标签...",
+
+    # Merge dialog
+    "Equalize domains": "对齐时间域",
+
     " -- Pitch": " -- 音高",
     " -- Pitch (hum)": " -- 音高 (蜂鸣声)",
     " seconds,": " 秒，",

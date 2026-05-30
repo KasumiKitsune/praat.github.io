@@ -21,6 +21,8 @@
 
 3. 修改前先读相关上下文。不要只凭英文字符串全局替换；Praat 有大量手写宏、菜单别名和旧拼写，错误替换很容易导致启动时报错或 UI 不匹配。
 
+4. 如果用户给的是截图里的“漏网之鱼”，先把截图转成受控清单和定位表，不要立刻做全仓库审计。清单越窄，修改越快也越安全。
+
 ## 1. 项目现状速览
 
 本仓库是 Praat 源码的非官方简体中文本地化版本，不是基于 gettext/Qt/i18n 框架的普通翻译项目。当前中文化主要由三部分组成：
@@ -100,6 +102,50 @@ UI 翻译运行时入口是：
 
 只有在做非常小的临时验证时才考虑直接改生成后的 C++。如果最终要保留改动，必须同步回 `generate_translation_map.py`，否则下一次运行脚本会把改动覆盖。
 
+### 2.5 截图漏网 UI 的高效处理
+
+当用户只给截图并说“把这些漏网之鱼翻译一下”时，不要从截图直接扩展成全项目翻译审计。先要求或自行整理一个最小清单：
+
+```text
+类型：菜单 / 按钮 / 对话框 / 弹窗 / 手册
+英文原文：Extract intervals
+建议中文：提取区间
+出现场景：TextGrid 编辑器菜单
+截图：用户已附
+备注：只处理本条，不扩大到相邻菜单
+```
+
+推荐执行顺序：
+
+1. 先抄出截图中可见的英文原文，保持大小写、冒号、省略号和前后空格。
+2. 给出定位表，再动手修改：
+
+   ```text
+   英文原文 | 类型 | 命中的文件 | 修改入口 | 建议中文 | 状态
+   ```
+
+3. 每个英文原文优先做精确搜索，搜索预算控制在 2 次左右。找不到就列入“未定位”，不要因为一个短词把全仓库都扫一遍。
+4. 普通 UI / 菜单 / 按钮优先回到 `generate_translation_map.py` 的 `EXACT_MAP`；确认不经过 `praat_translate()` 时，才继续追具体 GUI 创建路径。
+5. 弹窗、报错、警告要单独标记。许多 `Melder_throw` / `Melder_warning` 文案可能不经过普通 UI 翻译表，不要硬塞进 `EXACT_MAP` 后就宣称完成。
+6. 用户只要求修截图里的几条时，不要生成大而全的 `implementation_plan.md`；定位表足够，确认后直接按清单改。
+
+可直接复用的任务提示：
+
+```text
+请根据下面的漏网英文清单补翻译。不要做全项目审计，不要写 implementation_plan。
+只处理我列出的字符串；每个字符串最多精确搜索 2 次，找不到就报告未定位。
+
+规则：
+1. 普通 UI / 菜单 / 按钮优先修改 generate_translation_map.py，并按项目流程更新 sys/praat_translate.cpp。
+2. 手册正文只修改 fon/manual_*.cpp，不修改 docs/manual 生成结果。
+3. 弹窗 / 报错单独标记；如果不经过 praat_translate，不要硬塞进 EXACT_MAP。
+4. 修改前先给出“英文原文 | 位置 | 修改入口 | 建议中文”的定位表。
+5. 我确认后再执行修改。
+
+漏网清单：
+- ...
+```
+
 ## 3. 内置帮助手册工作流
 
 ### 3.1 真正的入口
@@ -115,7 +161,42 @@ UI 翻译运行时入口是：
 
 这些文件不是 Markdown。它们使用 Praat 自研手册宏，例如 `MAN_BEGIN`、`INTRO`、`NORMAL`、`LIST_ITEM`、`ENTRY`、`TERM`。
 
-### 3.2 链接和页面标题规则
+### 3.2 手册漏网内容的快速定位
+
+手册相关任务也不要从 `docs/manual/*.html` 或全仓库英文短词开始搜。更高效的定位顺序是：
+
+1. 如果截图或页面顶部能看到手册页标题，先精确搜索标题：
+
+   ```powershell
+   rg -n 'MAN_BEGIN\s*\(\s*U"TextGridEditor"' fon dwtools stat gram
+   ```
+
+   如果标题来自生成的 HTML 文件名，例如 `TextGridEditor.html`，优先回到 `fon/manual_*.cpp` 查对应 `MAN_BEGIN`。
+
+2. 如果只有正文里的英文短句，先限定手册源文件：
+
+   ```powershell
+   rg -n -F "every interval whose label" fon/manual_*.cpp
+   rg -n -F "every interval whose label" dwtools/manual_*.cpp stat/manual_*.cpp gram/manual_*.cpp
+   ```
+
+3. 如果短句太普通，例如 `the text`、`is equal to`、`click`，不要直接全仓库扫。先结合截图里的页面标题、对象名、菜单名、章节名或相邻句子扩大成更长的搜索片段。
+4. 定位到页面后，只改包含该页面的 `manual_*.cpp` 段落；不要修改 `docs/manual/*.html`，这些是生成产物。
+5. 找不到源头时，输出“未定位：英文原文 + 已搜索范围 + 下一步建议”，不要为了凑结果扩大成手册全量审计。
+
+手册漏网清单建议使用这种格式：
+
+```text
+页面标题：TextGridEditor
+英文原文：every interval whose label...
+建议中文：每个标签为……的区间
+源文件范围：fon/manual_annotation.cpp 优先
+是否允许调整链接文本：否，链接目标保持英文
+```
+
+现有 `extract_full_manuals_bilingual.py` 和 `extract_manuals_bilingual.py` 更适合“已有手册改动后的审校”，不是截图漏网任务的第一步。截图漏网任务应先定位源文件和页面，再按需要运行脚本导出审校材料。
+
+### 3.3 链接和页面标题规则
 
 手册最容易踩坑的是 dangling link。
 
@@ -130,7 +211,7 @@ UI 翻译运行时入口是：
 - 不要写成 `@波形图` 或 `@@波形图@`，这会让 Praat 在启动/打开手册时查找不存在的页面。
 - `##Command#`、`%emphasis%`、`\xx`、`\uXXXX`、`@@Page|label@` 这些标记要按 Praat 语法保留。
 
-### 3.3 审校辅助脚本
+### 3.4 审校辅助脚本
 
 当前有两条脚本路径，但要注意它们的比较基准：
 
@@ -152,7 +233,7 @@ python extract_manuals_bilingual.py
 
 `manuals_bilingual_review.txt` 是审校材料，不是手册源码。发现问题后要回到 `fon/manual_*.cpp` 修改。
 
-### 3.4 术语表维护
+### 3.5 术语表维护
 
 术语表文件是 `praat_glossary.md`，生成入口是 `build_glossary.py`。如果发现术语不准，优先改 `build_glossary.py` 里的 `MANUAL_OVERRIDES`，再重新生成：
 

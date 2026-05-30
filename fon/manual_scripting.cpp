@@ -109,70 +109,70 @@ R"~~~(
 "Scripting"
 © Paul Boersma 2000,2002–2004,2008,2010,2011,2013,2014,2017,2020,2024
 
-This is one of the tutorials of the Praat program. It assumes you are familiar with the @Intro.
+这是 Praat 程序的教程之一。它假设您已熟悉 @@Intro|简介@。
 
-A %script is a text that consists of menu commands and action commands.
-If you %run the script (perhaps from a @ScriptEditor),
-the commands are executed as if you clicked on them.
-You can read this tutorial sequentially with the help of the “##< 1#” and “##1 >#” buttons.
+一个%脚本（script）%是包含菜单命令 and 操作命令的文本。
+如果您%运行（run）%该脚本（通常从 @ScriptEditor 运行），
+这些命令的执行方式就如同您点击了它们一样。
+您可以在“##< 1#”和“##1 >#”按钮的帮助下按顺序阅读本教程。
 
-, @@Scripting 1. Your first scripts@ (how to create, how to run, how to save)
-, @@Scripting 2. How to script settings windows@ (numeric, boolean, multiple-choice, text, file)
-, @@Scripting 3. Simple language elements
-	, @@Scripting 3.1. Hello world@ (`writeInfoLine`, `appendInfoLine`)
-	, @@Scripting 3.2. Numeric variables@ (assignments)
-	, @@Scripting 3.3. Numeric queries
-	, @@Scripting 3.4. String variables@ (assignments)
-	, @@Scripting 3.5. String queries
-	, @@Scripting 3.6. “For” loops@ (`for`, `endfor`)
-	, @@Scripting 3.7. Layout@ (white space, comments, continuation lines)
-, @@Scripting 4. Object selection@
-	, @@Scripting 4.1. Selecting objects
-	, @@Scripting 4.2. Removing objects
-	, @@Scripting 4.3. Querying objects
-, @@Scripting 5. Language elements reference@
-	, @@Scripting 5.1. Variables@ (numeric, string)
-	, @@Scripting 5.2. Expressions@ (numeric, string)
-	, @@Scripting 5.3. Jumps@ (`if`, `then`, `elsif`, `else`, `endif`)
-	, @@Scripting 5.4. Loops@ (`for`/`endfor`, `while`/`endwhile`, `repeat`/`until`)
-	, @@Scripting 5.5. Procedures@ (`@`, `procedure`)
-	, @@Scripting 5.6. Arrays and dictionaries
-	, @@Scripting 5.7. Vectors and matrices
-	, @@Scripting 5.8. Including other scripts
-	, @@Scripting 5.9. Quitting@ (`exitScript`)
-, @@Scripting 6. Communication outside the script
-	, @@Scripting 6.1. Arguments to the script@ (`form`/`endform`, `runScript`)
-	, @@Scripting 6.2. Writing to the Info window@ (`writeInfoLine`, `appendInfoLine`, `appendInfo`, `tab$`)
-	, @@Scripting 6.3. Query commands@ (#Get, #Count)
-	, @@Scripting 6.4. Files@ (`fileReadable`, `readFile`, `writeFile`, `deleteFile`, `createFolder`)
-	, @@Scripting 6.5. Calling system commands@ (`runSystem`, `environment$`, `stopwatch`)
-	, @@Scripting 6.6. Controlling the user@ (`pause`, `beginPause`/`endPause`, `chooseReadFile$`)
-	, @@Scripting 6.7. Sending a message to another program@
-	, @@Scripting 6.8. Messages to the user@ (`exitScript`, `assert`, `nowarn`, `nocheck`)
-	, @@Scripting 6.9. Calling from the command line
-, @@Scripting 7. Scripting the editors
-	, @@Scripting 7.1. Scripting an editor from a shell script@ (`editor`/`endeditor`)
-	, @@Scripting 7.2. Scripting an editor from within
-, @@Scripting 8. Controlling Praat from another program
-	, @@Scripting 8.1. The sendpraat subroutine
-	, @@Scripting 8.2. The sendpraat program
-, @@Scripting 9. Turning a script into a stand-alone program
-, @@Scripting 10. Old functions
+, @@Scripting 1. Your first scripts|Scripting 1. 您的第一个脚本@（如何创建，如何运行，如何保存）
+, @@Scripting 2. How to script settings windows|Scripting 2. 如何为设置窗口编写脚本@（数值型、布尔型、多选、文本型、文件型）
+, @@Scripting 3. Simple language elements|Scripting 3. 简单的语言元素
+	, @@Scripting 3.1. Hello world|Scripting 3.1. Hello world@（`writeInfoLine`，`appendInfoLine`）
+	, @@Scripting 3.2. Numeric variables|Scripting 3.2. 数值变量@（赋值）
+	, @@Scripting 3.3. Numeric queries|Scripting 3.3. 数值查询
+	, @@Scripting 3.4. String variables|Scripting 3.4. 字符串变量@（赋值）
+	, @@Scripting 3.5. String queries|Scripting 3.5. 字符串查询
+	, @@Scripting 3.6. “For” loops|Scripting 3.6. “For” 循环@（`for`，`endfor`）
+	, @@Scripting 3.7. Layout|Scripting 3.7. 布局@（空格、注释、续行）
+, @@Scripting 4. Object selection|Scripting 4. 对象选择@
+	, @@Scripting 4.1. Selecting objects|Scripting 4.1. 选择对象
+	, @@Scripting 4.2. Removing objects|Scripting 4.2. 删除对象
+	, @@Scripting 4.3. Querying objects|Scripting 4.3. 查询对象
+, @@Scripting 5. Language elements reference|Scripting 5. 语言元素参考@
+	, @@Scripting 5.1. Variables|Scripting 5.1. 变量@（数值型、字符串型）
+	, @@Scripting 5.2. Expressions|Scripting 5.2. 表达式@（数值型、字符串型）
+	, @@Scripting 5.3. Jumps|Scripting 5.3. 跳转@（`if`、`then`、`elsif`、`else`、`endif`）
+	, @@Scripting 5.4. Loops|Scripting 5.4. 循环@（`for`/`endfor`、`while`/`endwhile`、`repeat`/`until`）
+	, @@Scripting 5.5. Procedures|Scripting 5.5. 过程@（`@`、`procedure`）
+	, @@Scripting 5.6. Arrays and dictionaries|Scripting 5.6. 数组与字典
+	, @@Scripting 5.7. Vectors and matrices|Scripting 5.7. 向量与矩阵
+	, @@Scripting 5.8. Including other scripts|Scripting 5.8. 包含其他脚本
+	, @@Scripting 5.9. Quitting|Scripting 5.9. 退出脚本@（`exitScript`）
+, @@Scripting 6. Communication outside the script|Scripting 6. 脚本外部通信
+	, @@Scripting 6.1. Arguments to the script|Scripting 6.1. 脚本参数@（`form`/`endform`、`runScript`）
+	, @@Scripting 6.2. Writing to the Info window|Scripting 6.2. 写入信息窗口@（`writeInfoLine`、`appendInfoLine`、`appendInfo`、`tab$`）
+	, @@Scripting 6.3. Query commands|Scripting 6.3. 查询命令@（#Get、#Count）
+	, @@Scripting 6.4. Files|Scripting 6.4. 文件@（`fileReadable`、`readFile`、`writeFile`、`deleteFile`、`createFolder`）
+	, @@Scripting 6.5. Calling system commands|Scripting 6.5. 调用系统命令@（`runSystem`、`environment$`、`stopwatch`）
+	, @@Scripting 6.6. Controlling the user|Scripting 6.6. 控制用户@（`pause`、`beginPause`/`endPause`、`chooseReadFile$`）
+	, @@Scripting 6.7. Sending a message to another program|Scripting 6.7. 向另一个程序发送消息@
+	, @@Scripting 6.8. Messages to the user|Scripting 6.8. 向用户发送消息@（`exitScript`、`assert`、`nowarn`、`nocheck`）
+	, @@Scripting 6.9. Calling from the command line|Scripting 6.9. 从命令行调用
+, @@Scripting 7. Scripting the editors|Scripting 7. 为编辑器编写脚本
+	, @@Scripting 7.1. Scripting an editor from a shell script|Scripting 7.1. 从 Shell 脚本控制编辑器@（`editor`/`endeditor`）
+	, @@Scripting 7.2. Scripting an editor from within|Scripting 7.2. 从内部控制编辑器
+, @@Scripting 8. Controlling Praat from another program|Scripting 8. 从其他程序控制 Praat
+	, @@Scripting 8.1. The sendpraat subroutine|Scripting 8.1. sendpraat 子例程
+	, @@Scripting 8.2. The sendpraat program|Scripting 8.2. sendpraat 程序
+, @@Scripting 9. Turning a script into a stand-alone program|Scripting 9. 将脚本转化为独立程序
+, @@Scripting 10. Old functions|Scripting 10. 旧版函数
 
-Also see the @@scripting examples@.
+另请参见 @@scripting examples|脚本编写示例@。
 
 ################################################################################
 "Scripting 1. Your first scripts"
 © Paul Boersma 2000,2002,2004,2005,2008(“My first script”),2011,2013,2014,2020,2023
 
-This page tells you how to create, run and save a script.
-To get a feel for how it works, you are advised to try out all the steps.
+本页介绍如何创建、运行和保存脚本。
+为了切实感受其工作原理，建议您尝试所有步骤。
 
-1. A minimal script
+1. 最简脚本
 ===================
-Suppose that you want to create a script that allows you to play a selected Sound object twice.
-You first create an empty script, by choosing @@New Praat script@ from the Praat menu in the Objects window.
-A @ScriptEditor window will appear on your screen:
+假设您想创建一个脚本，该脚本可以播放选中的 Sound 对象两次。
+您首先通过从 Objects 窗口的 Praat 菜单中选择 @@New Praat script|新建 Praat 脚本@ 来创建一个空脚本。
+您的屏幕上将出现一个 @ScriptEditor（脚本编辑器）窗口：
 {- 6x4
 	)~~~"
 		Manual_DRAW_WINDOW (4, "untitled script", "File   Edit   Search   Convert   Font   Run   Help")
@@ -182,23 +182,18 @@ A @ScriptEditor window will appear on your screen:
 	fontSize = extractNumber (info$, "Font size: ")
 	;Text: 50, "centre", 50, "half", string$ (fontSize)
 }
-In this window, you type
+在此窗口中，您输入：
 {;
 	Play
 	Play
 }
-Now select a Sound in the Objects window. As you expect from selecting a Sound, a #Play button will
-appear in the dynamic menu. If you now choose #Run from the Run menu in the ScriptEditor,
-Praat will play the sound twice.
-This works because #Play is a command that becomes available in the dynamic menu when you select a Sound.
+现在在 Objects 窗口中选择一个 Sound。正如您在选择 Sound 时所预期的那样，一个 #Play（播放）按钮将出现在动态菜单中。如果您现在选择 ScriptEditor 的 Run 菜单中的 #Run，Praat 将播放该声音两次。
+这是因为 #Play 是当您选择 Sound 时在动态菜单中变得可用的命令。
 
-2. Some more commands
+2. 更多命令
 =====================
-In the above example, you could use $Play in your script because the #Play command was available,
-i.e. because “Play” was the text on a button currently available in the dynamic menu.
-Apart from these selection-dependent (dynamic) commands,
-you can also use all fixed commands from the menus of the @@Objects window@
-and the @@Picture window@. For instance, try the following script:
+在上述示例中，您可以在脚本中使用 `Play`，是因为 #Play 命令是可用的，也就是说，因为 “Play” 是当前动态菜单中可用按钮上的文本。
+除了这些依赖于选定对象的（动态）命令之外，您还可以使用 @@Objects window|对象窗口@ 和 @@Picture window|画图窗口@ 菜单中的所有固定命令。例如，尝试以下脚本：
 {;
 	Erase all
 	Draw inner box
@@ -206,44 +201,27 @@ and the @@Picture window@. For instance, try the following script:
 	Play
 	Erase all
 }
-When you run this script, you’ll see a rectangle appear in the Picture window
-(that’s what the command ##Draw inner box# in the #Margins menu does),
-then you’ll hear the Sound play twice, then you’ll see the rectangle disappear from the Picture window
-(that’s what the command ##Erase all# from the Edit menu does).
+当您运行此脚本时，您会看到 Picture 窗口中出现一个矩形（这是 #Margins 菜单中的 ##Draw inner box# 命令的作用），然后您会听到 Sound 播放两次，接着您会看到该矩形从 Picture 窗口中消失（这是 Edit 菜单中的 ##Erase all# 命令的作用）。
 
-Here we see that the Praat scripting language is an example of a %%procedural programming language%,
-which means that the five %statements are executed in the order in which they appear in the script,
-i.e. first ##Erase all#, then ##Draw inner box#, then #Play twice, and finally ##Erase all#.
+在这里我们看到，Praat 脚本语言是%%过程式编程语言%的一个例子，这意味着这五个%语句（statements）%是按照它们在脚本中出现的顺序执行的，即首先是 ##Erase all#，然后是 ##Draw inner box#，接着是 #Play 两次，最后是 ##Erase all#。
 
-3. Experimenting with your script
+3. 实验您的脚本
 =================================
-You don't have to be afraid of making mistakes. Here are a couple that you can try to make.
+您不必担心犯错。这里有几个您可以尝试犯的错误。
 
-First, try to run the script when a Sound is not selected
-(e.g. you create a Pitch object from it and keep that selected, or you throw away the Sound).
-You will notice that Praat gives you an error message saying
-“The command “Play” is not available for the current selection”.
-Indeed, if you select a Pitch or if you select nothing, then no command #Play appears in the dynamic menu,
-so the script cannot execute it. Note that the commands ##Erase all# and ##Draw inner box# are still available,
-because they continue to be present in the menus of the Picture window;
-therefore, the script will execute the first two lines (`Erase all` and `Draw inner box`)
-and stop running at the third line, i.e. at your first `Play`.
-The result is that the “box” will stay visible in the Picture window, because the fifth line of the script,
-which should erase the box, is never executed.
+首先，尝试在未选中 Sound 时运行脚本（例如，您用它创建了一个 Pitch 对象并保持选中它，或者您扔掉了那个 Sound）。
+您会注意到 Praat 会给您一条错误消息，说：“The command “Play” is not available for the current selection”（命令“Play”对于当前选择不可用）。
+确实，如果您选择了一个 Pitch 或者什么都不选，动态菜单中就不会出现 #Play 命令，因此脚本无法执行它。请注意，##Erase all# 和 ##Draw inner box# 命令仍然可用，因为它们继续存在于 Picture 窗口的菜单中；因此，脚本将执行前两行（`Erase all` 和 `Draw inner box`），并在第三行即您的第一个 `Play` 处停止运行。结果是“框”将保持在 Picture 窗口中可见，因为应该擦除框的脚本第五行永远不会被执行。
 
-Second, try to mistype a command (there’s a good chance you already did it by accident),
-e.g. write `PLay` instead of `Play`, or `Draw inner bocks` or whatever.
-Again, you are likely to get a message saying that that command is not available.
-Such messages are the most common messages that you’ll see when writing scripts;
-now you know that they mean either that you mistyped something or that you made the wrong selection.
+其次，尝试写错一个命令（很有可能您已经不小心这样做了），例如，写成 `PLay` 而不是 `Play`，或者写成 `Draw inner bocks` 等等。
+同样，您可能会得到一条消息，指出该命令不可用。此类消息是您在编写脚本时会看到的最常见消息；现在您知道它们意味着您输入错误，或者您做出了错误的选择。
 
-4. Saving your script
+4. 保存您的脚本
 =====================
-The File menu of the ScriptEditor has a command #Save,
-with which you can save your script as a file on disk, for instance under the name “test.praat”.
+ScriptEditor 的 File 菜单中有一个 #Save 命令，您可以使用它将脚本作为文件保存在磁盘上，例如以 “test.praat” 命名。
 
-Please try this with the five-line script you just typed.
-After saving the script, the name of the script file will appear in the window title:
+请使用您刚刚输入的五行脚本试一下。
+保存脚本后，脚本文件的名称将出现在窗口标题中：
 {- 6x4
 	)~~~"
 		Manual_DRAW_WINDOW (4, "Script “/Users/Rose/Desktop/test.praat”", "File   Edit   Search   Convert   Font   Run   Help")
@@ -256,26 +234,19 @@ After saving the script, the name of the script file will appear in the window t
 	Text: 0, “left”, 135, “half”, “\s{Erase all}”
 	Draw rectangle: 0, 560, 0, 360
 }
-After you save your script, you can close the ScriptEditor window without losing the script:
-you can reopen the script file by using @@Open Praat script...@ from the Praat menu,
-or by choosing ##New Praat script# again, followed by ##Open...# from the ScriptEditor’s File menu.
+保存脚本后，您可以关闭 ScriptEditor 窗口而不会丢失脚本：您可以使用 Praat 菜单中的 @@Open Praat script...|打开 Praat 脚本...@ 重新打开该脚本文件，或者再次选择 ##New Praat script#，然后从 ScriptEditor 的 File 菜单中选择 ##Open...#。
 
-It advisable to use “.praat” as the extension for script file names.
-On the Mac, if you double-click a “.praat” file, Praat will automatically start up and show the script.
-On the Mac and on Windows, if you drag a “.praat” file on the Praat icon, Praat will also start up and show the script.
+建议使用 “.praat” 作为脚本文件名的扩展名。
+在 Mac 上，如果您双击 “.praat” 文件，Praat 将自动启动并显示该脚本。
+在 Mac 和 Windows 上，如果您将 “.praat” 文件拖到 Praat 图标上，Praat 也会启动并显示该脚本。
 
 ################################################################################
 "Scripting 2. How to script settings windows"
 Paul Boersma 1999,2004,(“Arguments to commands”),2011,2013,2014,2017,2019,2020,2023
 
-Not all menu commands are as simple as those on the @@Scripting 1. Your first scripts|previous page@,
-which act immediately once you choose them from a menu (e.g. ##Play#, ##Erase all#).
-Most commands in Praat require the user to supply additional information;
-these are the commands whose title ends in “...”.
+并非所有菜单命令都像 @@Scripting 1. Your first scripts|前一页@ 那样简单，即只要您从菜单中选择它们就会立即执行（例如 ##Play#, ##Erase all#）。Praat 中的大多数命令都需要用户提供额外的信息；这些命令的标题以“...”结尾。
 
-For instance, when you select a Sound, the command ##Draw...# will appear in the #Draw menu,
-and when you click it, Praat will present you with a %%settings window%,
-which asks you to supply six pieces of additional information, i.e. six so-called %settings (or in programming jargon: %arguments):
+例如，当您选择一个 Sound 时，#Draw 菜单中会出现 ##Draw...# 命令，当您点击它时，Praat 会向您呈现一个%%设置窗口（settings window）%，要求您提供六个额外的信息，即六个所谓的%设置（settings）%（或者用编程术语来说是：%参数（arguments）%）：
 
 // 4 fields, of which 0 texts and 0 additional radio buttons,
 // hence lines = 4 + 0 * 0.6 - 0 * 0.3 = 4.0,
@@ -289,20 +260,13 @@ which asks you to supply six pieces of additional information, i.e. six so-calle
 		Manual_DRAW_SETTINGS_WINDOW_OPTIONMENU ("Drawing method", "Curve")
 	R"~~~(
 }
-In this example, all the settings have their standard values: you want to draw the whole time domain of the Sound,
-you want to have autoscaling vertically, you want to see garnishings around the picture (a box, labelled axes, and numbers),
-and you want the waveform to be drawn as a curve. Pressing the OK button in the above window
-is equivalent to executing the following script line:
+在此示例中，所有设置都具有其标准值：您希望绘制 Sound 的整个时域，您希望在垂直方向上进行自动缩放，您希望在图像周围看到修饰（一个框、有标记的坐标轴和数字），并且您希望波形被绘制成曲线。在上述窗口中按下 OK 按钮等效于执行以下脚本行：
 {;
 	Draw: 0, 0, 0, 0, “yes”, “Curve”
 }
-You see that in a script, all of the arguments are supplied after the command, preceded by a colon and separated by commas,
-in the same order as in the settings window, counted from top to bottom (and, within a line, from left to right).
-The texts “(= all)” and “(= auto)” above are just Praat’s explanations of what it means to type a zero in those fields
-(namely “draw all times” and “use vertical autoscaling”, respectively); in a script they are superfluous and you shouldn’t write them.
+您会看到，在脚本中，所有参数都在命令之后提供，前置一个冒号并用逗号隔开，顺序与设置窗口中的顺序相同，从上到下计算（在同一行内，从左到右）。上面的文本“(= all)”和“(= auto)”只是 Praat 对在这些字段中输入零意味着什么的解释（分别指“绘制所有时间”和“使用垂直自动缩放”）；在脚本中它们是多余的，您不应该写它们。
 
-If you want to draw the sound with different settings, say from 1 to 3.2 seconds, scaled between -1 and +1 instead of automatically,
-with garnishings off, and with the waveform drawn as poles, you would have the following settings window:
+如果您想以不同的设置绘制声音，例如从 1 到 3.2秒，缩放范围在 -1 到 +1 之间而不是自动，并且关闭修饰，波形绘制成极值棒（poles），您将拥有以下设置窗口：
 
 // 4 fields, of which 0 texts and 0 additional radio buttons,
 // hence lines = 4 + 0 * 0.6 - 0 * 0.3 = 4.0,
@@ -316,27 +280,23 @@ with garnishings off, and with the waveform drawn as poles, you would have the f
 		Manual_DRAW_SETTINGS_WINDOW_OPTIONMENU ("Drawing method", "Poles")
 	R"~~~(
 }
-In a script this would look like
+在脚本中，这将看起来像：
 {;
 	Draw: 1.0, 3.2, -1, 1, “no”, “Poles”
 }
-1. Numeric arguments
+1. 数值参数
 ====================
-The first four arguments in the above examples are %%numeric arguments%: they are (real or integer) numbers.
-You just write them in the script as you would write them into the settings window.
+上述示例中的前四个参数是%%数值参数（numeric arguments）%：它们是（实数或整数）数值。您只需在脚本中像在设置窗口中输入它们一样写入它们。
 
-2. Boolean (yes/no) arguments
+2. 布尔（是/否）参数
 =============================
-The fifth argument in the above examples (#Garnish) is a %%boolean argument% (yes/no choice) and is represented by a %%check button%.
-In the script you write it as `"yes"` (including the quotes) or `"no"` (or as 1 or 0).
+上述示例中的第五个参数（#Garnish）是一个%%布尔参数（boolean argument）%（是/否选择），并由一个%%复选框（check button）%表示。在脚本中，您将其写为 `"yes"`（包括引号）或 `"no"`（或写为 1 或 0）。
 
-3. Multiple-choice arguments
+3. 多选参数
 ============================
-The sixth argument in the above examples (##Drawing method#) is a %%multiple-choice argument% and is represented by an %%option menu%.
-In the script you write the text of the choice, i.e. `"Curve"` or `"Poles"` in the examples.
+上述示例中的第六个参数（##Drawing method#）是一个%%多选参数（multiple-choice argument）%，并由一个%%下拉菜单（option menu）%表示。在脚本中，您写入所选选项的文本，例如示例中的 `"Curve"` 或 `"Poles"`。
 
-A multiple-choice argument is sometimes represented by a %%choice box% instead of by an option menu.
-For instance, the last example above could equally well have looked like
+多选参数有时会由%%单选框（choice box）%而不是下拉菜单表示。例如，上面的最后一个示例也可以看起来像：
 
 // 7 fields, of which 0 texts and 3 additional radio buttons,
 // hence lines = 7 + 0 * 0.6 - 3 * 0.3 = 6.1,
@@ -356,14 +316,13 @@ For instance, the last example above could equally well have looked like
 		Manual_DRAW_SETTINGS_WINDOW_CHOICE ("", "Speckles", 0)
 	R"~~~(
 }
-In supplying arguments to a command in a script, there is no difference between an option menu and a radio box.
-This last example will therefore again look like the following in a script:
+在向脚本中的命令提供参数时，下拉菜单和单选框之间没有区别。因此，最后一个示例在脚本中同样看起来像：
 {;
 	Draw: 1.0, 3.2, -1, 1, “no”, “Poles”
 }
-4. Text arguments
+4. 文本参数
 =================
-Consider another frequently used menu command, namely ##Create Sound from formula...# in the #New menu:
+考虑另一个经常使用的菜单命令，即 #New 菜单中的 ##Create Sound from formula...#：
 
 // 6 fields, of which 1 text and 0 additional radio buttons,
 // hence lines = 6 + 1 * 0.6 - 0 * 0.3 = 6.6,
@@ -379,19 +338,15 @@ Consider another frequently used menu command, namely ##Create Sound from formul
 		Manual_DRAW_SETTINGS_WINDOW_TEXT ("Formula", "1/2 * sin(2*pi*377*x)")
 	R"~~~(
 }
-In a script this would look like:
+在脚本中，这将看起来像：
 {;
 	Create Sound from formula: “sine”, 1, 0.0, 1.0, 44100, “1/2 * sin(2*pi*377*x)”
 }
-Both the first argument (#Name) and the sixth argument (#Formula) are %%text arguments%.
-In a script they are written within quotes.
+第一个参数（#Name）和第六个参数（#Formula）都是%%文本参数（text arguments）%。在脚本中，它们被写在双引号内。
 
-5. Formula arguments
+5. 公式参数
 ====================
-Sometimes it would be a bit awkward to write a formula that contains double quotes.
-Imagine you have a @Table object with a column “stimulus”, a column “response”, and a column “correct”,
-and you want to have a 1 in column “correct” if the texts in the columns “stimulus” and “response”
-are the same, and a 0 otherwise. You would do this by selecting the Table and choosing the ##Formula...# command:
+有时在公式中编写包含双引号的内容会有些尴尬。假设您有一个 @Table（表格）对象，其中有一列 “stimulus”（刺激）、一列 “response”（反应）和一列 “correct”（正确），如果 “stimulus” 和 “response” 列中的文本相同，您希望在 “correct” 列中填入 1，否则填入 0。您可以通过选择 Table 并选择 ##Formula...# 命令来做到这一点：
 
 // 2 fields, of which 1 text and 0 additional radio buttons,
 // hence lines = 2 + 1 * 0.6 - 0 * 0.3 = 2.6,
@@ -403,79 +358,61 @@ are the same, and a 0 otherwise. You would do this by selecting the Table and ch
 		Manual_DRAW_SETTINGS_WINDOW_TEXT ("Formula", "self\\$  [\\\" response\\\" ] = self\\$  [\\\" stimulus\\\" ]")
 	R"~~~(
 }
-According to section 4 above, and according to @@Formulas 2.2. Representation of strings@,
-you would have to write this in the following way in a script:
+根据上面的第 4 节以及 @@Formulas 2.2. Representation of strings|Formulas 2.2. 字符串的表示@，您必须在脚本中按以下方式编写：
 {;
 	Formula: "correct", "self$ [""response""] = self$ [""stimulus""]"
 }
-The required doubling of string-internal double quotes is awkward.
-Therefore, there exists a special way for typing formula arguments, namely with the tilde ("~"):
+双写字符串内部的双引号是有些麻烦的。因此，存在一种编写公式参数的特殊方法，即使用波浪号（“~”）：
 {;
 	Formula: "correct", ~ self$ ["response"] = self$ ["stimulus"]
 }
-This means that you can write the example of section 4 in an analogous way:
+这意味着您可以用类似的方式编写第 4 节的示例：
 {;
 	Create Sound from formula: “sine”, 1, 0.0, 1.0, 44100, ~ 1/2 * sin(2*pi*377*x)
 }
-The tilde is probably the preferred way to write formula arguments.
-You should remember, however, that the result is still a string (i.e. text),
-and you can treat it as a string with the string methods described later on in this tutorial.
+波浪号可能是编写公式参数的首选方式。但是，您应该记住，结果仍然是一个字符串（即文本），并且您可以使用本教程后面描述的字符串方法将其作为字符串进行处理。
 
-Another way is to use curly quotes, for instance:
+另一种方法是使用弯引号，例如：
 {;
 	Formula: "correct", “self$ ["response"] = self$ ["stimulus"]”
 }
-or
+或者
 {;
 	Formula: "correct", "self$ [“response”] = self$ [“stimulus”]"
 }
-6. File arguments
+6. 文件参数
 =================
-The commands from the Open and Save menus, and several other commands whose names
-start with #Read, #Open, or #Save, present a %%file selector window% instead of a typical Praat
-settings window. File selector windows ask the user to supply a single argument: the file name.
+Open 和 Save 菜单中的命令，以及其他几个名称以 #Read、#Open 或 #Save 开头的命令，呈现的是%%文件选择器窗口（file selector window）%而不是典型的 Praat 设置窗口。文件选择器窗口要求用户提供单个参数：文件名。
 
-In a script you can either supply the %%complete path% to the file, or supply a %%relative path%.
+在脚本中，您既可以提供文件的%%完整路径（complete path）%，也可以提供%%相对路径（relative path）%。
 
-A complete path includes both the folder (directory) hierarchy and the name of the file.
-This goes slightly differently on the Windows platform on the one hand,
-and on the Mac and Linux platforms on the other. If your user name is Miep,
-and your home folder contains a folder `Sounds`,
-and this folder contains a folder `Animals`, and this contains the file `miauw.wav`,
-you can open that file as follows:
+完整路径包含文件夹（目录）层级结构和文件名。一方面在 Windows 平台上，另一方面在 Mac 和 Linux 平台上，这一过程略有不同。如果您的用户名是 Miep，而您的主文件夹包含一个名为 `Sounds` 的文件夹，该文件夹包含一个名为 `Animals` 的文件夹，其中包含文件 `miauw.wav`，您可以按以下方式打开该文件：
 {;
 	Read from file: “C:/Users/Miep/Sounds/Animals/miauw.wav”   ; Windows
 	Read from file: “/Users/Miep/Sounds/Animals/miauw.wav”   ; Mac
 	Read from file: “/home/miep/Sounds/Animals/miauw.wav”   ; Linux
 }
-(the part before your user name may be slightly different on your computer;
-use your command or terminal window to find out)
+（用户名之前的部分在您的计算机上可能略有不同；请使用您的命令行或终端窗口来查看）
 
-In these examples, “C” is the Windows %%drive letter% and
-`/Users/Miep` or `/home/Miep` is your %%home folder%. Both the home folder and the drive letter
-can be abbreviated away by using the tilde (“~”) in the path
-(this tilde has nothing to do with the tilde used in formula arguments):
+在这些示例中，“C” 是 Windows 的%%盘符（drive letter）%，而 `/Users/Miep` 或 `/home/miep` 是您的%%主文件夹（home folder）%。主文件夹和盘符都可以通过在路径中使用波浪号（“~”）来缩写（这个波浪号与公式参数中使用的波浪号无关）：
 {;
 	Read from file: “~/Sounds/Animals/miauw.wav”
 }
-If your `Sounds` folder is not in your home folder but on your desktop, you do
+如果您的 `Sounds` 文件夹不在主文件夹中，而是在桌面上，您可以这样做：
 {;
 	Read from file: “~/Desktop/Sounds/Animals/miauw.wav”
 }
-(this works because on all three platforms, the desktop folder is a subfolder of your home folder)
+（这之所以可行，是因为在所有三个平台上，桌面文件夹都是主文件夹的子文件夹）
 
-If your Sounds folder is on a USB drive called PORCH, it would be something like:
+如果您的 Sounds 文件夹在名为 PORCH 的 USB 闪存盘上，它将是类似以下的内容：
 {;
 	Read from file: “G:/Sounds/Animals/miauw.wav”   ; Windows
 	Read from file: “/Volumes/PORCH/Sounds/Animals/miauw.wav”   ; Mac
 	Read from file: “/media/PORCH/Sounds/Animals/miauw.wav”   ; Linux
 }
-Instead of all these complete path names, you can use %relative path names.
-These are taken as relative to the folder in which your script resides,
-and help to make your script portable if you move the script along with your data.
+除了所有这些完整路径名外，您还可以使用%相对路径名。这些路径被视为相对于您的脚本所在的文件夹，这有助于使您的脚本在将脚本与数据一起移动时具有可移植性。
 
-Thus, if your script (after you have saved it!) is in the `Animals` folder mentioned above,
-i.e. in the same folder as `miauw.wav`, you would simply open the file with
+因此，如果您的脚本（在您保存它之后！）位于上述 `Animals` 文件夹中，即与 `miauw.wav` 位于同一文件夹中，您只需通过以下方式打开该文件：
 {;
 	Read from file: “miauw.wav”
 }
@@ -484,20 +421,17 @@ i.e. in the same folder as where the `Animals` folder is, you would open the fil
 {;
 	Read from file: “Animals/miauw.aifc”
 }
-If your script is in the folder `Scripts` that is inside the `Sounds` folder,
-i.e. if your script is a sister folder of the `Animals` folder, you would open the file with
+如果您的脚本位于 `Sounds` 文件夹内的 `Scripts` 文件夹中，即如果您的脚本是 `Animals` 文件夹的同级文件夹，您将使用以下命令打开该文件：
 {;
 	Read from file: “../Animals/miauw.aifc”
 }
-where “..” is the general way on all platforms to go one folder up in the hierarchy.
+其中 “..” 是所有平台上向上返回一级文件夹的通用方式。
 
-Note that on Windows you could use the backslash (“\”) instead of the forward slash (“/”),
-but with the forward slash your script will work on all three platforms.
+请注意，在 Windows 上您可以使用反斜杠（“\”）而不是正斜杠（“/”），但使用正斜杠，您的脚本在所有三个平台上都能正常工作。
 
-7. Colour arguments
+7. 颜色参数
 ===================
-Several commands in the World and Pen menus of the Picture window,
-as well as many object drawing commands, ask for a colour in the following way:
+Picture 窗口的 World 和 Pen 菜单中的几个命令，以及许多对象绘制命令，以以下方式要求提供颜色：
 
 // 5 fields, of which 0 texts and 0 additional radio buttons,
 // hence lines = 5 + 0 * 0.6 - 0 * 0.3 = 5.0,
@@ -512,46 +446,36 @@ as well as many object drawing commands, ask for a colour in the following way:
 		Manual_DRAW_SETTINGS_WINDOW_FIELD ("To y", "1.0")
 	R"~~~(
 }
-For the colour, you can supply, as text, one of the 16 explicit names that also appear in the Pen menu:
+对于颜色，您可以作为文本提供 Pen 菜单中也出现的 16 个明确名称之一：
 {
 	Paint rectangle: “maroon”, 0.0, 1.0, 0.0, 1.0
 }
-Alternatively, you can supply a grey value, as a number between 0.0 (black) and 1.0 (white). The following produces a very light grey:
+或者，您可以提供一个介于 0.0（黑色）和 1.0（白色）之间的灰度值。以下生成非常浅的灰色：
 {
 	Paint rectangle: 0.9, 0.0, 1.0, 0.0, 1.0
 }
-Finally, you can supply an explicit RGB (red–green–blue) value, as a “vector” of three numbers between 0.0 and 1.0.
-The following produces dark pink:
+最后，您可以提供一个明确的 RGB（红-绿-蓝）值，作为介于 0.0 和 1.0 之间的三个数字的“向量（vector）”。以下生成深粉色：
 {
 	Paint rectangle: {0.8,0.2,0.4}, 0.0, 1.0, 0.0, 1.0
 }
-8. How to supply arguments automatically
+8. 如何自动提供参数
 ========================================
-Now you know all the ways to write the arguments of commands in a script line.
-If you dislike manually copying arguments from settings windows into your script,
-or if you are not sure whether something is a numeric or a string argument,
-you can use the @@history mechanism@:
-choose @@Clear history@ from the Edit menu in your @ScriptEditor,
-click your command button, edit the arguments, and click #OK. The command will be executed.
-Then choose @@Paste history@, and the command line, including the arguments,
-will appear in the ScriptEditor at the position of the text cursor. You can build whole new scripts on the basis of this mechanism.
+现在您知道了在脚本行中编写命令参数的所有方法。如果您不喜欢手动将参数从设置窗口复制到脚本中，或者不确定某些内容是数值还是字符串参数，可以使用 @@history mechanism|历史机制@：从您的 @ScriptEditor 的 Edit 菜单中选择 @@Clear history|清除历史@，点击您的命令按钮，编辑参数，然后点击 #OK。命令将被执行。然后选择 @@Paste history|粘贴历史@，命令行（包括参数）将出现在 ScriptEditor 中光标所在的位置。您可以在此机制的基础上构建全新的脚本。
 
 ################################################################################
 )~~~"
 MAN_PAGES_END
 
 MAN_BEGIN (U"Scripting 3. Simple language elements", U"ppgb", 20130421)
-INTRO (U"The Praat scripting language doesn't only call the menu commands "
-	"discussed in the @@Scripting 1. Your first scripts|first@ and @@Scripting 2. How to script settings windows|second@ chapters of this tutorial, "
-	"it is also a general procedural programming language that allows you to compute numbers, handle texts, and make custom analyses.")
-NORMAL (U"This chapter focuses on the things you need most. It is designed in such a way that you can work through it even if you haven't written computer programs before.")
-LIST_ITEM (U"@@Scripting 3.1. Hello world@ (writeInfoLine, appendInfoLine)")
-LIST_ITEM (U"@@Scripting 3.2. Numeric variables@ (assignments)")
-LIST_ITEM (U"@@Scripting 3.3. Numeric queries")
-LIST_ITEM (U"@@Scripting 3.4. String variables@ (assignments)")
-LIST_ITEM (U"@@Scripting 3.5. String queries")
-LIST_ITEM (U"@@Scripting 3.6. “For” loops@ (for, endfor)")
-LIST_ITEM (U"@@Scripting 3.7. Layout@ (white space, comments, continuation lines)")
+INTRO (U"Praat 脚本语言不仅能调用本教程 @@Scripting 1. Your first scripts|第一章@ 和 @@Scripting 2. How to script settings windows|第二章@ 中讨论的菜单命令，它也是一种通用的过程式编程语言，允许您计算数值、处理文本并进行自定义分析。")
+NORMAL (U"本章重点介绍您最需要的内容。它的设计方式是，即使您以前没有编写过计算机程序，也可以通读它。")
+LIST_ITEM (U"@@Scripting 3.1. Hello world|Scripting 3.1. Hello world@（writeInfoLine，appendInfoLine）")
+LIST_ITEM (U"@@Scripting 3.2. Numeric variables|Scripting 3.2. 数值变量@（赋值）")
+LIST_ITEM (U"@@Scripting 3.3. Numeric queries|Scripting 3.3. 数值查询@")
+LIST_ITEM (U"@@Scripting 3.4. String variables|Scripting 3.4. 字符串变量@（赋值）")
+LIST_ITEM (U"@@Scripting 3.5. String queries|Scripting 3.5. 字符串查询@")
+LIST_ITEM (U"@@Scripting 3.6. “For” loops|Scripting 3.6. “For” 循环@（for，endfor）")
+LIST_ITEM (U"@@Scripting 3.7. Layout|Scripting 3.7. 布局@（空格、注释、续行）")
 MAN_END
 
 #define Manual_DRAW_PICTURE_WINDOW(height,vpLeft,vpRight,vpTop,vpBottom) \
@@ -577,31 +501,27 @@ MAN_END
 	"Draw line: 0, 0, 5.6, 0\n" \
 
 MAN_BEGIN (U"Scripting 3.1. Hello world", U"ppgb", 20140111)
-INTRO (U"Many manuals of computer programming languages start with their answer on the following question:")
-NORMAL (U"%%How do I write the text “Hello world” on the screen?")
-NORMAL (U"For the Praat scripting language, there are two answers.")
-ENTRY (U"1. “Hello world” in the Info window")
-NORMAL (U"The simplest answer is that you open the ScriptEditor window with ##New Praat script# from the #Praat menu, "
-	"then type the following line into the ScriptEditor window:")
+INTRO (U"许多计算机编程语言的手册都是从回答以下问题开始的：")
+NORMAL (U"%%我如何在屏幕上写入文本 “Hello world”？")
+NORMAL (U"对于 Praat 脚本语言，有两个答案。")
+ENTRY (U"1. 在信息（Info）窗口中的 “Hello world”")
+NORMAL (U"最简单的答案是，您在 #Praat 菜单中通过 ##New Praat script# 打开 ScriptEditor 窗口，然后在 ScriptEditor 窗口中输入以下行：")
 CODE (U"writeInfoLine: “Hello world”")
-NORMAL (U"and finally choose #Run from the #Run menu.")
-NORMAL (U"When you try this, the result should be that the Info window comes to the front, and that it shows the text `Hello world`:")
+NORMAL (U"最后从 #Run 菜单中选择 #Run。")
+NORMAL (U"当您尝试此操作时，结果应该是 Info 窗口显示在最前面，并显示文本 `Hello world`：")
 SCRIPT (6, 3, U""
 	Manual_DRAW_WINDOW (3, "Praat Info", "File   Edit   Search   Convert   Font   Help")
 	"Courier\n"
 	"Text: 0, “left”, 75, “half”, “\\s{Hello world}”\n"
 	"Draw rectangle: 0, 560, 0, 260\n"
 )
-NORMAL (U"Now suppose that you want to write two lines instead of just one, so you try a script with two lines:")
+NORMAL (U"现在假设您想写两行而不是一行，因此您尝试使用包含两行的脚本：")
 CODE (U"writeInfoLine: “Hello world”")
 CODE (U"writeInfoLine: “How do you do?”")
-NORMAL (U"This turns out not to do what you want: it seems to write only the text “How do you do?”. "
-	"This happens because the #writeInfoLine function first erases the Info window, then writes the line of text. "
-	"So the first line of the script did write the text “Hello world”, but the second line wiped it out "
-	"and wrote “How do you do?” instead. The script that does what you want is")
+NORMAL (U"结果这并不能实现您想要的效果：它似乎只写入了文本 “How do you do?”。这是因为 #writeInfoLine 函数首先会清除 Info 窗口，然后写入文本行。所以脚本的第一行确实写入了 “Hello world”，但第二行抹掉了它，并写入了 “How do you do?”。符合您要求的脚本是：")
 CODE (U"writeInfoLine: “Hello world”")
 CODE (U"appendInfoLine: “How do you do?”")
-NORMAL (U"Now the result will be")
+NORMAL (U"现在的运行结果将是：")
 SCRIPT (6, 3, U""
 	Manual_DRAW_WINDOW (3, "Praat Info", "File   Edit   Search   Convert   Font   Help")
 	"Courier\n"
@@ -609,11 +529,11 @@ SCRIPT (6, 3, U""
 	"Text: 0, “left”, 90, “half”, “\\s{How do you do?}”\n"
 	"Draw rectangle: 0, 560, 0, 260\n"
 )
-NORMAL (U"This works because @`appendInfoLine` writes a line without erasing the Info window first.")
-NORMAL (U"Finally, try the following script:")
+NORMAL (U"这之所以能行，是因为 @`appendInfoLine` 写入一行文本而不会先清除 Info 窗口。")
+NORMAL (U"最后，尝试以下脚本：")
 CODE (U"appendInfoLine: “Another try”")
 CODE (U"appendInfoLine: “Goodbye”")
-NORMAL (U"The result could be")
+NORMAL (U"运行结果可能是：")
 SCRIPT (6, 3, U""
 	Manual_DRAW_WINDOW (3, "Praat Info", "File   Edit   Search   Convert   Font   Help")
 	"Courier\n"
@@ -623,16 +543,12 @@ SCRIPT (6, 3, U""
 	"Text: 0, “left”, 120, “half”, “\\s{Goodbye}”\n"
 	"Draw rectangle: 0, 560, 0, 260\n"
 )
-NORMAL (U"In other words, @`appendInfoLine` writes lines into the Info window without erasing it, even if you run a script anew. "
-	"This is why many Praat scripts that write into the Info window do a #writeInfoLine first, and follow it with a series of @`appendInfoLine` calls.")
-NORMAL (U"For more information on these commands, see @@Scripting 6.2. Writing to the Info window@.")
-ENTRY (U"2. “Hello world” in the Picture window.")
-NORMAL (U"You can also show text in the Picture window. If you are an experienced Praat user, you have probably used the comamnd ##Text top...# before. "
-	"You can use it do draw a text at the top of the current %viewport, which is the part of the Picture window where the next drawing will occur "
-	"and which is marked by the pink %margins. Thus, when you select the top 4\\xx3 inches of the Picture window (with the mouse), "
-	"set the font size to 12 (with the Pen menu), and run the script")
+NORMAL (U"换句话说，即使您重新运行脚本，@`appendInfoLine` 也会将文本行写入 Info 窗口而不会清除它。这就是为什么许多向 Info 窗口写入内容的 Praat 脚本都会先执行一次 #writeInfoLine，紧接着调用一系列 @`appendInfoLine`。")
+NORMAL (U"有关这些命令的更多信息，请参见 @@Scripting 6.2. Writing to the Info window|Scripting 6.2. 写入信息窗口@。")
+ENTRY (U"2. 在画图（Picture）窗口中的 “Hello world”")
+NORMAL (U"您还可以在 Picture 窗口中显示文本。如果您是经验丰富的 Praat 用户，您之前可能使用过 ##Text top...# 命令。您可以使用它在当前 %viewport（视口）的顶部绘制文本，这是 Picture 窗口中进行下一次绘图的部分，并由粉色的 %margins（边距）标出。因此，当您（使用鼠标）选择 Picture 窗口的顶部 4\\xx3 英寸，将字体大小设置为 12（使用 Pen 菜单），并运行脚本：")
 CODE (U"Text top: “yes”, “Hello world”")
-NORMAL (U"then you’ll see")
+NORMAL (U"那么您将看到：")
 SCRIPT (6, 4.5, U""
 	Manual_DRAW_PICTURE_WINDOW (4.5, 0,4,0,3)
 	"Select outer viewport: 0.2, 4.2, 0.8, 12\n" \
@@ -642,116 +558,77 @@ SCRIPT (6, 4.5, U""
 	"Axes: 0, 1, 0, 1\n" \
 	"Draw rectangle: 0, 1, 0, 1\n"
 )
-NORMAL (U"So this works the same as when you choose ##Text top...# from the #Margins menu by hand, with #Far switched on.")
-NORMAL (U"If you want your script to always show the same text at the same position, with nothing else in the picture, "
-	"then you can make your script a bit more extensive:")
+NORMAL (U"所以这与您手动从 #Margins 菜单中选择 ##Text top...# 并开启 #Far 的效果是相同的。")
+NORMAL (U"如果您希望脚本始终在同一位置显示相同的文本，并且图片中没有其他内容，那么您可以使脚本更丰富一些：")
 CODE (U"Erase all")
 CODE (U"Times")
 CODE (U"Font size: 12")
 CODE (U"Select outer viewport: 0, 4, 0, 3")
 CODE (U"Text top: “yes”, “Hello world”")
-NORMAL (U"In this script, line 1 erases the Picture window, so that nothing besides your text can appear in the Picture window.")
-NORMAL (U"Line 2 executes the command #Times from the #Font menu, so that the script will always draw the text in Times, "
-	"even if you choose #Helvetica in the Font menu with the mouse before you run the script "
-	"(after the script has run, you’ll see that #Times is chosen in the Font menu).")
-NORMAL (U"Line 3 executes the command ##Font size...# from the #Font menu, setting the font size to 12 and setting the width of the pink margins "
-	"accordingly.")
-NORMAL (U"Line 4 executes the command @@Select outer viewport...@ from the Select menu. "
-	"This performs an action that you would normally do by dragging the mouse, "
-	"namely selecting the part of the Picture window that runs from 0 to 4 inches horizontally "
-	"and from 0 to 3 inches vertically. After running the script, "
-	"the %viewport is indeed [0, 4] \\xx [0, 3], as you can clearly see "
-	"from the pink margins above.")
-NORMAL (U"Line 5 finally writes the text.")
-NORMAL (U"For more information on these commands, see @@Picture window@.")
+NORMAL (U"在此脚本中，第 1 行擦除了 Picture 窗口，以便除了您的文本之外，Picture 窗口中不会出现任何其他内容。")
+NORMAL (U"第 2 行执行了 #Font 菜单中的 #Times 命令，以便脚本始终用 Times 绘制文本，即使您在运行脚本之前用鼠标在 Font 菜单中选择了 #Helvetica（脚本运行后，您会看到 Font 菜单中选择了 #Times）。")
+NORMAL (U"第 3 行执行了 #Font 菜单中的 ##Font size...# 命令，将字体大小设置为 12 并相应地设置粉色边距的宽度。")
+NORMAL (U"第 4 行执行了 Select 菜单中的 @@Select outer viewport...@ 命令。这执行了一个您通常通过拖动鼠标来完成的操作，即选择 Picture 窗口中水平方向从 0 到 4 英寸、垂直方向从 0 到 3 英寸的部分。运行脚本后，视口确实是 [0, 4] \\xx [0, 3]，从上方的粉色边距可以清楚地看到。")
+NORMAL (U"第 5 行最终写入文本。")
+NORMAL (U"有关这些命令的更多信息，请参见 @@Picture window|画图窗口@。")
 MAN_END
 
 MAN_BEGIN (U"Scripting 3.2. Numeric variables", U"ppgb", 20230201)
-INTRO (U"In any general procedural programming language you can work with %variables, "
-	"which are places in your computer's memory where you can store a number or anything else.")
-NORMAL (U"For instance, you could put the number 3.1 into the variable $%b in the following way:")
+INTRO (U"在任何通用的过程式编程语言中，您都可以使用%变量（variables）%，它们是您计算机内存中可以用来存储数字或任何其他内容的空间。")
+NORMAL (U"例如，您可以通过以下方式将数字 3.1 放入变量 %`b` 中：")
 CODE (U"b = 3.1")
-NORMAL (U"This statement is called as %assignment, i.e., you %assign the %value 3.1 to the %variable %`b`. "
-	"We read this statement aloud as “%`b` becomes 3.1” (or “%`b` gets 3.1”, but not “%`b` is 3.1”). "
-	"What this means is that after this statement, the memory location %`b` %contains the numeric value (number) 3.1.")
-NORMAL (U"You can regard a variable as a box: you put the value 3.1 into the box named %`b`. "
-	"Or you can regard a variable as a house: the house is called %`b` and now the family “3.1” is living there. "
-	"Or you can regard it as any other storage location.")
-NORMAL (U"To see what value a variable contains (what’s in the box, or who lives in the house), "
-	"you can use the #`writeInfoLine` function:")
+NORMAL (U"该语句称为%赋值（assignment）%，即您将%值（value）% 3.1 %赋给（assign）%变量 %`b`。我们大声读出该语句为“%`b` 变为 3.1”（or“%`b` 得到 3.1”，而不是“%`b` 是 3.1”）。这意味着在此语句执行后，内存位置 %`b` %包含数值（数字）3.1。")
+NORMAL (U"您可以将变量视为一个盒子：您将值 3.1 放入名为 %`b` 的盒子中。或者您可以将变量视为一栋房子：这栋房子叫 %`b`，现在 “3.1” 一家住在里面。或者您可以将其视为任何其他存储位置。")
+NORMAL (U"要查看变量包含什么值（盒子里有什么，或者谁住在房子里），您可以使用 #`writeInfoLine` 函数：")
 CODE (U"b = 3.1")
 CODE (U"writeInfoLine: “The value is ”, b, “.”")
-NORMAL (U"This will put the text “`The value is 3.1.`” into the Info window, as you are invited to verify.")
-NORMAL (U"A variable is called a variable because it is %variable, i.e. its value can change. Try the script")
+NORMAL (U"这会将文本 “`The value is 3.1.`” 放入 Info 窗口中，欢迎您进行验证。")
+NORMAL (U"变量之所以被称为变量，是因为它是%可变的（variable）%，也就是说它的值可以改变。尝试以下脚本：")
 CODE (U"b = 3.1")
 CODE (U"b = 5.8")
 CODE (U"writeInfoLine: “The value is ”, b, “.”")
-NORMAL (U"You will see that %`b` ends up having the value 5.8. The first line puts the value 3.1 there, but the second line "
-	"replaces it with 5.8. It’s like taking the 3.1 out of the box and putting the 5.8 in its stead. "
-	"Or the family 3.1 moves from the house, and the family called 5.8 moves in.")
-NORMAL (U"In an assignment, the part to the right of the “becomes” sign (the “=” sign) doesn’t have to be a number; "
-	"it can be any %formula that %evaluates to a number. For instance, the script")
+NORMAL (U"您会看到 %`b` 最终的值为 5.8。第一行将 3.1 放在那里，但第二行用 5.8 代替了它。这就像从盒子里取出 3.1，放入 5.8。或者 3.1 一家搬出了房子，而 5.8 一家搬了进来。")
+NORMAL (U"在赋值中，“成为”号（“=” 号）右侧的部分不一定是一个数字；它可以是任何结果为数字的%公式（formula）%。例如，脚本：")
 CODE (U"b = 3.1 * 2")
 CODE (U"writeInfoLine: “The value is ”, b, “.”")
-NORMAL (U"puts the text “`The value is 6.2.`” into the Info window. This works because Praat handles the first line "
-	"in the following way:")
-LIST_ITEM (U"1. the formula `3.1 * 2` is %evaluated (i.e. its value is computed), and the result is 6.2.")
-LIST_ITEM (U"2. the value 6.2 is subsequently stored in the variable `b`.")
-NORMAL (U"After line 1 has been executed, the variable %`b` just contains the value 6.2, nothing more; "
-	"the variable %`b` doesn’t remember that that value has been computed by multiplying 3.1 with 2.")
-NORMAL (U"Formulas can contain more things than numbers: they can also contain other variables:")
+NORMAL (U"将文本 “`The value is 6.2.`” 放入 Info 窗口中。这之所以能行，是因为 Praat 按以下方式处理第一行：")
+LIST_ITEM (U"1. 公式 `3.1 * 2` 被%求值（evaluated）%（即计算其值），结果为 6.2。")
+LIST_ITEM (U"2. 值 6.2 随后被存储在变量 `b` 中。")
+NORMAL (U"第 1 行执行后，变量 %`b` 中只包含值 6.2，仅此而已；变量 %`b` 不会记得该值是通过将 3.1 乘以 2 计算得出的。")
+NORMAL (U"公式中可以包含除数字之外的更多内容：它们也可以包含其他变量：")
 CODE (U"b = 3.1")
 CODE (U"c = b * 2")
 CODE (U"writeInfoLine: “The value of b is ”, b, “, and the value of c is ”, c, “.”")
-NORMAL (U"In the first line, %`b` gets the value 3.1. In the second line, the formula `b * 2` first has to be evaluated. "
-	"Praat looks up the value of %`b` (which is 3.1), so that it knows that the formula actually means `3.1 * 2`. "
-	"Praat evaluates this formula and stores the result (namely the value 6.2) "
-	"into the variable %`c`, which will then contain nothing else than the value 6.2. "
-	"The Info window thus reports “`The value of b is 3.1, and the value of c is 6.2.`”.")
-NORMAL (U"After these explanations, consider the following script:")
+NORMAL (U"在第一行中，%`b` 得到值 3.1。在第二行中，公式 `b * 2` 首先必须被求值。Praat 查找 %`b` 的值（即 3.1），因此它知道该公式实际上意味着 `3.1 * 2`。Praat 对该公式求值，并将结果（即值 6.2）存储到变量 %`c` 中，变量 %`c` 随后将不包含除值 6.2 之外的任何其他内容。因此，Info 窗口报告 “`The value of b is 3.1, and the value of c is 6.2.`”。")
+NORMAL (U"在这些解释之后，考虑以下脚本：")
 CODE (U"b = 3.1")
 CODE (U"c = b * 2")
 CODE (U"b = 5.8")
 CODE (U"writeInfoLine: “The value of c is ”, c, “.”")
-NORMAL (U"Can you figure out what the Info will report? If you think it will report "
-	"“`The value of c is 6.2.`”, then you are correct: after the first line, %`b` contains the value 3.1; "
-	"after the second line, the value of %`c` is therefore 6.2, and nothing more; "
-	"after line 3, the value of %`b` has changed to 5.8, but the value of %`c` hasn’t changed and is still 6.2.")
-NORMAL (U"If you thought that %`c` would end up having the value 11.6, then you’re thinking in terms "
-	"of a non-procedural language such as Prolog; you may have thought that the thing assigned to %`c` in the second line "
-	"is the whole %formula `b * 2`, so that %`c` changes when %`b` changes. But this is not the case: "
-	"the thing stored in %`c` is just the %value of the formula `b * 2` at that moment, which is 6.2, "
-	"and %`c` doesn’t remember how it got that value. If you have trouble understanding this, "
-	"consult anybody who writes programs.")
+NORMAL (U"您能猜出 Info 窗口会报告什么吗？如果您认为它会报告 “`The value of c is 6.2.`”，那么您是正确的：第一行之后，%`b` 包含值 3.1；第二行之后，%`c` 的值因此为 6.2，仅此而已；第 3 行之后，%`b` 的值变为了 5.8，但 %`c` 的值没有改变，仍然是 6.2。")
+NORMAL (U"如果您认为 %`c` 的最终值为 11.6，那么您可能是在用 Prolog 等非过程式语言的思路思考；您可能认为第二行中赋给 %`c` 的是整个公式 `b * 2`，因此当 %`b` 改变时 %`c` 也会改变。但情况并非如此：存储在 %`c` 中的只是当时公式 `b * 2` 的%值%（即 6.2），而 %`c` 并不记得它是如何得到该值的。如果您在理解这一点上遇到困难，可以向任何编写程序的人请教。")
 MAN_END
 
 MAN_BEGIN (U"Scripting 3.3. Numeric queries", U"ppgb", 20221202)
-INTRO (U"Now that you know how to script a menu command, and you know how variables work, "
-	"you are ready to combine the two.")
-NORMAL (U"Suppose you have selected a Sound in the object list. One of the commands available in the @@Query submenu@ "
-	"is ##Get power...#. When you choose it, you will see the following settings window:")
+INTRO (U"现在您已经知道如何为菜单命令编写脚本，也知道变量是如何工作的，接下来您就可以把这两者结合起来了。")
+NORMAL (U"假设您在对象列表中选择了一个 Sound。@@Query submenu|Query 子菜单@ 中可用的命令之一是 ##Get power...#。当您选择它时，您会看到以下设置窗口：")
 SCRIPT (5.4, Manual_SETTINGS_WINDOW_HEIGHT (1), U""
 	Manual_DRAW_SETTINGS_WINDOW ("Sound: Get power", 1)
 	Manual_DRAW_SETTINGS_WINDOW_RANGE ("Time range (s)", "0.0", "0.0 (= all)")
 )
-NORMAL (U"When you click OK, something like the following will appear in the Info window:")
+NORMAL (U"当您点击 OK 时，Info 窗口中将出现类似以下的内容：")
 SCRIPT (6, 3, U""
 	Manual_DRAW_WINDOW (3, "Praat Info", "File   Edit   Search   Convert   Font   Help")
 	"Courier\n"
 	"Text: 0, “left”, 75, “half”, “\\s{0.1350605005239421 Pa2}”\n"
 	"Draw rectangle: 0, 560, 0, 260\n"
 )
-NORMAL (U"This is the mean power of the whole Sound.")
-NORMAL (U"In a script, you want to use the value of this power in the script itself, not in the Info window, "
-	"perhaps because you want to do computations with it or because you want to report the value with a nice text around it. "
-	"This is how you do the latter:")
+NORMAL (U"这就是整个 Sound 的平均功率。")
+NORMAL (U"在脚本中，您希望在脚本本身中使用此功率值，而不是在 Info 窗口中，可能是因为您想用它进行计算，或者是因为您想在它周围加上好看的文本来报告该值。以下是后者的实现方式：")
 CODE (U"power = Get power: 0.0, 0.0")
 CODE (U"writeInfoLine: “The power of this sound is ”, power, “ Pascal-squared.”")
-NORMAL (U"The first line of this script executes the menu command ##Get power...#, "
-	"but puts the value 0.1350605005239421 into the variable %`power` instead of into the Info window "
-	"(the variable can have any name you like, as long as it starts with a lower-case letter "
-	"and consists of letters and digits; see @@Scripting 5.1. Variables@).")
-NORMAL (U"The second line then reports the value in the Info window, this time with a nice text around it:")
+NORMAL (U"此脚本的第一行执行了菜单命令 ##Get power...#，但是将值 0.1350605005239421 放入了变量 %`power` 中，而不是放入 Info 窗口中（该变量可以取您喜欢的任何名称，只要它以小写字母开头且由字母和数字组成即可；参见 @@Scripting 5.1. Variables|Scripting 5.1. 变量@）。")
+NORMAL (U"第二行然后在 Info 窗口中报告该值，这次在其周围加上了美化文本：")
 SCRIPT (6, 3, U""
 	Manual_DRAW_WINDOW (3, "Praat Info", "File   Edit   Search   Convert   Font   Help")
 	"Courier\n"
@@ -761,74 +638,62 @@ SCRIPT (6, 3, U""
 MAN_END
 
 MAN_BEGIN (U"Scripting 3.4. String variables", U"ppgb", 20130411)
-INTRO (U"Just as you can store @@Scripting 3.2. Numeric variables|numeric variables@, "
-	"you can store %%string variables%, which contain text instead of numbers. Here is an example:")
+INTRO (U"就像您可以存储 @@Scripting 3.2. Numeric variables|数值变量@ 一样，您也可以存储%%字符串变量（string variables）%，其中包含的是文本而不是数字。以下是一个示例：")
 CODE (U"word1$ = “Hello”")
 CODE (U"word2$ = “world”")
 CODE (U"sentence$ = word1$ + “ ” + word2$")
 CODE (U"writeInfoLine: “The whole sentence is: ”, sentence$")
-NORMAL (U"Yes, this is another way to get the sentence `Hello world` into the Info window. "
-	"It's a more linguistically valid way to do it, and here is how it works:")
-LIST_ITEM (U"1. In line 1, the value “Hello”, which is a text (as we can see by its use of quotes), "
-	"is stored into the variable %`word1$`, which is a string variable (as we can see because its name ends in a dollar sign).")
-LIST_ITEM (U"2. In line 2, the text value “world” is stored into the string variable %`word2$`.")
-LIST_ITEM (U"3. In line 3, we have the formula `word1$ + “ ” + word2$`, which contains two variables, "
-	"namely %`word1$` and %`word2$`.")
-LIST_ITEM (U"4. The values of the two variables are “Hello” and “world”, respectively, "
-	"so what the formula actually says is “Hello” + “ ” + “world”.")
-LIST_ITEM (U"5. The pluses in the formula mean “concatenate”, so we concatenate the three strings "
-	"“Hello”, “ ”, and “world”, giving the longer string “Hello world”.")
-LIST_ITEM (U"6. Still in line 3, the string value “Hello world” is assigned to the string variable %`sentence$`.")
-LIST_ITEM (U"7. Line 4 reports in the Info window: `The whole sentence is: Hello world`")
+NORMAL (U"是的，这是将句子 `Hello world` 写入 Info 窗口的另一种方式。从语言学上讲，这是一种更合理的方式，它的工作原理如下：")
+LIST_ITEM (U"1. 在第 1 行中，值 “Hello” 是一个文本（我们可以通过它使用引号看出来），被存储在变量 %`word1$` 中，这是一个字符串变量（我们可以因为它的名称以美元符号结尾而看出来）。")
+LIST_ITEM (U"2. 在第 2 行中，文本值 “world” 被存储在字符串变量 %`word2$` 中。")
+LIST_ITEM (U"3. 在第 3 行中，我们有公式 `word1$ + “ ” + word2$`，它包含两个变量，即 %`word1$` 和 %`word2$`。")
+LIST_ITEM (U"4. 这两个变量的值分别是 “Hello” 和 “world”，因此公式实际表达的是 “Hello” + “ ” + “world”。")
+LIST_ITEM (U"5. 公式中的加号表示“连接”，因此我们将 “Hello”、“ ” 和 “world” 这三个字符串连接起来，得到更长的字符串 “Hello world”。")
+LIST_ITEM (U"6. 同样在第 3 行中，字符串值 “Hello world” 被赋值给字符串变量 %`sentence$`。")
+LIST_ITEM (U"7. 第 4 行在 Info 窗口中报告：`The whole sentence is: Hello world`")
 MAN_END
 
 MAN_BEGIN (U"Scripting 3.5. String queries", U"ppgb", 20221202)
-INTRO (U"Just as you can use menu commands (usually in a @@Query submenu@) to query @@Scripting 3.3. Numeric queries|numbers@, "
-	"you can query texts as well.")
-NORMAL (U"For instance, when you select a Textgrid, the @@Query submenu@ will contain the command ##Get label of interval...#, "
-	"which takes two numeric arguments, namely ##Tier number# and ##Interval number#:")
+INTRO (U"就像您可以使用菜单命令（通常在 @@Query submenu|Query 子菜单@ 中）来查询 @@Scripting 3.3. Numeric queries|数值@ 一样，您也可以查询文本。")
+NORMAL (U"例如，当您选择一个 TextGrid 时，@@Query submenu|Query 子菜单@ 中将包含 ##Get label of interval...# 命令，该命令需要两个数值参数，即 ##Tier number# 和 ##Interval number#：")
 SCRIPT (5.4, Manual_SETTINGS_WINDOW_HEIGHT (2), U""
 	Manual_DRAW_SETTINGS_WINDOW ("TextGrid: Get label of interval", 2)
 	Manual_DRAW_SETTINGS_WINDOW_FIELD ("Tier number", "1")
 	Manual_DRAW_SETTINGS_WINDOW_FIELD ("Interval number", "3")
 )
-NORMAL (U"When you click OK, and interval 3 of tier 1 happens to contain the text `hello`, the following appears in the Info window:")
+NORMAL (U"当您点击 OK，且第 1 层的第 3 个区间恰好包含文本 `hello` 时，Info 窗口中会出现以下内容：")
 SCRIPT (6, 3, U""
 	Manual_DRAW_WINDOW (3, "Praat Info", "File   Edit   Search   Convert   Font   Help")
 	"Courier\n"
 	"Text: 0, “left”, 75, “half”, “\\s{hello}”\n"
 	"Draw rectangle: 0, 560, 0, 260\n"
 )
-NORMAL (U"In a script, you will want to put the result of the query in a string variable instead of in the Info window, "
-	"because you want to manipulate it further:")
+NORMAL (U"在脚本中，您会希望将查询结果放入字符串变量中而不是 Info 窗口中，因为您想要对其进行进一步操作：")
 CODE (U"text$ = Get label of interval: 1, 3")
 CODE (U"writeInfoLine: “The text in interval 3 of tier 1 is: ”, text$")
-NORMAL (U"The script first stores the text of the interval, i.e. `hello`, into the variable %`text$`, "
-	"then writes it, preceded by some informative text, into the Info window:")
+NORMAL (U"脚本首先将区间文本（即 `hello`）存入变量 %`text$` 中，然后将其前面加上一些解释性文本写入 Info 窗口：")
 SCRIPT (6, 3, U""
 	Manual_DRAW_WINDOW (3, "Praat Info", "File   Edit   Search   Convert   Font   Help")
 	"Courier\n"
 	"Text: 0, “left”, 75, “half”, “\\s{The text in interval 3 of tier 1 is: hello}”\n"
 	"Draw rectangle: 0, 560, 0, 260\n"
 )
-NORMAL (U"Hey, yet another way to implement “Hello world” with the Praat scripting language!")
-ENTRY (U"The difference between numeric queries and string queries")
-NORMAL (U"A string query stores in a string variable the whole text that would appear in the Info window. "
-	"For instance, the script")
+NORMAL (U"嘿，这又是用 Praat 脚本语言实现 “Hello world” 的另一种方法！")
+ENTRY (U"数值查询与字符串查询的区别")
+NORMAL (U"字符串查询会在字符串变量中存储如果输出到 Info 窗口中时所显示的完整文本。例如，以下脚本：")
 CODE (U"power$ = Get power: 0.0, 0.0")
 CODE (U"writeInfoLine: power$")
-NORMAL (U"could give you the following result:")
+NORMAL (U"可能给您以下结果：")
 SCRIPT (6, 3, U""
 	Manual_DRAW_WINDOW (3, "Praat Info", "File   Edit   Search   Convert   Font   Help")
 	"Courier\n"
 	"Text: 0, “left”, 75, “half”, “\\s{0.1350605005239421 Pa2}”\n"
 	"Draw rectangle: 0, 560, 0, 260\n"
 )
-NORMAL (U"A numeric query stores in a numeric variable only the first number that it can find in the text that would appear in the Info window. "
-	"For instance, the script")
+NORMAL (U"而数值查询在数值变量中仅存储在如果输出到 Info 窗口时显示的文本中所能找到的第一组数字。例如，以下脚本：")
 CODE (U"power = Get power: 0.0, 0.0")
 CODE (U"writeInfoLine: power")
-NORMAL (U"could give you the following result:")
+NORMAL (U"可能给您以下结果：")
 SCRIPT (6, 3, U""
 	Manual_DRAW_WINDOW (3, "Praat Info", "File   Edit   Search   Convert   Font   Help")
 	"Courier\n"
@@ -838,11 +703,8 @@ SCRIPT (6, 3, U""
 MAN_END
 
 MAN_BEGIN (U"Scripting 3.6. “For” loops", U"ppgb", 20140111)
-INTRO (U"The power of a procedural programming language is most easily illustrated with the %%for-loop%.")
-NORMAL (U"Take the example of the @@Scripting 3.5. String queries|previous page@, "
-	"whereas you wanted to know the text in the third interval of the first tier of a selected TextGrid. "
-	"It’s easy to imagine that you actually want the texts of %%all the first five% intervals. "
-	"With knowledge from the previous sections, you could write it like this:")
+INTRO (U"过程式编程语言的威力最容易用%%for循环（for-loop）%来阐明。")
+NORMAL (U"以 @@Scripting 3.5. String queries|前一页@ 的示例为例，当时您想知道选定 TextGrid 的第 1 层的第 3 个区间中的文本。很容易想象，您实际想要的是%%所有前五个%区间的文本。利用前几节的知识，您可以这样写：")
 CODE (U"writeInfoLine: “The texts in the first five intervals:”")
 CODE (U"text$ = Get label of interval: 1, 1")
 CODE (U"appendInfoLine: “Interval 1: ”, text$")
@@ -854,7 +716,7 @@ CODE (U"text$ = Get label of interval: 1, 4")
 CODE (U"appendInfoLine: “Interval 4: ”, text$")
 CODE (U"text$ = Get label of interval: 1, 5")
 CODE (U"appendInfoLine: “Interval 5: ”, text$")
-NORMAL (U"The result will be something like")
+NORMAL (U"运行结果将类似于：")
 SCRIPT (6, 3, U""
 	Manual_DRAW_WINDOW (3, "Praat Info", "File   Edit   Search   Convert   Font   Help")
 	"Courier\n"
@@ -866,9 +728,7 @@ SCRIPT (6, 3, U""
 	"Text: 0, “left”, 150, “half”, “\\s{Interval 5: you}”\n"
 	"Draw rectangle: 0, 560, 0, 260\n"
 )
-NORMAL (U"This can be done more nicely. The first step is to realize that the sentences starting with `text$` are similar to each other, "
-	"and the sentence starting with `appendInfoLine` are also similar to each other. They only differ in the interval number, "
-	"and can therefore be made %identical by using a variable for the interval number, like this:")
+NORMAL (U"这可以做得更优雅。第一步是意识到以 `text$` 开头的句子彼此相似，以 `appendInfoLine` 开头的句子也彼此相似。它们仅在区间编号上有所不同，因此可以通过为区间编号使用变量来使它们%完全相同%，如下所示：")
 CODE (U"writeInfoLine: “The texts in the first five intervals:”")
 CODE (U"intervalNumber = 1")
 CODE (U"text$ = Get label of interval: 1, intervalNumber")
@@ -885,32 +745,22 @@ CODE (U"appendInfoLine: “Interval ”, intervalNumber, “: ”, text$")
 CODE (U"intervalNumber = 5")
 CODE (U"text$ = Get label of interval: 1, intervalNumber")
 CODE (U"appendInfoLine: “Interval ”, intervalNumber, “: ”, text$")
-NORMAL (U"A new trick that you see here is that as a numeric argument (##Interval number#, "
-	"the second argument to ##Get label of interval...#), you can use not only a number "
-	"(as in all previous examples), but also a variable (%`intervalNumber`). "
-	"The rest of the script should be known stuff by now.")
-NORMAL (U"The script above is long, but it can be made much shorter with the use of a %%for-loop%:")
+NORMAL (U"您在此处看到的一个新技巧是，作为数值参数（##Interval number#，即 ##Get label of interval...# 的第二个参数），您不仅可以使用数字（如之前所有示例中所示），还可以使用变量（%`intervalNumber`）。到目前为止，脚本的其他部分应该已经是已知的内容了。")
+NORMAL (U"上面的脚本很长，但使用%%for循环（for-loop）%可以使其变得短得多：")
 CODE (U"writeInfoLine: “The texts in the first five intervals:”")
 CODE (U"for intervalNumber from 1 to 5")
 	CODE1 (U"text$ = Get label of interval: 1, intervalNumber")
 	CODE1 (U"appendInfoLine: “Interval ”, intervalNumber, “: ”, text$")
 CODE (U"endfor")
-NORMAL (U"The two lines that were repeated five times in the previous version now show up with indentation "
-	"between a `for` line and its corresponding `endfor`. Those two lines (the `text$` and the `appendInfoLine` line) "
-	"are executed five times: for %`intervalNumber` equal to 1, for %`intervalNumber` equal to 2, for %`intervalNumber` equal to 3, "
-	"for %`intervalNumber` equal to 4, and for %`intervalNumber` equal to 5, in that order.")
-NORMAL (U"In the above example, using a loop does not do much more than save eight lines, at the cost of adding two new lines. "
-	"But imagine the case in which you want to list %all the texts in the intervals: "
-	"the version without the loop is no longer possible. By contrast, the version %with the loop is still possible, "
-	"because we have the command ##Get number of intervals...#, which gives us the number of intervals in the specified tier "
-	"(here, tier 1). So you do:")
+NORMAL (U"在先前版本中重复了五次的两行代码，现在以缩进形式出现在 `for` 行与其对应的 `endfor` 之间。那两行（`text$` 行和 `appendInfoLine` 行）会被执行五次：依次为 %`intervalNumber` 等于 1、%`intervalNumber` 等于 2、%`intervalNumber` 等于 3、%`intervalNumber` 等于 4，以及 %`intervalNumber` 等于 5。")
+NORMAL (U"在上述示例中，使用循环并没有比省去八行代码多做太多事情，代价是增加了两个新行。但是想象一下，如果您想列出区间中的%所有%文本：没有循环的版本将不再可行。相比之下，%有%循环的版本仍然可行，因为我们有 ##Get number of intervals...# 命令，它能获取指定层（这里是第 1 层）的区间数量。所以您这样做：")
 CODE (U"numberOfIntervals = Get number of intervals: 1")
 CODE (U"writeInfoLine: “The texts in all ”, numberOfIntervals, “ intervals:”")
 CODE (U"for intervalNumber from 1 to numberOfIntervals")
 	CODE1 (U"text$ = Get label of interval: 1, intervalNumber")
 	CODE1 (U"appendInfoLine: “Interval ”, intervalNumber, “: ”, text$")
 CODE (U"endfor")
-NORMAL (U"This may yield something like")
+NORMAL (U"这可能会产生类似于：")
 SCRIPT (6, 3, U""
 	Manual_DRAW_WINDOW (3, "Praat Info", "File   Edit   Search   Convert   Font   Help")
 	"Courier\n"
@@ -924,9 +774,7 @@ SCRIPT (6, 3, U""
 	"Text: 0, “left”, 180, “half”, “\\s{Interval 7: goodbye}”\n"
 	"Draw rectangle: 0, 560, 0, 260\n"
 )
-NORMAL (U"This is the first script in this tutorial that is useful in itself. On the basis of it "
-	"you can create all kinds of ways to list the texts in intervals. Here is how you would also list the durations "
-	"of those intervals:")
+NORMAL (U"这是本教程中第一个本身就非常有用的脚本。在此基础上，您可以创建各种方式来列出区间中的文本。以下是您如何也能列出这些区间的时长：")
 CODE (U"numberOfIntervals = Get number of intervals: 1")
 CODE (U"writeInfoLine: “The durations and texts in all ”, numberOfIntervals, “ intervals:”")
 CODE (U"for intervalNumber from 1 to numberOfIntervals")
@@ -1060,113 +908,106 @@ R"~~~(
 "Scripting 4.2. Removing objects"
 © Paul Boersma 1999,2004,2006–2008,2011,2013,2014
 
-In @@Scripting 4.1. Selecting objects|\SS4.1@ we saw that objects could be removed by
-selecting them first and then calling the #Remove command.
-A faster way is the #removeObject function, which can also remove unselected objects:
+在 @@Scripting 4.1. Selecting objects|选择对象@ 中，我们看到可以通过先选择对象然后调用 #Remove 命令来删除它们。
+更快捷的方法是使用 #removeObject 函数，它还可以删除未选择的对象：
 {;
 	sound = Create Sound as pure tone: “sine377”,
-	... 1, 0, 1, 44100, 377, 0.2, 0.01, 0.01   ; remember the ID of the Sound
-	Play   ; the Sound is selected, so it plays
-	spectrum = To Spectrum: “yes”   ; remember the ID of the Spectrum
-	Draw: 0, 5000, 20, 80, “yes”   ; the Spectrum is selected, so it is drawn
-	# Remove the created Spectrum and Sound:
-	\#`{removeObject}: sound, spectrum   ; remove one selected and one unselected object
+	... 1, 0, 1, 44100, 377, 0.2, 0.01, 0.01   ; 记住 Sound 的 ID
+	Play   ; Sound 被选中，所以播放它
+	spectrum = To Spectrum: “yes”   ; 记住 Spectrum 的 ID
+	Draw: 0, 5000, 20, 80, “yes”   ; Spectrum 被选中，所以绘制它
+	# 删除创建的 Spectrum 和 Sound：
+	\#`{removeObject}: sound, spectrum   ; 删除一个已选择和一个未选择的对象
 }
-The #removeObject function keeps the objects selected that were selected before
-(except of course the ones it throws away).
-This allows you to easily throw away objects as soon as you no longer need them:
+#removeObject 函数会保持之前已被选择的对象依然处于被选中状态（当然，它丢弃的对象除外）。
+这使您能够在不再需要对象时轻松地立即丢弃它们：
 {;
 	sound = Create Sound as pure tone: “sine377”,
-	... 1, 0, 1, 44100, 377, 0.2, 0.01, 0.01   ; remember the ID of the Sound
-	Play   ; the Sound is selected, so it plays
+	... 1, 0, 1, 44100, 377, 0.2, 0.01, 0.01   ; 记住 Sound 的 ID
+	Play   ; Sound 被选中，所以播放它
 	spectrum = To Spectrum: “yes”
-	\#`{removeObject}: sound   ; we no longer need the Sound, so we remove it
-	Draw: 0, 5000, 20, 80, “yes”   ; the Spectrum is still selected, so it is drawn
-	\#`{removeObject}: spectrum   ; remove the last object created by the script
+	\#`{removeObject}: sound   ; 我们不再需要这个 Sound，因此将其删除
+	Draw: 0, 5000, 20, 80, “yes”   ; Spectrum 仍然被选中，所以绘制它
+	\#`{removeObject}: spectrum   ; 删除该脚本创建的最后一个对象
 }
-Selecting and removing all objects from the list (don’t)
+选择并从列表中删除所有对象（千万别这么做）
 ========================================================
-A very strange command, which you should not normally use, is `select all`:
+一个非常奇怪的命令，通常您不应该使用它，那就是 `select all`：
 {;
 	\#{select all}
 	Remove
 }
-This selects all objects in the list and then removes them.
-Please try not to use this, because it will remove even the objects that your script did not create!
-After all, you don’t want the users of your script to lose the objects they created!
-So please try to remove in your script only the objects that your script created,
-even if the script is for your own use (because if it is a nice script, others will want to use it).
+这会选中列表中的所有对象，然后将它们删除。
+请尽量不要使用此命令，因为它甚至会删除您的脚本未创建的对象！
+毕竟，您不希望您脚本的用户丢失他们自己创建的对象！
+因此，请尽量在脚本中仅删除由该脚本创建的对象，即使该脚本仅供您自己使用（因为如果它是一个很好的脚本，其他人也会想使用它）。
 
 ################################################################################
 "Scripting 4.3. Querying objects"
 © Paul Boersma 1999,2004,2006–2008,2011,2013,2014,2018,2023
 
-You can get the name of a selected object into a string variable.
-For instance, the following reads the name of the second selected Sound
-(as counted from the top of the list of objects) into the variable %`name$`:
+您可以将选定对象的名称获取到字符串变量中。
+例如，以下脚本将第二个选定的 Sound（从对象列表的顶部开始计算）的名称读取到变量 %`name$` 中：
 {;
 	name$ = \#`{selected$} (“Sound”, 2)
 }
-If the Sound was called “Sound hallo”, the variable %`name$` will contain the string “hallo”.
-To get the name of the topmost selected Sound object, you can leave out the number:
+如果该 Sound 被命名为“Sound hallo”，那么变量 %`name$` 将包含字符串“hallo”。
+要获取最顶部选定的 Sound 对象的名称，您可以省略数字：
 {;
 	name$ = selected$ (“Sound”)
 }
-To get the full name (type + name) of the third selected object, you do:
+要获取第三个选定对象的完整名称（类型 + 名称），您可以这样做：
 {;
 	fullName$ = selected$ (3)
 }
-To get the full name of the topmost selected object, you do:
+要获取最顶部选定对象的完整名称，您可以这样做：
 {;
 	fullName$ = selected$ ()
 }
-To get the type and name out of the full name, you do:
+要从完整名称中提取出类型和名称，您可以这样做：
 {;
 	type$ = \`{extractWord$} (fullName$, “”)
 	name$ = \`{extractLine$} (fullName$, “ ”)
 }
-Negative numbers count from the bottom. Thus, to get the name of the bottom-most selected Sound
-object, you say
+负数表示从底部开始计数。因此，要获取最底部选定的 Sound 对象的名称，您可以这样写：
 {;
 	name$ = selected$ (“Sound”, -1)
 }
-You would use `selected$` () for drawing the object name in a picture:
+您可以使用 `selected$` () 来在图像中绘制对象名称：
 {;
 	Draw: 0, 0, 0, 0, “yes”
 	name$ = selected$ (“Sound”)
 	Text top: “no”, “This is sound ” + name$
 }
-For identifying previously selected objects, this method is not very suitable, since
-there may be multiple objects with the same name:
+对于标识之前选定的对象，此方法并不是很合适，因为可能存在多个同名对象：
 {;
-	# The following two lines are OK:
+	# 以下两行代码是可以的：
 	soundName$ = selected$ (“Sound”, -1)
 	pitchName$ = selected$ (“Pitch”)
-	# But the following line is questionable, since it doesn’t
-	# necessarily select the previously selected Pitch again:
+	# 但下面这行代码是有问题的，因为它不一定会再次选中之前选定的那个 Pitch：
 	selectObject: “Pitch ” + pitchName$
 }
-Instead of this error-prone approach, you should get the object’s unique ID.
-The correct version of our example becomes:
+相比这种容易出错的方法，您应该获取该对象的唯一 ID。
+我们示例的正确版本变为：
 {;
 	sound = selected (“Sound”, -1)
 	pitch = selected (“Pitch”)
-	# Correct:
+	# 正确：
 	selectObject: pitch
 }
-To get the number of selected Sound objects into a variable, use
+要将选定的 Sound 对象数量获取到变量中，请使用：
 {;
 	numberOfSelectedSounds = numberOfSelected (“Sound”)
 }
-To get the number of selected objects into a variable, use
+要将选定的对象数量获取到变量中，请使用：
 {;
 	numberOfSelectedObjects = numberOfSelected ()
 }
-Example: doing something to every selected Sound
+示例：对每个选定的 Sound 进行某些操作
 ================================================
 {;
 	sounds# = \#`{selected#} (“Sound”)
-	# Median pitches of all selected sounds:
+	# 所有选定 sound 的中位数基频（median pitch）：
 	for i to size (sounds#)
 		selectObject: sounds# [i]
 		To Pitch (filtered ac): 0.0, 50, 800, 15, “no”, 0.03, 0.09, 0.50, 0.055, 0.35, 0.14
@@ -1174,7 +1015,7 @@ Example: doing something to every selected Sound
 		appendInfoLine: f0
 		Remove
 	endfor
-	# Restore selection:
+	# 恢复选中状态：
 	selectObject (sounds#)
 }
 
